@@ -1,302 +1,925 @@
-id,price,sale price,gyarto,modell,evjarat,km ora,uzemenyag,teljesitmeny,allapot,csomagtarto,kivitel,szemelyek_szama,szin,hengerurtartalom,hajtas,valto,vegyes fogyasztas
-20604181,10 530 000 Ft,Akciós: 7 990 000 Ft,FORD,PUMA,2024/6,7 km,Benzin,"92 kW, 125 LE",Kitűnő,456 liter,Városi terepjáró (crossover),5 fő,Szürke,999 cm³,Első kerék,Manuális (6 fokozatú),"4,3 l/100km"
-20789545,10 855 000 Ft,Akciós: 9 560 200 Ft,PEUGEOT,RIFTER,2024,4 km,Benzin,"81 kW, 110 LE",Kitűnő,775 liter,Egyterű,5 fő,Zöld (metál),1 199 cm³,Első kerék,Manuális (6 fokozatú),"5,5 l/100km"
-20927854,17 450 000 Ft,Akciós: 13 399 000 Ft,FORD,EXPLORER,2024/10,7 km,Elektromos,"125 kW, 170 LE",Kitűnő,,Városi terepjáró (crossover),5 fő,Bordó (metál),,Hátsó kerék,Automata,
-21091547,12 740 000 Ft,Akciós: 10 940 000 Ft,NISSAN,QASHQAI,2025,5 km,Benzin,"103 kW, 140 LE",Kitűnő,504 liter,Városi terepjáró (crossover),5 fő,Ezüst,1 332 cm³,Első kerék,Manuális (6 fokozatú),
-21153941,18 049 000 Ft,Akciós: 17 249 000 Ft,HYUNDAI,TUCSON,2024,Nincs megadva,Hibrid,"118 kW, 160 LE",Sérülésmentes,620 liter,Városi terepjáró (crossover),5 fő,Sötétzöld,1 598 cm³,Első kerék,Automata (6 fokozatú tiptronic),
-21198537,9 690 000 Ft,,CITROEN,C4 X,2024/10,10 km,Benzin,"75 kW, 102 LE",Kitűnő,510 liter,Sedan,5 fő,,1 199 cm³,Első kerék,Manuális (6 fokozatú),
-21317660,20 460 000 Ft,Akciós: 17 850 000 Ft,PEUGEOT,508,2024/12,5 km,,"133 kW, 181 LE",Kitűnő,487 liter,Ferdehátú,5 fő,,1 598 cm³,Első kerék,Automata (8 fokozatú tiptronic),
-21384061,9 960 000 Ft,Akciós: 9 290 000 Ft,PEUGEOT,208,2024/10,5 km,Benzin,"74 kW, 101 LE",Kitűnő,342 liter,Ferdehátú,5 fő,,1 199 cm³,Első kerék,,
-21411067,12 357 800 Ft,Akciós: 11 345 900 Ft,MAZDA,CX-30,2025,1 km,Benzin,"103 kW, 140 LE",Kitűnő,430 liter,Városi terepjáró (crossover),5 fő,Törtfehér (metál),2 488 cm³,Első kerék,Manuális (6 fokozatú),
-21433887,27 907 800 Ft,Akciós: 23 890 000 Ft,MAZDA,CX-80,2025,3 km,Hibrid (Benzin),"141 kW, 192 LE",Kitűnő,302 liter,Kombi,7 fő,Bordó (metál),2 488 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-21438474,22 627 300 Ft,Akciós: 19 890 000 Ft,MAZDA,CX-60,2025,3 km,Dízel,"187 kW, 254 LE",Kitűnő,570 liter,Városi terepjáró (crossover),5 fő,Homok (metál),3 283 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-21452380,6 440 000 Ft,,CITROEN,C3,2025/1,3 km,Benzin,"74 kW, 101 LE",Kitűnő,310 liter,Ferdehátú,5 fő,,1 199 cm³,Első kerék,Manuális (6 fokozatú),
-21467062,15 390 000 Ft,Akciós: 13 390 000 Ft,NISSAN,X-TRAIL,2025,7 km,Benzin,"120 kW, 163 LE",Kitűnő,585 liter,Városi terepjáró (crossover),5 fő,Fehér,1 497 cm³,Első kerék,Fokozatmentes automata,
-21499903,11 099 000 Ft,,CITROEN,C5 AIRCROSS,2025,7 km,Dízel,"96 kW, 131 LE",Kitűnő,580 liter,Városi terepjáró (crossover),5 fő,,1 499 cm³,Első kerék,Automata (8 fokozatú),"3,8 l/100km"
-21539452,10 890 000 Ft,Akciós: 10 590 000 Ft,OPEL,FRONTERA,2025,5 km,Elektromos,"83 kW, 113 LE",Kitűnő,,Városi terepjáró (crossover),5 fő,Narancssárga (metál),,,Fokozatmentes automata,
-21568933,11 490 000 Ft,Akciós: 9 990 000 Ft,OMODA,OMODA 5,2024,2 km,Benzin,"108 kW, 147 LE",Kitűnő,,Városi terepjáró (crossover),5 fő,,1 598 cm³,Első kerék,Automata (7 fokozatú),
-21612195,5 699 000 Ft,,KIA,CEE'D,2022/5,78 725 km,Benzin,"74 kW, 101 LE",Normál,625 liter,Kombi,5 fő,(metál),998 cm³,Első kerék,Manuális (6 fokozatú),
-21632037,13 850 000 Ft,Akciós: 12 190 000 Ft,OPEL,GRANDLAND,2024,5 km,Benzin,"100 kW, 136 LE",Kitűnő,514 liter,Városi terepjáró (crossover),5 fő,Fehér,1 199 cm³,Első kerék,Automata (6 fokozatú),
-21706910,14 115 000 Ft,Akciós: 10 999 000 Ft,PEUGEOT,308,2025/1,5 km,Dízel,"96 kW, 131 LE",Kitűnő,412 liter,Ferdehátú,5 fő,Kék (metál),1 499 cm³,Első kerék,Automata (8 fokozatú tiptronic),
-21734946,23 035 000 Ft,Akciós: 20 110 000 Ft,KIA,SORENTO,2025,5 km,Dízel,"142 kW, 193 LE",Normál,187 liter,Városi terepjáró (crossover),7 fő,Fekete,2 151 cm³,Összkerék,Automata (8 fokozatú),
-21759441,6 569 000 Ft,Akciós: 6 269 000 Ft,DACIA,SANDERO,2025,10 km,Benzin,"67 kW, 91 LE",Kitűnő,328 liter,Ferdehátú,5 fő,,999 cm³,Első kerék,Manuális (5 fokozatú),
-21805531,13 298 000 Ft,Akciós: 12 798 000 Ft,SSANGYONG,TORRES,2025,5 km,Benzin,"120 kW, 163 LE",Kitűnő,703 liter,Kombi,5 fő,,1 497 cm³,Első kerék,Manuális (6 fokozatú),
-21815547,17 150 000 Ft,Akciós: 11 799 000 Ft,FORD,CAPRI,2025,7 km,Elektromos,"125 kW, 170 LE",Kitűnő,627 liter,Ferdehátú,5 fő,Fehér,,Hátsó kerék,Fokozatmentes automata,
-21834960,7 959 000 Ft,,RENAULT,CLIO,2025,5 900 km,Benzin,"67 kW, 91 LE",Normál,382 liter,Ferdehátú,5 fő,Szürke,999 cm³,Első kerék,Manuális (6 fokozatú),
-21859248,21 725 000 Ft,Akciós: 19 848 000 Ft,SSANGYONG,REXTON,2025,5 km,Dízel,"148 kW, 201 LE",Kitűnő,240 liter,Városi terepjáró (crossover),7 fő,Fekete,2 157 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-21891126,18 874 000 Ft,Akciós: 17 899 000 Ft,HYUNDAI,IONIQ 6,2025,Nincs megadva,Elektromos,"168 kW, 228 LE",Sérülésmentes,401 liter,Sedan,5 fő,Sötétszürke (metál),,Hátsó kerék,Fokozatmentes automata,
-21909155,13 999 000 Ft,,KIA,EV3,2025/2,11 km,Elektromos,"150 kW, 204 LE",Kitűnő,460 liter,Kombi,5 fő,,,Első kerék,Fokozatmentes automata,
-21912815,8 199 000 Ft,,OPEL,MOKKA,2025/3,10 km,Benzin,"100 kW, 136 LE",Kitűnő,350 liter,Városi terepjáró (crossover),5 fő,Kék,1 199 cm³,Első kerék,Manuális (6 fokozatú),
-21915593,9 450 000 Ft,,OPEL,ASTRA,2025,10 km,Benzin,"96 kW, 131 LE",Kitűnő,422 liter,Ferdehátú,5 fő,Fehér,1 199 cm³,Első kerék,Manuális (6 fokozatú),
-21932770,6 490 000 Ft,,OPEL,CORSA,2025,5 km,Benzin,"74 kW, 101 LE",Kitűnő,309 liter,Ferdehátú,5 fő,Kék,1 199 cm³,Első kerék,Manuális (6 fokozatú),
-21944672,17 196 000 Ft,Akciós: 15 998 000 Ft,KGM,ACTYON,2025,3 km,Benzin,"120 kW, 163 LE",Kitűnő,703 liter,Kombi,5 fő,Aranysárga,1 497 cm³,Első kerék,Automata (6 fokozatú tiptronic),
-21960271,14 310 000 Ft,Akciós: 10 990 000 Ft,PEUGEOT,408,2025,5 km,Benzin,"100 kW, 136 LE",Kitűnő,536 liter,Coupe,5 fő,Fehér,1 199 cm³,Első kerék,,
-21966898,18 983 960 Ft,Akciós: 17 713 960 Ft,ISUZU,D-MAX,2025,5 km,Dízel,"120 kW, 163 LE",Kitűnő,,Pickup,5 fő,Ezüst,1 898 cm³,Összkerék,Automata (6 fokozatú tiptronic),9 l/100km
-21969018,13 434 000 Ft,Akciós: 11 200 000 Ft,PEUGEOT,2008,2025,5 km,Benzin,"100 kW, 136 LE",Kitűnő,434 liter,Városi terepjáró (crossover),5 fő,,1 199 cm³,Első kerék,,
-21979712,15 610 000 Ft,Akciós: 14 799 000 Ft,PEUGEOT,5008,2025/6,3 km,Benzin,"100 kW, 136 LE",Újszerű,748 liter,Városi terepjáró (crossover),7 fő,,1 199 cm³,Első kerék,,
-21981424,8 598 000 Ft,Akciós: 7 850 000 Ft,KGM,TIVOLI,2025/6,7 km,Benzin,"120 kW, 163 LE",Kitűnő,427 liter,Városi terepjáró (crossover),5 fő,Fehér (metál),1 497 cm³,Első kerék,Manuális (6 fokozatú),
-21989255,7 499 000 Ft,Akciós: 6 879 000 Ft,DACIA,DUSTER,2025,7 km,LPG,"74 kW, 101 LE",Normál,439 liter,Városi terepjáró (crossover),5 fő,Fehér,999 cm³,Első kerék,Manuális (6 fokozatú),
-21992509,14 580 000 Ft,Akciós: 12 880 000 Ft,NISSAN,JUKE,2025,5 500 km,Benzin,"69 kW, 94 LE",Kitűnő,354 liter,Városi terepjáró (crossover),5 fő,Fehér (metál),1 598 cm³,Első kerék,Fokozatmentes automata,
-22005976,13 740 000 Ft,Akciós: 12 290 000 Ft,PEUGEOT,3008,2025/5,3 km,Benzin,"100 kW, 136 LE",Újszerű,520 liter,Városi terepjáró (crossover),5 fő,,1 199 cm³,Első kerék,,
-22024522,10 299 000 Ft,,RENAULT,SYMBIOZ,2025,1 km,Benzin,"103 kW, 140 LE",Normál,,Egyterű,6 fő,Kék,1 333 cm³,Első kerék,Manuális (6 fokozatú),
-22043446,21 794 000 Ft,Akciós: 17 990 000 Ft,HONDA,CR-V,2025/7,Nincs megadva,Benzin,"135 kW, 184 LE",Kitűnő,579 liter,Városi terepjáró (crossover),5 fő,Bordó (metál),1 993 cm³,Összkerék,Fokozatmentes automata,
-22043809,17 220 000 Ft,Akciós: 14 550 000 Ft,HONDA,CIVIC,2025/7,Nincs megadva,Benzin,"135 kW, 184 LE",Kitűnő,404 liter,Ferdehátú,5 fő,Fekete (metál),1 993 cm³,Első kerék,Fokozatmentes automata,
-22045704,16 029 000 Ft,Akciós: 13 189 000 Ft,HONDA,HR-V,2025/7,Nincs megadva,Benzin,"96 kW, 131 LE",Kitűnő,304 liter,Városi terepjáró (crossover),5 fő,Szürke (metál),1 498 cm³,Első kerék,Fokozatmentes automata,"4,2 l/100km"
-22045834,9 899 000 Ft,Akciós: 9 599 000 Ft,MG,MG3,2025/7,Nincs megadva,Benzin,"75 kW, 102 LE",Kitűnő,293 liter,Ferdehátú,5 fő,Fehér,1 490 cm³,Első kerék,,
-22046194,7 299 000 Ft,Akciós: 6 990 000 Ft,MG,ZS,2025/7,Nincs megadva,Benzin,"78 kW, 106 LE",Kitűnő,448 liter,Városi terepjáró (crossover),5 fő,Fehér,1 498 cm³,Első kerék,Manuális (5 fokozatú),
-22086583,8 895 000 Ft,,SKODA,KODIAQ,2019/12,149 000 km,Dízel,"110 kW, 150 LE",Megkímélt,835 liter,Városi terepjáró (crossover),5 fő,Kék (metál),1 968 cm³,Első kerék,Automata (7 fokozatú),5 l/100km
-22097300,9 900 000 Ft,Akciós: 8 550 000 Ft,SUZUKI,S-CROSS,2025,1 km,Benzin,"81 kW, 110 LE",Normál,430 liter,Városi terepjáró (crossover),5 fő,Fehér,1 373 cm³,Első kerék,Manuális (6 fokozatú),
-22097349,9 640 000 Ft,Akciós: 8 090 000 Ft,SUZUKI,VITARA,2025,1 km,Benzin,"81 kW, 110 LE",Normál,362 liter,Városi terepjáró (crossover),5 fő,Fehér,1 373 cm³,Első kerék,Manuális (6 fokozatú),
-22098728,5 999 000 Ft,,MITSUBISHI,OUTLANDER,2018/3,91 000 km,Benzin,"110 kW, 150 LE",Kitűnő,591 liter,Városi terepjáró (crossover),5 fő,Sötétszürke (metál),1 998 cm³,Első kerék,Fokozatmentes automata,"7,3 l/100km"
-22113593,8 999 000 Ft,,FORD,RANGER,2021/12,86 990 km,Dízel,"157 kW, 213 LE",Kitűnő,,Pickup,5 fő,Fehér,1 996 cm³,Összkerék,Automata,"8,2 l/100km"
-22122766,11 490 000 Ft,Akciós: 9 490 000 Ft,CHERY,TIGGO,2025,5 km,Benzin,"108 kW, 147 LE",Kitűnő,500 liter,Városi terepjáró (crossover),5 fő,Fekete (metál),1 598 cm³,Első kerék,Automata (7 fokozatú),
-22033321,12 490 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2024/4,21 200 km,Benzin,"100 kW, 136 LE",Megkímélt,355 liter,Ferdehátú,5 fő,Fehér,1 332 cm³,Első kerék,Automata (7 fokozatú),
-21830836,13 490 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2024/3,22 105 km,Benzin,"100 kW, 136 LE",Kitűnő,355 liter,Ferdehátú,5 fő,Fekete (metál),1 332 cm³,Első kerék,Automata (7 fokozatú),
-22033926,13 990 000 Ft,,MERCEDES-BENZ,GLC-OSZTÁLY,2022/1,60 172 km,Benzin,"145 kW, 197 LE",Megkímélt,550 liter,Városi terepjáró (crossover),5 fő,Szürke (metál),1 991 cm³,Összkerék,Automata (9 fokozatú tiptronic),"8,1 l/100km"
-21436590,,,VOLVO,EX30,2024/6,4 981 km,Elektromos,"200 kW, 272 LE",Megkímélt,318 liter,Kombi,5 fő,Sárga,,Hátsó kerék,Fokozatmentes automata,
-20654239,15 490 000 Ft,,BMW,5-ÖS SOROZAT,2023/3,64 347 km,Hibrid,"135 kW, 184 LE",Megkímélt,410 liter,Sedan,5 fő,Fekete,1 998 cm³,Hátsó kerék,Automata (8 fokozatú tiptronic),
-22033981,,,MERCEDES-BENZ,EQC,2024/1,22 940 km,Elektromos,"300 kW, 408 LE",Kitűnő,500 liter,Kombi,5 fő,,,Összkerék,Fokozatmentes automata,
-21944567,1 250 000 Ft,,SUZUKI,IGNIS,2005/10,213 662 km,Benzin,"69 kW, 94 LE",Normál,236 liter,Ferdehátú,5 fő,Fekete,1 328 cm³,Első kerék,Manuális (5 fokozatú),"6,5 l/100km"
-21928524,1 750 000 Ft,,OPEL,ZAFIRA,2014/2,275 197 km,CNG,"110 kW, 150 LE",Normál,152 liter,Egyterű,7 fő,Fekete,1 598 cm³,Első kerék,Manuális (6 fokozatú),
-22037580,2 899 000 Ft,,OPEL,ASTRA,2016/5,128 390 km,Dízel,"81 kW, 110 LE",Megkímélt,460 liter,Sedan,5 fő,Fehér,1 598 cm³,Első kerék,Manuális (6 fokozatú),"3,7 l/100km"
-21719182,2 999 000 Ft,,CITROEN,C-ZERO,2017/9,7 550 km,Elektromos,"47 kW, 64 LE",Kitűnő,168 liter,Ferdehátú,4 fő,Fehér (metál),,Hátsó kerék,Fokozatmentes automata,
-21919833,2 999 900 Ft,,PEUGEOT,508,2014/3,281 981 km,Dízel,"133 kW, 181 LE",Normál,473 liter,Sedan,5 fő,(metál),1 997 cm³,Első kerék,Automata (6 fokozatú tiptronic),"4,4 l/100km"
-22073041,3 170 000 Ft,,RENAULT,LAGUNA,2012/3,142 378 km,Dízel,"110 kW, 150 LE",Normál,423 liter,Coupe,4 fő,Fehér,1 995 cm³,Első kerék,Manuális (6 fokozatú),"6,5 l/100km"
-22125849,3 270 000 Ft,,RENAULT,SCENIC,2015/3,125 142 km,Dízel,"81 kW, 110 LE",Normál,522 liter,Egyterű,5 fő,Fekete,1 461 cm³,Első kerék,Automata (6 fokozatú),5 l/100km
-22105163,3 370 000 Ft,,CITROEN,C4,2017/5,89 239 km,Benzin,"96 kW, 131 LE",Normál,408 liter,Ferdehátú,5 fő,Szürke,1 199 cm³,Első kerék,Manuális (6 fokozatú),5 l/100km
-22120857,3 770 000 Ft,,DACIA,DUSTER,2020/11,121 798 km,Benzin,"74 kW, 101 LE",Normál,478 liter,Városi terepjáró (crossover),5 fő,Ezüst,999 cm³,Első kerék,Manuális (5 fokozatú),
-22040773,3 770 000 Ft,,FORD,S-MAX,2014/9,136 120 km,Dízel,"120 kW, 163 LE",Normál,755 liter,Egyterű,5 fő,Ezüst,1 997 cm³,Első kerék,Automata (6 fokozatú),6 l/100km
-21475893,3 770 000 Ft,,KIA,SORENTO,2010/12,141 652 km,Dízel,"145 kW, 197 LE",Normál,531 liter,Városi terepjáró (crossover),5 fő,Fekete,2 199 cm³,Első kerék,Manuális (6 fokozatú),"6,5 l/100km"
-21964701,3 970 000 Ft,,MINI,COOPER,2015/6,130 605 km,Benzin,"100 kW, 136 LE",Normál,278 liter,Ferdehátú,5 fő,Fekete,1 499 cm³,Első kerék,Manuális (6 fokozatú),"4,7 l/100km"
-21832502,4 099 900 Ft,,RENAULT,SCENIC,2020/1,288 862 km,Dízel,"88 kW, 120 LE",Normál,233 liter,Egyterű,7 fő,(metál),1 749 cm³,Első kerék,Manuális (6 fokozatú),"4,9 l/100km"
-22020692,4 250 000 Ft,,OPEL,ASTRA,2020/12,119 339 km,Benzin,"107 kW, 145 LE",Normál,540 liter,Kombi,5 fő,Fehér,1 199 cm³,Első kerék,Manuális (6 fokozatú),"4,6 l/100km"
-22122380,4 370 000 Ft,,VOLVO,V60,2015/12,130 976 km,Dízel,"110 kW, 150 LE",Normál,430 liter,Kombi,5 fő,Pezsgő,1 969 cm³,Első kerék,Manuális (6 fokozatú),"3,9 l/100km"
-22125926,4 470 000 Ft,,KIA,SPORTAGE,2016/3,196 175 km,Dízel,"85 kW, 116 LE",Normál,564 liter,Városi terepjáró (crossover),5 fő,Ezüst,1 685 cm³,Első kerék,Manuális (6 fokozatú),"5,1 l/100km"
-22031027,4 470 000 Ft,,TOYOTA,AURIS,2016/6,74 916 km,Benzin,"73 kW, 99 LE",Normál,360 liter,Ferdehátú,5 fő,Fehér,1 329 cm³,Első kerék,Manuális (6 fokozatú),"5,5 l/100km"
-21965764,4 470 000 Ft,,FORD,KUGA,2013/5,145 728 km,Dízel,"120 kW, 163 LE",Normál,492 liter,Városi terepjáró (crossover),5 fő,Ezüst,1 997 cm³,Összkerék,Automata (6 fokozatú),"6,2 l/100km"
-21622703,4 499 000 Ft,,HYUNDAI,I30,2018/12,212 751 km,Dízel,"85 kW, 116 LE",Kitűnő,602 liter,Kombi,5 fő,Ezüst (metál),1 582 cm³,Első kerék,Automata (7 fokozatú),"4,6 l/100km"
-21944724,4 690 000 Ft,,SKODA,OCTAVIA,2018/2,162 145 km,Dízel,"85 kW, 116 LE",Normál,610 liter,Kombi,5 fő,Fehér,1 598 cm³,Első kerék,Manuális (5 fokozatú),"3,9 l/100km"
-21944588,4 750 000 Ft,,PONTIAC,SOLSTICE,2007/2,52 937 km,Benzin,"194 kW, 264 LE",Normál,,Cabrio,2 fő,Szürke,1 998 cm³,Hátsó kerék,Automata,
-22134013,4 770 000 Ft,,SUZUKI,VITARA,2015/7,112 097 km,Benzin,"88 kW, 120 LE",Normál,375 liter,Városi terepjáró (crossover),5 fő,Kék,1 586 cm³,Első kerék,Manuális (5 fokozatú),"5,3 l/100km"
-22106764,4 970 000 Ft,,HONDA,CIVIC,2017/8,152 203 km,Benzin,"95 kW, 129 LE",Normál,478 liter,Ferdehátú,5 fő,Szürke,988 cm³,Első kerék,Manuális (6 fokozatú),
-22092485,5 000 000 Ft,,VOLKSWAGEN,SCIROCCO,2016/3,129 111 km,Benzin,"92 kW, 125 LE",Normál,292 liter,Coupe,5 fő,Fehér (metál),1 390 cm³,Első kerék,Manuális (6 fokozatú),
-21987390,,,FORD,FOCUS,2015/12,124 175 km,Benzin,"184 kW, 250 LE",Normál,316 liter,Ferdehátú,5 fő,Szürke,1 999 cm³,Első kerék,Manuális (6 fokozatú),"7,2 l/100km"
-22016447,5 370 000 Ft,,HONDA,JAZZ,2018/1,146 508 km,Benzin,"96 kW, 131 LE",Normál,354 liter,Egyterű,5 fő,Szürke,1 498 cm³,Első kerék,Manuális (6 fokozatú),"5,9 l/100km"
-22040683,5 470 000 Ft,,HONDA,CR-V,2015/2,236 713 km,Dízel,"110 kW, 150 LE",Normál,,Városi terepjáró (crossover),5 fő,Fehér,2 199 cm³,Összkerék,Automata,
-21836733,5 499 900 Ft,,RENAULT,ZOE,2020/1,71 150 km,Elektromos,"80 kW, 109 LE",Normál,338 liter,Ferdehátú,5 fő,(metál),,Első kerék,Fokozatmentes automata,
-22133584,5 499 900 Ft,,RENAULT,ZOE,2020/12,26 984 km,Elektromos,"80 kW, 109 LE",Sérülésmentes,338 liter,Ferdehátú,5 fő,,,Első kerék,Fokozatmentes automata,
-21901494,5 670 000 Ft,,BMW,4-ES SOROZAT,2016/9,199 996 km,Dízel,"110 kW, 150 LE",Normál,480 liter,Coupe,5 fő,Fekete,1 995 cm³,Hátsó kerék,Manuális (6 fokozatú),"4,1 l/100km"
-21944464,5 750 000 Ft,,LEXUS,IS,2013/7,180 702 km,Hibrid,"133 kW, 181 LE",Normál,450 liter,Sedan,5 fő,Fekete,2 494 cm³,Hátsó kerék,Automata,"4,3 l/100km"
-22124849,5 770 000 Ft,,KIA,CEE'D,2022/3,62 401 km,Benzin,"88 kW, 120 LE",Normál,625 liter,Kombi,5 fő,Zöld,998 cm³,Első kerék,Manuális (6 fokozatú),"5,5 l/100km"
-22068601,5 950 000 Ft,,MERCEDES-BENZ,SLK-OSZTÁLY,2006/12,79 281 km,Benzin,"170 kW, 231 LE",Normál,208 liter,Cabrio,2 fő,Fehér,2 996 cm³,Hátsó kerék,Automata,"9,5 l/100km"
-22012041,5 970 000 Ft,,BMW,3-AS SOROZAT,2015/5,188 480 km,Benzin,"180 kW, 245 LE",Normál,480 liter,Sedan,5 fő,Fehér,1 997 cm³,Összkerék,Automata (8 fokozatú),
-21623276,5 990 000 Ft,,OPEL,CORSA,2020/9,52 043 km,Elektromos,"100 kW, 136 LE",Kitűnő,267 liter,Ferdehátú,5 fő,Fekete (metál),,Első kerék,Fokozatmentes automata,
-22020070,6 100 000 Ft,,BMW,3-AS SOROZAT,1990/10,154 360 km,Benzin,"83 kW, 113 LE",Normál,,Coupe,5 fő,Piros,1 796 cm³,Hátsó kerék,Manuális (5 fokozatú),
-22097130,6 399 000 Ft,,JEEP,COMPASS,2019/3,75 664 km,Benzin,"103 kW, 140 LE",Normál,438 liter,Városi terepjáró (crossover),5 fő,,1 368 cm³,Első kerék,Manuális (6 fokozatú),"6,8 l/100km"
-22041259,6 470 000 Ft,,JAGUAR,XE,2016/10,96 489 km,Benzin,"147 kW, 200 LE",Normál,455 liter,Sedan,5 fő,Bordó,1 999 cm³,Hátsó kerék,Automata (8 fokozatú tiptronic),"7,5 l/100km"
-22036983,6 470 000 Ft,,MINI,COUNTRYMAN,2018/7,137 067 km,Hibrid (Benzin),"100 kW, 136 LE",Normál,405 liter,Kombi,5 fő,Szürke,1 499 cm³,Összkerék,Automata (6 fokozatú tiptronic),
-21834756,6 470 000 Ft,,BMW,5-ÖS SOROZAT,2014/7,168 714 km,Benzin,"225 kW, 306 LE",Normál,500 liter,Sedan,5 fő,Fehér,2 979 cm³,Hátsó kerék,Automata (8 fokozatú tiptronic),"8,2 l/100km"
-22037666,6 590 000 Ft,,SKODA,OCTAVIA,2020/4,146 615 km,Dízel,"135 kW, 184 LE",Normál,590 liter,Ferdehátú,5 fő,Fekete,1 968 cm³,Összkerék,Automata,
-22105816,6 749 000 Ft,,OPEL,CROSSLAND,2023/6,37 552 km,Benzin,"96 kW, 131 LE",Normál,520 liter,Városi terepjáró (crossover),5 fő,(metál),1 199 cm³,Első kerék,Automata (6 fokozatú tiptronic),
-22105788,6 749 000 Ft,,OPEL,CROSSLAND,2023/6,46 858 km,Benzin,"96 kW, 131 LE",Normál,520 liter,Városi terepjáró (crossover),5 fő,(metál),1 199 cm³,Első kerék,Automata (6 fokozatú tiptronic),
-22092504,6 850 000 Ft,,PORSCHE,CAYENNE,2010/11,168 719 km,Dízel,"176 kW, 239 LE",Normál,670 liter,Városi terepjáró (crossover),5 fő,Barna,2 967 cm³,Összkerék,Automata (8 fokozatú tiptronic),"9,3 l/100km"
-22081920,6 890 000 Ft,,VOLVO,V40,2018/9,117 188 km,Benzin,"112 kW, 152 LE",Megkímélt,324 liter,Ferdehátú,5 fő,Fekete (metál),1 969 cm³,Első kerék,Manuális (6 fokozatú),6 l/100km
-22129827,6 970 000 Ft,,KIA,OPTIMA,2019/8,123 919 km,Hibrid,"115 kW, 156 LE",Normál,440 liter,Kombi,5 fő,Fehér,1 999 cm³,Első kerék,Automata (6 fokozatú tiptronic),"1,3 l/100km"
-21979130,6 970 000 Ft,,JAGUAR,F-PACE,2017/2,106 939 km,Dízel,"132 kW, 179 LE",Normál,650 liter,Városi terepjáró (crossover),5 fő,Fekete,1 999 cm³,Hátsó kerék,Manuális (6 fokozatú),"4,9 l/100km"
-19321385,7 290 000 Ft,,KIA,CEE'D,2022/3,28 748 km,Benzin,"118 kW, 160 LE",Kitűnő,395 liter,Ferdehátú,5 fő,,1 482 cm³,Első kerék,Manuális (6 fokozatú),"5,9 l/100km"
-22112503,7 399 000 Ft,,OPEL,ASTRA,2023/12,24 621 km,Benzin,"96 kW, 131 LE",Kitűnő,422 liter,Ferdehátú,5 fő,Piros,1 199 cm³,Első kerék,Automata (8 fokozatú tiptronic),
-21592917,7 499 900 Ft,,FIAT,500,2023/8,9 707 km,Elektromos,"87 kW, 118 LE",Normál,185 liter,Ferdehátú,4 fő,(metál),,Első kerék,Fokozatmentes automata,
-21915677,7 690 000 Ft,,VOLVO,S90,2016/9,216 093 km,Dízel,"140 kW, 190 LE",Megkímélt,500 liter,Sedan,5 fő,Fekete (metál),1 969 cm³,Első kerék,Automata (8 fokozatú tiptronic),"4,4 l/100km"
-21933002,7 899 000 Ft,,OPEL,CORSA,2025/4,1 500 km,Benzin,"74 kW, 101 LE",Kitűnő,309 liter,Ferdehátú,5 fő,Piros,1 199 cm³,Első kerék,Manuális (6 fokozatú),
-22133060,7 970 000 Ft,,RENAULT,CAPTUR,2020/11,22 872 km,Hibrid,"68 kW, 92 LE",Kitűnő,265 liter,Városi terepjáró (crossover),5 fő,Narancs,1 598 cm³,Első kerék,Fokozatmentes automata,
-22058406,7 970 000 Ft,,MAZDA,CX-30,2021/7,80 965 km,Benzin,"90 kW, 122 LE",Normál,430 liter,Városi terepjáró (crossover),5 fő,Szürke,1 998 cm³,Első kerék,Manuális (6 fokozatú),
-22112600,7 990 000 Ft,,OPEL,ASTRA,2024/2,23 000 km,Benzin,"81 kW, 110 LE",Kitűnő,597 liter,Kombi,5 fő,Fehér,1 199 cm³,Első kerék,Manuális (6 fokozatú),
-21762090,8 199 000 Ft,,OPEL,MOKKA,2025/1,10 km,Benzin,"100 kW, 136 LE",Kitűnő,350 liter,Városi terepjáró (crossover),5 fő,Szürke,1 199 cm³,Első kerék,Manuális (6 fokozatú),
-21760317,8 199 000 Ft,,OPEL,MOKKA,2025/1,10 km,Benzin,"100 kW, 136 LE",Kitűnő,350 liter,Városi terepjáró (crossover),5 fő,Zöld,1 199 cm³,Első kerék,Manuális (6 fokozatú),
-21758044,8 199 000 Ft,,OPEL,MOKKA,2025/1,10 km,Benzin,"100 kW, 136 LE",Kitűnő,350 liter,Városi terepjáró (crossover),5 fő,Kék,1 199 cm³,Első kerék,Manuális (6 fokozatú),
-22085461,8 399 000 Ft,,OPEL,GRANDLAND,2022/9,36 918 km,Benzin,"96 kW, 131 LE",Újszerű,514 liter,Városi terepjáró (crossover),5 fő,Fehér,1 199 cm³,Első kerék,Manuális (6 fokozatú),
-22123901,8 499 000 Ft,,BMW,X SOROZAT,2020/3,46 630 km,Benzin,"103 kW, 140 LE",Megkímélt,470 liter,Városi terepjáró (crossover),5 fő,Szürke (metál),1 499 cm³,Első kerék,Manuális (6 fokozatú),"5,6 l/100km"
-22101291,8 499 990 Ft,,TOYOTA,RAV 4,2017/10,77 760 km,Hibrid (Benzin),"114 kW, 155 LE",Normál,501 liter,Városi terepjáró (crossover),5 fő,(metál),2 494 cm³,Összkerék,Fokozatmentes automata,"5,2 l/100km"
-22006539,8 590 000 Ft,,MERCEDES-BENZ,SLK-OSZTÁLY,2014/3,88 282 km,Benzin,"135 kW, 184 LE",Normál,225 liter,Cabrio,2 fő,Fekete,1 796 cm³,Hátsó kerék,Automata (7 fokozatú tiptronic),"6,5 l/100km"
-21478410,8 590 000 Ft,,SKODA,SCALA,2024/12,300 km,Benzin,"81 kW, 110 LE",Újszerű,467 liter,Ferdehátú,5 fő,Fehér,999 cm³,Első kerék,Manuális (6 fokozatú),"4,7 l/100km"
-22125240,8 990 000 Ft,,MERCEDES-BENZ,E-OSZTÁLY,2017/7,169 397 km,Dízel,"143 kW, 194 LE",Kitűnő,540 liter,Sedan,5 fő,Fekete,1 950 cm³,Hátsó kerék,Automata (9 fokozatú tiptronic),"4,3 l/100km"
-22052260,8 999 900 Ft,,HYUNDAI,KONA,2021/11,29 890 km,Elektromos,"150 kW, 204 LE",Kitűnő,332 liter,Városi terepjáró (crossover),5 fő,(metál),,Első kerék,Fokozatmentes automata,
-21978900,9 299 000 Ft,,BMW,2-ES SOROZAT,2020/7,22 500 km,Dízel,"140 kW, 190 LE",Újszerű,390 liter,Coupe,4 fő,Sötétkék (metál),1 995 cm³,Hátsó kerék,Manuális (6 fokozatú),
-21891677,9 299 000 Ft,,OPEL,GRANDLAND,2022/10,17 621 km,Benzin,"96 kW, 131 LE",Újszerű,514 liter,Városi terepjáró (crossover),5 fő,Ezüst (metál),1 199 cm³,Első kerék,Automata (8 fokozatú tiptronic),
-22004487,9 470 000 Ft,,BMW,5-ÖS SOROZAT,2019/6,101 912 km,Benzin,"135 kW, 184 LE",Normál,560 liter,Kombi,5 fő,Kék,1 998 cm³,Hátsó kerék,Automata (8 fokozatú tiptronic),"6,3 l/100km"
-21979668,9 490 000 Ft,,KIA,SORENTO,2019/3,157 709 km,Dízel,"147 kW, 200 LE",Kitűnő,142 liter,Terepjáró,7 fő,Fekete,2 199 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-21242392,9 490 000 Ft,,VOLVO,V60,2021/3,123 478 km,Benzin,"120 kW, 163 LE",Megkímélt,529 liter,Kombi,5 fő,Fekete (metál),1 969 cm³,Első kerék,Automata (8 fokozatú tiptronic),"6,3 l/100km"
-21412246,9 499 000 Ft,,OPEL,MOKKA,2024/11,3 000 km,Benzin,"100 kW, 136 LE",Kitűnő,350 liter,Városi terepjáró (crossover),5 fő,,1 199 cm³,Első kerék,Manuális (6 fokozatú),
-22123048,9 499 000 Ft,,OPEL,ASTRA,2024/7,18 000 km,Dízel,"96 kW, 131 LE",Újszerű,597 liter,Kombi,5 fő,Fehér,1 498 cm³,Első kerék,Automata (8 fokozatú tiptronic),
-21212925,9 699 900 Ft,,BMW,5-ÖS SOROZAT,2016/11,95 455 km,Benzin,"185 kW, 252 LE",Kitűnő,530 liter,Sedan,5 fő,(metál),1 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),6 l/100km
-22122440,9 899 000 Ft,,OPEL,CORSA,2024/2,14 700 km,Elektromos,"115 kW, 156 LE",Újszerű,267 liter,Ferdehátú,5 fő,Szürke,,Első kerék,Fokozatmentes automata,
-22020061,9 900 000 Ft,,BMW,OLDTIMER,1968/8,21 808 km,Benzin,"88 kW, 120 LE",Normál,,Coupe,5 fő,Kék,1 977 cm³,Hátsó kerék,Manuális,
-21969322,9 990 000 Ft,,MERCEDES-BENZ,C-OSZTÁLY,2021/8,41 450 km,Benzin,"115 kW, 156 LE",Kitűnő,460 liter,Kombi,5 fő,Fehér,1 497 cm³,Hátsó kerék,Automata (9 fokozatú tiptronic),"6,8 l/100km"
-22113375,9 999 000 Ft,,OPEL,ASTRA,2024/4,29 000 km,Dízel,"96 kW, 131 LE",Kitűnő,597 liter,Kombi,5 fő,Piros,1 498 cm³,Első kerék,Automata (8 fokozatú tiptronic),
-22092497,10 190 000 Ft,,MERCEDES-AMG,A-OSZTÁLY,2017/2,128 194 km,Benzin,"280 kW, 381 LE",Normál,341 liter,Ferdehátú,5 fő,Fekete,1 991 cm³,Összkerék,Automata,"6,9 l/100km"
-22092492,10 190 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2017/2,128 194 km,Benzin,"280 kW, 381 LE",Normál,341 liter,Ferdehátú,5 fő,Fekete (metál),1 991 cm³,Összkerék,Automata,
-21958759,10 190 000 Ft,,OPEL,FRONTERA,2025/5,1 500 km,Benzin,"100 kW, 136 LE",Kitűnő,460 liter,Terepjáró,5 fő,,1 199 cm³,Első kerék,,
-22084709,10 470 000 Ft,,AUDI,A8,2017/1,184 165 km,Dízel,"193 kW, 262 LE",Normál,520 liter,Sedan,5 fő,Fekete,2 967 cm³,Összkerék,Automata (8 fokozatú tiptronic),"5,8 l/100km"
-22010035,10 490 000 Ft,,VOLVO,XC40,2021/11,144 770 km,Benzin,"120 kW, 163 LE",Megkímélt,452 liter,Városi terepjáró (crossover),5 fő,Fehér,1 477 cm³,Első kerék,Automata (8 fokozatú tiptronic),
-21934292,10 490 000 Ft,,KIA,SOUL,2021/4,15 000 km,Elektromos,"150 kW, 204 LE",Kitűnő,315 liter,Egyterű,5 fő,Fehér,,Első kerék,Fokozatmentes automata,
-21891653,10 499 000 Ft,,OPEL,GRANDLAND,2023/12,12 537 km,Benzin,"96 kW, 131 LE",Újszerű,514 liter,Városi terepjáró (crossover),5 fő,Fekete (metál),1 199 cm³,Első kerék,Automata (8 fokozatú tiptronic),
-21913248,10 970 000 Ft,,VOLVO,XC90,2017/2,176 510 km,Dízel,"173 kW, 235 LE",Normál,705 liter,Városi terepjáró (crossover),5 fő,Sötétszürke,1 969 cm³,Összkerék,Automata (8 fokozatú tiptronic),"5,8 l/100km"
-22113773,10 990 000 Ft,,OPEL,ASTRA,2024/5,17 100 km,Benzin,"96 kW, 131 LE",Kitűnő,597 liter,Kombi,5 fő,Kék,1 199 cm³,Első kerék,Automata (8 fokozatú tiptronic),
-22098363,10 990 000 Ft,,MINI,COOPER,2023/7,34 500 km,Benzin,"150 kW, 204 LE",Újszerű,275 liter,Ferdehátú,4 fő,Fekete (metál),1 998 cm³,Első kerék,,
-22081994,10 990 000 Ft,,VOLVO,XC40,2022/3,82 166 km,Benzin,"95 kW, 129 LE",Megkímélt,452 liter,Városi terepjáró (crossover),5 fő,Fekete (metál),1 477 cm³,Első kerék,Automata (8 fokozatú tiptronic),"6,7 l/100km"
-21969635,10 990 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2021/6,131 450 km,Benzin,"100 kW, 136 LE",Kitűnő,460 liter,Coupe,5 fő,Fehér,1 332 cm³,Első kerék,,
-21932868,10 990 000 Ft,,MINI,MINI,2023/7,32 500 km,Benzin,"131 kW, 178 LE",Újszerű,211 liter,Ferdehátú,4 fő,Fekete (metál),1 998 cm³,Első kerék,Automata (7 fokozatú),
-22133022,10 999 000 Ft,,OPEL,ASTRA,2024/3,26 000 km,Benzin,"96 kW, 131 LE",Kitűnő,597 liter,Kombi,5 fő,Fehér,1 199 cm³,Első kerék,Automata (8 fokozatú tiptronic),
-21931435,10 999 000 Ft,,OPEL,ASTRA,2025/2,3 500 km,Benzin,"96 kW, 131 LE",Kitűnő,597 liter,Kombi,5 fő,,1 199 cm³,Első kerék,Manuális (6 fokozatú),
-21903123,10 999 900 Ft,,VOLVO,XC60,2020/6,146 013 km,Dízel,"145 kW, 197 LE",Normál,483 liter,Városi terepjáró (crossover),5 fő,(metál),1 969 cm³,Első kerék,Automata (8 fokozatú tiptronic),7 l/100km
-21962433,11 190 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2021/7,91 853 km,Hibrid (Benzin),"118 kW, 160 LE",Normál,310 liter,Ferdehátú,5 fő,Fehér,1 332 cm³,Első kerék,Automata (8 fokozatú),"1,5 l/100km"
-21319238,11 199 000 Ft,,OPEL,INSIGNIA,2021/6,100 000 km,Benzin,"169 kW, 230 LE",Újszerű,490 liter,Ferdehátú,5 fő,Piros (metál),1 998 cm³,Összkerék,Automata (9 fokozatú tiptronic),7 l/100km
-22005283,11 490 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2023/9,17 105 km,Benzin,"100 kW, 136 LE",Kitűnő,345 liter,Ferdehátú,5 fő,Fehér,1 332 cm³,Első kerék,Automata (7 fokozatú),"5,8 l/100km"
-21867519,11 490 000 Ft,,VOLVO,XC60,2020/6,97 278 km,Dízel,"140 kW, 190 LE",Megkímélt,505 liter,Városi terepjáró (crossover),5 fő,Fehér,1 969 cm³,Első kerék,Automata (8 fokozatú tiptronic),"5,1 l/100km"
-20521354,11 490 000 Ft,,BMW,X SOROZAT,2018/7,101 151 km,Benzin,"185 kW, 252 LE",Normál,550 liter,Városi terepjáró (crossover),5 fő,Kék (metál),1 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),"7,4 l/100km"
-21879841,11 590 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2024/2,25 483 km,Benzin,"100 kW, 136 LE",Kitűnő,355 liter,Ferdehátú,5 fő,Ezüst,1 332 cm³,Első kerék,Automata (7 fokozatú),
-21879668,11 590 000 Ft,,MERCEDES-BENZ,B-OSZTÁLY,2022/12,10 690 km,Benzin,"100 kW, 136 LE",Kitűnő,435 liter,Egyterű,5 fő,Szürke (metál),1 332 cm³,Első kerék,Automata (7 fokozatú),
-21773483,11 590 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2024/2,24 889 km,Benzin,"100 kW, 136 LE",Kitűnő,405 liter,Ferdehátú,5 fő,Fehér,1 332 cm³,Első kerék,Automata (7 fokozatú),
-22044555,11 900 000 Ft,,BMW,2-ES SOROZAT,2024/4,36 980 km,Benzin,"115 kW, 156 LE",Kitűnő,390 liter,Coupe,4 fő,Fehér,1 998 cm³,Hátsó kerék,Automata (8 fokozatú tiptronic),
-22105160,11 970 000 Ft,,BMW,6-OS SOROZAT,2018/6,128 981 km,Benzin,"250 kW, 340 LE",Normál,610 liter,Ferdehátú,5 fő,Fekete,2 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),"7,7 l/100km"
-22124995,11 990 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2023/12,14 515 km,Benzin,"100 kW, 136 LE",Kitűnő,345 liter,Ferdehátú,5 fő,Fehér,1 332 cm³,Első kerék,Automata (7 fokozatú),"5,8 l/100km"
-22017511,11 990 000 Ft,,MERCEDES-BENZ,C-OSZTÁLY,2020/6,85 795 km,Hibrid (Benzin),"155 kW, 211 LE",Normál,300 liter,Sedan,5 fő,Fekete,1 991 cm³,Összkerék,Automata (9 fokozatú tiptronic),"2,1 l/100km"
-22007385,11 990 000 Ft,,BMW,3-AS SOROZAT,2021/4,66 350 km,Hibrid (Benzin),"135 kW, 184 LE",Megkímélt,410 liter,Kombi,5 fő,Szürke (metál),1 998 cm³,Hátsó kerék,Automata (8 fokozatú tiptronic),
-21958650,11 990 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2023/10,19 391 km,Benzin,"100 kW, 136 LE",Kitűnő,355 liter,Ferdehátú,5 fő,Ezüst (metál),1 332 cm³,Első kerék,Automata (7 fokozatú),
-21958483,11 990 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2023/10,68 454 km,Dízel,"85 kW, 116 LE",Kitűnő,450 liter,Kombi,5 fő,Szürke (metál),1 950 cm³,Első kerék,Automata (8 fokozatú),"5,1 l/100km"
-21534998,11 990 000 Ft,,BMW,1-ES SOROZAT,2023/12,10 565 km,Benzin,"100 kW, 136 LE",Újszerű,380 liter,Ferdehátú,5 fő,Fekete (metál),1 499 cm³,Első kerék,,"5,9 l/100km"
-21381383,11 990 000 Ft,,VOLVO,XC40,2021/2,94 022 km,Benzin,"120 kW, 163 LE",Megkímélt,452 liter,Városi terepjáró (crossover),5 fő,Fekete (metál),1 477 cm³,Első kerék,Automata (8 fokozatú tiptronic),
-21956305,12 190 000 Ft,,MERCEDES-BENZ,GLC-OSZTÁLY,2020/4,64 535 km,Dízel,"120 kW, 163 LE",Kitűnő,550 liter,Városi terepjáró (crossover),5 fő,Kék (metál),1 950 cm³,Összkerék,Automata (9 fokozatú tiptronic),
-21928536,12 250 000 Ft,,LAND ROVER,RANGE ROVER,2015/7,221 545 km,Dízel,"250 kW, 340 LE",Normál,909 liter,Terepjáró,5 fő,Fekete (metál),4 367 cm³,Összkerék,Automata (8 fokozatú tiptronic),"8,4 l/100km"
-22013815,12 390 000 Ft,,VOLVO,XC40,2021/5,58 325 km,Hibrid (Benzin),"132 kW, 179 LE",Normál,452 liter,Városi terepjáró (crossover),5 fő,Kék (metál),1 477 cm³,Első kerék,Automata (7 fokozatú),"1,9 l/100km"
-21780656,12 490 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2024/6,2 750 km,Benzin,"100 kW, 136 LE",Megkímélt,355 liter,Ferdehátú,5 fő,Fehér,1 332 cm³,Első kerék,Automata (7 fokozatú),
-22012049,12 490 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2024/5,24 737 km,Benzin,"100 kW, 136 LE",Kitűnő,355 liter,Ferdehátú,5 fő,Ezüst,1 332 cm³,Első kerék,Automata (7 fokozatú),
-21889327,12 490 000 Ft,,BMW,2-ES SOROZAT,2024/4,25 000 km,Benzin,"103 kW, 140 LE",Kitűnő,430 liter,Coupe,5 fő,Fehér,1 499 cm³,Első kerék,Automata (7 fokozatú),"5,3 l/100km"
-21376499,12 490 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2022/8,50 185 km,Benzin,"120 kW, 163 LE",Normál,460 liter,Kombi,5 fő,Szürke,1 332 cm³,Első kerék,,
-21063808,12 490 000 Ft,,BMW,X SOROZAT,2023/7,5 861 km,Benzin,"100 kW, 136 LE",Megkímélt,470 liter,Városi terepjáró (crossover),5 fő,Kék (metál),1 499 cm³,Első kerék,,"5,8 l/100km"
-21944557,12 500 000 Ft,,HONDA,S 2000,2005/5,77 144 km,Benzin,"177 kW, 241 LE",Normál,143 liter,Cabrio,2 fő,Szürke,1 997 cm³,Hátsó kerék,Manuális (6 fokozatú),
-21771060,12 590 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2024/3,8 700 km,Benzin,"120 kW, 163 LE",Újszerű,355 liter,Ferdehátú,5 fő,Fehér,1 332 cm³,Első kerék,Automata (7 fokozatú),
-22110659,12 790 000 Ft,,BMW,2-ES SOROZAT,2024/8,7 000 km,Benzin,"100 kW, 136 LE",Kitűnő,430 liter,Coupe,5 fő,Kék (metál),1 499 cm³,Első kerék,Automata (7 fokozatú),"5,9 l/100km"
-22018629,12 790 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2023/4,58 784 km,Dízel,"110 kW, 150 LE",Kitűnő,460 liter,Coupe,5 fő,Fekete (metál),1 950 cm³,Összkerék,Automata (8 fokozatú),"4,4 l/100km"
-21965245,12 790 000 Ft,,MERCEDES-BENZ,GLB-OSZTÁLY,2020/6,89 587 km,Dízel,"110 kW, 150 LE",Kitűnő,570 liter,Kombi,5 fő,Szürke (metál),1 950 cm³,Első kerék,Automata (8 fokozatú),5 l/100km
-22097363,12 990 000 Ft,,MERCEDES-BENZ,GLA-OSZTÁLY,2021/3,111 497 km,Hibrid (Benzin),"118 kW, 160 LE",Kitűnő,385 liter,Városi terepjáró (crossover),5 fő,Fehér,1 332 cm³,Első kerék,Automata (8 fokozatú),"1,8 l/100km"
-22012244,12 990 000 Ft,,MERCEDES-BENZ,GLB-OSZTÁLY,2023/10,36 812 km,Benzin,"100 kW, 136 LE",Kitűnő,570 liter,Kombi,7 fő,Fekete,1 332 cm³,Első kerék,Automata (7 fokozatú),"6,2 l/100km"
-21970902,12 990 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2024/4,21 429 km,Benzin,"100 kW, 136 LE",Kitűnő,460 liter,Kombi,5 fő,Ezüst (metál),1 332 cm³,Első kerék,Automata (7 fokozatú),
-21962729,12 990 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2024/7,3 083 km,Benzin,"100 kW, 136 LE",Kitűnő,355 liter,Ferdehátú,5 fő,Fehér,1 332 cm³,Első kerék,Automata (7 fokozatú),
-21927682,12 990 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2023/4,12 163 km,Dízel,"85 kW, 116 LE",Kitűnő,345 liter,Ferdehátú,5 fő,Szürke (metál),1 950 cm³,Első kerék,Automata (8 fokozatú),
-21765555,12 990 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2023/11,37 316 km,Benzin,"120 kW, 163 LE",Kitűnő,460 liter,Kombi,5 fő,Ezüst (metál),1 332 cm³,Első kerék,Automata (7 fokozatú),
-22122355,12 999 000 Ft,,OPEL,ASTRA,2024/8,7 200 km,Elektromos,"115 kW, 156 LE",Újszerű,516 liter,Kombi,5 fő,Sötétszürke (metál),,Első kerék,Fokozatmentes automata,
-21690471,12 999 900 Ft,,VOLKSWAGEN,TOUAREG,2019/4,182 224 km,Dízel,"210 kW, 286 LE",Normál,810 liter,Városi terepjáró (crossover),5 fő,(metál),2 967 cm³,Összkerék,Automata (8 fokozatú tiptronic),"6,9 l/100km"
-21366341,13 199 900 Ft,,BMW,4-ES SOROZAT,2018/5,118 000 km,Benzin,"265 kW, 360 LE",Kitűnő,480 liter,Coupe,5 fő,,2 998 cm³,Hátsó kerék,Automata (8 fokozatú tiptronic),"6,8 l/100km"
-22113896,13 490 000 Ft,,VOLVO,XC60,2020/2,41 821 km,Dízel,"145 kW, 197 LE",Kitűnő,483 liter,Városi terepjáró (crossover),5 fő,Sötétbarna (metál),1 969 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-22082551,13 490 000 Ft,,VOLVO,XC40,2024/11,25 000 km,Benzin,"120 kW, 163 LE",Újszerű,452 liter,Városi terepjáró (crossover),5 fő,Szürke (metál),1 969 cm³,Első kerék,Automata (7 fokozatú),
-22082396,13 490 000 Ft,,VOLVO,XC40,2024/11,25 000 km,Benzin,"120 kW, 163 LE",Újszerű,452 liter,Városi terepjáró (crossover),5 fő,Fekete (metál),1 969 cm³,Első kerék,Automata (7 fokozatú),
-22082295,13 490 000 Ft,,VOLVO,XC40,2024/11,25 000 km,Benzin,"120 kW, 163 LE",Újszerű,452 liter,Városi terepjáró (crossover),5 fő,Szürke,1 969 cm³,Első kerék,Automata (7 fokozatú),
-21936679,13 490 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2023/11,28 697 km,Dízel,"85 kW, 116 LE",Kitűnő,450 liter,Kombi,5 fő,Fekete,1 950 cm³,Első kerék,Automata (8 fokozatú),"5,1 l/100km"
-21874859,13 490 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2022/5,67 000 km,Dízel,"140 kW, 190 LE",Megkímélt,450 liter,Kombi,5 fő,Ezüst (metál),1 950 cm³,Összkerék,Automata (8 fokozatú),"4,4 l/100km"
-21765336,13 490 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2023/10,27 187 km,Hibrid (Benzin),"118 kW, 160 LE",Kitűnő,345 liter,Sedan,5 fő,Bordó (metál),1 332 cm³,Első kerék,Automata (8 fokozatú),"1,4 l/100km"
-22067095,13 499 000 Ft,,BMW,2-ES SOROZAT,2024/2,19 000 km,Benzin,"150 kW, 204 LE",Újszerű,415 liter,Egyterű,5 fő,Fehér,1 998 cm³,Összkerék,,
-21479260,13 499 000 Ft,,VOLKSWAGEN,T-ROC,2024/12,300 km,Benzin,"110 kW, 150 LE",Újszerű,445 liter,Városi terepjáró (crossover),5 fő,Ezüst,1 498 cm³,Első kerék,,
-22082305,13 590 000 Ft,,VOLVO,XC40,2023/6,29 568 km,Benzin,"120 kW, 163 LE",Újszerű,452 liter,Városi terepjáró (crossover),5 fő,Ezüst (metál),1 969 cm³,Első kerék,,
-21957320,13 590 000 Ft,,MERCEDES-BENZ,EQB,2022/4,52 105 km,Elektromos,"168 kW, 228 LE",Normál,495 liter,Kombi,5 fő,,,Összkerék,Fokozatmentes automata,
-21253020,13 670 000 Ft,,LAND ROVER,DISCOVERY,2018/1,108 369 km,Dízel,"190 kW, 258 LE",Normál,1 231 liter,Terepjáró,5 fő,Szürke,2 993 cm³,Összkerék,Automata (8 fokozatú tiptronic),"7,2 l/100km"
-22082590,13 690 000 Ft,,VOLVO,XC40,2024/11,25 000 km,Benzin,"120 kW, 163 LE",Újszerű,452 liter,Városi terepjáró (crossover),5 fő,Kék (metál),1 969 cm³,Első kerék,Automata (7 fokozatú),
-22002506,13 690 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2023/9,9 900 km,Dízel,"110 kW, 150 LE",Újszerű,445 liter,Coupe,5 fő,Fekete,1 950 cm³,Első kerék,Automata (8 fokozatú),
-22130211,13 888 000 Ft,,MINI,COUNTRYMAN,2024/7,15 900 km,Benzin,"115 kW, 156 LE",Kitűnő,436 liter,Kombi,5 fő,Szürke (metál),1 499 cm³,Első kerék,Automata,
-22124982,13 890 000 Ft,,MERCEDES-BENZ,GLA-OSZTÁLY,2020/11,60 000 km,Benzin,"120 kW, 163 LE",Sérülésmentes,435 liter,Városi terepjáró (crossover),5 fő,Sötétszürke,1 332 cm³,Első kerék,Automata (7 fokozatú),6 l/100km
-21971238,13 900 000 Ft,,AUDI,A5,2021/8,9 472 km,Benzin,"110 kW, 150 LE",Normál,370 liter,Cabrio,5 fő,Kék (metál),1 984 cm³,Első kerék,Automata,"6,3 l/100km"
-20939093,13 957 300 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2023/10,34 666 km,Benzin,"165 kW, 224 LE",Kitűnő,345 liter,Ferdehátú,5 fő,Ezüst (metál),1 991 cm³,Összkerék,Automata (8 fokozatú),"6,6 l/100km"
-22038356,13 970 000 Ft,,FORD,FOCUS,2019/1,38 832 km,Benzin,"257 kW, 349 LE",Normál,363 liter,Ferdehátú,5 fő,Kék,2 300 cm³,Összkerék,Manuális (6 fokozatú),"7,7 l/100km"
-22073973,13 990 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2023/12,27 567 km,Hibrid (Benzin),"120 kW, 163 LE",Kitűnő,310 liter,Ferdehátú,5 fő,Piros (metál),1 332 cm³,Első kerék,Automata (8 fokozatú),
-22016810,13 990 000 Ft,,VOLVO,EX30,2024/5,24 140 km,Elektromos,"200 kW, 272 LE",Újszerű,318 liter,Kombi,5 fő,Sötétszürke (metál),,Hátsó kerék,Fokozatmentes automata,
-22016775,13 990 000 Ft,,VOLVO,EX30,2024/5,17 233 km,Elektromos,"200 kW, 272 LE",Újszerű,318 liter,Kombi,5 fő,Fehér (metál),,Hátsó kerék,Fokozatmentes automata,
-21969753,13 990 000 Ft,,MERCEDES-BENZ,C-OSZTÁLY,2022/4,99 962 km,Dízel,"147 kW, 200 LE",Kitűnő,490 liter,Kombi,5 fő,Ezüst (metál),1 993 cm³,Összkerék,Automata (9 fokozatú tiptronic),
-21943712,13 990 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2023/10,42 787 km,Benzin,"100 kW, 136 LE",Kitűnő,460 liter,Kombi,5 fő,Piros (metál),1 332 cm³,Első kerék,Automata (7 fokozatú),
-21865713,13 990 000 Ft,,VOLVO,EX30,2024/5,16 391 km,Elektromos,"200 kW, 272 LE",Újszerű,318 liter,Kombi,5 fő,Szürke (metál),,Hátsó kerék,Fokozatmentes automata,
-19562655,13 990 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2023/5,49 000 km,Benzin,"120 kW, 163 LE",Kitűnő,355 liter,Ferdehátú,5 fő,Fehér,1 332 cm³,Első kerék,Automata (7 fokozatú),
-22085445,13 999 000 Ft,,BMW,4-ES SOROZAT,2021/4,61 200 km,Dízel,"140 kW, 190 LE",Kitűnő,440 liter,Coupe,4 fő,Világoskék (metál),1 995 cm³,Összkerék,Automata (8 fokozatú tiptronic),"4,6 l/100km"
-21746371,14 190 000 Ft,,MERCEDES-BENZ,E-OSZTÁLY,2021/3,75 492 km,Hibrid (Benzin),"155 kW, 211 LE",Kitűnő,370 liter,Sedan,5 fő,Fekete (metál),1 991 cm³,Hátsó kerék,Automata (9 fokozatú tiptronic),"1,8 l/100km"
-19126183,14 190 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2022/10,63 000 km,Benzin,"120 kW, 163 LE",Kitűnő,460 liter,Coupe,5 fő,Ezüst (metál),1 332 cm³,Első kerék,Automata (7 fokozatú),
-21966753,14 290 000 Ft,,MERCEDES-BENZ,EQB,2024/3,32 000 km,Elektromos,"140 kW, 190 LE",Újszerű,495 liter,Városi terepjáró (crossover),5 fő,Fehér,,Első kerék,Fokozatmentes automata,
-21478026,14 290 000 Ft,,SKODA,KAROQ,2024/12,300 km,Benzin,"110 kW, 150 LE",Újszerű,521 liter,Városi terepjáró (crossover),5 fő,Fehér,1 498 cm³,Első kerék,,
-22016827,14 490 000 Ft,,VOLVO,EX30,2024/5,24 708 km,Elektromos,"200 kW, 272 LE",Újszerű,318 liter,Kombi,5 fő,Sötétszürke (metál),,Hátsó kerék,Fokozatmentes automata,
-21901100,14 490 000 Ft,,VOLVO,EX30,2024/5,15 436 km,Elektromos,"200 kW, 272 LE",Újszerű,318 liter,Kombi,5 fő,Fekete (metál),,Hátsó kerék,Fokozatmentes automata,
-21849446,14 490 000 Ft,,BMW,1-ES SOROZAT,2023/9,18 901 km,Dízel,"110 kW, 150 LE",Újszerű,380 liter,Ferdehátú,5 fő,Fekete,1 995 cm³,Első kerék,Automata (8 fokozatú tiptronic),"4,4 l/100km"
-21741945,14 690 000 Ft,,MERCEDES-BENZ,GLA-OSZTÁLY,2024/1,19 601 km,Benzin,"100 kW, 136 LE",Kitűnő,425 liter,Városi terepjáró (crossover),5 fő,Fehér,1 332 cm³,Első kerék,Automata (7 fokozatú),
-20937282,14 790 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2023/10,48 728 km,Benzin,"140 kW, 190 LE",Kitűnő,355 liter,Ferdehátú,5 fő,Szürke (metál),1 991 cm³,Összkerék,Automata (8 fokozatú),
-22057836,14 990 000 Ft,,MERCEDES-AMG,GLB,2021/5,98 784 km,Benzin,"225 kW, 306 LE",Kitűnő,,Egyterű,5 fő,Szürke (metál),1 991 cm³,Összkerék,Automata (8 fokozatú),
-22048707,14 990 000 Ft,,MERCEDES-AMG,CLA,2022/1,65 158 km,Benzin,"225 kW, 306 LE",Kitűnő,505 liter,Kombi,5 fő,Fehér,1 991 cm³,Összkerék,Automata (7 fokozatú),"7,5 l/100km"
-22040807,14 990 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2024/4,13 475 km,Benzin,"100 kW, 136 LE",Kitűnő,460 liter,Coupe,5 fő,Szürke (metál),1 332 cm³,Első kerék,Automata (7 fokozatú),
-20122550,14 990 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2023/6,34 500 km,Dízel,"110 kW, 150 LE",Normál,450 liter,Coupe,5 fő,Fekete,1 950 cm³,Első kerék,Automata (8 fokozatú),
-22114014,15 490 000 Ft,,BMW,1-ES SOROZAT,2024/10,12 300 km,Dízel,"140 kW, 190 LE",Kitűnő,380 liter,Ferdehátú,5 fő,Szürke (metál),1 995 cm³,Első kerék,Automata (8 fokozatú tiptronic),"4,6 l/100km"
-22104939,15 490 000 Ft,,MERCEDES-BENZ,GLA-OSZTÁLY,2023/9,52 000 km,Hibrid (Benzin),"118 kW, 160 LE",Normál,385 liter,Városi terepjáró (crossover),5 fő,Fekete,1 332 cm³,Első kerék,Automata (8 fokozatú),"1,8 l/100km"
-21989696,15 490 000 Ft,,MERCEDES-BENZ,GLA-OSZTÁLY,2024/4,23 162 km,Benzin,"100 kW, 136 LE",Kitűnő,425 liter,Városi terepjáró (crossover),5 fő,Fekete,1 332 cm³,Első kerék,Automata (7 fokozatú),
-21656167,15 490 000 Ft,,BMW,3-AS SOROZAT,2021/4,75 326 km,Hibrid (Benzin),"135 kW, 184 LE",Megkímélt,410 liter,Kombi,5 fő,Sötétszürke (metál),1 998 cm³,Hátsó kerék,Automata (8 fokozatú tiptronic),
-21454645,15 490 000 Ft,,MERCEDES-BENZ,B-OSZTÁLY,2023/6,20 km,Benzin,"120 kW, 163 LE",Kitűnő,455 liter,Egyterű,5 fő,Ezüst (metál),1 332 cm³,Első kerék,Automata (7 fokozatú),
-21177286,15 499 000 Ft,,FORD,KUGA,2024/6,2 500 km,Benzin,"132 kW, 179 LE",Újszerű,412 liter,Városi terepjáró (crossover),5 fő,Szürke,2 488 cm³,Első kerék,Fokozatmentes automata,
-20990858,15 499 000 Ft,,FORD,KUGA,2024/6,2 500 km,Hibrid (Benzin),"165 kW, 224 LE",Újszerű,412 liter,Városi terepjáró (crossover),5 fő,Fekete,2 488 cm³,Első kerék,Fokozatmentes automata,
-20990543,15 499 000 Ft,,FORD,KUGA,2024/6,2 500 km,Benzin,"134 kW, 182 LE",Újszerű,412 liter,Városi terepjáró (crossover),5 fő,Kék,2 488 cm³,Első kerék,Fokozatmentes automata,
-21953633,15 799 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2023/3,10 000 km,Benzin,"120 kW, 163 LE",Normál,355 liter,Ferdehátú,5 fő,Fekete,1 332 cm³,Első kerék,Automata (7 fokozatú),
-22005131,15 890 000 Ft,,BMW,3-AS SOROZAT,2024/9,6 200 km,Benzin,"135 kW, 184 LE",Újszerű,480 liter,Sedan,5 fő,Fehér,1 998 cm³,Hátsó kerék,Automata (8 fokozatú tiptronic),
-22132664,15 890 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2024/1,50 788 km,Hibrid (Benzin),"120 kW, 163 LE",Kitűnő,310 liter,Ferdehátú,5 fő,Fekete,1 332 cm³,Első kerék,Automata (8 fokozatú),
-21911011,15 899 900 Ft,,PORSCHE,MACAN,2018/8,78 664 km,Benzin,"185 kW, 252 LE",Kitűnő,500 liter,Kombi,5 fő,(metál),1 984 cm³,Összkerék,Automata,"7,2 l/100km"
-22106877,15 990 000 Ft,,MERCEDES-BENZ,GLC-OSZTÁLY,2022/6,109 986 km,Dízel,"143 kW, 194 LE",Kitűnő,500 liter,Városi terepjáró (crossover),5 fő,Szürke (metál),1 950 cm³,Összkerék,Automata (9 fokozatú tiptronic),
-22077764,15 990 000 Ft,,MERCEDES-BENZ,C-OSZTÁLY,2023/12,72 089 km,Dízel,"147 kW, 200 LE",Kitűnő,455 liter,Sedan,5 fő,Ezüst (metál),1 993 cm³,Összkerék,Automata (9 fokozatú tiptronic),
-21905068,15 990 000 Ft,,BMW,4-ES SOROZAT,2022/7,45 000 km,Dízel,"140 kW, 190 LE",Újszerű,470 liter,Ferdehátú,5 fő,Szürke (metál),1 995 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-21454702,15 990 000 Ft,,MERCEDES-BENZ,B-OSZTÁLY,2022/6,7 500 km,Benzin,"165 kW, 224 LE",Kitűnő,435 liter,Egyterű,5 fő,Fehér,1 991 cm³,Első kerék,Automata (7 fokozatú),
-21125423,15 990 000 Ft,,VOLVO,EX30,2024/2,20 000 km,Elektromos,"200 kW, 272 LE",Normál,318 liter,Kombi,5 fő,,,Hátsó kerék,Fokozatmentes automata,
-20000137,15 990 000 Ft,,MERCEDES-AMG,A-OSZTÁLY,2021/6,23 587 km,,"225 kW, 306 LE",Normál,,Ferdehátú,5 fő,Fehér,,,,
-18702017,15 990 000 Ft,,MERCEDES-BENZ,A-OSZTÁLY,2021/6,23 587 km,Benzin,"225 kW, 306 LE",Újszerű,,Ferdehátú,5 fő,Fehér,1 991 cm³,,Automata (7 fokozatú),
-20990637,15 999 000 Ft,,FORD,KUGA,2024/6,2 500 km,Hibrid (Benzin),"112 kW, 152 LE",Újszerű,405 liter,Városi terepjáró (crossover),5 fő,,2 488 cm³,Első kerék,Fokozatmentes automata,"1,2 l/100km"
-22102555,16 290 000 Ft,,VOLVO,XC60,2023/5,79 799 km,Dízel,"145 kW, 197 LE",Kitűnő,483 liter,Városi terepjáró (crossover),5 fő,Világosszürke (metál),1 969 cm³,Összkerék,Automata (8 fokozatú tiptronic),"5,6 l/100km"
-21562325,16 290 000 Ft,,VOLVO,EX30,2024/6,6 010 km,Elektromos,"200 kW, 272 LE",Normál,318 liter,Kombi,5 fő,,,Hátsó kerék,Fokozatmentes automata,
-22059114,16 390 000 Ft,,MERCEDES-BENZ,GLA-OSZTÁLY,2024/8,10 766 km,Benzin,"120 kW, 163 LE",Normál,435 liter,Városi terepjáró (crossover),5 fő,Kék,1 332 cm³,Első kerék,Automata (7 fokozatú),6 l/100km
-21907009,16 490 000 Ft,,MERCEDES-BENZ,CLA-OSZTÁLY,2023/5,36 730 km,Dízel,"140 kW, 190 LE",Kitűnő,460 liter,Coupe,5 fő,Fehér (metál),1 950 cm³,Első kerék,Automata (8 fokozatú),
-21615047,16 490 000 Ft,,VOLVO,C40,2024/3,23 057 km,Elektromos,"185 kW, 252 LE",Normál,413 liter,Kombi,5 fő,Fehér (metál),,Hátsó kerék,Fokozatmentes automata,
-21488804,16 490 000 Ft,,BMW,X SOROZAT,2020/10,96 144 km,Dízel,"240 kW, 326 LE",Megkímélt,550 liter,Városi terepjáró (crossover),5 fő,Kék (metál),2 993 cm³,Összkerék,Automata (8 fokozatú tiptronic),"6,4 l/100km"
-22050718,16 499 900 Ft,,BMW,Z SOROZAT,2019/9,44 552 km,Benzin,"250 kW, 340 LE",Normál,281 liter,Cabrio,2 fő,(metál),2 998 cm³,Hátsó kerék,Automata (8 fokozatú tiptronic),"7,3 l/100km"
-22010047,16 590 000 Ft,,VOLVO,EX30,2024/11,3 580 km,Elektromos,"200 kW, 272 LE",Normál,318 liter,Kombi,5 fő,,,Hátsó kerék,Fokozatmentes automata,
-22009941,16 590 000 Ft,,VOLVO,EX30,2024/11,4 408 km,Elektromos,"200 kW, 272 LE",Normál,318 liter,Kombi,5 fő,,,Hátsó kerék,Fokozatmentes automata,
-22102492,16 790 000 Ft,,VOLVO,XC60,2023/5,53 921 km,Dízel,"145 kW, 197 LE",Kitűnő,483 liter,Városi terepjáró (crossover),5 fő,Sötétszürke (metál),1 969 cm³,Összkerék,Automata (8 fokozatú tiptronic),"5,6 l/100km"
-21714939,16 990 000 Ft,,VOLVO,V90,2023/6,62 831 km,Dízel,"145 kW, 197 LE",Megkímélt,560 liter,Kombi,5 fő,,1 969 cm³,Első kerék,Automata (8 fokozatú tiptronic),"5,2 l/100km"
-21516805,16 990 000 Ft,,MERCEDES-BENZ,C-OSZTÁLY,2023/5,46 738 km,Dízel,"147 kW, 200 LE",Kitűnő,490 liter,Kombi,5 fő,Fekete,1 993 cm³,Összkerék,Automata (9 fokozatú tiptronic),
-21296696,16 990 000 Ft,,VOLVO,S90,2023/3,32 171 km,Benzin,"184 kW, 250 LE",Normál,461 liter,Sedan,5 fő,Fehér,1 969 cm³,Első kerék,Automata (8 fokozatú tiptronic),"6,6 l/100km"
-21251728,16 990 000 Ft,,BMW,X SOROZAT,2023/10,31 449 km,Benzin,"131 kW, 178 LE",Megkímélt,470 liter,Városi terepjáró (crossover),5 fő,Fekete (metál),1 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),"6,6 l/100km"
-19894521,17 190 000 Ft,,BMW,5-ÖS SOROZAT,2021/11,19 000 km,Hibrid (Benzin),"135 kW, 184 LE",Kitűnő,410 liter,Sedan,5 fő,,1 998 cm³,Hátsó kerék,Automata (8 fokozatú tiptronic),
-21985505,17 290 000 Ft,,MERCEDES-BENZ,GLA-OSZTÁLY,2023/12,33 040 km,Dízel,"110 kW, 150 LE",Kitűnő,435 liter,Városi terepjáró (crossover),5 fő,Fekete,1 950 cm³,Első kerék,Automata (8 fokozatú),"4,8 l/100km"
-21784232,17 290 000 Ft,,BMW,3-AS SOROZAT,2023/3,68 000 km,Hibrid (Benzin),"135 kW, 184 LE",Normál,410 liter,Kombi,5 fő,Sötétszürke (metál),1 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-21768961,17 390 000 Ft,,VOLVO,V60,2024/2,27 502 km,Dízel,"145 kW, 197 LE",Normál,519 liter,Kombi,5 fő,Ezüst (metál),1 969 cm³,Első kerék,Automata (8 fokozatú tiptronic),"4,9 l/100km"
-22059342,17 490 000 Ft,,BMW,I SOROZAT,2022/6,28 000 km,Elektromos,"250 kW, 340 LE",Kitűnő,470 liter,Coupe,5 fő,,,Hátsó kerék,Fokozatmentes automata,
-21454785,17 490 000 Ft,,MERCEDES-BENZ,GLB-OSZTÁLY,2022/1,23 000 km,Benzin,"165 kW, 224 LE",Kitűnő,570 liter,Kombi,7 fő,Fehér,1 991 cm³,Összkerék,Automata (8 fokozatú),"7,4 l/100km"
-21302271,17 490 000 Ft,,BMW,2-ES SOROZAT,2024/1,8 157 km,Hibrid (Benzin),"100 kW, 136 LE",Újszerű,406 liter,Egyterű,5 fő,Szürke (metál),1 499 cm³,Összkerék,Automata (7 fokozatú),
-21965036,17 890 000 Ft,,KIA,SORENTO,2023/11,74 309 km,Dízel,"142 kW, 193 LE",Normál,705 liter,Városi terepjáró (crossover),5 fő,Kék (metál),2 151 cm³,Összkerék,Automata,
-21932574,17 900 000 Ft,,MERCEDES-BENZ,GLA-OSZTÁLY,2024/3,23 984 km,Dízel,"110 kW, 150 LE",Kitűnő,435 liter,Városi terepjáró (crossover),5 fő,Fekete,1 950 cm³,Összkerék,Automata (8 fokozatú),"5,2 l/100km"
-22125398,17 990 000 Ft,,MERCEDES-BENZ,GLC-OSZTÁLY,2022/12,66 340 km,Dízel,"143 kW, 194 LE",Kitűnő,500 liter,Városi terepjáró (crossover),5 fő,Fehér,1 950 cm³,Összkerék,Automata (9 fokozatú tiptronic),
-22117982,17 990 000 Ft,,BMW,3-AS SOROZAT,2024/6,10 940 km,Benzin,"135 kW, 184 LE",Megkímélt,480 liter,Sedan,5 fő,Kék (metál),1 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-22115474,17 990 000 Ft,,BMW,3-AS SOROZAT,2023/11,15 850 km,Hibrid (Benzin),"135 kW, 184 LE",Újszerű,410 liter,Kombi,5 fő,Fekete,1 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-22105010,17 990 000 Ft,,BMW,4-ES SOROZAT,2024/6,25 500 km,Dízel,"140 kW, 190 LE",Kitűnő,440 liter,Coupe,4 fő,Bordó (metál),1 995 cm³,Összkerék,Automata (8 fokozatú tiptronic),"4,6 l/100km"
-22009128,17 990 000 Ft,,VOLVO,XC90,2021/9,82 912 km,Dízel,"173 kW, 235 LE",Újszerű,310 liter,Városi terepjáró (crossover),7 fő,Sötétkék (metál),1 969 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-21757365,17 990 000 Ft,,BMW,7-ES SOROZAT,2019/10,90 665 km,Hibrid (Benzin),"210 kW, 286 LE",Megkímélt,420 liter,Sedan,5 fő,Szürke (metál),2 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-21706875,17 990 000 Ft,,BMW,3-AS SOROZAT,2023/8,24 010 km,Dízel,"140 kW, 190 LE",Megkímélt,500 liter,Kombi,5 fő,Kék (metál),1 995 cm³,Hátsó kerék,Automata (8 fokozatú tiptronic),
-21063855,17 990 000 Ft,,VOLVO,XC60,2023/6,28 076 km,Dízel,"145 kW, 197 LE",Megkímélt,483 liter,Városi terepjáró (crossover),5 fő,Kék,1 969 cm³,Összkerék,Automata (8 fokozatú tiptronic),"5,6 l/100km"
-20936555,17 990 000 Ft,,BMW,2-ES SOROZAT,2023/9,35 181 km,Benzin,"225 kW, 306 LE",Megkímélt,430 liter,Coupe,5 fő,Fekete (metál),1 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-20912621,17 990 000 Ft,,VOLVO,V60,2023/2,33 780 km,Hibrid (Benzin),"186 kW, 253 LE",Megkímélt,519 liter,Kombi,5 fő,Bézs,1 969 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-20827664,18 490 000 Ft,,MERCEDES-BENZ,EQB,2024/2,10 500 km,Elektromos,"168 kW, 228 LE",Kitűnő,495 liter,Kombi,7 fő,Sötétszürke (metál),,Összkerék,Fokozatmentes automata,
-21405046,18 888 000 Ft,,MERCEDES-BENZ,C-OSZTÁLY,2024/3,47 434 km,Dízel,"120 kW, 163 LE",Kitűnő,490 liter,Kombi,5 fő,Fekete (metál),1 993 cm³,Hátsó kerék,Automata (9 fokozatú tiptronic),
-22116680,18 990 000 Ft,,BMW,3-AS SOROZAT,2024/3,24 000 km,,"135 kW, 184 LE",Kitűnő,375 liter,Sedan,5 fő,Világosszürke (metál),1 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-22102711,18 990 000 Ft,,VOLVO,XC90,2022/6,84 804 km,Dízel,"173 kW, 235 LE",Kitűnő,310 liter,Városi terepjáró (crossover),7 fő,Szürke,1 969 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-22080624,18 990 000 Ft,,MERCEDES-BENZ,GLA-OSZTÁLY,2024/8,16 000 km,Hibrid (Benzin),"120 kW, 163 LE",Normál,385 liter,Városi terepjáró (crossover),5 fő,Ezüst (metál),1 332 cm³,Első kerék,Automata (8 fokozatú),
-22025906,18 990 000 Ft,,BMW,4-ES SOROZAT,2024/6,26 500 km,Dízel,"140 kW, 190 LE",Kitűnő,470 liter,Coupe,5 fő,Kék (metál),1 995 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-22055735,18 999 000 Ft,,BMW,3-AS SOROZAT,2024/8,33 000 km,Hibrid (Benzin),"135 kW, 184 LE",Kitűnő,375 liter,Sedan,5 fő,Világosszürke (metál),1 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-22125390,19 490 000 Ft,,MERCEDES-BENZ,GLB-OSZTÁLY,2024/6,38 077 km,Dízel,"110 kW, 150 LE",Kitűnő,570 liter,Kombi,5 fő,Szürke (metál),1 950 cm³,Összkerék,Automata (8 fokozatú),"5,5 l/100km"
-22115484,19 490 000 Ft,,BMW,3-AS SOROZAT,2024/1,20 600 km,Hibrid,"135 kW, 184 LE",Kitűnő,410 liter,Kombi,5 fő,Világosszürke (metál),1 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-21525618,19 490 000 Ft,,MERCEDES-BENZ,B-OSZTÁLY,2023/3,9 900 km,Hibrid (Benzin),"120 kW, 163 LE",Kitűnő,405 liter,Egyterű,5 fő,Ezüst (metál),1 332 cm³,Első kerék,Automata (8 fokozatú),
-20064431,19 499 000 Ft,,MERCEDES-BENZ,C-OSZTÁLY,2023/6,13 km,Benzin,"135 kW, 184 LE",Kitűnő,360 liter,Coupe,4 fő,Fehér,1 497 cm³,Hátsó kerék,Automata (9 fokozatú tiptronic),"6,5 l/100km"
-21359436,19 590 000 Ft,,MERCEDES-BENZ,VITO,2023/12,5 300 km,Dízel,"120 kW, 163 LE",Normál,990 liter,Egyterű,9 fő,Sötétszürke,1 950 cm³,Hátsó kerék,Automata (9 fokozatú tiptronic),"5,8 l/100km"
-22126041,19 690 000 Ft,,MERCEDES-BENZ,GLE-OSZTÁLY,2020/6,117 293 km,Benzin,"270 kW, 367 LE",Kitűnő,690 liter,Városi terepjáró (crossover),7 fő,Ezüst (metál),2 999 cm³,Összkerék,Automata (9 fokozatú tiptronic),"9,4 l/100km"
-21914577,19 799 000 Ft,,BMW,3-AS SOROZAT,2024/9,6 200 km,Dízel,"140 kW, 190 LE",Újszerű,500 liter,Kombi,5 fő,Szürke (metál),1 995 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-22109008,19 890 000 Ft,,MERCEDES-BENZ,C-OSZTÁLY,2024/10,12 311 km,Dízel,"147 kW, 200 LE",Kitűnő,490 liter,Kombi,5 fő,Szürke,1 993 cm³,Összkerék,Automata (9 fokozatú tiptronic),
-22108934,19 890 000 Ft,,MERCEDES-BENZ,C-OSZTÁLY,2024/10,12 311 km,Dízel,"147 kW, 200 LE",Kitűnő,490 liter,Kombi,5 fő,Szürke,1 993 cm³,Összkerék,Automata (9 fokozatú tiptronic),
-22115530,19 990 000 Ft,,BMW,3-AS SOROZAT,2024/5,15 000 km,Hibrid (Benzin),"135 kW, 184 LE",Kitűnő,375 liter,Sedan,5 fő,Fehér,1 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-22115520,19 990 000 Ft,,BMW,3-AS SOROZAT,2024/10,15 000 km,,"135 kW, 184 LE",Újszerű,375 liter,Sedan,5 fő,Fehér,1 998 cm³,Összkerék,Automata (8 fokozatú tiptronic),
-22102154,19 990 000 Ft,,MERCEDES-BENZ,EQA,2023/11,24 900 km,Elektromos,"215 kW, 292 LE",Normál,340 liter,Városi terepjáró (crossover),5 fő,,,Összkerék,Fokozatmentes automata,
+id,price,sale price,gyarto,modell,evjarat,km ora,uzemenyag,KW,LE,allapot,csomagtarto,kivitel,szemelyek_szama,szin,hengerurtartalom,hajtas,valto tipus,valto szam,valto subtipus,vegyes fogyasztas
+20604181,10530000.0,7990000.0,FORD,PUMA,2024.42,7.0,Benzin,92.0,125.0,Kitűnő,456.0,Városi terepjáró (crossover),5.0,Szürke,999.0,Első kerék,Manuális,6.0,,4.3
+20789545,10855000.0,9560200.0,PEUGEOT,RIFTER,2024.0,4.0,Benzin,81.0,110.0,Kitűnő,775.0,Egyterű,5.0,Zöld (metál),1199.0,Első kerék,Manuális,6.0,,5.5
+20927854,17450000.0,13399000.0,FORD,EXPLORER,2024.75,7.0,Elektromos,125.0,170.0,Kitűnő,,Városi terepjáró (crossover),5.0,Bordó (metál),,Hátsó kerék,Automata,,,
+21091547,12740000.0,10940000.0,NISSAN,QASHQAI,2025.0,5.0,Benzin,103.0,140.0,Kitűnő,504.0,Városi terepjáró (crossover),5.0,Ezüst,1332.0,Első kerék,Manuális,6.0,,
+21153941,18049000.0,17249000.0,HYUNDAI,TUCSON,2024.0,,Hibrid,118.0,160.0,Sérülésmentes,620.0,Városi terepjáró (crossover),5.0,Sötétzöld,1598.0,Első kerék,Automata,6.0,tiptronic,
+21198537,9690000.0,,CITROEN,C4 X,2024.75,10.0,Benzin,75.0,102.0,Kitűnő,510.0,Sedan,5.0,,1199.0,Első kerék,Manuális,6.0,,
+21317660,20460000.0,17850000.0,PEUGEOT,508,2024.92,5.0,,133.0,181.0,Kitűnő,487.0,Ferdehátú,5.0,,1598.0,Első kerék,Automata,8.0,tiptronic,
+21384061,9960000.0,9290000.0,PEUGEOT,208,2024.75,5.0,Benzin,74.0,101.0,Kitűnő,342.0,Ferdehátú,5.0,,1199.0,Első kerék,,,,
+21411067,12357800.0,11345900.0,MAZDA,CX-30,2025.0,1.0,Benzin,103.0,140.0,Kitűnő,430.0,Városi terepjáró (crossover),5.0,Törtfehér (metál),2488.0,Első kerék,Manuális,6.0,,
+21438474,22627300.0,19890000.0,MAZDA,CX-60,2025.0,3.0,Dízel,187.0,254.0,Kitűnő,570.0,Városi terepjáró (crossover),5.0,Homok (metál),3283.0,Összkerék,Automata,8.0,tiptronic,
+21452380,6440000.0,,CITROEN,C3,2025.0,3.0,Benzin,74.0,101.0,Kitűnő,310.0,Ferdehátú,5.0,,1199.0,Első kerék,Manuális,6.0,,
+21467062,15390000.0,13390000.0,NISSAN,X-TRAIL,2025.0,7.0,Benzin,120.0,163.0,Kitűnő,585.0,Városi terepjáró (crossover),5.0,Fehér,1497.0,Első kerék,Fokozatmentes automata,,,
+21499903,11099000.0,,CITROEN,C5 AIRCROSS,2025.0,7.0,Dízel,96.0,131.0,Kitűnő,580.0,Városi terepjáró (crossover),5.0,,1499.0,Első kerék,Automata,8.0,,3.8
+21539452,10890000.0,10590000.0,OPEL,FRONTERA,2025.0,5.0,Elektromos,83.0,113.0,Kitűnő,,Városi terepjáró (crossover),5.0,Narancssárga (metál),,,Fokozatmentes automata,,,
+21568933,11490000.0,9990000.0,OMODA,OMODA 5,2024.0,2.0,Benzin,108.0,147.0,Kitűnő,,Városi terepjáró (crossover),5.0,,1598.0,Első kerék,Automata,7.0,,
+21612195,5699000.0,,KIA,CEE'D,2022.33,78725.0,Benzin,74.0,101.0,Normál,625.0,Kombi,5.0,(metál),998.0,Első kerék,Manuális,6.0,,
+21632037,13850000.0,12190000.0,OPEL,GRANDLAND,2024.0,5.0,Benzin,100.0,136.0,Kitűnő,514.0,Városi terepjáró (crossover),5.0,Fehér,1199.0,Első kerék,Automata,6.0,,
+21706910,14115000.0,10999000.0,PEUGEOT,308,2025.0,5.0,Dízel,96.0,131.0,Kitűnő,412.0,Ferdehátú,5.0,Kék (metál),1499.0,Első kerék,Automata,8.0,tiptronic,
+21734946,23035000.0,20110000.0,KIA,SORENTO,2025.0,5.0,Dízel,142.0,193.0,Normál,187.0,Városi terepjáró (crossover),7.0,Fekete,2151.0,Összkerék,Automata,8.0,,
+21759441,6569000.0,6269000.0,DACIA,SANDERO,2025.0,10.0,Benzin,67.0,91.0,Kitűnő,328.0,Ferdehátú,5.0,,999.0,Első kerék,Manuális,5.0,,
+21805531,13298000.0,12798000.0,SSANGYONG,TORRES,2025.0,5.0,Benzin,120.0,163.0,Kitűnő,703.0,Kombi,5.0,,1497.0,Első kerék,Manuális,6.0,,
+21815547,17150000.0,11799000.0,FORD,CAPRI,2025.0,7.0,Elektromos,125.0,170.0,Kitűnő,627.0,Ferdehátú,5.0,Fehér,,Hátsó kerék,Fokozatmentes automata,,,
+21834960,7959000.0,,RENAULT,CLIO,2025.0,5900.0,Benzin,67.0,91.0,Normál,382.0,Ferdehátú,5.0,Szürke,999.0,Első kerék,Manuális,6.0,,
+21859248,21725000.0,19848000.0,SSANGYONG,REXTON,2025.0,5.0,Dízel,148.0,201.0,Kitűnő,240.0,Városi terepjáró (crossover),7.0,Fekete,2157.0,Összkerék,Automata,8.0,tiptronic,
+21891126,18874000.0,17899000.0,HYUNDAI,IONIQ 6,2025.0,,Elektromos,168.0,228.0,Sérülésmentes,401.0,Sedan,5.0,Sötétszürke (metál),,Hátsó kerék,Fokozatmentes automata,,,
+21909155,13999000.0,,KIA,EV3,2025.08,11.0,Elektromos,150.0,204.0,Kitűnő,460.0,Kombi,5.0,,,Első kerék,Fokozatmentes automata,,,
+21912815,8199000.0,,OPEL,MOKKA,2025.17,10.0,Benzin,100.0,136.0,Kitűnő,350.0,Városi terepjáró (crossover),5.0,Kék,1199.0,Első kerék,Manuális,6.0,,
+21915593,9450000.0,,OPEL,ASTRA ASTRA L,2025.0,10.0,Benzin,96.0,131.0,Kitűnő,422.0,Ferdehátú,5.0,Fehér,1199.0,Első kerék,Manuális,6.0,,
+21932770,6490000.0,,OPEL,CORSA CORSA F,2025.0,5.0,Benzin,74.0,101.0,Kitűnő,309.0,Ferdehátú,5.0,Kék,1199.0,Első kerék,Manuális,6.0,,
+21944672,17196000.0,15998000.0,KGM,ACTYON,2025.0,3.0,Benzin,120.0,163.0,Kitűnő,703.0,Kombi,5.0,Aranysárga,1497.0,Első kerék,Automata,6.0,tiptronic,
+21960271,14310000.0,10990000.0,PEUGEOT,408,2025.0,5.0,Benzin,100.0,136.0,Kitűnő,536.0,Coupe,5.0,Fehér,1199.0,Első kerék,,,,
+21966898,18983960.0,17713960.0,ISUZU,D-MAX,2025.0,5.0,Dízel,120.0,163.0,Kitűnő,,Pickup,5.0,Ezüst,1898.0,Összkerék,Automata,6.0,tiptronic,9.0
+21969018,13434000.0,11200000.0,PEUGEOT,2008,2025.0,5.0,Benzin,100.0,136.0,Kitűnő,434.0,Városi terepjáró (crossover),5.0,,1199.0,Első kerék,,,,
+21979712,15610000.0,13799000.0,PEUGEOT,5008,2025.42,3.0,Benzin,100.0,136.0,Újszerű,748.0,Városi terepjáró (crossover),7.0,,1199.0,Első kerék,,,,
+21981424,8598000.0,7850000.0,KGM,TIVOLI,2025.42,7.0,Benzin,120.0,163.0,Kitűnő,427.0,Városi terepjáró (crossover),5.0,Fehér (metál),1497.0,Első kerék,Manuális,6.0,,
+21989255,7499000.0,6879000.0,DACIA,DUSTER,2025.0,7.0,LPG,74.0,101.0,Normál,439.0,Városi terepjáró (crossover),5.0,Fehér,999.0,Első kerék,Manuális,6.0,,
+21992509,14580000.0,12880000.0,NISSAN,JUKE,2025.0,5500.0,Benzin,69.0,94.0,Kitűnő,354.0,Városi terepjáró (crossover),5.0,Fehér (metál),1598.0,Első kerék,Fokozatmentes automata,,,
+22005976,13740000.0,12290000.0,PEUGEOT,3008,2025.33,3.0,Benzin,100.0,136.0,Újszerű,520.0,Városi terepjáró (crossover),5.0,,1199.0,Első kerék,,,,
+22024522,10299000.0,,RENAULT,SYMBIOZ,2025.0,1.0,Benzin,103.0,140.0,Normál,,Egyterű,6.0,Kék,1333.0,Első kerék,Manuális,6.0,,
+22043446,21794000.0,17990000.0,HONDA,CR-V,2025.5,,Benzin,135.0,184.0,Kitűnő,579.0,Városi terepjáró (crossover),5.0,Bordó (metál),1993.0,Összkerék,Fokozatmentes automata,,,
+22043809,17220000.0,14550000.0,HONDA,CIVIC,2025.5,,Benzin,135.0,184.0,Kitűnő,404.0,Ferdehátú,5.0,Fekete (metál),1993.0,Első kerék,Fokozatmentes automata,,,
+22045704,16029000.0,13189000.0,HONDA,HR-V,2025.5,,Benzin,96.0,131.0,Kitűnő,304.0,Városi terepjáró (crossover),5.0,Szürke (metál),1498.0,Első kerék,Fokozatmentes automata,,,4.2
+22045834,9899000.0,9599000.0,MG,MG3,2025.5,,Benzin,75.0,102.0,Kitűnő,293.0,Ferdehátú,5.0,Fehér,1490.0,Első kerék,,,,
+22046194,7299000.0,6988000.0,MG,ZS,2025.5,,Benzin,78.0,106.0,Kitűnő,448.0,Városi terepjáró (crossover),5.0,Fehér,1498.0,Első kerék,Manuális,5.0,,
+22097300,9900000.0,8550000.0,SUZUKI,S-CROSS,2025.0,1.0,Benzin,81.0,110.0,Normál,430.0,Városi terepjáró (crossover),5.0,Fehér,1373.0,Első kerék,Manuális,6.0,,
+22097349,9640000.0,8090000.0,SUZUKI,VITARA,2025.0,1.0,Benzin,81.0,110.0,Normál,362.0,Városi terepjáró (crossover),5.0,Fehér,1373.0,Első kerék,Manuális,6.0,,
+22122766,11490000.0,9490000.0,CHERY,TIGGO TIGGO 7,2025.0,5.0,Benzin,108.0,147.0,Kitűnő,500.0,Városi terepjáró (crossover),5.0,Fekete (metál),1598.0,Első kerék,Automata,7.0,,
+22123305,12990000.0,10990000.0,CHERY,TIGGO TIGGO 8,2025.0,5.0,Benzin,108.0,147.0,Kitűnő,193.0,Városi terepjáró (crossover),7.0,Fekete (metál),1598.0,Első kerék,Automata,7.0,,
+22146474,7795000.0,,SKODA,OCTAVIA,2020.83,69700.0,Benzin,110.0,150.0,Normál,640.0,Kombi,5.0,Fekete (metál),1498.0,Első kerék,Manuális,6.0,,4.8
+22009941,,,VOLVO,EX30,2024.83,4408.0,Elektromos,200.0,272.0,Normál,318.0,Kombi,5.0,,,Hátsó kerék,Fokozatmentes automata,,,
+21562325,,,VOLVO,EX30,2024.42,6010.0,Elektromos,200.0,272.0,Normál,318.0,Kombi,5.0,,,Hátsó kerék,Fokozatmentes automata,,,
+21436590,,,VOLVO,EX30,2024.42,4981.0,Elektromos,200.0,272.0,Megkímélt,318.0,Kombi,5.0,Sárga,,Hátsó kerék,Fokozatmentes automata,,,
+22153214,17290000.0,,VOLVO,XC90,2022.42,84804.0,Dízel,173.0,235.0,Kitűnő,705.0,Városi terepjáró (crossover),5.0,Szürke (metál),1969.0,Összkerék,Automata,8.0,tiptronic,5.7
+22132801,39775833.0,,MERCEDES-BENZ,GLE-OSZTÁLY GLE 450,2025.0,16180.0,Dízel,270.0,367.0,Újszerű,630.0,Coupe,5.0,Fekete (metál),2989.0,Összkerék,Automata,9.0,tiptronic,
+22086881,1050000.0,,SKODA,FABIA,2007.83,223804.0,Benzin,51.0,69.0,Normál,300.0,Ferdehátú,5.0,Fekete,1198.0,Első kerék,Manuális,5.0,,5.9
+22139927,1250000.0,,SUZUKI,IGNIS,2005.75,213662.0,Benzin,69.0,94.0,Normál,236.0,Ferdehátú,5.0,Fekete,1328.0,Első kerék,Manuális,5.0,,6.5
+22139533,1690000.0,,OPEL,ZAFIRA,2014.08,275197.0,CNG,110.0,150.0,Normál,152.0,Egyterű,7.0,Fekete,1598.0,Első kerék,Manuális,6.0,,
+22037580,2899000.0,,OPEL,ASTRA ASTRA J,2016.33,128390.0,Dízel,81.0,110.0,Megkímélt,460.0,Sedan,5.0,Fehér,1598.0,Első kerék,Manuális,6.0,,3.7
+22073041,,,RENAULT,LAGUNA,2012.17,142378.0,Dízel,110.0,150.0,Normál,423.0,Coupe,4.0,Fehér,1995.0,Első kerék,Manuális,6.0,,6.5
+21719182,2999000.0,,CITROEN,C-ZERO,2017.67,7550.0,Elektromos,47.0,64.0,Kitűnő,168.0,Ferdehátú,4.0,Fehér (metál),,Hátsó kerék,Fokozatmentes automata,,,
+21919833,2999900.0,,PEUGEOT,508,2014.17,281981.0,Dízel,133.0,181.0,Normál,473.0,Sedan,5.0,(metál),1997.0,Első kerék,Automata,6.0,tiptronic,4.4
+22125849,3270000.0,,RENAULT,SCENIC,2015.17,125142.0,Dízel,81.0,110.0,Normál,522.0,Egyterű,5.0,Fekete,1461.0,Első kerék,Automata,6.0,,5.0
+22105163,3370000.0,,CITROEN,C4,2017.33,89239.0,Benzin,96.0,131.0,Normál,408.0,Ferdehátú,5.0,Szürke,1199.0,Első kerék,Manuális,6.0,,5.0
+21964701,,,MINI,COOPER,2015.42,130605.0,Benzin,100.0,136.0,Normál,278.0,Ferdehátú,5.0,Fekete,1499.0,Első kerék,Manuális,6.0,,4.7
+22120857,3770000.0,,DACIA,DUSTER,2020.83,121798.0,Benzin,74.0,101.0,Normál,478.0,Városi terepjáró (crossover),5.0,Ezüst,999.0,Első kerék,Manuális,5.0,,
+21475893,3770000.0,,KIA,SORENTO,2010.92,141652.0,Dízel,145.0,197.0,Normál,531.0,Városi terepjáró (crossover),5.0,Fekete,2199.0,Első kerék,Manuális,6.0,,6.5
+21832502,4099900.0,,RENAULT,SCENIC GRAND SCENIC,2020.0,288862.0,Dízel,88.0,120.0,Normál,233.0,Egyterű,7.0,(metál),1749.0,Első kerék,Manuális,6.0,,4.9
+22020692,4150000.0,,OPEL,ASTRA ASTRA K,2020.92,119339.0,Benzin,107.0,145.0,Normál,540.0,Kombi,5.0,Fehér,1199.0,Első kerék,Manuális,6.0,,4.6
+22122380,4370000.0,,VOLVO,V60,2015.92,130976.0,Dízel,110.0,150.0,Normál,430.0,Kombi,5.0,Pezsgő,1969.0,Első kerék,Manuális,6.0,,3.9
+22125926,4470000.0,,KIA,SPORTAGE,2016.17,196175.0,Dízel,85.0,116.0,Normál,564.0,Városi terepjáró (crossover),5.0,Ezüst,1685.0,Első kerék,Manuális,6.0,,5.1
+21965764,4470000.0,,FORD,KUGA,2013.33,145728.0,Dízel,120.0,163.0,Normál,492.0,Városi terepjáró (crossover),5.0,Ezüst,1997.0,Összkerék,Automata,6.0,,6.2
+21622703,4499000.0,,HYUNDAI,I30,2018.92,212751.0,Dízel,85.0,116.0,Kitűnő,602.0,Kombi,5.0,Ezüst (metál),1582.0,Első kerék,Automata,7.0,,4.6
+22139950,4690000.0,,SKODA,OCTAVIA,2018.08,162145.0,Dízel,85.0,116.0,Normál,610.0,Kombi,5.0,Fehér,1598.0,Első kerék,Manuális,5.0,,3.9
+22139936,4750000.0,,PONTIAC,SOLSTICE,2007.08,52937.0,Benzin,194.0,264.0,Normál,,Cabrio,2.0,Szürke,1998.0,Hátsó kerék,Automata,,,
+22134013,4770000.0,,SUZUKI,VITARA,2015.5,112097.0,Benzin,88.0,120.0,Normál,375.0,Városi terepjáró (crossover),5.0,Kék,1586.0,Első kerék,Manuális,5.0,,5.3
+22106764,4970000.0,,HONDA,CIVIC,2017.58,152203.0,Benzin,95.0,129.0,Normál,478.0,Ferdehátú,5.0,Szürke,988.0,Első kerék,Manuális,6.0,,
+22016447,,,HONDA,JAZZ,2018.0,146508.0,Benzin,96.0,131.0,Normál,354.0,Egyterű,5.0,Szürke,1498.0,Első kerék,Manuális,6.0,,5.9
+22092485,5000000.0,,VOLKSWAGEN,SCIROCCO,2016.17,129111.0,Benzin,92.0,125.0,Normál,292.0,Coupe,5.0,Fehér (metál),1390.0,Első kerék,Manuális,6.0,,
+21987390,,,FORD,FOCUS,2015.92,124175.0,Benzin,184.0,250.0,Normál,316.0,Ferdehátú,5.0,Szürke,1999.0,Első kerék,Manuális,6.0,,7.2
+22133584,5499900.0,,RENAULT,ZOE,2020.92,26984.0,Elektromos,80.0,109.0,Sérülésmentes,338.0,Ferdehátú,5.0,,,Első kerék,Fokozatmentes automata,,,
+21836733,5499900.0,,RENAULT,ZOE,2020.0,71150.0,Elektromos,80.0,109.0,Normál,338.0,Ferdehátú,5.0,(metál),,Első kerék,Fokozatmentes automata,,,
+22139904,5550000.0,,LEXUS,IS,2013.5,180702.0,Hibrid,133.0,181.0,Normál,450.0,Sedan,5.0,Fekete,2494.0,Hátsó kerék,Automata,,,4.3
+21901494,5670000.0,,BMW,4-ES SOROZAT 418,2016.67,199996.0,Dízel,110.0,150.0,Normál,480.0,Coupe,5.0,Fekete,1995.0,Hátsó kerék,Manuális,6.0,,4.1
+22124849,5770000.0,,KIA,CEE'D,2022.17,62401.0,Benzin,88.0,120.0,Normál,625.0,Kombi,5.0,Zöld,998.0,Első kerék,Manuális,6.0,,5.5
+22152383,5870000.0,,HYUNDAI,I30,2018.83,79788.0,Benzin,103.0,140.0,Normál,450.0,Coupe,5.0,Fehér,1353.0,Első kerék,Manuális,6.0,,5.5
+22068601,5950000.0,,MERCEDES-BENZ,SLK-OSZTÁLY SLK 280,2006.92,79281.0,Benzin,170.0,231.0,Normál,208.0,Cabrio,2.0,Fehér,2996.0,Hátsó kerék,Automata,,,9.5
+22012041,5970000.0,,BMW,3-AS SOROZAT 328 GRAN TURISMO,2015.33,188480.0,Benzin,180.0,245.0,Normál,480.0,Sedan,5.0,Fehér,1997.0,Összkerék,Automata,8.0,,
+21623276,5990000.0,,OPEL,CORSA,2020.67,52043.0,Elektromos,100.0,136.0,Kitűnő,267.0,Ferdehátú,5.0,Fekete (metál),,Első kerék,Fokozatmentes automata,,,
+22020070,6000000.0,,BMW,3-AS SOROZAT 318,1990.75,154360.0,Benzin,83.0,113.0,Normál,,Coupe,5.0,Piros,1796.0,Hátsó kerék,Manuális,5.0,,
+22097130,6399000.0,,JEEP,COMPASS,2019.17,75664.0,Benzin,103.0,140.0,Normál,438.0,Városi terepjáró (crossover),5.0,,1368.0,Első kerék,Manuális,6.0,,6.8
+22036983,6470000.0,,MINI,COUNTRYMAN,2018.5,137067.0,Hibrid (Benzin),100.0,136.0,Normál,405.0,Kombi,5.0,Szürke,1499.0,Összkerék,Automata,6.0,tiptronic,
+22037666,6590000.0,,SKODA,OCTAVIA,2020.25,146615.0,Dízel,135.0,184.0,Normál,590.0,Ferdehátú,5.0,Fekete,1968.0,Összkerék,Automata,,,
+22105816,6749000.0,,OPEL,CROSSLAND,2023.42,37552.0,Benzin,96.0,131.0,Normál,520.0,Városi terepjáró (crossover),5.0,(metál),1199.0,Első kerék,Automata,6.0,tiptronic,
+22105788,6749000.0,,OPEL,CROSSLAND,2023.42,46858.0,Benzin,96.0,131.0,Normál,520.0,Városi terepjáró (crossover),5.0,(metál),1199.0,Első kerék,Automata,6.0,tiptronic,
+22092504,6850000.0,,PORSCHE,CAYENNE,2010.83,168719.0,Dízel,176.0,239.0,Normál,670.0,Városi terepjáró (crossover),5.0,Barna,2967.0,Összkerék,Automata,8.0,tiptronic,9.3
+22081920,6890000.0,,VOLVO,V40,2018.67,117188.0,Benzin,112.0,152.0,Megkímélt,324.0,Ferdehátú,5.0,Fekete (metál),1969.0,Első kerék,Manuális,6.0,,6.0
+22150051,7190000.0,,OPEL,CROSSLAND,2023.17,42793.0,Benzin,96.0,131.0,Normál,520.0,Városi terepjáró (crossover),5.0,(metál),1199.0,Első kerék,Automata,6.0,tiptronic,
+19321385,7290000.0,,KIA,CEE'D,2022.17,28748.0,Benzin,118.0,160.0,Kitűnő,395.0,Ferdehátú,5.0,,1482.0,Első kerék,Manuális,6.0,,5.9
+22112503,7399000.0,,OPEL,ASTRA ASTRA L,2023.92,24621.0,Benzin,96.0,131.0,Kitűnő,422.0,Ferdehátú,5.0,Piros,1199.0,Első kerék,Automata,8.0,tiptronic,
+21592917,7499900.0,,FIAT,500,2023.58,9707.0,Elektromos,87.0,118.0,Normál,185.0,Ferdehátú,4.0,(metál),,Első kerék,Fokozatmentes automata,,,
+21915677,7690000.0,,VOLVO,S90,2016.67,216093.0,Dízel,140.0,190.0,Megkímélt,500.0,Sedan,5.0,Fekete (metál),1969.0,Első kerék,Automata,8.0,tiptronic,4.4
+21933002,7899000.0,,OPEL,CORSA CORSA F,2025.25,1500.0,Benzin,74.0,101.0,Kitűnő,309.0,Ferdehátú,5.0,Piros,1199.0,Első kerék,Manuális,6.0,,
+22133060,7970000.0,,RENAULT,CAPTUR,2020.83,22872.0,Hibrid,68.0,92.0,Kitűnő,265.0,Városi terepjáró (crossover),5.0,Narancs,1598.0,Első kerék,Fokozatmentes automata,,,
+22058406,7970000.0,,MAZDA,CX-30,2021.5,80965.0,Benzin,90.0,122.0,Normál,430.0,Városi terepjáró (crossover),5.0,Szürke,1998.0,Első kerék,Manuális,6.0,,
+22112600,7990000.0,,OPEL,ASTRA ASTRA L,2024.08,23000.0,Benzin,81.0,110.0,Kitűnő,597.0,Kombi,5.0,Fehér,1199.0,Első kerék,Manuális,6.0,,
+21762090,8199000.0,,OPEL,MOKKA,2025.0,10.0,Benzin,100.0,136.0,Kitűnő,350.0,Városi terepjáró (crossover),5.0,Szürke,1199.0,Első kerék,Manuális,6.0,,
+21760317,8199000.0,,OPEL,MOKKA,2025.0,10.0,Benzin,100.0,136.0,Kitűnő,350.0,Városi terepjáró (crossover),5.0,Zöld,1199.0,Első kerék,Manuális,6.0,,
+21758044,8199000.0,,OPEL,MOKKA,2025.0,10.0,Benzin,100.0,136.0,Kitűnő,350.0,Városi terepjáró (crossover),5.0,Kék,1199.0,Első kerék,Manuális,6.0,,
+22139968,8390000.0,,MERCEDES-BENZ,SLK-OSZTÁLY SLK 200,2014.17,88282.0,Benzin,135.0,184.0,Normál,225.0,Cabrio,2.0,Fekete,1796.0,Hátsó kerék,Automata,7.0,tiptronic,6.5
+22085461,8399000.0,,OPEL,GRANDLAND,2022.67,36918.0,Benzin,96.0,131.0,Újszerű,514.0,Városi terepjáró (crossover),5.0,Fehér,1199.0,Első kerék,Manuális,6.0,,
+22101291,8499990.0,,TOYOTA,RAV 4,2017.75,77760.0,Hibrid (Benzin),114.0,155.0,Normál,501.0,Városi terepjáró (crossover),5.0,(metál),2494.0,Összkerék,Fokozatmentes automata,,,5.2
+21936835,8590000.0,,KIA,STONIC,2025.33,20.0,Benzin,88.0,120.0,Kitűnő,352.0,Városi terepjáró (crossover),5.0,,998.0,Első kerék,Manuális,6.0,,
+21478410,8590000.0,,SKODA,SCALA,2024.92,300.0,Benzin,81.0,110.0,Újszerű,467.0,Ferdehátú,5.0,Fehér,999.0,Első kerék,Manuális,6.0,,4.7
+22125240,8990000.0,,MERCEDES-BENZ,E-OSZTÁLY E 220,2017.5,169397.0,Dízel,143.0,194.0,Kitűnő,540.0,Sedan,5.0,Fekete,1950.0,Hátsó kerék,Automata,9.0,tiptronic,4.3
+22052260,8999900.0,,HYUNDAI,KONA,2021.83,29890.0,Elektromos,150.0,204.0,Kitűnő,332.0,Városi terepjáró (crossover),5.0,(metál),,Első kerék,Fokozatmentes automata,,,
+21891677,9299000.0,,OPEL,GRANDLAND,2022.75,17621.0,Benzin,96.0,131.0,Újszerű,514.0,Városi terepjáró (crossover),5.0,Ezüst (metál),1199.0,Első kerék,Automata,8.0,tiptronic,
+21979668,9490000.0,,KIA,SORENTO,2019.17,157709.0,Dízel,147.0,200.0,Kitűnő,142.0,Terepjáró,7.0,Fekete,2199.0,Összkerék,Automata,8.0,tiptronic,
+21242392,9490000.0,,VOLVO,V60,2021.17,123478.0,Benzin,120.0,163.0,Megkímélt,529.0,Kombi,5.0,Fekete (metál),1969.0,Első kerék,Automata,8.0,tiptronic,6.3
+22123048,9499000.0,,OPEL,ASTRA ASTRA L,2024.5,18000.0,Dízel,96.0,131.0,Újszerű,597.0,Kombi,5.0,Fehér,1498.0,Első kerék,Automata,8.0,tiptronic,
+21412246,9499000.0,,OPEL,MOKKA,2024.83,3000.0,Benzin,100.0,136.0,Kitűnő,350.0,Városi terepjáró (crossover),5.0,,1199.0,Első kerék,Manuális,6.0,,
+21212925,9699900.0,,BMW,5-ÖS SOROZAT 530,2016.83,95455.0,Benzin,185.0,252.0,Kitűnő,530.0,Sedan,5.0,(metál),1998.0,Összkerék,Automata,8.0,tiptronic,6.0
+22084709,,,AUDI,A8,2017.0,184165.0,Dízel,193.0,262.0,Normál,520.0,Sedan,5.0,Fekete,2967.0,Összkerék,Automata,8.0,tiptronic,5.8
+22020061,9900000.0,,BMW,OLDTIMER 2000,1968.58,21808.0,Benzin,88.0,120.0,Normál,,Coupe,5.0,Kék,1977.0,Hátsó kerék,Manuális,,,
+21969322,9990000.0,,MERCEDES-BENZ,C-OSZTÁLY C 180,2021.58,41450.0,Benzin,115.0,156.0,Kitűnő,460.0,Kombi,5.0,Fehér,1497.0,Hátsó kerék,Automata,9.0,tiptronic,6.8
+22113375,9999000.0,,OPEL,ASTRA ASTRA L,2024.25,29000.0,Dízel,96.0,131.0,Kitűnő,597.0,Kombi,5.0,Piros,1498.0,Első kerék,Automata,8.0,tiptronic,
+22092497,10190000.0,,MERCEDES-AMG,A-OSZTÁLY A 45,2017.08,128194.0,Benzin,280.0,381.0,Normál,341.0,Ferdehátú,5.0,Fekete,1991.0,Összkerék,Automata,,,6.9
+22092492,10190000.0,,MERCEDES-BENZ,A-OSZTÁLY A 45 AMG,2017.08,128194.0,Benzin,280.0,381.0,Normál,341.0,Ferdehátú,5.0,Fekete (metál),1991.0,Összkerék,Automata,,,
+21958759,10190000.0,,OPEL,FRONTERA,2025.33,1500.0,Benzin,100.0,136.0,Kitűnő,460.0,Terepjáró,5.0,,1199.0,Első kerék,,,,
+22010035,10490000.0,,VOLVO,XC40,2021.83,144770.0,Benzin,120.0,163.0,Megkímélt,452.0,Városi terepjáró (crossover),5.0,Fehér,1477.0,Első kerék,Automata,8.0,tiptronic,
+21891653,10499000.0,,OPEL,GRANDLAND,2023.92,12537.0,Benzin,96.0,131.0,Újszerű,514.0,Városi terepjáró (crossover),5.0,Fekete (metál),1199.0,Első kerék,Automata,8.0,tiptronic,
+21962433,10790000.0,,MERCEDES-BENZ,A-OSZTÁLY A 250,2021.5,91853.0,Hibrid (Benzin),118.0,160.0,Normál,310.0,Ferdehátú,5.0,Fehér,1332.0,Első kerék,Automata,8.0,,1.5
+22113773,10990000.0,,OPEL,ASTRA ASTRA L,2024.33,17100.0,Benzin,96.0,131.0,Kitűnő,597.0,Kombi,5.0,Kék,1199.0,Első kerék,Automata,8.0,tiptronic,
+22098363,10990000.0,,MINI,COOPER,2023.5,34500.0,Benzin,150.0,204.0,Újszerű,275.0,Ferdehátú,4.0,Fekete (metál),1998.0,Első kerék,,,,
+22081994,10990000.0,,VOLVO,XC40,2022.17,82166.0,Benzin,95.0,129.0,Megkímélt,452.0,Városi terepjáró (crossover),5.0,Fekete (metál),1477.0,Első kerék,Automata,8.0,tiptronic,6.7
+21969635,10990000.0,,MERCEDES-BENZ,CLA-OSZTÁLY CLA 180,2021.42,131450.0,Benzin,100.0,136.0,Kitűnő,460.0,Coupe,5.0,Fehér,1332.0,Első kerék,,,,
+21932868,10990000.0,,MINI,MINI,2023.5,32500.0,Benzin,131.0,178.0,Újszerű,211.0,Ferdehátú,4.0,Fekete (metál),1998.0,Első kerék,Automata,7.0,,
+21063808,10990000.0,,BMW,X SOROZAT X2,2023.5,5861.0,Benzin,100.0,136.0,Megkímélt,470.0,Városi terepjáró (crossover),5.0,Kék (metál),1499.0,Első kerék,,,,5.8
+22133022,10999000.0,,OPEL,ASTRA ASTRA L,2024.17,26000.0,Benzin,96.0,131.0,Kitűnő,597.0,Kombi,5.0,Fehér,1199.0,Első kerék,Automata,8.0,tiptronic,
+21931435,10999000.0,,OPEL,ASTRA,2025.08,3500.0,Benzin,96.0,131.0,Kitűnő,597.0,Kombi,5.0,,1199.0,Első kerék,Manuális,6.0,,
+21903123,10999900.0,,VOLVO,XC60,2020.42,146013.0,Dízel,145.0,197.0,Normál,483.0,Városi terepjáró (crossover),5.0,(metál),1969.0,Első kerék,Automata,8.0,tiptronic,7.0
+21319238,11199000.0,,OPEL,INSIGNIA,2021.42,100000.0,Benzin,169.0,230.0,Újszerű,490.0,Ferdehátú,5.0,Piros (metál),1998.0,Összkerék,Automata,9.0,tiptronic,7.0
+21867519,11490000.0,,VOLVO,XC60,2020.42,97278.0,Dízel,140.0,190.0,Megkímélt,505.0,Városi terepjáró (crossover),5.0,Fehér,1969.0,Első kerék,Automata,8.0,tiptronic,5.1
+20521354,11490000.0,,BMW,X SOROZAT X3,2018.5,101151.0,Benzin,185.0,252.0,Normál,550.0,Városi terepjáró (crossover),5.0,Kék (metál),1998.0,Összkerék,Automata,8.0,tiptronic,7.4
+22152413,11490000.0,,MERCEDES-BENZ,CLA-OSZTÁLY CLA 180,2021.5,19511.0,Benzin,100.0,136.0,Kitűnő,460.0,Coupe,5.0,Bordó,1332.0,Első kerék,Automata,7.0,,
+21879668,11590000.0,,MERCEDES-BENZ,B-OSZTÁLY B 180,2022.92,10690.0,Benzin,100.0,136.0,Kitűnő,435.0,Egyterű,5.0,Szürke (metál),1332.0,Első kerék,Automata,7.0,,
+21773483,11590000.0,,MERCEDES-BENZ,A-OSZTÁLY A 180,2024.08,24889.0,Benzin,100.0,136.0,Kitűnő,405.0,Ferdehátú,5.0,Fehér,1332.0,Első kerék,Automata,7.0,,
+22044555,11900000.0,,BMW,2-ES SOROZAT 218,2024.25,36980.0,Benzin,115.0,156.0,Kitűnő,390.0,Coupe,4.0,Fehér,1998.0,Hátsó kerék,Automata,8.0,tiptronic,
+22105160,11970000.0,,BMW,6-OS SOROZAT 640,2018.42,128981.0,Benzin,250.0,340.0,Normál,610.0,Ferdehátú,5.0,Fekete,2998.0,Összkerék,Automata,8.0,tiptronic,7.7
+22124995,11990000.0,,MERCEDES-BENZ,A-OSZTÁLY A 180,2023.92,14515.0,Benzin,100.0,136.0,Kitűnő,345.0,Ferdehátú,5.0,Fehér,1332.0,Első kerék,Automata,7.0,,5.8
+22017511,11990000.0,,MERCEDES-BENZ,C-OSZTÁLY C 300,2020.42,85795.0,Hibrid (Benzin),155.0,211.0,Normál,300.0,Sedan,5.0,Fekete,1991.0,Összkerék,Automata,9.0,tiptronic,2.1
+22007385,11990000.0,,BMW,3-AS SOROZAT 330,2021.25,66350.0,Hibrid (Benzin),135.0,184.0,Megkímélt,410.0,Kombi,5.0,Szürke (metál),1998.0,Hátsó kerék,Automata,8.0,tiptronic,
+21958650,11990000.0,,MERCEDES-BENZ,A-OSZTÁLY A 180,2023.75,19391.0,Benzin,100.0,136.0,Kitűnő,355.0,Ferdehátú,5.0,Ezüst (metál),1332.0,Első kerék,Automata,7.0,,
+21958483,11990000.0,,MERCEDES-BENZ,CLA-OSZTÁLY CLA 180,2023.75,68454.0,Dízel,85.0,116.0,Kitűnő,450.0,Kombi,5.0,Szürke (metál),1950.0,Első kerék,Automata,8.0,,5.1
+21771060,11990000.0,,MERCEDES-BENZ,A-OSZTÁLY A 200,2024.17,8700.0,Benzin,120.0,163.0,Újszerű,355.0,Ferdehátú,5.0,Fehér,1332.0,Első kerék,Automata,7.0,,
+21534998,11990000.0,,BMW,1-ES SOROZAT 118,2023.92,10565.0,Benzin,100.0,136.0,Újszerű,380.0,Ferdehátú,5.0,Fekete (metál),1499.0,Első kerék,,,,5.9
+21381383,11990000.0,,VOLVO,XC40,2021.08,94022.0,Benzin,120.0,163.0,Megkímélt,452.0,Városi terepjáró (crossover),5.0,Fekete (metál),1477.0,Első kerék,Automata,8.0,tiptronic,
+21889327,11999000.0,,BMW,2-ES SOROZAT 218,2024.25,25000.0,Benzin,103.0,140.0,Kitűnő,430.0,Coupe,5.0,Fehér,1499.0,Első kerék,Automata,7.0,,5.3
+22139541,12000000.0,,LAND ROVER,RANGE ROVER,2015.5,221545.0,Dízel,250.0,340.0,Normál,909.0,Terepjáró,5.0,Fekete (metál),4367.0,Összkerék,Automata,8.0,tiptronic,8.4
+21956305,12190000.0,,MERCEDES-BENZ,GLC-OSZTÁLY GLC 200,2020.25,64535.0,Dízel,120.0,163.0,Kitűnő,550.0,Városi terepjáró (crossover),5.0,Kék (metál),1950.0,Összkerék,Automata,9.0,tiptronic,
+22013815,12390000.0,,VOLVO,XC40,2021.33,58325.0,Hibrid (Benzin),132.0,179.0,Normál,452.0,Városi terepjáró (crossover),5.0,Kék (metál),1477.0,Első kerék,Automata,7.0,,1.9
+21780656,12490000.0,,MERCEDES-BENZ,A-OSZTÁLY A 180,2024.42,2750.0,Benzin,100.0,136.0,Megkímélt,355.0,Ferdehátú,5.0,Fehér,1332.0,Első kerék,Automata,7.0,,
+22033321,12490000.0,,MERCEDES-BENZ,A-OSZTÁLY A 180,2024.25,21200.0,Benzin,100.0,136.0,Megkímélt,355.0,Ferdehátú,5.0,Fehér,1332.0,Első kerék,Automata,7.0,,
+22012049,12490000.0,,MERCEDES-BENZ,A-OSZTÁLY A 180,2024.33,24737.0,Benzin,100.0,136.0,Kitűnő,355.0,Ferdehátú,5.0,Ezüst,1332.0,Első kerék,Automata,7.0,,
+21376499,12490000.0,,MERCEDES-BENZ,CLA-OSZTÁLY CLA 200,2022.58,50185.0,Benzin,120.0,163.0,Normál,460.0,Kombi,5.0,Szürke,1332.0,Első kerék,,,,
+21944557,12500000.0,,HONDA,S 2000,2005.33,77144.0,Benzin,177.0,241.0,Normál,143.0,Cabrio,2.0,Szürke,1997.0,Hátsó kerék,Manuális,6.0,,
+22137863,12790000.0,,MERCEDES-BENZ,GLC-OSZTÁLY GLC 200,2021.17,104309.0,Benzin,145.0,197.0,Normál,500.0,Városi terepjáró (crossover),5.0,Szürke,1991.0,Összkerék,Automata,9.0,tiptronic,8.1
+22110659,12790000.0,,BMW,2-ES SOROZAT 218,2024.58,7000.0,Benzin,100.0,136.0,Kitűnő,430.0,Coupe,5.0,Kék (metál),1499.0,Első kerék,Automata,7.0,,5.9
+22018629,12790000.0,,MERCEDES-BENZ,CLA-OSZTÁLY CLA 200,2023.25,58784.0,Dízel,110.0,150.0,Kitűnő,460.0,Coupe,5.0,Fekete (metál),1950.0,Összkerék,Automata,8.0,,4.4
+21965245,12790000.0,,MERCEDES-BENZ,GLB-OSZTÁLY GLB 200,2020.42,89587.0,Dízel,110.0,150.0,Kitűnő,570.0,Kombi,5.0,Szürke (metál),1950.0,Első kerék,Automata,8.0,,5.0
+22038356,,,FORD,FOCUS,2019.0,38832.0,Benzin,257.0,349.0,Normál,363.0,Ferdehátú,5.0,Kék,2300.0,Összkerék,Manuális,6.0,,7.7
+22097363,12990000.0,,MERCEDES-BENZ,GLA-OSZTÁLY GLA 250,2021.17,111497.0,Hibrid (Benzin),118.0,160.0,Kitűnő,385.0,Városi terepjáró (crossover),5.0,Fehér,1332.0,Első kerék,Automata,8.0,,1.8
+22012244,12990000.0,,MERCEDES-BENZ,GLB-OSZTÁLY GLB 180,2023.75,36812.0,Benzin,100.0,136.0,Kitűnő,570.0,Kombi,7.0,Fekete,1332.0,Első kerék,Automata,7.0,,6.2
+21970902,12990000.0,,MERCEDES-BENZ,CLA-OSZTÁLY CLA 180,2024.25,21429.0,Benzin,100.0,136.0,Kitűnő,460.0,Kombi,5.0,Ezüst (metál),1332.0,Első kerék,Automata,7.0,,
+21962729,12990000.0,,MERCEDES-BENZ,A-OSZTÁLY A 180,2024.5,3083.0,Benzin,100.0,136.0,Kitűnő,355.0,Ferdehátú,5.0,Fehér,1332.0,Első kerék,Automata,7.0,,
+21927682,12990000.0,,MERCEDES-BENZ,A-OSZTÁLY A 180,2023.25,12163.0,Dízel,85.0,116.0,Kitűnő,345.0,Ferdehátú,5.0,Szürke (metál),1950.0,Első kerék,Automata,8.0,,
+21849446,12990000.0,,BMW,1-ES SOROZAT 118,2023.67,18901.0,Dízel,110.0,150.0,Újszerű,380.0,Ferdehátú,5.0,Fekete,1995.0,Első kerék,Automata,8.0,tiptronic,4.4
+21765555,12990000.0,,MERCEDES-BENZ,CLA-OSZTÁLY CLA 200,2023.83,37316.0,Benzin,120.0,163.0,Kitűnő,460.0,Kombi,5.0,Ezüst (metál),1332.0,Első kerék,Automata,7.0,,
+22122355,12999000.0,,OPEL,ASTRA ASTRA L,2024.58,7200.0,Elektromos,115.0,156.0,Újszerű,516.0,Kombi,5.0,Sötétszürke (metál),,Első kerék,Fokozatmentes automata,,,
+21690471,12999900.0,,VOLKSWAGEN,TOUAREG,2019.25,182224.0,Dízel,210.0,286.0,Normál,810.0,Városi terepjáró (crossover),5.0,(metál),2967.0,Összkerék,Automata,8.0,tiptronic,6.9
+21366341,13199900.0,,BMW,4-ES SOROZAT 440,2018.33,118000.0,Benzin,265.0,360.0,Kitűnő,480.0,Coupe,5.0,,2998.0,Hátsó kerék,Automata,8.0,tiptronic,6.8
+22144731,13490000.0,,BMW,2-ES SOROZAT 218,2025.0,9800.0,Benzin,100.0,136.0,Kitűnő,430.0,Egyterű,5.0,Fehér,1499.0,Első kerék,Automata,7.0,,5.3
+22113896,13490000.0,,VOLVO,XC60,2020.08,41821.0,Dízel,145.0,197.0,Kitűnő,483.0,Városi terepjáró (crossover),5.0,Sötétbarna (metál),1969.0,Összkerék,Automata,8.0,tiptronic,
+22082551,13490000.0,,VOLVO,XC40,2024.83,25000.0,Benzin,120.0,163.0,Újszerű,452.0,Városi terepjáró (crossover),5.0,Szürke (metál),1969.0,Első kerék,Automata,7.0,,
+22082396,13490000.0,,VOLVO,XC40,2024.83,25000.0,Benzin,120.0,163.0,Újszerű,452.0,Városi terepjáró (crossover),5.0,Fekete (metál),1969.0,Első kerék,Automata,7.0,,
+22082295,13490000.0,,VOLVO,XC40,2024.83,25000.0,Benzin,120.0,163.0,Újszerű,452.0,Városi terepjáró (crossover),5.0,Szürke,1969.0,Első kerék,Automata,7.0,,
+21936679,13490000.0,,MERCEDES-BENZ,CLA-OSZTÁLY CLA 180,2023.83,28697.0,Dízel,85.0,116.0,Kitűnő,450.0,Kombi,5.0,Fekete,1950.0,Első kerék,Automata,8.0,,5.1
+21874859,13490000.0,,MERCEDES-BENZ,CLA-OSZTÁLY CLA 220,2022.33,67000.0,Dízel,140.0,190.0,Megkímélt,450.0,Kombi,5.0,Ezüst (metál),1950.0,Összkerék,Automata,8.0,,4.4
+21830836,13490000.0,,MERCEDES-BENZ,A-OSZTÁLY A 180,2024.17,22105.0,Benzin,100.0,136.0,Kitűnő,355.0,Ferdehátú,5.0,Fekete (metál),1332.0,Első kerék,Automata,7.0,,
+21765336,13490000.0,,MERCEDES-BENZ,A-OSZTÁLY A 250,2023.75,27187.0,Hibrid (Benzin),118.0,160.0,Kitűnő,345.0,Sedan,5.0,Bordó (metál),1332.0,Első kerék,Automata,8.0,,1.4
+22067095,13499000.0,,BMW,2-ES SOROZAT 223,2024.08,19000.0,Benzin,150.0,204.0,Újszerű,415.0,Egyterű,5.0,Fehér,1998.0,Összkerék,,,,
+21479260,13499000.0,,VOLKSWAGEN,T-ROC,2024.92,300.0,Benzin,110.0,150.0,Újszerű,445.0,Városi terepjáró (crossover),5.0,Ezüst,1498.0,Első kerék,,,,
+22082305,13590000.0,,VOLVO,XC40,2023.42,29568.0,Benzin,120.0,163.0,Újszerű,452.0,Városi terepjáró (crossover),5.0,Ezüst (metál),1969.0,Első kerék,,,,
+21957320,13590000.0,,MERCEDES-BENZ,EQB,2022.25,52105.0,Elektromos,168.0,228.0,Normál,495.0,Kombi,5.0,,,Összkerék,Fokozatmentes automata,,,
+21253020,13670000.0,,LAND ROVER,DISCOVERY,2018.0,108369.0,Dízel,190.0,258.0,Normál,1231.0,Terepjáró,5.0,Szürke,2993.0,Összkerék,Automata,8.0,tiptronic,7.2
+22124982,13890000.0,,MERCEDES-BENZ,GLA-OSZTÁLY GLA 200,2020.83,60000.0,Benzin,120.0,163.0,Sérülésmentes,435.0,Városi terepjáró (crossover),5.0,Sötétszürke,1332.0,Első kerék,Automata,7.0,,6.0
+20939093,13957300.0,,MERCEDES-BENZ,A-OSZTÁLY A 250,2023.75,34666.0,Benzin,165.0,224.0,Kitűnő,345.0,Ferdehátú,5.0,Ezüst (metál),1991.0,Összkerék,Automata,8.0,,6.6
+22073973,13990000.0,,MERCEDES-BENZ,A-OSZTÁLY A 250,2023.92,27567.0,Hibrid (Benzin),120.0,163.0,Kitűnő,310.0,Ferdehátú,5.0,Piros (metál),1332.0,Első kerék,Automata,8.0,,
+22033926,13990000.0,,MERCEDES-BENZ,GLC-OSZTÁLY GLC 200,2022.0,60172.0,Benzin,145.0,197.0,Megkímélt,550.0,Városi terepjáró (crossover),5.0,Szürke (metál),1991.0,Összkerék,Automata,9.0,tiptronic,8.1
+22016810,13990000.0,,VOLVO,EX30,2024.33,24140.0,Elektromos,200.0,272.0,Újszerű,318.0,Kombi,5.0,Sötétszürke (metál),,Hátsó kerék,Fokozatmentes automata,,,
+22016775,13990000.0,,VOLVO,EX30,2024.33,17233.0,Elektromos,200.0,272.0,Újszerű,318.0,Kombi,5.0,Fehér (metál),,Hátsó kerék,Fokozatmentes automata,,,
+21969753,13990000.0,,MERCEDES-BENZ,C-OSZTÁLY C 220,2022.25,99962.0,Dízel,147.0,200.0,Kitűnő,490.0,Kombi,5.0,Ezüst (metál),1993.0,Összkerék,Automata,9.0,tiptronic,
+21943712,13990000.0,,MERCEDES-BENZ,CLA-OSZTÁLY CLA 180,2023.75,42787.0,Benzin,100.0,136.0,Kitűnő,460.0,Kombi,5.0,Piros (metál),1332.0,Első kerék,Automata,7.0,,
+21865713,13990000.0,,VOLVO,EX30,2024.33,16391.0,Elektromos,200.0,272.0,Újszerű,318.0,Kombi,5.0,Szürke (metál),,Hátsó kerék,Fokozatmentes automata,,,
+19562655,13990000.0,,MERCEDES-BENZ,A-OSZTÁLY A 200,2023.33,49000.0,Benzin,120.0,163.0,Kitűnő,355.0,Ferdehátú,5.0,Fehér,1332.0,Első kerék,Automata,7.0,,
+22085445,13999000.0,,BMW,4-ES SOROZAT 420,2021.25,61200.0,Dízel,140.0,190.0,Kitűnő,440.0,Coupe,4.0,Világoskék (metál),1995.0,Összkerék,Automata,8.0,tiptronic,4.6
+21746371,14190000.0,,MERCEDES-BENZ,E-OSZTÁLY E 300,2021.17,75492.0,Hibrid (Benzin),155.0,211.0,Kitűnő,370.0,Sedan,5.0,Fekete (metál),1991.0,Hátsó kerék,Automata,9.0,tiptronic,1.8
+19126183,14190000.0,,MERCEDES-BENZ,CLA-OSZTÁLY CLA 200,2022.75,63000.0,Benzin,120.0,163.0,Kitűnő,460.0,Coupe,5.0,Ezüst (metál),1332.0,Első kerék,Automata,7.0,,
+21966753,14290000.0,,MERCEDES-BENZ,EQB,2024.17,32000.0,Elektromos,140.0,190.0,Újszerű,495.0,Városi terepjáró (crossover),5.0,Fehér,,Első kerék,Fokozatmentes automata,,,
+21478026,14290000.0,,SKODA,KAROQ,2024.92,300.0,Benzin,110.0,150.0,Újszerű,521.0,Városi terepjáró (crossover),5.0,Fehér,1498.0,Első kerék,,,,
+22016827,14490000.0,,VOLVO,EX30,2024.33,24708.0,Elektromos,200.0,272.0,Újszerű,318.0,Kombi,5.0,Sötétszürke (metál),,Hátsó kerék,Fokozatmentes automata,,,
+21901100,14490000.0,,VOLVO,EX30,2024.33,15436.0,Elektromos,200.0,272.0,Újszerű,318.0,Kombi,5.0,Fekete (metál),,Hátsó kerék,Fokozatmentes automata,,,
+21741945,14690000.0,,MERCEDES-BENZ,GLA-OSZTÁLY GLA 180,2024.0,19601.0,Benzin,100.0,136.0,Kitűnő,425.0,Városi terepjáró (crossover),5.0,Fehér,1332.0,Első kerék,Automata,7.0,,
+20937282,14790000.0,,MERCEDES-BENZ,A-OSZTÁLY A 220,2023.75,48728.0,Benzin,140.0,190.0,Kitűnő,355.0,Ferdehátú,5.0,Szürke (metál),1991.0,Összkerék,Automata,8.0,,
+22048707,14990000.0,,MERCEDES-AMG,CLA,2022.0,65158.0,Benzin,225.0,306.0,Kitűnő,505.0,Kombi,5.0,Fehér,1991.0,Összkerék,Automata,7.0,,7.5
+20122550,14990000.0,,MERCEDES-BENZ,CLA-OSZTÁLY CLA 200,2023.42,34500.0,Dízel,110.0,150.0,Normál,450.0,Coupe,5.0,Fekete,1950.0,Első kerék,Automata,8.0,,
+22155659,14999000.0,,BMW,X SOROZAT X3,2021.83,101200.0,Hibrid,135.0,184.0,Kitűnő,450.0,Városi terepjáró (crossover),5.0,Fehér (metál),1998.0,Összkerék,Automata,8.0,tiptronic,
+22114014,15490000.0,,BMW,1-ES SOROZAT 120,2024.75,12300.0,Dízel,140.0,190.0,Kitűnő,380.0,Ferdehátú,5.0,Szürke (metál),1995.0,Első kerék,Automata,8.0,tiptronic,4.6
+22104939,15490000.0,,MERCEDES-BENZ,GLA-OSZTÁLY GLA 250,2023.67,52000.0,Hibrid (Benzin),118.0,160.0,Normál,385.0,Városi terepjáró (crossover),5.0,Fekete,1332.0,Első kerék,Automata,8.0,,1.8
+21989696,15490000.0,,MERCEDES-BENZ,GLA-OSZTÁLY GLA 180,2024.25,23162.0,Benzin,100.0,136.0,Kitűnő,425.0,Városi terepjáró (crossover),5.0,Fekete,1332.0,Első kerék,Automata,7.0,,
+21656167,15490000.0,,BMW,3-AS SOROZAT 330,2021.25,75326.0,Hibrid (Benzin),135.0,184.0,Megkímélt,410.0,Kombi,5.0,Sötétszürke (metál),1998.0,Hátsó kerék,Automata,8.0,tiptronic,
+21454645,15490000.0,,MERCEDES-BENZ,B-OSZTÁLY B 200,2023.42,20.0,Benzin,120.0,163.0,Kitűnő,455.0,Egyterű,5.0,Ezüst (metál),1332.0,Első kerék,Automata,7.0,,
+20654239,15490000.0,,BMW,5-ÖS SOROZAT 530,2023.17,64347.0,Hibrid,135.0,184.0,Megkímélt,410.0,Sedan,5.0,Fekete,1998.0,Hátsó kerék,Automata,8.0,tiptronic,
+21177286,15499000.0,,FORD,KUGA,2024.42,2500.0,Benzin,132.0,179.0,Újszerű,412.0,Városi terepjáró (crossover),5.0,Szürke,2488.0,Első kerék,Fokozatmentes automata,,,
+20990858,15499000.0,,FORD,KUGA,2024.42,2500.0,Hibrid (Benzin),165.0,224.0,Újszerű,412.0,Városi terepjáró (crossover),5.0,Fekete,2488.0,Első kerék,Fokozatmentes automata,,,
+20990543,15499000.0,,FORD,KUGA,2024.42,2500.0,Benzin,134.0,182.0,Újszerű,412.0,Városi terepjáró (crossover),5.0,Kék,2488.0,Első kerék,Fokozatmentes automata,,,
+21911011,15499900.0,,PORSCHE,MACAN,2018.58,78664.0,Benzin,185.0,252.0,Kitűnő,500.0,Kombi,5.0,(metál),1984.0,Összkerék,Automata,,,7.2
+21953633,15799000.0,,MERCEDES-BENZ,A-OSZTÁLY A 200,2023.17,10000.0,Benzin,120.0,163.0,Normál,355.0,Ferdehátú,5.0,Fekete,1332.0,Első kerék,Automata,7.0,,
+22132664,15890000.0,,MERCEDES-BENZ,A-OSZTÁLY A 250,2024.0,50788.0,Hibrid (Benzin),120.0,163.0,Kitűnő,310.0,Ferdehátú,5.0,Fekete,1332.0,Első kerék,Automata,8.0,,
+22005131,15890000.0,,BMW,3-AS SOROZAT 320,2024.67,6200.0,Benzin,135.0,184.0,Újszerű,480.0,Sedan,5.0,Fehér,1998.0,Hátsó kerék,Automata,8.0,tiptronic,
+22110188,15990000.0,,MERCEDES-BENZ,EQE,2024.08,61300.0,Elektromos,180.0,245.0,Kitűnő,430.0,Sedan,5.0,Ezüst (metál),,Hátsó kerék,Fokozatmentes automata,,,
+22077764,15990000.0,,MERCEDES-BENZ,C-OSZTÁLY C 220,2023.92,72089.0,Dízel,147.0,200.0,Kitűnő,455.0,Sedan,5.0,Ezüst (metál),1993.0,Összkerék,Automata,9.0,tiptronic,
+21905068,15990000.0,,BMW,4-ES SOROZAT 420,2022.5,45000.0,Dízel,140.0,190.0,Újszerű,470.0,Ferdehátú,5.0,Szürke (metál),1995.0,Összkerék,Automata,8.0,tiptronic,
+21454702,15990000.0,,MERCEDES-BENZ,B-OSZTÁLY B 250,2022.42,7500.0,Benzin,165.0,224.0,Kitűnő,435.0,Egyterű,5.0,Fehér,1991.0,Első kerék,Automata,7.0,,
+21251728,15990000.0,,BMW,X SOROZAT X2,2023.75,31449.0,Benzin,131.0,178.0,Megkímélt,470.0,Városi terepjáró (crossover),5.0,Fekete (metál),1998.0,Összkerék,Automata,8.0,tiptronic,6.6
+21125423,15990000.0,,VOLVO,EX30,2024.08,20000.0,Elektromos,200.0,272.0,Normál,318.0,Kombi,5.0,,,Hátsó kerék,Fokozatmentes automata,,,
+20000137,15990000.0,,MERCEDES-AMG,A-OSZTÁLY,2021.42,23587.0,,225.0,306.0,Normál,,Ferdehátú,5.0,Fehér,,,,,,
+18702017,15990000.0,,MERCEDES-BENZ,A-OSZTÁLY A 35 AMG,2021.42,23587.0,Benzin,225.0,306.0,Újszerű,,Ferdehátú,5.0,Fehér,1991.0,,Automata,7.0,,
+20990637,15999000.0,,FORD,KUGA,2024.42,2500.0,Hibrid (Benzin),112.0,152.0,Újszerű,405.0,Városi terepjáró (crossover),5.0,,2488.0,Első kerék,Fokozatmentes automata,,,1.2
+22102555,16290000.0,,VOLVO,XC60,2023.33,79799.0,Dízel,145.0,197.0,Kitűnő,483.0,Városi terepjáró (crossover),5.0,Világosszürke (metál),1969.0,Összkerék,Automata,8.0,tiptronic,5.6
+22059114,16390000.0,,MERCEDES-BENZ,GLA-OSZTÁLY GLA 200,2024.58,10766.0,Benzin,120.0,163.0,Normál,435.0,Városi terepjáró (crossover),5.0,Kék,1332.0,Első kerék,Automata,7.0,,6.0
+21907009,16490000.0,,MERCEDES-BENZ,CLA-OSZTÁLY CLA 220,2023.33,36730.0,Dízel,140.0,190.0,Kitűnő,460.0,Coupe,5.0,Fehér (metál),1950.0,Első kerék,Automata,8.0,,
+21615047,16490000.0,,VOLVO,C40,2024.17,23057.0,Elektromos,185.0,252.0,Normál,413.0,Kombi,5.0,Fehér (metál),,Hátsó kerék,Fokozatmentes automata,,,
+21488804,16490000.0,,BMW,X SOROZAT X3,2020.75,96144.0,Dízel,240.0,326.0,Megkímélt,550.0,Városi terepjáró (crossover),5.0,Kék (metál),2993.0,Összkerék,Automata,8.0,tiptronic,6.4
+22050718,16499900.0,,BMW,Z SOROZAT Z4,2019.67,44552.0,Benzin,250.0,340.0,Normál,281.0,Cabrio,2.0,(metál),2998.0,Hátsó kerék,Automata,8.0,tiptronic,7.3
+22102492,16790000.0,,VOLVO,XC60,2023.33,53921.0,Dízel,145.0,197.0,Kitűnő,483.0,Városi terepjáró (crossover),5.0,Sötétszürke (metál),1969.0,Összkerék,Automata,8.0,tiptronic,5.6
+21714939,16990000.0,,VOLVO,V90,2023.42,62831.0,Dízel,145.0,197.0,Megkímélt,560.0,Kombi,5.0,,1969.0,Első kerék,Automata,8.0,tiptronic,5.2
+21706875,16990000.0,,BMW,3-AS SOROZAT 320,2023.58,24010.0,Dízel,140.0,190.0,Megkímélt,500.0,Kombi,5.0,Kék (metál),1995.0,Hátsó kerék,Automata,8.0,tiptronic,
+21296696,16990000.0,,VOLVO,S90,2023.17,32171.0,Benzin,184.0,250.0,Normál,461.0,Sedan,5.0,Fehér,1969.0,Első kerék,Automata,8.0,tiptronic,6.6
+20936555,16990000.0,,BMW,2-ES SOROZAT M235I,2023.67,35181.0,Benzin,225.0,306.0,Megkímélt,430.0,Coupe,5.0,Fekete (metál),1998.0,Összkerék,Automata,8.0,tiptronic,
+19894521,17190000.0,,BMW,5-ÖS SOROZAT 530,2021.83,19000.0,Hibrid (Benzin),135.0,184.0,Kitűnő,410.0,Sedan,5.0,,1998.0,Hátsó kerék,Automata,8.0,tiptronic,
+21985505,17290000.0,,MERCEDES-BENZ,GLA-OSZTÁLY GLA 200,2023.92,33040.0,Dízel,110.0,150.0,Kitűnő,435.0,Városi terepjáró (crossover),5.0,Fekete,1950.0,Első kerék,Automata,8.0,,4.8
+21768961,17390000.0,,VOLVO,V60,2024.08,27502.0,Dízel,145.0,197.0,Normál,519.0,Kombi,5.0,Ezüst (metál),1969.0,Első kerék,Automata,8.0,tiptronic,4.9
+22059342,17490000.0,,BMW,I SOROZAT I4,2022.42,28000.0,Elektromos,250.0,340.0,Kitűnő,470.0,Coupe,5.0,,,Hátsó kerék,Fokozatmentes automata,,,
+21454785,17490000.0,,MERCEDES-BENZ,GLB-OSZTÁLY GLB 250,2022.0,23000.0,Benzin,165.0,224.0,Kitűnő,570.0,Kombi,7.0,Fehér,1991.0,Összkerék,Automata,8.0,,7.4
+21302271,17490000.0,,BMW,2-ES SOROZAT 225,2024.0,8157.0,Hibrid (Benzin),100.0,136.0,Újszerű,406.0,Egyterű,5.0,Szürke (metál),1499.0,Összkerék,Automata,7.0,,
+21965036,17890000.0,,KIA,SORENTO,2023.83,74309.0,Dízel,142.0,193.0,Normál,705.0,Városi terepjáró (crossover),5.0,Kék (metál),2151.0,Összkerék,Automata,,,
+22139966,17900000.0,,AUDI,A5 A5 CABRIO,2021.58,9472.0,Benzin,110.0,150.0,Normál,370.0,Cabrio,5.0,Kék (metál),1984.0,Első kerék,Automata,,,6.3
+21932574,17900000.0,,MERCEDES-BENZ,GLA-OSZTÁLY GLA 200,2024.17,23984.0,Dízel,110.0,150.0,Kitűnő,435.0,Városi terepjáró (crossover),5.0,Fekete,1950.0,Összkerék,Automata,8.0,,5.2
+22125398,17990000.0,,MERCEDES-BENZ,GLC-OSZTÁLY GLC 220,2022.92,66340.0,Dízel,143.0,194.0,Kitűnő,500.0,Városi terepjáró (crossover),5.0,Fehér,1950.0,Összkerék,Automata,9.0,tiptronic,
+22117982,17990000.0,,BMW,3-AS SOROZAT 320,2024.42,10940.0,Benzin,135.0,184.0,Megkímélt,480.0,Sedan,5.0,Kék (metál),1998.0,Összkerék,Automata,8.0,tiptronic,
+22115474,17990000.0,,BMW,3-AS SOROZAT 330,2023.83,15850.0,Hibrid (Benzin),135.0,184.0,Újszerű,410.0,Kombi,5.0,Fekete,1998.0,Összkerék,Automata,8.0,tiptronic,
+22105010,17990000.0,,BMW,4-ES SOROZAT 420,2024.42,25500.0,Dízel,140.0,190.0,Kitűnő,440.0,Coupe,4.0,Bordó (metál),1995.0,Összkerék,Automata,8.0,tiptronic,4.6
+22009128,17990000.0,,VOLVO,XC90,2021.67,82912.0,Dízel,173.0,235.0,Újszerű,310.0,Városi terepjáró (crossover),7.0,Sötétkék (metál),1969.0,Összkerék,Automata,8.0,tiptronic,
+21757365,17990000.0,,BMW,7-ES SOROZAT 745,2019.75,90665.0,Hibrid (Benzin),210.0,286.0,Megkímélt,420.0,Sedan,5.0,Szürke (metál),2998.0,Összkerék,Automata,8.0,tiptronic,
+21363832,17990000.0,,BMW,3-AS SOROZAT 330,2023.75,14883.0,Hibrid (Benzin),135.0,184.0,Újszerű,375.0,Sedan,5.0,Fekete (metál),1998.0,Hátsó kerék,Automata,8.0,tiptronic,
+21110301,17990000.0,,BMW,3-AS SOROZAT 330,2023.5,14476.0,Hibrid,135.0,184.0,Újszerű,375.0,Sedan,5.0,Fekete (metál),1998.0,Összkerék,Automata,8.0,tiptronic,2.0
+21063855,17990000.0,,VOLVO,XC60,2023.42,28076.0,Dízel,145.0,197.0,Megkímélt,483.0,Városi terepjáró (crossover),5.0,Kék,1969.0,Összkerék,Automata,8.0,tiptronic,5.6
+20912621,17990000.0,,VOLVO,V60,2023.08,33780.0,Hibrid (Benzin),186.0,253.0,Megkímélt,519.0,Kombi,5.0,Bézs,1969.0,Összkerék,Automata,8.0,tiptronic,
+20827664,17990000.0,,MERCEDES-BENZ,EQB,2024.08,10500.0,Elektromos,168.0,228.0,Kitűnő,495.0,Kombi,7.0,Sötétszürke (metál),,Összkerék,Fokozatmentes automata,,,
+22055735,17999000.0,,BMW,3-AS SOROZAT 330,2024.58,33000.0,Hibrid (Benzin),135.0,184.0,Kitűnő,375.0,Sedan,5.0,Világosszürke (metál),1998.0,Összkerék,Automata,8.0,tiptronic,
+22025906,17999000.0,,BMW,4-ES SOROZAT 420,2024.42,26500.0,Dízel,140.0,190.0,Kitűnő,470.0,Coupe,5.0,Kék (metál),1995.0,Összkerék,Automata,8.0,tiptronic,
+22144636,18490000.0,,VOLVO,XC90,2021.25,76181.0,Dízel,173.0,235.0,Normál,310.0,Városi terepjáró (crossover),7.0,Fehér (metál),1969.0,Összkerék,Automata,8.0,tiptronic,
+21405046,18888000.0,,MERCEDES-BENZ,C-OSZTÁLY C 200,2024.17,47434.0,Dízel,120.0,163.0,Kitűnő,490.0,Kombi,5.0,Fekete (metál),1993.0,Hátsó kerék,Automata,9.0,tiptronic,
+22154105,18990000.0,,BMW,X SOROZAT X3,2024.42,22196.0,Benzin,135.0,184.0,Újszerű,550.0,Városi terepjáró (crossover),5.0,Fekete,1998.0,Összkerék,Automata,8.0,tiptronic,
+22102711,18990000.0,,VOLVO,XC90,2022.42,84804.0,Dízel,173.0,235.0,Kitűnő,310.0,Városi terepjáró (crossover),7.0,Szürke,1969.0,Összkerék,Automata,8.0,tiptronic,
+22080624,18990000.0,,MERCEDES-BENZ,GLA-OSZTÁLY GLA 250,2024.58,16000.0,Hibrid (Benzin),120.0,163.0,Normál,385.0,Városi terepjáró (crossover),5.0,Ezüst (metál),1332.0,Első kerék,Automata,8.0,,
+21407560,18990000.0,,BMW,3-AS SOROZAT 330,2023.83,32541.0,Dízel,210.0,286.0,Újszerű,500.0,Kombi,5.0,Kék (metál),2993.0,Hátsó kerék,Automata,8.0,tiptronic,
+21138039,18990000.0,,BMW,3-AS SOROZAT 330,2023.58,23380.0,Hibrid (Benzin),135.0,184.0,Megkímélt,410.0,Kombi,5.0,Piros,1998.0,Összkerék,Automata,8.0,tiptronic,
+21108152,18990000.0,,BMW,3-AS SOROZAT 330,2023.58,9797.0,Hibrid (Benzin),135.0,184.0,Megkímélt,410.0,Kombi,5.0,Piros (metál),1998.0,Összkerék,Automata,8.0,tiptronic,
+22125390,19490000.0,,MERCEDES-BENZ,GLB-OSZTÁLY GLB 200,2024.42,38077.0,Dízel,110.0,150.0,Kitűnő,570.0,Kombi,5.0,Szürke (metál),1950.0,Összkerék,Automata,8.0,,5.5
+22115484,19490000.0,,BMW,3-AS SOROZAT 330,2024.0,20600.0,Hibrid,135.0,184.0,Kitűnő,410.0,Kombi,5.0,Világosszürke (metál),1998.0,Összkerék,Automata,8.0,tiptronic,
+22033981,19490000.0,,MERCEDES-BENZ,EQC,2024.0,22940.0,Elektromos,300.0,408.0,Kitűnő,500.0,Kombi,5.0,,,Összkerék,Fokozatmentes automata,,,
+21525618,19490000.0,,MERCEDES-BENZ,B-OSZTÁLY B 250 E,2023.17,9900.0,Hibrid (Benzin),120.0,163.0,Kitűnő,405.0,Egyterű,5.0,Ezüst (metál),1332.0,Első kerék,Automata,8.0,,
+20064431,19499000.0,,MERCEDES-BENZ,C-OSZTÁLY C 200,2023.42,13.0,Benzin,135.0,184.0,Kitűnő,360.0,Coupe,4.0,Fehér,1497.0,Hátsó kerék,Automata,9.0,tiptronic,6.5
+21359436,19590000.0,,MERCEDES-BENZ,VITO,2023.92,5300.0,Dízel,120.0,163.0,Normál,990.0,Egyterű,9.0,Sötétszürke,1950.0,Hátsó kerék,Automata,9.0,tiptronic,5.8
+22126041,19690000.0,,MERCEDES-BENZ,GLE-OSZTÁLY GLE 450,2020.42,117293.0,Benzin,270.0,367.0,Kitűnő,690.0,Városi terepjáró (crossover),7.0,Ezüst (metál),2999.0,Összkerék,Automata,9.0,tiptronic,9.4
+21914577,19799000.0,,BMW,3-AS SOROZAT 320,2024.67,6200.0,Dízel,140.0,190.0,Újszerű,500.0,Kombi,5.0,Szürke (metál),1995.0,Összkerék,Automata,8.0,tiptronic,
+21964989,19799999.0,,MERCEDES-BENZ,V-OSZTÁLY,2024.08,45900.0,Dízel,140.0,190.0,Normál,610.0,Kisbusz,7.0,Zöld,1950.0,Hátsó kerék,Automata,9.0,tiptronic,
+22115530,19990000.0,,BMW,3-AS SOROZAT 330,2024.33,15000.0,Hibrid (Benzin),135.0,184.0,Kitűnő,375.0,Sedan,5.0,Fehér,1998.0,Összkerék,Automata,8.0,tiptronic,
+22115520,19990000.0,,BMW,3-AS SOROZAT 330,2024.75,15000.0,,135.0,184.0,Újszerű,375.0,Sedan,5.0,Fehér,1998.0,Összkerék,Automata,8.0,tiptronic,
+22102154,19990000.0,,MERCEDES-BENZ,EQA,2023.83,24900.0,Elektromos,215.0,292.0,Normál,340.0,Városi terepjáró (crossover),5.0,,,Összkerék,Fokozatmentes automata,,,
+22013874,19990000.0,,MERCEDES-BENZ,CLS-OSZTÁLY,2021.33,50000.0,Dízel,143.0,194.0,Kitűnő,520.0,Coupe,5.0,Sötétkék,1950.0,Hátsó kerék,Automata,9.0,tiptronic,5.1
+21812137,19990000.0,,BMW,3-AS SOROZAT 330,2024.25,21000.0,Hibrid,135.0,184.0,Kitűnő,375.0,Sedan,5.0,Fehér,1998.0,Összkerék,Automata,8.0,tiptronic,
+21773267,19990000.0,,MERCEDES-BENZ,V-OSZTÁLY,2020.58,137178.0,Dízel,176.0,239.0,Kitűnő,1030.0,Kisbusz,7.0,Szürke (metál),1950.0,Összkerék,Automata,9.0,tiptronic,
+21672782,19990000.0,,MERCEDES-BENZ,A-OSZTÁLY A 35 AMG,2023.75,29920.0,Benzin,225.0,306.0,Kitűnő,,Ferdehátú,5.0,Fehér (metál),1991.0,Összkerék,Automata,8.0,,
+21625586,19990000.0,,BMW,5-ÖS SOROZAT 530,2023.08,25500.0,Dízel,210.0,286.0,Kitűnő,560.0,Kombi,5.0,,2993.0,Hátsó kerék,Automata,8.0,tiptronic,4.9
+20926353,19990000.0,,MERCEDES-AMG,A-OSZTÁLY,2023.75,29920.0,Benzin,225.0,306.0,Kitűnő,,Ferdehátú,5.0,Fehér (metál),1991.0,Összkerék,Automata,8.0,,
+22140626,19999000.0,,BMW,8-AS SOROZAT 840,2021.75,75681.0,Benzin,245.0,333.0,Újszerű,420.0,Coupe,4.0,Sötétkék (metál),2998.0,Összkerék,Automata,8.0,tiptronic,7.8
+21962374,19999000.0,,BMW,3-AS SOROZAT 330,2024.33,24000.0,Hibrid (Benzin),135.0,184.0,Kitűnő,410.0,Kombi,5.0,Sötétkék (metál),1998.0,Összkerék,Automata,8.0,tiptronic,
+21617786,,,MERCEDES-BENZ,V-OSZTÁLY,2023.42,71025.0,Dízel,120.0,163.0,Kitűnő,1030.0,Kisbusz,8.0,Szürke,1950.0,Hátsó kerék,Automata,9.0,tiptronic,
+20761918,19999999.0,,MERCEDES-BENZ,EQB,2022.17,36500.0,Elektromos,215.0,292.0,Kitűnő,495.0,Kombi,7.0,Kék,,Összkerék,Fokozatmentes automata,,,
+21517937,20299000.0,,BMW,4-ES SOROZAT 440,2023.5,51100.0,Dízel,250.0,340.0,Kitűnő,385.0,Coupe,4.0,Fekete (metál),2993.0,Összkerék,Automata,8.0,tiptronic,
+21473854,20307300.0,,MERCEDES-BENZ,C-OSZTÁLY C 300,2023.75,26130.0,Benzin,190.0,258.0,Kitűnő,490.0,Kombi,5.0,Fekete,1999.0,Összkerék,Automata,9.0,tiptronic,6.7
+21789131,20490000.0,,VOLVO,XC60,2024.0,23558.0,Hibrid (Benzin),186.0,253.0,Megkímélt,468.0,Városi terepjáró (crossover),5.0,,1969.0,Összkerék,Automata,8.0,tiptronic,
+21516276,,,MERCEDES-BENZ,V-OSZTÁLY,2023.5,73380.0,Dízel,120.0,163.0,Kitűnő,1030.0,Kisbusz,6.0,Szürke,1950.0,Hátsó kerék,Automata,9.0,tiptronic,
+22080509,20590000.0,,VOLVO,XC60,2024.75,21878.0,Hibrid (Benzin),186.0,253.0,Normál,468.0,Városi terepjáró (crossover),5.0,Pezsgő (metál),1969.0,Összkerék,Automata,8.0,tiptronic,
+22092482,20690000.0,,MERCEDES-BENZ,EQE,2022.42,75666.0,Elektromos,215.0,292.0,Normál,430.0,Sedan,5.0,Fekete (metál),,Hátsó kerék,Automata,,,
+21913859,20990000.0,,MERCEDES-BENZ,E-OSZTÁLY E 450,2022.0,53832.0,Benzin,270.0,367.0,Normál,540.0,Sedan,5.0,Fehér,2999.0,Összkerék,Automata,9.0,tiptronic,8.3
+21848861,20990000.0,,MERCEDES-BENZ,E-OSZTÁLY E 200,2024.0,15000.0,Benzin,150.0,204.0,Normál,540.0,Sedan,5.0,Ezüst,1999.0,Összkerék,Automata,9.0,tiptronic,
+21619596,20990000.0,,BMW,3-AS SOROZAT 330,2023.17,29000.0,Dízel,210.0,286.0,Kitűnő,500.0,Kombi,5.0,Sötétkék (metál),2993.0,Összkerék,Automata,8.0,tiptronic,
+21587552,20990000.0,,MERCEDES-BENZ,EQB,2024.42,9979.0,Elektromos,140.0,190.0,Kitűnő,495.0,Kombi,5.0,Fekete,,Első kerék,Fokozatmentes automata,,,
+20963163,20990000.0,,BMW,5-ÖS SOROZAT 530,2023.58,32548.0,Hibrid (Benzin),135.0,184.0,Megkímélt,430.0,Kombi,5.0,Kék (metál),1998.0,Összkerék,Automata,8.0,tiptronic,2.4
+20728149,20990000.0,,MERCEDES-BENZ,GLC-OSZTÁLY GLC 300,2023.25,75000.0,Hibrid (Dízel),145.0,197.0,Újszerű,390.0,Coupe,5.0,Fehér (metál),1993.0,Összkerék,Automata,9.0,tiptronic,
+19471010,20990000.0,,MERCEDES-BENZ,GLC-OSZTÁLY GLC 300,2023.17,78448.0,Hibrid (Dízel),143.0,194.0,Kitűnő,350.0,Coupe,5.0,Fekete,1950.0,Összkerék,Automata,9.0,tiptronic,2.0
+22072725,20999000.0,,BMW,IX,2023.08,11000.0,Elektromos,240.0,326.0,Kitűnő,500.0,Kombi,5.0,Sötétszürke (metál),,Összkerék,Fokozatmentes automata,,,
+22013858,21399000.0,,MERCEDES-BENZ,A-OSZTÁLY A 250,2025.25,6000.0,Hibrid (Benzin),120.0,163.0,Normál,310.0,Ferdehátú,5.0,Szürke (metál),1332.0,Első kerék,Automata,8.0,,
+21468101,21490000.0,,VOLVO,XC90,2023.25,55408.0,Dízel,173.0,235.0,Megkímélt,705.0,Városi terepjáró (crossover),5.0,,1969.0,Összkerék,Automata,8.0,tiptronic,5.7
+21317957,21490000.0,,VOLVO,XC90,2023.33,56765.0,Dízel,184.0,250.0,Megkímélt,302.0,Városi terepjáró (crossover),7.0,,1969.0,Összkerék,Automata,8.0,tiptronic,7.7
+21817527,21499000.0,,BMW,I SOROZAT I4,2023.67,23000.0,Elektromos,250.0,340.0,Kitűnő,470.0,Coupe,5.0,Óceánkék,,Hátsó kerék,Fokozatmentes automata,,,
+21815426,21690000.0,,MERCEDES-BENZ,E-OSZTÁLY E 400,2023.33,59505.0,Dízel,243.0,330.0,Kitűnő,640.0,Kombi,5.0,Fekete,2925.0,Összkerék,Automata,9.0,tiptronic,6.6
+21815170,21690000.0,,MERCEDES-BENZ,E-OSZTÁLY E 400,2023.58,69563.0,Dízel,243.0,330.0,Kitűnő,640.0,Kombi,5.0,Fekete,2925.0,Összkerék,Automata,9.0,tiptronic,6.7
+21772416,21749500.0,,OPEL,ZAFIRA LIFE,2023.33,6257.0,Elektromos,100.0,136.0,Normál,4900.0,Kombi,7.0,Szürke (metál),,Első kerék,Fokozatmentes automata,,,
+22059447,21990000.0,,BMW,IX3,2024.33,25200.0,Elektromos,210.0,286.0,Kitűnő,510.0,Városi terepjáró (crossover),5.0,Fekete,,Hátsó kerék,Fokozatmentes automata,,,
+22031535,21990000.0,,BMW,IX2,2024.33,20578.0,Elektromos,150.0,204.0,Újszerű,525.0,Kombi,5.0,Szürke (metál),,Első kerék,Fokozatmentes automata,,,
+21848657,21990000.0,,MERCEDES-BENZ,EQE,2024.0,15000.0,Elektromos,180.0,245.0,Normál,430.0,Sedan,5.0,,,Hátsó kerék,Fokozatmentes automata,,,
+21317234,21990000.0,,BMW,3-AS SOROZAT 330,2023.75,37145.0,Dízel,210.0,286.0,Megkímélt,500.0,Kombi,5.0,Kék (metál),2993.0,Összkerék,Automata,8.0,tiptronic,
+20100111,21990000.0,,BMW,I SOROZAT I4,2023.75,15241.0,Elektromos,250.0,340.0,Újszerű,470.0,Coupe,5.0,Kék (metál),,Hátsó kerék,Fokozatmentes automata,,,
+21811077,21999000.0,,MERCEDES-BENZ,EQA,2023.92,8000.0,Elektromos,140.0,190.0,Kitűnő,340.0,Kombi,5.0,Fehér,,Első kerék,Fokozatmentes automata,,,
+21740657,22199000.0,,VOLVO,XC60,2024.75,13356.0,Hibrid (Benzin),186.0,253.0,Újszerű,468.0,Városi terepjáró (crossover),5.0,Világosszürke (metál),1969.0,Összkerék,Automata,8.0,tiptronic,
+21181030,22408715.0,,MERCEDES-BENZ,GLC-OSZTÁLY GLC 300,2023.67,29129.0,Hibrid,150.0,204.0,Normál,470.0,Városi terepjáró (crossover),5.0,,1999.0,Összkerék,Automata,9.0,tiptronic,
+21672835,22590000.0,,MERCEDES-BENZ,CLA-OSZTÁLY,2022.92,20273.0,Benzin,225.0,306.0,Újszerű,505.0,Kombi,5.0,Fehér,1991.0,Összkerék,Automata,7.0,,
+21622877,22590000.0,,MERCEDES-BENZ,E-OSZTÁLY E 200,2024.5,15386.0,Benzin,150.0,204.0,Kitűnő,540.0,Sedan,5.0,Szürke (metál),1999.0,Összkerék,Automata,9.0,tiptronic,
+19846330,22590000.0,,MERCEDES-AMG,CLA,2022.92,20273.0,Benzin,225.0,306.0,Újszerű,505.0,Kombi,5.0,Fehér,1991.0,Összkerék,Automata,8.0,,7.5
+22104313,22990000.0,,BMW,4-ES SOROZAT 430,2024.42,34560.0,Benzin,180.0,245.0,Újszerű,385.0,Cabrio,4.0,Kék (metál),1998.0,Összkerék,Automata,8.0,tiptronic,
+22103375,22990000.0,,MERCEDES-BENZ,E-OSZTÁLY E 450,2021.25,62647.0,Benzin,270.0,367.0,Normál,285.0,Cabrio,4.0,Fehér,2999.0,Összkerék,Automata,9.0,tiptronic,8.7
+22097468,22990000.0,,MERCEDES-AMG,CLA,2022.42,26533.0,Benzin,310.0,421.0,Kitűnő,460.0,Coupe,5.0,Fehér,1991.0,Összkerék,Automata,8.0,,8.3
+22077419,22990000.0,,MERCEDES-BENZ,E-OSZTÁLY E 220,2024.33,13957.0,Dízel,145.0,197.0,Normál,540.0,Sedan,5.0,Sötétszürke (metál),1993.0,Összkerék,Automata,9.0,tiptronic,
+21969901,22990000.0,,BMW,4-ES SOROZAT 430,2024.33,22300.0,Benzin,180.0,245.0,Kitűnő,385.0,Cabrio,4.0,Világosszürke (metál),1998.0,Összkerék,Automata,8.0,tiptronic,
+21875506,22990000.0,,MERCEDES-BENZ,V-OSZTÁLY,2023.25,48500.0,Dízel,140.0,190.0,Újszerű,610.0,Kisbusz,8.0,,1950.0,Hátsó kerék,Automata,9.0,tiptronic,
+21520076,22990000.0,,MERCEDES-BENZ,GLC-OSZTÁLY GLC 220,2023.67,14039.0,Dízel,145.0,197.0,Kitűnő,600.0,Városi terepjáró (crossover),5.0,Fehér,1993.0,Összkerék,Automata,9.0,tiptronic,
+21432407,22990000.0,,BMW,5-ÖS SOROZAT 550,2021.58,26296.0,Benzin,390.0,530.0,Normál,530.0,Sedan,5.0,Fekete (metál),4395.0,Összkerék,Automata,8.0,tiptronic,
+22142023,22999000.0,,BMW,IX,2022.83,47500.0,Elektromos,240.0,326.0,Megkímélt,500.0,Kombi,5.0,Bézs (metál),,Összkerék,Fokozatmentes automata,,,
+22012441,22999000.0,,BMW,I SOROZAT I4,2024.33,15000.0,Elektromos,250.0,340.0,Újszerű,470.0,Coupe,5.0,Sötétkék (metál),,Hátsó kerék,Fokozatmentes automata,,,
+21886990,22999000.0,,KIA,EV6,2023.42,26000.0,Elektromos,430.0,585.0,Kitűnő,480.0,Kombi,5.0,Fehér (metál),,Összkerék,Fokozatmentes automata,,,
+21863334,,,MERCEDES-AMG,A-OSZTÁLY A 45,2023.25,12515.0,Benzin,310.0,421.0,Kitűnő,370.0,Ferdehátú,5.0,Fekete,1991.0,Összkerék,,,,
+22125980,23490000.0,,MERCEDES-BENZ,CLS-OSZTÁLY,2022.42,44833.0,Dízel,195.0,265.0,Kitűnő,520.0,Coupe,5.0,Fekete (metál),1993.0,Összkerék,Automata,9.0,tiptronic,5.8
+22133747,23490000.0,,MERCEDES-BENZ,GLE-OSZTÁLY GLE 350,2021.92,111000.0,Hibrid (Dízel),143.0,194.0,Sérülésmentes,510.0,Városi terepjáró (crossover),5.0,Fehér,1950.0,Összkerék,Automata,9.0,tiptronic,1.3
+21224080,23490000.0,,BMW,3-AS SOROZAT 330,2024.75,12000.0,Hibrid (Benzin),135.0,184.0,Kitűnő,375.0,Sedan,5.0,,1998.0,Hátsó kerék,Automata,8.0,tiptronic,
+21992070,23970000.0,,MERCEDES-BENZ,S-OSZTÁLY S 500,2018.25,58908.0,Benzin,320.0,435.0,Normál,510.0,Sedan,5.0,Fekete,2999.0,Hátsó kerék,Automata,9.0,tiptronic,7.3
+22085020,23990000.0,,MERCEDES-BENZ,GLE-OSZTÁLY GLE 350,2021.42,43449.0,Hibrid (Dízel),143.0,194.0,Normál,510.0,Városi terepjáró (crossover),5.0,,1950.0,Összkerék,Automata,9.0,tiptronic,1.3
+21944667,23990000.0,,BMW,X SOROZAT X2,2024.0,14257.0,Benzin,221.0,300.0,Normál,560.0,Városi terepjáró (crossover),5.0,Bordó (metál),1998.0,Összkerék,Automata,,,
+21750256,23990000.0,,VOLVO,XC60,2024.17,31334.0,Hibrid (Benzin),186.0,253.0,Megkímélt,468.0,Városi terepjáró (crossover),5.0,Fekete,1969.0,Összkerék,Automata,8.0,tiptronic,
+21194009,23990000.0,,VOLVO,XC90,2024.08,26191.0,Dízel,173.0,235.0,Megkímélt,302.0,Városi terepjáró (crossover),7.0,Fehér,1969.0,Összkerék,Automata,8.0,tiptronic,5.7
+21866222,23999000.0,,MERCEDES-AMG,GLA,2022.58,13870.0,Benzin,310.0,421.0,Kitűnő,,Kombi,5.0,Sötétszürke,1991.0,Állandó összkerék,Automata,8.0,,
+22144989,24444000.0,,BMW,3-AS SOROZAT 340,2024.83,33000.0,Dízel,250.0,340.0,Kitűnő,500.0,Kombi,5.0,Sötétszürke (metál),2993.0,Összkerék,Automata,8.0,tiptronic,
+18800986,24578559.0,,MERCEDES-BENZ,EQE,2022.33,16058.0,Elektromos,215.0,292.0,Újszerű,430.0,Sedan,5.0,Fehér,,Hátsó kerék,Fokozatmentes automata,,,
+22110999,24690000.0,,MERCEDES-BENZ,C-OSZTÁLY C 300,2024.42,8500.0,Hibrid (Benzin),150.0,204.0,Normál,360.0,Sedan,5.0,Sötétszürke,1999.0,Hátsó kerék,Automata,9.0,tiptronic,
+22114020,24990000.0,,BMW,5-ÖS SOROZAT 520,2024.33,17500.0,Dízel,145.0,197.0,Kitűnő,570.0,Kombi,5.0,Kék (metál),1995.0,Összkerék,Automata,8.0,tiptronic,
+22110468,24990000.0,,MERCEDES-BENZ,C-OSZTÁLY C 300,2024.25,13000.0,Hibrid (Benzin),150.0,204.0,Normál,360.0,Sedan,5.0,Fehér,1999.0,Hátsó kerék,Automata,9.0,tiptronic,
+21987255,24990000.0,,MERCEDES-BENZ,GLC-OSZTÁLY,2024.75,7500.0,Dízel,145.0,197.0,Normál,545.0,Városi terepjáró (crossover),5.0,Ezüst (metál),1993.0,Összkerék,Automata,9.0,tiptronic,
+21970548,24990000.0,,MERCEDES-BENZ,GLS-OSZTÁLY GLS 400,2019.75,71700.0,Dízel,243.0,330.0,Sérülésmentes,,Városi terepjáró (crossover),7.0,,2925.0,Összkerék,Automata,9.0,tiptronic,
+21454829,24990000.0,,MERCEDES-BENZ,E-OSZTÁLY E 300,2023.17,38000.0,Dízel,195.0,265.0,Kitűnő,540.0,Sedan,5.0,Fekete (metál),1992.0,Összkerék,Automata,9.0,tiptronic,5.6
+21389899,24990000.0,,BMW,5-ÖS SOROZAT 520,2024.42,20173.0,Dízel,145.0,197.0,Újszerű,570.0,Kombi,5.0,Kék (metál),1995.0,Összkerék,Automata,8.0,tiptronic,
+22017285,24999000.0,,BMW,X SOROZAT X4,2024.83,32000.0,Dízel,210.0,286.0,Kitűnő,525.0,Városi terepjáró (crossover),5.0,Sötétkék (metál),2993.0,Összkerék,Automata,8.0,tiptronic,
+22063826,25000000.0,,MERCEDES-AMG,C-OSZTÁLY C 63,2016.75,89713.0,Benzin,375.0,510.0,Normál,400.0,Cabrio,4.0,Kék (metál),3982.0,Hátsó kerék,Automata,,,8.9
+22063830,25090000.0,,MERCEDES-BENZ,C-OSZTÁLY C 63 AMG,2016.75,89713.0,Benzin,375.0,510.0,Megkímélt,,Cabrio,4.0,Kék (metál),3982.0,Hátsó kerék,Automata,,,
+22101957,25250000.0,,MERCEDES-BENZ,S-OSZTÁLY S 63 AMG,2014.08,169387.0,Benzin,430.0,585.0,Megkímélt,400.0,Coupe,4.0,Fehér (metál),5461.0,Hátsó kerék,Automata,,,10.1
+22101972,25300000.0,,MERCEDES-AMG,S-OSZTÁLY S 63,2014.08,169387.0,Benzin,430.0,585.0,Megkímélt,,Coupe,4.0,Fehér (metál),5461.0,Összkerék,Automata,,,
+22130761,25490000.0,,BMW,5-ÖS SOROZAT 530,2024.83,33000.0,,140.0,190.0,Kitűnő,570.0,Kombi,5.0,Szürke (metál),1998.0,Összkerék,Automata,8.0,tiptronic,
+21960572,25780000.0,,AUDI,Q8,2023.42,65964.0,Benzin,250.0,340.0,Normál,505.0,Városi terepjáró (crossover),5.0,Sötétszürke,2995.0,Összkerék,Automata,8.0,tiptronic,2.8
+19904985,25912665.0,,MERCEDES-BENZ,EQE EQE 43 AMG,2022.5,6500.0,Elektromos,350.0,476.0,Kitűnő,,Sedan,5.0,Ezüst (metál),,Összkerék,Fokozatmentes automata,,,
+22109189,25990000.0,,MERCEDES-AMG,GLE GLE 53,2021.5,122381.0,Benzin,320.0,435.0,Kitűnő,,Városi terepjáró (crossover),5.0,Fekete (metál),2999.0,Állandó összkerék,Automata,9.0,,
+21864025,25990000.0,,MERCEDES-BENZ,CLE-OSZTÁLY CLE 300,2024.58,11522.0,Hibrid,150.0,204.0,Újszerű,290.0,Coupe,4.0,Fehér,1999.0,Hátsó kerék,Automata,9.0,tiptronic,
+21490385,25990000.0,,BMW,3-AS SOROZAT 330,2024.17,25460.0,Dízel,210.0,286.0,Megkímélt,500.0,Kombi,5.0,Szürke (metál),2993.0,Hátsó kerék,Automata,8.0,tiptronic,
+21892233,25999000.0,,BMW,5-ÖS SOROZAT 520,2024.67,15000.0,Dízel,145.0,197.0,Újszerű,570.0,Kombi,5.0,Világosszürke (metál),1995.0,Összkerék,Automata,8.0,tiptronic,
+22113730,26900000.0,,MERCEDES-BENZ,EQE,2024.5,15355.0,Elektromos,215.0,292.0,Kitűnő,430.0,Sedan,5.0,Fekete (metál),,Összkerék,Fokozatmentes automata,,,
+22137684,26990000.0,,MERCEDES-BENZ,GLE-OSZTÁLY GLE 400,2023.0,49473.0,Dízel,243.0,330.0,Kitűnő,655.0,Városi terepjáró (crossover),5.0,Ezüst (metál),2925.0,Összkerék,Automata,9.0,tiptronic,7.4
+22086796,26990000.0,,MERCEDES-BENZ,E-OSZTÁLY E 220,2025.25,15000.0,Dízel,145.0,197.0,Kitűnő,540.0,Sedan,5.0,Fehér,1993.0,Összkerék,Automata,9.0,tiptronic,
+22055312,26990000.0,,MERCEDES-AMG,E-OSZTÁLY E 53,2023.08,76274.0,Benzin,320.0,435.0,Kitűnő,540.0,Sedan,5.0,Fekete (metál),2999.0,Összkerék,Automata,9.0,tiptronic,8.8
+20425762,27422420.0,,MERCEDES-BENZ,EQE EQE 43 AMG,2023.25,17114.0,Elektromos,350.0,476.0,Kitűnő,,Sedan,5.0,Fehér (metál),,Összkerék,Fokozatmentes automata,,,
+21377711,27554115.0,,MERCEDES-BENZ,EQE EQE 53 AMG,2022.67,56894.0,Elektromos,460.0,625.0,Kitűnő,,Sedan,5.0,Fekete (metál),,Összkerék,Fokozatmentes automata,,,
+22113887,27690000.0,,MERCEDES-BENZ,GLC-OSZTÁLY GLC 220,2025.08,13600.0,Dízel,145.0,197.0,Normál,600.0,Városi terepjáró (crossover),5.0,Sötétszürke,1993.0,Összkerék,Automata,9.0,tiptronic,
+21773228,27970000.0,,MERCEDES-BENZ,GLS-OSZTÁLY GLS 400,2020.08,87409.0,Dízel,243.0,330.0,Normál,355.0,Városi terepjáró (crossover),7.0,Fehér,2925.0,Összkerék,Automata,9.0,tiptronic,
+22137417,27990000.0,,MERCEDES-BENZ,GLE-OSZTÁLY GLE 400,2021.5,56606.0,Dízel,243.0,330.0,Normál,655.0,Coupe,5.0,Ezüst (metál),2925.0,Összkerék,Automata,9.0,tiptronic,7.4
+22066169,27990000.0,,MERCEDES-BENZ,C-OSZTÁLY C 300,2025.42,1500.0,Hibrid (Dízel),145.0,197.0,Kitűnő,315.0,Sedan,5.0,Sötétszürke (metál),1993.0,Összkerék,Automata,9.0,tiptronic,
+22027127,27990000.0,,MERCEDES-BENZ,EQE,2025.25,6000.0,Elektromos,180.0,245.0,Kitűnő,430.0,Sedan,5.0,Ezüst (metál),,Hátsó kerék,Fokozatmentes automata,,,
+22078896,28390000.0,,VOLVO,XC90,2024.58,27086.0,Hibrid (Benzin),228.0,310.0,Normál,262.0,Városi terepjáró (crossover),7.0,Fekete (metál),1969.0,Összkerék,Automata,8.0,tiptronic,
+22026800,28390000.0,,VOLVO,XC90,2024.58,26646.0,,228.0,310.0,Normál,262.0,Városi terepjáró (crossover),7.0,,1969.0,Összkerék,Automata,8.0,tiptronic,
+22014007,28390000.0,,VOLVO,XC90,2024.58,22576.0,Hibrid (Benzin),228.0,310.0,Normál,262.0,Városi terepjáró (crossover),7.0,,1969.0,Összkerék,Automata,8.0,tiptronic,
+21614928,28490000.0,,VOLVO,XC90,2023.83,28990.0,Hibrid (Benzin),228.0,310.0,Megkímélt,262.0,Városi terepjáró (crossover),7.0,Fehér,1969.0,Összkerék,Automata,8.0,tiptronic,
+20839961,28500000.0,,BMW,I SOROZAT I4,2024.0,11000.0,Elektromos,400.0,544.0,Kitűnő,470.0,Coupe,5.0,,,Összkerék,Fokozatmentes automata,,,
+21852914,28590000.0,,BMW,5-ÖS SOROZAT 530,2024.58,22758.0,Hibrid (Benzin),140.0,190.0,Megkímélt,570.0,Kombi,5.0,Fehér,1998.0,Összkerék,Automata,8.0,tiptronic,
+21367309,28699000.0,,BMW,X SOROZAT X4,2024.83,20000.0,Dízel,210.0,286.0,Újszerű,525.0,Városi terepjáró (crossover),5.0,Szürke (metál),2993.0,Összkerék,Automata,8.0,tiptronic,
+21893828,28890000.0,,MERCEDES-AMG,GLC,2022.25,16000.0,Benzin,375.0,510.0,Újszerű,,Városi terepjáró (crossover),5.0,Fekete,3982.0,Összkerék,Automata,,,
+22127263,28990000.0,,MERCEDES-AMG,GLE GLE 53,2022.25,43083.0,Benzin,320.0,435.0,Kitűnő,,Terepjáró,5.0,Fekete,2999.0,Összkerék,Automata,9.0,,
+22059402,28990000.0,,MERCEDES-AMG,GT,2021.33,26967.0,Benzin,270.0,367.0,Kitűnő,456.0,Coupe,4.0,Fehér,2999.0,Összkerék,Automata,9.0,tiptronic,9.4
+21535708,28990000.0,,BMW,I SOROZAT I5,2024.58,14420.0,Elektromos,250.0,340.0,Újszerű,570.0,Kombi,5.0,Zöld (metál),,Hátsó kerék,Fokozatmentes automata,,,
+21907190,29490000.0,,MERCEDES-BENZ,GLC-OSZTÁLY GLC 220,2025.0,20000.0,Dízel,145.0,197.0,Normál,545.0,Városi terepjáró (crossover),5.0,Szürke,1993.0,Összkerék,Automata,9.0,tiptronic,
+21552629,29611659.0,,MERCEDES-BENZ,EQS,2022.33,12750.0,Elektromos,245.0,333.0,Újszerű,610.0,Ferdehátú,5.0,Fehér (metál),,Hátsó kerék,Fokozatmentes automata,,,
+21955856,29900000.0,,BMW,X SOROZAT X5,2020.58,36850.0,Benzin,460.0,625.0,Újszerű,650.0,Városi terepjáró (crossover),5.0,Világosszürke (metál),4395.0,Összkerék,Automata,8.0,tiptronic,13.0
+22081525,29990000.0,,VOLVO,XC90,2024.83,25000.0,,228.0,310.0,Újszerű,262.0,Városi terepjáró (crossover),7.0,Fekete,1969.0,Összkerék,Automata,8.0,tiptronic,
+21477360,29990000.0,,BMW,I SOROZAT I5,2024.25,5100.0,Elektromos,250.0,340.0,Kitűnő,490.0,Sedan,5.0,Homok (metál),,Hátsó kerék,Fokozatmentes automata,,,
+20748238,29990000.0,,MERCEDES-BENZ,E-OSZTÁLY E 300,2023.83,2379.0,Hibrid (Benzin),150.0,204.0,Kitűnő,370.0,Sedan,5.0,Ezüst (metál),1999.0,Összkerék,Automata,9.0,tiptronic,
+22146177,30490000.0,,MERCEDES-BENZ,E-OSZTÁLY E 300,2024.5,1618.0,Hibrid (Dízel),145.0,197.0,Kitűnő,370.0,Sedan,5.0,Világoszöld (metál),1993.0,Összkerék,Automata,9.0,tiptronic,
+21856608,30590000.0,,MERCEDES-BENZ,GLC-OSZTÁLY GLC 300,2024.83,7350.0,Hibrid (Dízel),145.0,197.0,Kitűnő,390.0,Városi terepjáró (crossover),5.0,Fehér,1993.0,Összkerék,Automata,9.0,tiptronic,
+21670638,30843188.0,,MERCEDES-BENZ,CLS-OSZTÁLY,2022.67,17800.0,Benzin,320.0,435.0,Kitűnő,490.0,Coupe,5.0,Fehér,2999.0,Összkerék,Automata,9.0,tiptronic,
+21452422,30843188.0,,MERCEDES-AMG,CLS,2022.67,17800.0,Benzin,320.0,435.0,Kitűnő,490.0,Coupe,5.0,Fehér,2999.0,Összkerék,Automata,9.0,tiptronic,9.0
+21177737,31590000.0,,MERCEDES-BENZ,E-OSZTÁLY E 300,2024.08,21669.0,Hibrid (Benzin),150.0,204.0,Kitűnő,370.0,Sedan,5.0,Sötétszürke (metál),1999.0,Hátsó kerék,Automata,9.0,tiptronic,
+22122288,31990000.0,,BMW,5-ÖS SOROZAT 550,2024.33,25000.0,,230.0,313.0,Újszerű,520.0,Sedan,5.0,Sötétszürke (metál),2998.0,Összkerék,Automata,8.0,tiptronic,
+22025836,31999000.0,,BMW,IX,2024.33,18500.0,Elektromos,385.0,523.0,Újszerű,500.0,Kombi,5.0,Fekete (metál),,Összkerék,Fokozatmentes automata,,,
+21967180,,,MERCEDES-BENZ,GLE-OSZTÁLY GLE 400,2023.42,24986.0,Dízel,243.0,330.0,Megkímélt,690.0,Városi terepjáró (crossover),7.0,Szürke,2925.0,Összkerék,Automata,9.0,tiptronic,
+22036826,32990000.0,,MERCEDES-BENZ,S-OSZTÁLY S 580,2022.42,89873.0,Hibrid (Benzin),270.0,367.0,Normál,350.0,Sedan,5.0,Sötétszürke,2999.0,Összkerék,Automata,9.0,tiptronic,
+21544341,33273688.0,,MERCEDES-BENZ,EQS SUV,2023.75,45200.0,Elektromos,265.0,360.0,Normál,645.0,Kombi,5.0,,,Összkerék,Fokozatmentes automata,,,
+21888570,33490000.0,,BMW,I SOROZAT I5,2023.75,12115.0,Elektromos,442.0,601.0,Megkímélt,490.0,Sedan,5.0,Fekete (metál),,Összkerék,Fokozatmentes automata,,,
+20833866,33490000.0,,BMW,I SOROZAT I5,2023.75,12058.0,Elektromos,442.0,601.0,Kitűnő,490.0,Sedan,5.0,,,Összkerék,Fokozatmentes automata,,,
+21672799,33890000.0,,MERCEDES-BENZ,GLS-OSZTÁLY GLS 400,2022.67,76206.0,Dízel,243.0,330.0,Normál,355.0,Városi terepjáró (crossover),7.0,Fekete (metál),2925.0,Összkerék,Automata,9.0,tiptronic,
+22075008,33990000.0,,MERCEDES-AMG,GT,2022.42,68500.0,Benzin,320.0,435.0,Újszerű,456.0,Coupe,4.0,Kék,2999.0,Összkerék,Automata,9.0,tiptronic,9.4
+22157937,34490000.0,,BMW,IX,2023.58,24800.0,Elektromos,397.0,540.0,Újszerű,500.0,Kombi,5.0,Fehér (metál),,Összkerék,Fokozatmentes automata,,,
+22149200,34990000.0,,MERCEDES-BENZ,GLS-OSZTÁLY GLS 580,2020.83,55853.0,Benzin,360.0,489.0,Kitűnő,355.0,Terepjáró,7.0,Fekete,3982.0,Összkerék,Automata,9.0,tiptronic,10.0
+22004964,34990000.0,,MERCEDES-BENZ,GLE-OSZTÁLY GLE 350,2024.5,21000.0,Hibrid (Dízel),145.0,197.0,Újszerű,510.0,Coupe,5.0,Fekete,1993.0,Összkerék,Automata,9.0,tiptronic,
+21806902,34990000.0,,MERCEDES-AMG,GT,2022.5,52055.0,Benzin,320.0,435.0,Kitűnő,456.0,Coupe,5.0,Szürke,2999.0,Összkerék,Automata,9.0,tiptronic,9.4
+22126428,34999000.0,,MERCEDES-BENZ,GLE-OSZTÁLY GLE 450,2023.75,23001.0,Dízel,270.0,367.0,Normál,630.0,Coupe,5.0,,2989.0,Összkerék,Automata,9.0,tiptronic,
+22082371,34999000.0,,MERCEDES-BENZ,GLE-OSZTÁLY GLE 450,2023.75,23001.0,Dízel,270.0,367.0,Normál,630.0,Városi terepjáró (crossover),5.0,,2989.0,Összkerék,Automata,9.0,tiptronic,
+21880051,35490000.0,,MERCEDES-BENZ,S-OSZTÁLY S 400,2022.33,45373.0,Dízel,243.0,330.0,Kitűnő,540.0,Sedan,5.0,Fekete,2925.0,Összkerék,Automata,9.0,tiptronic,7.0
+21644739,36490000.0,,MERCEDES-BENZ,GLE-OSZTÁLY GLE 350,2024.25,31303.0,Hibrid (Dízel),143.0,194.0,Normál,490.0,Coupe,5.0,Ezüst,1950.0,Összkerék,Automata,9.0,tiptronic,1.3
+21100862,36490000.0,,BMW,IX,2024.08,24040.0,Elektromos,385.0,523.0,Kitűnő,500.0,Kombi,5.0,Fekete (metál),,Összkerék,Fokozatmentes automata,,,
+21743542,36990000.0,,MERCEDES-BENZ,E-OSZTÁLY E 450,2024.58,49691.0,Dízel,270.0,367.0,Kitűnő,540.0,Sedan,5.0,Barna,2989.0,Összkerék,Automata,9.0,tiptronic,
+21539409,36999000.0,,BMW,X SOROZAT X7,2023.42,24000.0,Dízel,259.0,352.0,Újszerű,750.0,Városi terepjáró (crossover),7.0,Fekete,2993.0,Összkerék,Automata,8.0,tiptronic,
+21944618,37700000.0,,BMW,X SOROZAT X5,2024.83,8500.0,Dízel,210.0,286.0,Kitűnő,650.0,Városi terepjáró (crossover),5.0,Szürke,2993.0,Összkerék,Automata,8.0,tiptronic,6.2
+22144904,38790000.0,,MERCEDES-BENZ,E-OSZTÁLY E 220,2024.0,15000.0,Dízel,145.0,197.0,Kitűnő,615.0,Kombi,5.0,Barna (metál),1993.0,Összkerék,Automata,9.0,tiptronic,
+21958825,38990000.0,,MERCEDES-BENZ,GLS-OSZTÁLY GLS 400,2023.0,31527.0,Dízel,243.0,330.0,Kitűnő,355.0,Városi terepjáró (crossover),7.0,Ezüst (metál),2925.0,Összkerék,Automata,9.0,tiptronic,
+21197721,38990000.0,,MERCEDES-AMG,C-OSZTÁLY C 63,2024.75,3000.0,Hibrid (Benzin),350.0,476.0,Kitűnő,280.0,Sedan,5.0,Fekete,1991.0,Összkerék,Automata,9.0,tiptronic,
+19563303,39199000.0,,MERCEDES-BENZ,EQS,2023.33,32800.0,Elektromos,330.0,449.0,Kitűnő,610.0,Ferdehátú,5.0,Fekete (metál),,Összkerék,Fokozatmentes automata,,,
+21892360,39490000.0,,MERCEDES-BENZ,S-OSZTÁLY S 580,2022.08,82650.0,Benzin,370.0,503.0,Kitűnő,535.0,Sedan,5.0,Fekete (metál),3982.0,Összkerék,Automata,9.0,tiptronic,10.6
+21681779,39490000.0,,MERCEDES-BENZ,EQE SUV,2023.08,1500.0,Elektromos,300.0,408.0,Kitűnő,520.0,Városi terepjáró (crossover),5.0,Ezüst (metál),,Összkerék,Fokozatmentes automata,,,
+22006178,39900000.0,,BMW,X SOROZAT X5,2023.83,27000.0,Dízel,250.0,340.0,Újszerű,650.0,Városi terepjáró (crossover),7.0,Sötétzöld (metál),2993.0,Összkerék,Automata,8.0,tiptronic,6.4
+21944597,39950000.0,,PORSCHE,911,2007.25,83149.0,Benzin,353.0,480.0,Normál,105.0,Coupe,4.0,Fekete (metál),3600.0,Összkerék,Manuális,6.0,,12.8
+22016585,39990000.0,,BMW,X SOROZAT X7,2024.75,26975.0,Dízel,259.0,352.0,Újszerű,750.0,Városi terepjáró (crossover),7.0,Fekete (metál),2993.0,Összkerék,Automata,8.0,tiptronic,
+21592496,39990000.0,,MERCEDES-BENZ,GLS-OSZTÁLY GLS 400,2023.92,23700.0,Dízel,243.0,330.0,Újszerű,355.0,Városi terepjáró (crossover),7.0,Fehér,2925.0,Összkerék,Automata,9.0,tiptronic,
+21869482,39999000.0,,BMW,I SOROZAT I7,2022.83,16800.0,Elektromos,400.0,544.0,Újszerű,500.0,Sedan,5.0,Sötétkék (metál),,Összkerék,Fokozatmentes automata,,,
+21919756,40590000.0,,MERCEDES-BENZ,GLE-OSZTÁLY GLE 450,2025.0,15000.0,Dízel,270.0,367.0,Normál,655.0,Városi terepjáró (crossover),5.0,Szürke,2989.0,Összkerék,Automata,9.0,tiptronic,
+22118215,40990000.0,,BMW,X SOROZAT X5,2024.5,35288.0,Benzin,390.0,530.0,Megkímélt,650.0,Városi terepjáró (crossover),5.0,Fekete (metál),4395.0,Összkerék,Automata,8.0,tiptronic,
+22016189,41499000.0,,BMW,X SOROZAT X5,2024.33,30538.0,Hibrid (Benzin),230.0,313.0,Újszerű,500.0,Városi terepjáró (crossover),5.0,Szürke,2998.0,Összkerék,Automata,8.0,tiptronic,
+19825141,41990000.0,,MERCEDES-BENZ,EQS,2022.25,6928.0,Elektromos,385.0,523.0,Újszerű,610.0,Ferdehátú,5.0,Ezüst (metál),,Összkerék,Fokozatmentes automata,,,
+21458182,43888000.0,,MERCEDES-BENZ,S-OSZTÁLY S 400,2023.83,26603.0,Dízel,243.0,330.0,Kitűnő,540.0,Sedan,5.0,Fekete (metál),2925.0,Összkerék,Automata,9.0,tiptronic,6.9
+22146970,43990000.0,,BMW,X SOROZAT X7,2023.42,49050.0,Benzin,390.0,530.0,Kitűnő,750.0,Városi terepjáró (crossover),7.0,Fekete (metál),4395.0,Összkerék,Automata,8.0,tiptronic,
+22136259,44663334.0,,MERCEDES-BENZ,G-OSZTÁLY G 500,2022.5,106495.0,Benzin,310.0,421.0,Megkímélt,480.0,Terepjáró,5.0,Ezüst (metál),3982.0,Összkerék,Automata,9.0,tiptronic,11.1
+21081393,47777000.0,,MERCEDES-BENZ,G-OSZTÁLY G 500,2022.42,46979.0,Benzin,310.0,421.0,Kitűnő,480.0,Terepjáró,5.0,Piros (metál),3982.0,Összkerék,Automata,9.0,tiptronic,11.1
+21829388,47990000.0,,BMW,I SOROZAT I7,2024.58,4001.0,Elektromos,400.0,544.0,Kitűnő,500.0,Sedan,5.0,Szürke,,Összkerék,Fokozatmentes automata,,,
+20100372,48000000.0,,BMW,XM,2023.67,13931.0,Hibrid (Benzin),480.0,653.0,Újszerű,527.0,Városi terepjáró (crossover),5.0,Fehér (metál),4395.0,Összkerék,Automata,8.0,tiptronic,
+21885480,51990000.0,,MERCEDES-BENZ,GLS-OSZTÁLY GLS 450,2024.5,36771.0,Dízel,270.0,367.0,Kitűnő,355.0,Városi terepjáró (crossover),7.0,Szürke (metál),2989.0,Összkerék,Automata,9.0,tiptronic,
+22077277,53990000.0,,MERCEDES-AMG,GT GT R,2021.5,18281.0,Benzin,430.0,585.0,Kitűnő,,Sport,2.0,Sötétszürke (metál),3982.0,Hátsó kerék,Automata,7.0,,
+21227575,54500000.0,,BMW,7-ES SOROZAT 760,2024.08,8500.0,Hibrid,280.0,381.0,Kitűnő,525.0,Sedan,5.0,Sötétszürke (metál),2998.0,Összkerék,Automata,8.0,tiptronic,
+22097751,55000000.0,,BMW,XM,2023.5,22000.0,Hibrid (Benzin),360.0,489.0,Kitűnő,527.0,Kombi,5.0,Fekete (metál),4395.0,Összkerék,Automata,8.0,tiptronic,
+21642851,57685891.0,,MERCEDES-BENZ,SL-OSZTÁLY SL 63 AMG,2022.75,18267.0,Benzin,430.0,585.0,Kitűnő,213.0,Cabrio,4.0,Fekete (metál),3982.0,Összkerék,Automata,9.0,,
+20055943,57685891.0,,MERCEDES-AMG,SL,2022.75,18267.0,Benzin,430.0,585.0,Újszerű,213.0,Cabrio,4.0,Fekete (metál),3982.0,Összkerék,Automata,9.0,tiptronic,
+21634971,58900000.0,,MERCEDES-BENZ,G-OSZTÁLY G 63 AMG,2020.5,35908.0,Benzin,430.0,585.0,Kitűnő,454.0,Terepjáró,5.0,Szürke,3982.0,Összkerék,Automata,9.0,tiptronic,13.1
+22052370,64970000.0,,MERCEDES-BENZ,S-OSZTÁLY,2023.5,17358.0,Benzin,620.0,843.0,Kitűnő,335.0,Coupe,4.0,Sötétszürke,3982.0,Összkerék,Automata,9.0,,
+22052357,64970000.0,,MERCEDES-AMG,GT,2023.5,17358.0,Benzin,620.0,843.0,Kitűnő,335.0,Coupe,4.0,Sötétszürke,3982.0,Összkerék,Automata,9.0,tiptronic,
+21098876,68000000.0,,MERCEDES-AMG,SL,2023.17,29885.0,Benzin,430.0,585.0,Kitűnő,213.0,Cabrio,2.0,Fekete,3982.0,Összkerék,Automata,9.0,tiptronic,
+21036733,69990000.0,,MERCEDES-MAYBACH,GLS-OSZTÁLY GLS 600,2024.0,11565.0,Benzin,410.0,557.0,Kitűnő,,Terepjáró,4.0,Fekete (metál),3982.0,Összkerék,Automata,9.0,,
+21055504,71897192.0,,MERCEDES-AMG,S-OSZTÁLY S 63,2023.5,17258.0,Hibrid (Benzin),450.0,612.0,Normál,305.0,Sedan,5.0,Fekete (metál),3982.0,Összkerék,Automata,9.0,tiptronic,
+21123793,76099928.0,,MERCEDES-AMG,G-OSZTÁLY G 63,2023.42,11000.0,Benzin,430.0,585.0,Normál,,Terepjáró,5.0,Fehér,3982.0,Összkerék,Automata,9.0,,
+22033724,84990000.0,,MERCEDES-MAYBACH,S-OSZTÁLY S680,2024.0,29541.0,Benzin,450.0,612.0,Kitűnő,,Sedan,4.0,Szürke,5980.0,Összkerék,Automata,9.0,,
+21927908,92990000.0,,MERCEDES-MAYBACH,S-OSZTÁLY S680,2024.17,23000.0,Benzin,450.0,612.0,Újszerű,,Sedan,4.0,Fekete,5980.0,,Automata,,,
+21862056,99100000.0,,MERCEDES-AMG,G-OSZTÁLY G 63,2023.58,40.0,Benzin,430.0,585.0,Kitűnő,,Terepjáró,5.0,Kék,3982.0,Összkerék,Automata,9.0,,
+21503998,101500000.0,,MERCEDES-AMG,G-OSZTÁLY G 63,2023.58,1238.0,Benzin,430.0,585.0,Újszerű,,Terepjáró,5.0,,3982.0,,Automata,9.0,,
+21918502,102200000.0,,MERCEDES-AMG,G-OSZTÁLY G 63,2023.58,1330.0,Benzin,430.0,585.0,Kitűnő,,Terepjáró,5.0,Fehér,3982.0,Összkerék,Automata,9.0,,
+21862617,102800000.0,,MERCEDES-AMG,G-OSZTÁLY G 63,2023.75,60.0,Benzin,430.0,585.0,Kitűnő,,Terepjáró,5.0,Piros,3982.0,Összkerék,Automata,9.0,,
+21944622,109250000.0,,LAMBORGHINI,URUS,2021.42,19515.0,Benzin,478.0,650.0,Újszerű,,Városi terepjáró (crossover),5.0,Fehér,3996.0,Összkerék,Automata,,,
+21680864,71897192.0,,MERCEDES-BENZ,S-OSZTÁLY S 63 AMG,2023.5,17258.0,Hibrid (Benzin),450.0,612.0,Kitűnő,305.0,Sedan,5.0,Fekete (metál),3982.0,Összkerék,Automata,9.0,tiptronic,
+22053573,,,SUZUKI,VITARA,2025.42,1800.0,Hibrid (Benzin),95.0,129.0,Újszerű,362.0,Városi terepjáró (crossover),5.0,,1373.0,Első kerék,Manuális,6.0,,
+21969782,,,SUZUKI,VITARA,2025.42,23.0,Hibrid (Benzin),95.0,129.0,Újszerű,362.0,Városi terepjáró (crossover),5.0,,1373.0,Első kerék,Manuális,6.0,,
+22151205,140000.0,,SUZUKI,BALENO,1997.75,225000.0,Benzin,72.0,98.0,Megkímélt,375.0,Kombi,5.0,,1590.0,Első kerék,Manuális,5.0,,7.4
+22143830,250000.0,,RENAULT,MEGANE,1999.42,267200.0,Benzin,70.0,95.0,Kitűnő,348.0,Ferdehátú,5.0,Bordó,1390.0,Első kerék,Manuális,5.0,,6.6
+22142721,250000.0,,CITROEN,XSARA,2003.33,391705.0,Benzin,80.0,109.0,Normál,408.0,Ferdehátú,5.0,Szürke,1587.0,Első kerék,Manuális,5.0,,6.9
+22144170,265000.0,,FORD,FOCUS,2001.67,295635.0,Benzin,55.0,75.0,Megkímélt,520.0,Kombi,5.0,,1388.0,Első kerék,Manuális,5.0,,6.6
+22033470,285000.0,,SUZUKI,SWIFT,1999.58,118000.0,Benzin,50.0,68.0,Sérülésmentes,226.0,Ferdehátú,5.0,Kék,1298.0,Első kerék,Manuális,5.0,,5.9
+22146953,290000.0,,SUZUKI,LIANA,2002.0,289771.0,Benzin,78.0,106.0,Normál,279.0,Ferdehátú,5.0,,1586.0,Első kerék,Manuális,5.0,,6.9
+22137997,290000.0,,OPEL,ASTRA ASTRA F,2000.0,247379.0,Benzin,44.0,60.0,Normál,500.0,Sedan,5.0,Bézs (metál),1389.0,Első kerék,Manuális,5.0,,7.7
+22146979,300000.0,,FORD,FOCUS,1999.33,314480.0,Benzin,55.0,75.0,Normál,350.0,Ferdehátú,5.0,Világoszöld,1388.0,Első kerék,Manuális,5.0,,6.4
+22103655,319000.0,,SUZUKI,ALTO,2004.67,178000.0,Benzin,46.0,63.0,Megkímélt,177.0,Ferdehátú,4.0,,1061.0,Első kerék,Manuális,5.0,,4.9
+22139470,335000.0,,RENAULT,LAGUNA,2002.33,340000.0,Dízel,88.0,120.0,Normál,430.0,Ferdehátú,5.0,,1870.0,Első kerék,Manuális,6.0,,5.5
+22100597,340000.0,,OPEL,ASTRA ASTRA G,2002.92,428336.0,Benzin,55.0,75.0,Normál,370.0,Ferdehátú,5.0,Fekete,1199.0,Első kerék,Manuális,5.0,,6.2
+22118292,349000.0,,SUZUKI,SWIFT,2001.33,136000.0,Benzin,39.0,53.0,Normál,226.0,Ferdehátú,5.0,,993.0,Első kerék,Manuális,5.0,,5.5
+21969544,,,ROVER,200 214,1994.75,140000.0,Benzin,76.0,103.0,Normál,,Ferdehátú,4.0,,1396.0,,Manuális,5.0,,
+22151546,350000.0,,SUZUKI,SWIFT,1999.67,117000.0,Benzin,39.0,53.0,Kitűnő,226.0,Ferdehátú,5.0,,993.0,Első kerék,Manuális,5.0,,5.5
+21874953,375000.0,,VOLKSWAGEN,POLO POLO IV,2002.75,177000.0,Benzin,47.0,64.0,Normál,270.0,Ferdehátú,5.0,,1198.0,Első kerék,Manuális,5.0,,5.9
+22140470,379000.0,,OPEL,ASTRA ASTRA G,2002.83,360000.0,Benzin,55.0,75.0,Kitűnő,370.0,Ferdehátú,5.0,Zöld (metál),1199.0,Első kerék,Manuális,5.0,,6.2
+22151506,379999.0,,SUZUKI,SWIFT,2003.08,78000.0,Benzin,62.0,84.0,Kitűnő,226.0,Ferdehátú,5.0,,1298.0,Első kerék,Manuális,5.0,,5.6
+22139382,389000.0,,CHEVROLET,SPARK,2007.42,89122.0,Benzin,38.0,52.0,Megkímélt,170.0,Ferdehátú,5.0,,796.0,Első kerék,Manuális,5.0,,5.2
+22100195,389999.0,,DAEWOO,NUBIRA,2003.25,224795.0,Benzin,80.0,109.0,Normál,405.0,Sedan,5.0,Fekete,1598.0,Első kerék,Manuális,5.0,,7.1
+22124174,390000.0,,FIAT,STILO,2004.75,265800.0,Benzin,69.0,94.0,Normál,370.0,Ferdehátú,5.0,Világosszürke,1370.0,Első kerék,Manuális,6.0,,6.7
+21645906,399000.0,,HYUNDAI,ACCENT,2007.42,385000.0,Benzin,70.0,95.0,Normál,,Sedan,5.0,,1399.0,Első kerék,Manuális,5.0,,
+22104102,400000.0,,FORD,FOCUS,2005.67,457000.0,Benzin,74.0,101.0,Normál,385.0,Kombi,5.0,,1596.0,Első kerék,Manuális,5.0,,6.7
+22119365,410000.0,,SUZUKI,SWIFT,1996.83,90000.0,Benzin,39.0,53.0,Kitűnő,226.0,Ferdehátú,5.0,Zöld,993.0,Első kerék,Manuális,5.0,,5.5
+22140888,415000.0,,FIAT,STILO,2002.92,184500.0,Benzin,76.0,103.0,Normál,,Ferdehátú,5.0,Citromsárga,1596.0,,Manuális,5.0,,7.3
+22151441,,,FORD,MONDEO,2005.75,438000.0,Benzin,92.0,125.0,Sérülésmentes,500.0,Sedan,5.0,Bézs,1798.0,Első kerék,Manuális,5.0,,7.7
+21963736,420000.0,,RENAULT,TWINGO,2003.58,142000.0,Benzin,55.0,75.0,Megkímélt,168.0,Ferdehátú,4.0,,1149.0,Első kerék,Manuális,5.0,,5.9
+22094727,425000.0,,MAZDA,PREMACY,2003.58,350000.0,Dízel,74.0,101.0,Normál,420.0,Egyterű,5.0,,1998.0,Első kerék,Manuális,5.0,,6.4
+22108527,449990.0,,TOYOTA,COROLLA,2004.0,399000.0,Benzin,71.0,97.0,Sérülésmentes,437.0,Sedan,5.0,Világoskék (metál),1398.0,Első kerék,Manuális,5.0,,6.7
+22150395,450000.0,,RENAULT,CLIO,2004.0,280000.0,Benzin,55.0,75.0,Normál,255.0,Ferdehátú,5.0,Ezüst (metál),1149.0,Első kerék,Manuális,5.0,,5.9
+22154028,460000.0,,OPEL,ASTRA ASTRA H,2006.33,445000.0,Benzin,77.0,105.0,Megkímélt,350.0,Kombi,5.0,Fehér,1598.0,Első kerék,Manuális,5.0,,6.6
+21881608,460000.0,,CHEVROLET,AVEO,2008.75,351000.0,Benzin,69.0,94.0,Normál,220.0,Ferdehátú,5.0,,1399.0,Első kerék,Manuális,5.0,,7.0
+22126012,465000.0,,FORD,FOCUS,2004.0,263445.0,Benzin,74.0,101.0,Normál,350.0,Ferdehátú,5.0,Ezüst,1596.0,Első kerék,Manuális,5.0,,6.8
+22118613,480000.0,,PEUGEOT,206,2003.17,95152.0,Benzin,44.0,60.0,Kitűnő,245.0,Ferdehátú,5.0,Ezüst (metál),1124.0,Első kerék,Manuális,5.0,,6.2
+22120973,490000.0,,DAEWOO,MATIZ,2004.42,85000.0,Benzin,38.0,52.0,Megkímélt,167.0,Ferdehátú,5.0,,796.0,Első kerék,Manuális,5.0,,6.1
+22143814,499999.0,,SUZUKI,WAGON R+,2003.83,239000.0,Benzin,56.0,76.0,Megkímélt,300.0,Ferdehátú,5.0,,1298.0,Első kerék,Manuális,5.0,,6.1
+22069354,499999.0,,RENAULT,MEGANE,2008.42,227000.0,Benzin,82.0,111.0,Normál,491.0,Kombi,5.0,Pezsgő (metál),1598.0,Első kerék,Manuális,5.0,,6.7
+22131655,500000.0,,FORD,MONDEO,2005.0,300000.0,Benzin,81.0,110.0,Megkímélt,500.0,Sedan,5.0,Kék,1798.0,Első kerék,Manuális,5.0,,7.6
+22143845,510000.0,,DAEWOO,KALOS,2003.92,200000.0,Benzin,53.0,72.0,Megkímélt,220.0,Ferdehátú,5.0,,1150.0,Első kerék,Manuális,5.0,,6.6
+22150125,525000.0,,VOLKSWAGEN,POLO POLO IV,2004.0,405000.0,Dízel,55.0,75.0,Normál,270.0,Ferdehátú,5.0,Ezüst,1422.0,Első kerék,Manuális,5.0,,4.5
+22144016,529999.0,,OPEL,CORSA CORSA C,2001.83,188000.0,Benzin,55.0,75.0,Megkímélt,260.0,Ferdehátú,5.0,,1199.0,Első kerék,Manuális,5.0,,6.3
+22153734,549000.0,,VOLKSWAGEN,POLO,2002.17,213000.0,Benzin,40.0,54.0,Normál,270.0,Ferdehátú,5.0,Ezüst (metál),1198.0,Első kerék,Manuális,5.0,,5.9
+22122017,549000.0,,BMW,3-AS SOROZAT 316,2002.0,242000.0,Benzin,85.0,116.0,Kitűnő,310.0,Ferdehátú,5.0,,1596.0,Hátsó kerék,Manuális,5.0,,7.9
+22144404,549000.0,,FORD,FOCUS,2005.5,332000.0,Benzin,74.0,101.0,Megkímélt,482.0,Kombi,5.0,Fehér,1596.0,Első kerék,Manuális,5.0,,6.7
+22144006,549999.0,,VOLKSWAGEN,GOLF GOLF IV,1999.08,330000.0,Benzin,55.0,75.0,Megkímélt,330.0,Ferdehátú,5.0,,1390.0,Első kerék,Manuális,5.0,,6.4
+22143993,549999.0,,FORD,FOCUS,2001.25,270000.0,Benzin,55.0,75.0,Megkímélt,520.0,Kombi,5.0,,1388.0,Első kerék,Manuális,5.0,,6.6
+22143981,549999.0,,FORD,FOCUS,2003.08,240000.0,Benzin,55.0,75.0,Megkímélt,490.0,Sedan,5.0,,1388.0,Első kerék,Manuális,5.0,,6.6
+22143964,549999.0,,OPEL,CORSA CORSA C,2002.92,260000.0,Benzin,55.0,75.0,Megkímélt,260.0,Ferdehátú,5.0,,1199.0,Első kerék,Manuális,5.0,,6.3
+22143935,549999.0,,PEUGEOT,206,2006.08,218000.0,Benzin,55.0,75.0,Megkímélt,313.0,Kombi,5.0,,1360.0,Első kerék,Manuális,5.0,,6.4
+22143831,549999.0,,VOLKSWAGEN,POLO POLO III,2001.75,320000.0,Benzin,44.0,60.0,Megkímélt,245.0,Ferdehátú,5.0,,1390.0,Első kerék,Manuális,5.0,,6.1
+22143826,549999.0,,CITROEN,C3,2003.25,156000.0,Benzin,44.0,60.0,Megkímélt,305.0,Ferdehátú,5.0,,1124.0,Első kerék,Manuális,5.0,,6.0
+22153318,550000.0,,OPEL,CORSA CORSA C,2002.25,178157.0,Benzin,66.0,90.0,Normál,260.0,Ferdehátú,5.0,Zöld,1389.0,Első kerék,Manuális,5.0,,7.2
+22153318,550000.0,,OPEL,CORSA CORSA C,2002.25,178157.0,Benzin,66.0,90.0,Normál,260.0,Ferdehátú,5.0,Zöld,1389.0,Első kerék,Manuális,5.0,,7.2
+22071686,550000.0,,OPEL,CORSA CORSA C,2006.0,280688.0,Benzin,56.0,76.0,Normál,,Ferdehátú,5.0,Fehér,1200.0,,,,,
+21932774,550000.0,,OPEL,ASTRA ASTRA G,2001.0,197000.0,Benzin,62.0,84.0,Megkímélt,370.0,Ferdehátú,5.0,,1598.0,Első kerék,Manuális,5.0,,7.1
+22140447,,,POLSKI FIAT,126,1987.0,9800.0,Benzin,18.0,24.0,Megkímélt,,Ferdehátú,4.0,Világosszürke,652.0,Hátsó kerék,Manuális,4.0,,
+22146449,590000.0,,OPEL,ASTRA ASTRA G,2003.42,210437.0,Benzin,66.0,90.0,Normál,370.0,Ferdehátú,5.0,Ezüst,1388.0,Első kerék,Manuális,5.0,,7.2
+22137618,595000.0,,OPEL,CORSA CORSA C,2004.58,181582.0,Dízel,51.0,69.0,Normál,260.0,Ferdehátú,5.0,Szürke (metál),1248.0,Első kerék,Manuális,5.0,,4.5
+22151107,598000.0,,OPEL,CORSA CORSA C,2006.25,156100.0,Dízel,51.0,69.0,Normál,260.0,Ferdehátú,5.0,Fehér,1248.0,Első kerék,Manuális,5.0,,4.5
+22127210,599000.0,,FORD,FOCUS,2002.0,250000.0,Benzin,74.0,101.0,Kitűnő,350.0,Ferdehátú,5.0,Ezüst (metál),1596.0,Első kerék,Manuális,5.0,,6.9
+22143829,599999.0,,OPEL,AGILA,2003.92,136000.0,Benzin,43.0,58.0,Megkímélt,248.0,Egyterű,5.0,,973.0,Első kerék,Manuális,5.0,,6.4
+22125537,599999.0,,VOLKSWAGEN,GOLF GOLF III,1992.58,162000.0,Benzin,66.0,90.0,Megkímélt,330.0,Ferdehátú,5.0,Zöld,1781.0,Első kerék,Manuális,5.0,,
+22149090,,,CHRYSLER,PT CRUISER,2005.0,260000.0,Benzin,85.0,116.0,Megkímélt,520.0,Kombi,5.0,Szürke,1598.0,Első kerék,Manuális,5.0,,7.7
+22141161,,,PEUGEOT,407,2006.0,410000.0,Dízel,80.0,109.0,Normál,448.0,Kombi,5.0,,1560.0,Első kerék,Manuális,5.0,,5.6
+21863600,,,RENAULT,MODUS,2005.0,176000.0,Benzin,55.0,75.0,Normál,198.0,Egyterű,5.0,,1149.0,Első kerék,Manuális,5.0,,6.0
+22152857,649000.0,,CITROEN,C5,2002.33,255200.0,Dízel,80.0,109.0,Normál,456.0,Ferdehátú,5.0,Sötétkék,1997.0,Első kerék,Manuális,5.0,,5.6
+22154636,650000.0,,SKODA,FABIA,2004.92,179693.0,Benzin,47.0,64.0,Kitűnő,248.0,Ferdehátú,5.0,,1198.0,Első kerék,Manuális,5.0,,6.0
+22154212,650000.0,,OPEL,VECTRA VECTRA C,2004.58,360500.0,Dízel,130.0,177.0,Normál,510.0,Kombi,5.0,Sötétzöld (metál),2959.0,Első kerék,Automata,5.0,tiptronic,7.7
+22140916,650000.0,,FORD,FIESTA,2006.33,248015.0,Dízel,50.0,68.0,Megkímélt,284.0,Ferdehátú,5.0,Ezüst,1399.0,Első kerék,Manuális,5.0,,4.3
+22131608,650000.0,,VOLKSWAGEN,GOLF GOLF IV,2003.67,329081.0,Benzin,77.0,105.0,Megkímélt,330.0,Kombi,5.0,Ezüst,1598.0,Első kerék,Manuális,5.0,,6.8
+22111858,650000.0,,PEUGEOT,206,2005.42,200345.0,Benzin,55.0,75.0,Normál,245.0,Ferdehátú,5.0,Zöld,1360.0,Első kerék,Manuális,5.0,,6.3
+21973849,650000.0,,CITROEN,C3,2004.92,96358.0,Benzin,44.0,60.0,Megkímélt,305.0,Ferdehátú,5.0,Piros,1124.0,Első kerék,Manuális,5.0,,6.0
+21628021,650000.0,,FORD,FOCUS,2006.58,247853.0,Benzin,59.0,80.0,Normál,526.0,Sedan,5.0,Piros,1388.0,Első kerék,Manuális,5.0,,6.6
+22113989,670000.0,,CITROEN,BERLINGO,2007.42,296000.0,Benzin,55.0,75.0,Megkímélt,,Egyterű,5.0,,1360.0,,Manuális,5.0,,7.1
+22109601,670000.0,,CITROEN,C2,2005.0,181000.0,Benzin,55.0,75.0,Megkímélt,166.0,Ferdehátú,4.0,,1360.0,Első kerék,Manuális,5.0,,6.1
+22146685,675000.0,,NISSAN,MICRA,2004.08,250000.0,Benzin,48.0,65.0,Megkímélt,251.0,Ferdehátú,5.0,,1240.0,Első kerék,Manuális,5.0,,5.9
+22092315,675000.0,,AUDI,A4,1995.0,246000.0,Benzin,74.0,101.0,Megkímélt,440.0,Sedan,5.0,Ezüst,1595.0,Első kerék,Manuális,5.0,,7.9
+22071548,677000.0,,SUZUKI,VITARA,1993.83,230501.0,Benzin,71.0,97.0,Normál,290.0,Városi terepjáró (crossover),5.0,Fekete,1589.0,Összkerék,Manuális,5.0,,8.4
+22138801,680000.0,,RENAULT,SCENIC,2004.58,220961.0,Benzin,83.0,113.0,Megkímélt,430.0,Egyterű,5.0,Világosszürke (metál),1598.0,Első kerék,Manuális,5.0,,7.2
+22155407,690000.0,,FIAT,BRAVO,2009.0,380000.0,Dízel,88.0,120.0,Újszerű,400.0,Ferdehátú,5.0,,1598.0,Első kerék,Manuális,6.0,,4.9
+22138701,690000.0,,FORD,FOCUS,2005.0,293200.0,Benzin,74.0,101.0,Normál,350.0,Ferdehátú,5.0,Bordó,1596.0,Első kerék,Manuális,5.0,,6.8
+22107142,690000.0,,PEUGEOT,1007,2005.58,192780.0,Dízel,50.0,68.0,Megkímélt,364.0,Ferdehátú,4.0,Szürke,1398.0,Első kerék,Manuális,5.0,,4.7
+22090922,690000.0,,KIA,CARENS,2004.0,172000.0,Dízel,83.0,113.0,Normál,422.0,Egyterű,5.0,Ezüst,1991.0,Első kerék,Manuális,5.0,,7.0
+22114481,699000.0,,VOLKSWAGEN,BORA,2002.0,299000.0,Benzin,77.0,105.0,Kitűnő,455.0,Sedan,5.0,Fekete (metál),1595.0,Első kerék,Manuális,5.0,,6.9
+22031831,699999.0,,OPEL,ASTRA ASTRA G,2002.0,178332.0,Benzin,108.0,147.0,Normál,460.0,Coupe,4.0,Bézs (metál),2198.0,Első kerék,Automata,4.0,,8.6
+22149992,750000.0,,FIAT,PUNTO,2000.42,106801.0,Benzin,59.0,80.0,Megkímélt,297.0,Ferdehátú,5.0,Aranysárga,1242.0,Első kerék,Manuális,5.0,,6.0
+22143336,750000.0,,MERCEDES-BENZ,A-OSZTÁLY A 170,2005.0,364000.0,Benzin,85.0,116.0,Normál,435.0,Ferdehátú,5.0,,1699.0,Első kerék,Manuális,5.0,,6.6
+21989273,750000.0,,HONDA,CIVIC,2004.42,248500.0,Hibrid,61.0,83.0,Normál,370.0,Sedan,5.0,,1339.0,Első kerék,Manuális,5.0,,6.4
+22130519,790000.0,,PEUGEOT,307,2005.92,364343.0,Benzin,103.0,140.0,Normál,341.0,Ferdehátú,5.0,Zöld (metál),1997.0,Első kerék,Manuális,5.0,,7.7
+22126225,790000.0,,HONDA,HR-V,2000.0,280000.0,Benzin,77.0,105.0,Megkímélt,285.0,Városi terepjáró (crossover),5.0,,1590.0,Összkerék,Manuális,5.0,,8.6
+22157869,795000.0,,MAZDA,323 323 F,2001.67,260042.0,Benzin,72.0,98.0,Normál,356.0,Ferdehátú,5.0,,1598.0,Első kerék,Manuális,5.0,,7.4
+22135714,798000.0,,FORD,FIESTA,2007.92,142478.0,Benzin,58.0,79.0,Normál,284.0,Ferdehátú,5.0,,1388.0,Első kerék,Manuális,5.0,,6.4
+22117636,799000.0,,OPEL,ZAFIRA ZAFIRA A,2002.0,270000.0,Benzin,74.0,101.0,Kitűnő,150.0,Egyterű,7.0,Ezüst (metál),1598.0,Első kerék,Manuális,5.0,,7.9
+22109941,799000.0,,RENAULT,LAGUNA,2004.42,298580.0,Benzin,120.0,163.0,Megkímélt,,Ferdehátú,5.0,Kék,1998.0,Első kerék,Manuális,6.0,,8.2
+22108265,799000.0,,RENAULT,MEGANE,2005.33,170000.0,Benzin,83.0,113.0,Normál,,Kombi,5.0,,1598.0,Első kerék,Manuális,5.0,,6.0
+22124203,800000.0,,PEUGEOT,407,2005.33,312000.0,Dízel,,,Megkímélt,,Sedan,5.0,Bézs,1980.0,Első kerék,Manuális,6.0,,8.3
+22022837,800000.0,,SMART,FORTWO FORTWO CABRIO,2003.0,151000.0,Benzin,45.0,61.0,Megkímélt,,Cabrio,2.0,,698.0,Hátsó kerék,Automata,5.0,,
+22157451,800000.0,,CITROEN,C3,2009.08,118000.0,Benzin,54.0,73.0,Normál,305.0,Ferdehátú,5.0,,1360.0,Első kerék,Manuális,5.0,,6.2
+22124003,820000.0,,MERCEDES-BENZ,A-OSZTÁLY A 170,2002.0,316000.0,Dízel,70.0,95.0,Normál,390.0,Ferdehátú,5.0,Zöld,1689.0,Első kerék,Automata,5.0,tiptronic,5.8
+22151275,830000.0,,MAZDA,3,2005.75,280000.0,Benzin,77.0,105.0,Kitűnő,300.0,Ferdehátú,5.0,Kék,1598.0,Első kerék,Manuális,5.0,,7.2
+22138867,839000.0,,TOYOTA,AVENSIS,2007.92,434000.0,Dízel,93.0,126.0,Megkímélt,520.0,Sedan,5.0,Bézs (metál),1998.0,Első kerék,Manuális,6.0,,5.5
+22143847,849999.0,,RENAULT,LAGUNA,2005.92,150000.0,Benzin,99.0,135.0,Megkímélt,430.0,Ferdehátú,5.0,,1998.0,Első kerék,Manuális,5.0,,7.7
+22138430,849999.0,,SUZUKI,IGNIS,2003.58,145000.0,Benzin,69.0,94.0,Normál,236.0,Ferdehátú,5.0,Zöld,1328.0,Első kerék,Manuális,5.0,,6.5
+22072161,850000.0,,SEAT,ALHAMBRA,2001.0,325000.0,Dízel,85.0,116.0,Normál,,Kisbusz,7.0,Világosszürke,1896.0,Első kerék,Manuális,6.0,,
+22075771,875000.0,,SKODA,OCTAVIA,2001.83,380000.0,Dízel,74.0,101.0,Normál,448.0,Kombi,5.0,Sötétkék,1896.0,Összkerék,Manuális,6.0,,6.2
+22149138,879000.0,,OPEL,CORSA CORSA C,2005.33,189300.0,Benzin,59.0,80.0,Kitűnő,260.0,Ferdehátú,5.0,Szürke (metál),1229.0,Első kerék,Manuális,5.0,,6.0
+22135035,890000.0,,VOLKSWAGEN,TOURAN,2004.17,263355.0,Benzin,75.0,102.0,Normál,695.0,Egyterű,5.0,,1595.0,Első kerék,Manuális,5.0,,7.9
+22121196,890000.0,,NISSAN,MICRA,2004.58,148000.0,Benzin,48.0,65.0,Megkímélt,251.0,Ferdehátú,5.0,Világosszürke (metál),998.0,Első kerék,Manuális,5.0,,5.8
+22050806,890000.0,,KIA,CEE'D,2008.83,421453.0,Dízel,85.0,116.0,Normál,340.0,Ferdehátú,5.0,Szürke,1582.0,Első kerék,Manuális,5.0,,4.7
+22138528,899000.0,,OPEL,ASTRA ASTRA G,2006.0,177000.0,Benzin,66.0,90.0,Megkímélt,,Ferdehátú,5.0,Szürke (metál),1364.0,,Manuális,5.0,,
+22122339,899000.0,,CITROEN,C4,2006.67,205852.0,Benzin,66.0,90.0,Megkímélt,320.0,Ferdehátú,5.0,Ezüst,1360.0,Első kerék,Manuális,5.0,,6.4
+22064179,899000.0,,RENAULT,CLIO,2007.0,210000.0,Benzin,65.0,88.0,Kitűnő,,Ferdehátú,5.0,Sötétszürke (metál),1598.0,Első kerék,Manuális,5.0,,
+22018571,899000.0,,CITROEN,C3 PLURIEL,2005.42,124840.0,Benzin,54.0,73.0,Kitűnő,130.0,Cabrio,4.0,Világosszürke,1360.0,Első kerék,Manuális,5.0,,6.6
+22155000,900000.0,,SUZUKI,IGNIS,2004.75,213000.0,Benzin,80.0,109.0,Normál,164.0,Ferdehátú,4.0,Citromsárga,1490.0,Első kerék,Manuális,5.0,,6.9
+22149564,900000.0,,MERCEDES-BENZ,B-OSZTÁLY B 180,2006.0,218883.0,Dízel,80.0,109.0,Megkímélt,458.0,Egyterű,5.0,,1992.0,Első kerék,Fokozatmentes automata,,,6.2
+22140665,900000.0,,FORD,MONDEO,2006.0,298000.0,Benzin,92.0,125.0,Kitűnő,540.0,Kombi,5.0,Világosszürke,1798.0,Első kerék,Manuális,5.0,,7.9
+22134960,900000.0,,SUZUKI,SJ SAMURAI,1984.92,125000.0,,,,Normál,,Terepjáró,,Zöld,,Kapcsolható összkerék,,,,
+22098332,900000.0,,FORD,FIESTA,2008.67,162000.0,Dízel,50.0,68.0,Normál,284.0,Ferdehátú,5.0,,1399.0,Első kerék,Manuális,5.0,,4.3
+22088941,900000.0,,RENAULT,LAGUNA,2006.0,187000.0,Benzin,82.0,111.0,Megkímélt,430.0,Ferdehátú,5.0,,1598.0,Első kerék,Manuális,5.0,,7.4
+22126142,950000.0,,SKODA,FABIA,2012.0,154000.0,Benzin,77.0,105.0,Normál,315.0,Ferdehátú,5.0,Ezüst,1197.0,Első kerék,Manuális,5.0,,5.3
+21460659,950000.0,,PEUGEOT,206,2011.42,199992.0,Dízel,50.0,68.0,Normál,245.0,Ferdehátú,5.0,Ezüst (metál),1398.0,Első kerék,Manuális,5.0,,4.2
+22085591,970000.0,,MAZDA,3,2007.17,281746.0,Benzin,77.0,105.0,Megkímélt,413.0,Sedan,5.0,Barna,1598.0,Első kerék,Manuális,5.0,,6.9
+22134900,985000.0,,MERCEDES-BENZ,C-OSZTÁLY C 200,2006.75,420199.0,Dízel,90.0,122.0,Normál,455.0,Kombi,5.0,Fekete,2148.0,Hátsó kerék,Automata,4.0,tiptronic,6.6
+22134338,990000.0,,PEUGEOT,207,2009.83,210000.0,Benzin,70.0,95.0,Újszerű,,Ferdehátú,5.0,Fekete,1397.0,Első kerék,Manuális,5.0,,5.9
+22131453,990000.0,,FORD,FOCUS,2008.42,253000.0,Dízel,85.0,116.0,Normál,526.0,Sedan,5.0,Sötétszürke,1753.0,Első kerék,Manuális,5.0,,5.3
+22129050,990000.0,,FORD,FIESTA,2008.67,127000.0,Benzin,51.0,69.0,Kitűnő,284.0,Ferdehátú,5.0,,1299.0,Első kerék,Manuális,5.0,,6.2
+22118196,990000.0,,MAZDA,6,2002.0,296370.0,Benzin,88.0,120.0,Megkímélt,492.0,Ferdehátú,5.0,Világosszürke,1798.0,Első kerék,Manuális,5.0,,7.8
+22111238,990000.0,,NISSAN,MICRA,2005.25,136800.0,Benzin,59.0,80.0,Normál,251.0,Ferdehátú,5.0,Zöld,1240.0,Első kerék,Manuális,5.0,,5.9
+22073035,990000.0,,OPEL,ASTRA ASTRA H,2006.67,250714.0,Benzin,103.0,140.0,Normál,505.0,Kombi,5.0,Ezüst (metál),1796.0,Első kerék,Manuális,5.0,,7.6
+21485784,990000.0,,SEAT,ALTEA,2007.67,245000.0,Dízel,125.0,170.0,Normál,409.0,Egyterű,5.0,Világosbarna (metál),1968.0,Első kerék,Manuális,6.0,,6.1
+19350527,990000.0,,VOLKSWAGEN,POLO POLO IV,2005.5,187000.0,Benzin,40.0,54.0,Normál,270.0,Ferdehátú,5.0,,1198.0,Első kerék,Manuális,5.0,,6.0
+22131646,990000.0,,MAZDA,6,2004.0,265000.0,Benzin,88.0,120.0,Sérülésmentes,505.0,Kombi,5.0,,1798.0,Első kerék,Manuális,5.0,,8.1
+22149036,995000.0,,CITROEN,C3 PICASSO,2009.5,218300.0,Benzin,70.0,95.0,Újszerű,385.0,Egyterű,5.0,Szürke (metál),1397.0,Első kerék,Manuális,5.0,,6.9
+22151494,999000.0,,VOLKSWAGEN,POLO POLO IV,2002.25,343000.0,Dízel,74.0,101.0,Megkímélt,270.0,Ferdehátú,5.0,Ezüst (metál),1896.0,Első kerék,Manuális,5.0,,4.9
+22116588,999000.0,,TOYOTA,COROLLA,2004.0,265000.0,Benzin,71.0,97.0,Megkímélt,289.0,Ferdehátú,5.0,,1398.0,Első kerék,Manuális,5.0,,6.7
+22110857,999000.0,,FIAT,PANDA,2008.5,117000.0,Benzin,44.0,60.0,Megkímélt,203.0,Ferdehátú,4.0,,1242.0,Első kerék,Manuális,5.0,,5.6
+22123846,999999.0,,PEUGEOT,206,2004.17,211000.0,Benzin,80.0,109.0,Kitűnő,245.0,Cabrio,4.0,Világoskék (metál),1587.0,Első kerék,Manuális,5.0,,6.4
+22151647,1000000.0,,DACIA,LOGAN,2009.42,62000.0,Benzin,55.0,75.0,Normál,510.0,Sedan,5.0,,1390.0,Első kerék,Manuális,5.0,,6.8
+22141007,1000000.0,,CHEVROLET,LACETTI,2010.33,151000.0,Benzin,80.0,109.0,Kitűnő,400.0,Kombi,5.0,Ezüst (metál),1598.0,Első kerék,Manuális,5.0,,7.8
+22137371,1000000.0,,CITROEN,C4 PICASSO GRAND C4 PICASSO,2007.42,394000.0,Dízel,80.0,109.0,Megkímélt,208.0,Egyterű,7.0,Barna,1560.0,Első kerék,Szekvenciális,6.0,,5.7
+22102835,1000000.0,,BMW,3-AS SOROZAT 320,2005.83,324000.0,Dízel,110.0,150.0,Megkímélt,,Kombi,5.0,,1995.0,,Automata,5.0,,
+22022784,1000000.0,,VOLKSWAGEN,PASSAT PASSAT V,2003.08,313842.0,Benzin,75.0,102.0,Megkímélt,,Sedan,5.0,Ezüst,1595.0,Első kerék,Manuális,5.0,,
+22142073,1049000.0,,FORD,FIESTA,2007.25,137352.0,Benzin,58.0,79.0,Normál,284.0,Ferdehátú,5.0,Sötétszürke (metál),1388.0,Első kerék,Manuális,5.0,,6.4
+22122054,1049000.0,,MERCEDES-BENZ,B-OSZTÁLY B 170,2006.0,249000.0,Benzin,85.0,116.0,Kitűnő,458.0,Egyterű,5.0,,1699.0,Első kerék,Manuális,5.0,,
+21996045,1049000.0,,RENAULT,SCENIC,2010.0,329000.0,Dízel,63.0,86.0,Újszerű,752.0,Egyterű,5.0,,1461.0,Első kerék,Manuális,6.0,,5.2
+22140732,1050000.0,,PEUGEOT,207,2006.25,199000.0,Benzin,66.0,90.0,Normál,267.0,Ferdehátú,5.0,Világosszürke,1360.0,Első kerék,Manuális,5.0,,6.4
+22135702,1090000.0,,SUZUKI,SWIFT,2006.0,299500.0,Benzin,68.0,92.0,Normál,213.0,Ferdehátú,5.0,,1328.0,Első kerék,Manuális,5.0,,6.2
+22114408,1090000.0,,FORD,FIESTA,2005.33,103000.0,Benzin,58.0,79.0,Normál,284.0,Ferdehátú,5.0,Világoskék (metál),1388.0,Első kerék,Manuális,5.0,,6.4
+22095986,1090000.0,,VOLKSWAGEN,POLO,2006.83,127000.0,Benzin,40.0,54.0,Kitűnő,270.0,Ferdehátú,5.0,,1198.0,Első kerék,Manuális,5.0,,6.0
+22104099,1099000.0,,RENAULT,THALIA,2003.17,45983.0,Benzin,55.0,75.0,Kitűnő,510.0,Sedan,5.0,Bordó (metál),1390.0,Első kerék,Manuális,5.0,,7.1
+22141119,,,CHRYSLER,SEBRING,2005.0,229000.0,Benzin,104.0,141.0,Megkímélt,453.0,Sedan,5.0,Fekete,1996.0,Első kerék,Manuális,5.0,,8.3
+22127701,,,FORD,TRANSIT,2004.58,230024.0,Dízel,74.0,101.0,Megkímélt,,Kisbusz,9.0,,1998.0,Első kerék,Manuális,5.0,,7.7
+22096966,1100000.0,,FORD,FIESTA,2007.92,215000.0,Benzin,58.0,79.0,Újszerű,284.0,Ferdehátú,5.0,,1388.0,Első kerék,Manuális,5.0,,6.4
+21993710,1100000.0,,MAZDA,6,2007.92,260000.0,Benzin,108.0,147.0,Megkímélt,505.0,Kombi,5.0,Lila,1999.0,Első kerék,Manuális,6.0,,8.0
+21875167,1100000.0,,OPEL,MERIVA MERIVA B,2012.42,236000.0,Benzin,88.0,120.0,Megkímélt,400.0,Egyterű,5.0,,1364.0,Első kerék,Manuális,5.0,,5.9
+22153258,1149000.0,,PEUGEOT,206,2010.42,173066.0,Benzin,55.0,75.0,Megkímélt,245.0,Ferdehátú,5.0,Szürke (metál),1360.0,Első kerék,Manuális,5.0,,6.3
+22153101,1150000.0,,OPEL,CORSA CORSA D,2007.42,192000.0,Benzin,59.0,80.0,Normál,,Ferdehátú,5.0,,1229.0,Első kerék,Manuális,5.0,,6.1
+22141738,1150000.0,,VOLKSWAGEN,PASSAT PASSAT V,2005.08,194585.0,Benzin,75.0,102.0,Normál,475.0,Sedan,5.0,Világosszürke,1595.0,Első kerék,Manuális,5.0,,7.7
+22138972,1150000.0,,OPEL,VECTRA VECTRA C,2006.92,270000.0,Dízel,110.0,150.0,Megkímélt,500.0,Ferdehátú,5.0,Bézs (metál),1910.0,Első kerék,Manuális,6.0,,5.9
+22119855,1150000.0,,SEAT,TOLEDO,1999.58,120340.0,Benzin,74.0,101.0,Kitűnő,500.0,Sedan,5.0,Bézs,1595.0,Első kerék,Manuális,5.0,,7.6
+22154332,1190000.0,,SUZUKI,SWIFT,2007.25,194000.0,Benzin,68.0,92.0,Normál,213.0,Ferdehátú,5.0,Sötétszürke (metál),1328.0,Első kerék,Manuális,5.0,,6.2
+22145681,1190000.0,,FORD,FOCUS,2013.0,135000.0,Benzin,92.0,125.0,Normál,490.0,Kombi,5.0,,999.0,Első kerék,Manuális,6.0,,5.0
+22141069,1190000.0,,VOLKSWAGEN,SHARAN,2005.42,322000.0,Dízel,85.0,116.0,Megkímélt,852.0,Egyterű,7.0,Fekete,1896.0,,Automata,,,6.4
+21860808,1190000.0,,VOLKSWAGEN,JETTA JETTA V,2006.08,293500.0,Benzin,110.0,150.0,Normál,527.0,Sedan,5.0,,1984.0,Első kerék,Manuális,6.0,,8.2
+22155495,1190000.0,,TOYOTA,COROLLA COROLLA VERSO,2007.0,370000.0,Dízel,100.0,136.0,Újszerű,155.0,Egyterű,7.0,,2231.0,Első kerék,Manuális,6.0,,6.4
+22112102,1198000.0,,FORD,FOCUS,2008.75,290000.0,Dízel,66.0,90.0,Kitűnő,526.0,Ferdehátú,5.0,Sötétszürke (metál),1560.0,Első kerék,Manuális,5.0,,4.7
+22134047,1199999.0,,FORD,FIESTA,2009.0,86233.0,Benzin,51.0,69.0,Normál,284.0,Ferdehátú,5.0,Fekete (metál),1299.0,Első kerék,Manuális,5.0,,6.2
+22156032,1199999.0,,FORD,FOCUS,2006.0,262600.0,Benzin,74.0,101.0,Megkímélt,385.0,Ferdehátú,5.0,Ezüst,1596.0,Első kerék,Manuális,5.0,,6.7
+22135070,1200000.0,,MAZDA,6,2006.0,204000.0,Benzin,104.0,141.0,Kitűnő,505.0,Kombi,5.0,Sötétszürke (metál),1999.0,Első kerék,Manuális,5.0,,8.0
+22117457,1200000.0,,SUZUKI,SX4,2008.67,283662.0,Benzin,79.0,107.0,Megkímélt,515.0,Sedan,5.0,Szürke,1586.0,Első kerék,Manuális,5.0,,6.8
+22118356,1250000.0,,CITROEN,C3 PICASSO,2010.67,220000.0,Benzin,70.0,95.0,Kitűnő,385.0,Egyterű,5.0,,1397.0,Első kerék,Manuális,5.0,,6.9
+22151597,1250000.0,,FORD,FOCUS,2008.83,160100.0,Dízel,85.0,116.0,Kitűnő,526.0,Sedan,5.0,,1753.0,Első kerék,Manuális,5.0,,5.3
+22118436,,,MAZDA,2,2007.33,235135.0,Benzin,76.0,103.0,Megkímélt,250.0,Ferdehátú,5.0,Sötétkék (metál),1498.0,Első kerék,Manuális,5.0,,5.9
+22109314,1250000.0,,KIA,SORENTO,2007.42,363000.0,Dízel,103.0,140.0,Normál,441.0,Városi terepjáró (crossover),5.0,,2497.0,Összkerék,Manuális,5.0,,8.5
+22057445,1250000.0,,FORD,FOCUS,2012.67,383000.0,Dízel,85.0,116.0,Megkímélt,316.0,Kombi,5.0,Sötétszürke,1560.0,Első kerék,Manuális,6.0,,4.2
+22050668,1250000.0,,BMW,1-ES SOROZAT 116,2007.5,236858.0,Benzin,85.0,116.0,Normál,330.0,Ferdehátú,5.0,Fekete,1596.0,Hátsó kerék,Manuális,6.0,,7.5
+21720402,1250000.0,,SUZUKI,SPLASH,2009.58,182120.0,Benzin,48.0,65.0,Normál,178.0,Ferdehátú,5.0,Piros,996.0,Első kerék,Manuális,5.0,,5.0
+21863209,1270000.0,,SKODA,OCTAVIA,2005.25,233850.0,Benzin,55.0,75.0,Megkímélt,528.0,Ferdehátú,5.0,Pezsgő (metál),1390.0,Első kerék,Manuális,5.0,,6.7
+22147879,1290000.0,,OPEL,VIVARO,2002.92,625000.0,Dízel,74.0,101.0,Megkímélt,5000.0,Kisbusz,6.0,Fehér,1870.0,Első kerék,Manuális,6.0,,7.7
+22145305,1290000.0,,VOLKSWAGEN,POLO,2005.92,145000.0,Benzin,55.0,75.0,Újszerű,270.0,Ferdehátú,5.0,Fekete,1390.0,Első kerék,Manuális,5.0,,6.7
+22136359,1290000.0,,OPEL,ASTRA ASTRA H,2005.75,113345.0,Benzin,66.0,90.0,Normál,380.0,Ferdehátú,5.0,Fekete,1364.0,Első kerék,Manuális,5.0,,6.3
+22041444,1290000.0,,OPEL,ZAFIRA ZAFIRA B,2007.42,198000.0,Benzin,77.0,105.0,Megkímélt,,Egyterű,7.0,Ezüst,1598.0,Első kerék,Manuális,5.0,,7.3
+21224825,1290000.0,,PEUGEOT,207,2009.67,178143.0,Benzin,70.0,95.0,Megkímélt,267.0,Ferdehátú,5.0,Szürke,1398.0,Első kerék,Manuális,5.0,,5.9
+22136553,1290000.0,,FORD,MONDEO,2009.17,324000.0,Dízel,103.0,140.0,Normál,540.0,Ferdehátú,5.0,Szürke (metál),1997.0,Első kerék,Automata,6.0,tiptronic,5.9
+22138664,1299000.0,,OPEL,ASTRA ASTRA H,2008.33,157000.0,Dízel,66.0,90.0,Újszerű,380.0,Kombi,5.0,Világosszürke,1248.0,Első kerék,Manuális,6.0,,4.8
+22147465,1299999.0,,RENAULT,MEGANE,2012.67,273989.0,Dízel,81.0,110.0,Normál,372.0,Ferdehátú,5.0,Ezüst,1461.0,Első kerék,,,,4.4
+22147820,1300000.0,,SUZUKI,SWIFT,2006.0,62129.0,Benzin,68.0,92.0,Megkímélt,213.0,Ferdehátú,5.0,Fekete,1328.0,Első kerék,Manuális,5.0,,6.2
+22154627,1340000.0,,HYUNDAI,I10,2012.92,131000.0,Benzin,51.0,69.0,Megkímélt,225.0,Ferdehátú,5.0,Piros,1086.0,Első kerék,Manuális,5.0,,4.7
+22131953,1333333.0,,VOLKSWAGEN,GOLF GOLF V,2008.33,221000.0,Benzin,147.0,200.0,Normál,350.0,Ferdehátú,5.0,Fehér,1984.0,Első kerék,Manuális,6.0,,8.1
+22153828,1349000.0,,VOLKSWAGEN,PASSAT PASSAT VI,2008.5,418990.0,Dízel,125.0,170.0,Normál,513.0,Kombi,5.0,Kék,1968.0,Első kerék,Manuális,6.0,,6.6
+22147816,1350000.0,,KIA,CEE'D,2011.58,250000.0,Benzin,77.0,105.0,Újszerű,340.0,Ferdehátú,5.0,,1396.0,Első kerék,Manuális,5.0,,5.8
+22027929,1350000.0,,VOLKSWAGEN,JETTA,2007.0,178556.0,Benzin,75.0,102.0,Normál,527.0,Sedan,5.0,Bordó (metál),1595.0,Első kerék,Manuális,5.0,,7.6
+22141854,1358000.0,,FIAT,PUNTO,2011.0,124458.0,Benzin,57.0,77.0,Megkímélt,275.0,Ferdehátú,5.0,Fekete (metál),1368.0,Első kerék,Manuális,5.0,,5.7
+22151885,1380000.0,,SKODA,OCTAVIA,2006.33,217650.0,Benzin,75.0,102.0,Megkímélt,580.0,Kombi,5.0,,1595.0,Első kerék,Manuális,5.0,,7.2
+22156441,1390000.0,,SUZUKI,SPLASH,2008.33,68753.0,Benzin,48.0,65.0,Kitűnő,178.0,Ferdehátú,5.0,Narancs,996.0,Első kerék,Manuális,5.0,,5.0
+22117020,1390000.0,,KIA,CEE'D,2008.08,207570.0,Benzin,90.0,122.0,Normál,340.0,Ferdehátú,5.0,Fehér,1591.0,Első kerék,Manuális,5.0,,5.9
+22025269,1390000.0,,FORD,C-MAX,2010.42,353363.0,Benzin,74.0,101.0,Megkímélt,460.0,Egyterű,5.0,Ezüst (metál),1596.0,Első kerék,Manuális,5.0,,6.9
+21970969,,,RENAULT,CLIO,2007.42,123000.0,Benzin,72.0,98.0,Kitűnő,288.0,Ferdehátú,5.0,Ezüst (metál),1390.0,Első kerék,Manuális,5.0,,6.6
+21952373,1390000.0,,RENAULT,TWINGO,2008.33,186649.0,Benzin,74.0,101.0,Kitűnő,165.0,Ferdehátú,4.0,Narancs (metál),1149.0,Első kerék,Manuális,5.0,,5.9
+21867615,1390000.0,,FORD,FIESTA,2008.92,206539.0,Benzin,60.0,82.0,Normál,295.0,Ferdehátú,5.0,Lila,1242.0,Első kerék,Manuális,5.0,,5.7
+22149967,1395000.0,,SUZUKI,SWIFT,2005.25,186200.0,Benzin,67.0,91.0,Megkímélt,,Ferdehátú,5.0,,1328.0,Első kerék,Manuális,5.0,,6.2
+22151196,1399000.0,,CITROEN,C4 PICASSO,2008.25,222000.0,Dízel,80.0,109.0,Normál,500.0,Egyterű,5.0,Aranysárga (metál),1560.0,Első kerék,Szekvenciális,6.0,,5.7
+22147655,1399000.0,,SKODA,FABIA,2009.0,190000.0,Benzin,63.0,86.0,Megkímélt,480.0,Kombi,5.0,Világoskék (metál),1390.0,Első kerék,Manuális,5.0,,6.5
+22071456,,,OPEL,CORSA CORSA D,2007.75,153000.0,Benzin,59.0,80.0,Kitűnő,285.0,Ferdehátú,5.0,Fekete,1229.0,Első kerék,Manuális,5.0,,6.1
+21203818,1400000.0,,HONDA,JAZZ,2008.42,241660.0,Benzin,61.0,83.0,Megkímélt,380.0,Egyterű,5.0,Lila,1339.0,Első kerék,Manuális,5.0,,5.8
+22109241,1400000.0,,SKODA,FABIA,2013.75,181285.0,Benzin,51.0,69.0,Normál,315.0,Ferdehátú,5.0,Szürke,1198.0,Első kerék,Manuális,5.0,,5.5
+22046014,1400000.0,,RENAULT,FLUENCE,2013.58,274000.0,Benzin,82.0,111.0,Normál,530.0,Sedan,5.0,Barna,1598.0,Első kerék,Manuális,5.0,,6.8
+21882500,1400000.0,,MINI,MINI MINI COOPER,2007.0,169000.0,Benzin,88.0,120.0,Újszerű,160.0,Ferdehátú,4.0,,1598.0,Első kerék,Manuális,6.0,,5.8
+22060312,1445000.0,,RENAULT,SCENIC GRAND SCENIC,2010.25,384805.0,Dízel,81.0,110.0,Normál,750.0,Egyterű,7.0,Világosszürke,1461.0,Első kerék,Manuális,6.0,,5.2
+22151971,1450000.0,,FORD,FOCUS,2008.75,201000.0,Benzin,85.0,116.0,Kitűnő,482.0,Kombi,5.0,,1596.0,Első kerék,Manuális,5.0,,6.4
+22138495,1450000.0,,SEAT,IBIZA,2008.58,173000.0,Benzin,63.0,86.0,Megkímélt,,Ferdehátú,5.0,Sötétszürke,1390.0,Első kerék,Manuális,5.0,,6.2
+22135739,1450000.0,,BMW,3-AS SOROZAT 320,2002.83,315552.0,Benzin,125.0,170.0,Normál,,Coupe,5.0,Fekete,2171.0,Hátsó kerék,Automata,5.0,,
+22115582,1470000.0,,SUZUKI,SX4,2007.83,303000.0,Benzin,73.0,99.0,Kitűnő,270.0,Ferdehátú,5.0,,1490.0,Első kerék,Manuális,5.0,,6.8
+22127480,1480000.0,,OPEL,MERIVA MERIVA B,2010.0,250878.0,Dízel,55.0,75.0,Kitűnő,400.0,Egyterű,5.0,Barna (metál),1248.0,Első kerék,Manuális,5.0,,4.9
+22153162,1490000.0,,SUZUKI,SPLASH,2009.17,66300.0,Benzin,48.0,65.0,Megkímélt,178.0,Ferdehátú,5.0,,996.0,Első kerék,Manuális,5.0,,5.0
+22151778,1490000.0,,MERCEDES-BENZ,B-OSZTÁLY B 170,2007.67,192000.0,Benzin,85.0,116.0,Kitűnő,458.0,Egyterű,5.0,Ezüst,1699.0,Első kerék,Manuális,5.0,,
+22151408,1490000.0,,PEUGEOT,207,2008.5,129000.0,Benzin,88.0,120.0,Kitűnő,405.0,Cabrio,4.0,,1587.0,Első kerék,Manuális,5.0,,6.5
+22146646,1490000.0,,SUZUKI,SPLASH,2008.5,175000.0,Benzin,63.0,86.0,Újszerű,178.0,Ferdehátú,5.0,Ezüst (metál),1242.0,Első kerék,Manuális,5.0,,5.5
+22141658,1490000.0,,OPEL,ASTRA ASTRA J,2012.0,309000.0,Dízel,121.0,165.0,Megkímélt,,Kombi,,,1956.0,,Manuális,6.0,,5.1
+22138962,1490000.0,,SEAT,ALTEA,2007.92,236000.0,Dízel,125.0,170.0,Megkímélt,532.0,Egyterű,5.0,Sötétszürke (metál),1968.0,Összkerék,Manuális,6.0,,6.2
+22106978,1490000.0,,SUZUKI,SX4,2008.5,291000.0,Benzin,79.0,107.0,Megkímélt,,Sedan,5.0,Fekete,1596.0,Első kerék,Manuális,5.0,,6.8
+22080437,1490000.0,,VOLVO,V50,2005.83,244000.0,Dízel,80.0,109.0,Megkímélt,417.0,Kombi,5.0,Sötétszürke (metál),1560.0,Első kerék,Manuális,5.0,,5.0
+22076860,1490000.0,,AUDI,A6,2005.42,341000.0,Dízel,132.0,179.0,Normál,565.0,Kombi,5.0,Ezüst (metál),2698.0,Első kerék,Manuális,6.0,,7.1
+22060167,1490000.0,,MERCEDES-BENZ,W-OSZTÁLY W 123,1982.92,162000.0,Benzin,100.0,136.0,Normál,,Sedan,,Kék,2300.0,Hátsó kerék,Manuális,4.0,,
+22059255,1490000.0,,LANCIA,MUSA,2011.75,150358.0,Benzin,57.0,77.0,Megkímélt,320.0,Egyterű,5.0,Fekete,1368.0,Első kerék,Manuális,5.0,,6.2
+22129979,1490000.0,,FORD,C-MAX,2011.0,339000.0,Dízel,85.0,116.0,Kitűnő,471.0,Egyterű,5.0,Szürke,1560.0,Első kerék,Manuális,6.0,,4.3
+22151719,1495000.0,,NISSAN,NOTE,2008.0,176000.0,Benzin,81.0,110.0,Kitűnő,280.0,Egyterű,5.0,Ezüst,1598.0,Első kerék,Manuális,5.0,,6.6
+22136885,1499000.0,,HYUNDAI,I30,2011.17,138708.0,Benzin,80.0,109.0,Megkímélt,340.0,Ferdehátú,5.0,Fekete (metál),1396.0,Első kerék,Manuális,5.0,,6.1
+22049898,1499000.0,,OPEL,ASTRA ASTRA H,2008.92,135000.0,Benzin,103.0,140.0,Normál,380.0,Kombi,5.0,Sötétszürke,1796.0,Első kerék,Manuális,5.0,,7.5
+21935456,1499000.0,,FORD,FOCUS,2007.0,166000.0,Benzin,74.0,101.0,Kitűnő,482.0,Kombi,5.0,Fekete (metál),1596.0,Első kerék,Manuális,5.0,,6.7
+21871038,1499000.0,,FORD,FIESTA,2011.67,253000.0,Benzin,44.0,60.0,Újszerű,295.0,Ferdehátú,5.0,Sötétkék,1242.0,Első kerék,Manuális,5.0,,5.4
+22153099,1499999.0,,SMART,FORTWO FORTWO BRABUS,2003.25,229000.0,Benzin,55.0,75.0,Kitűnő,,Coupe,2.0,Sárga,698.0,Hátsó kerék,Szekvenciális,6.0,,
+22126959,1499999.0,,VOLVO,S40,2007.0,152213.0,Benzin,92.0,125.0,Normál,404.0,Sedan,5.0,Sötétszürke (metál),1798.0,Első kerék,Manuális,5.0,,7.3
+22134556,1500000.0,,AUDI,A8,2000.0,345000.0,Dízel,132.0,179.0,Normál,525.0,Sedan,5.0,Kék,2496.0,Első kerék,Manuális,6.0,,7.3
+22132961,1500000.0,,SKODA,FABIA,2008.33,72959.0,Benzin,63.0,86.0,Megkímélt,300.0,Ferdehátú,5.0,Bézs,1390.0,Első kerék,Manuális,5.0,,6.5
+22072021,1500000.0,,PEUGEOT,208,2012.5,253000.0,Dízel,50.0,68.0,Megkímélt,285.0,Ferdehátú,5.0,Fekete,1398.0,Első kerék,Manuális,5.0,,3.8
+22155644,1500000.0,,HYUNDAI,I30,2010.58,172282.0,Benzin,80.0,109.0,Normál,340.0,Ferdehátú,5.0,Szürke,1396.0,Első kerék,Manuális,5.0,,6.1
+22143466,1500000.0,,ALFA ROMEO,159,2007.75,295000.0,Dízel,88.0,120.0,Megkímélt,405.0,Kombi,5.0,,1910.0,Első kerék,Manuális,6.0,,5.9
+22153825,1510000.0,,VOLKSWAGEN,POLO POLO IV,2004.75,61000.0,Benzin,55.0,75.0,Kitűnő,270.0,Ferdehátú,5.0,Fekete,1390.0,Első kerék,Manuális,5.0,,6.4
+21870167,1520000.0,,VOLVO,V50,2006.25,326000.0,Dízel,100.0,136.0,Megkímélt,417.0,Kombi,5.0,Ezüst (metál),1998.0,Első kerék,Manuális,6.0,,5.7
+22081315,,,TOYOTA,RAV 4,2003.92,275000.0,Dízel,85.0,116.0,Normál,400.0,Városi terepjáró (crossover),5.0,,1995.0,Összkerék,Manuális,5.0,,7.1
+22142429,1550000.0,,MAZDA,B-SOROZAT B 2500,2003.92,410000.0,Dízel,80.0,109.0,Normál,,Pickup,5.0,,2500.0,,Manuális,5.0,,11.3
+22126209,1550000.0,,SAAB,9-3,2009.0,232500.0,Benzin,110.0,150.0,Megkímélt,,Sedan,5.0,,1998.0,Első kerék,Automata,5.0,,8.5
+21919049,1550000.0,,VOLKSWAGEN,GOLF GOLF VI,2009.17,369793.0,Benzin,59.0,80.0,Normál,350.0,Ferdehátú,5.0,Fekete,1390.0,Első kerék,Manuális,5.0,,6.4
+21935127,1580000.0,,FORD,C-MAX,2008.92,263092.0,Benzin/Gáz,107.0,145.0,Megkímélt,460.0,Egyterű,5.0,Ezüst (metál),1999.0,Első kerék,Manuális,5.0,,7.3
+22145578,1590000.0,,MERCEDES-BENZ,B-OSZTÁLY,2010.67,282000.0,Benzin,85.0,116.0,Megkímélt,,Egyterű,5.0,,1699.0,,Manuális,5.0,,
+22065912,1590000.0,,SUZUKI,SPLASH,2010.08,131000.0,Benzin,63.0,86.0,Normál,178.0,Ferdehátú,5.0,Fehér,1242.0,Első kerék,Manuális,5.0,,5.5
+21967486,,,SEAT,LEON,2008.5,194000.0,Benzin,75.0,102.0,Kitűnő,341.0,Ferdehátú,5.0,Világosszürke (metál),1595.0,Első kerék,Manuális,5.0,,7.6
+21904315,1599000.0,,FORD,FOCUS,2009.58,255000.0,Benzin,74.0,101.0,Kitűnő,482.0,Kombi,5.0,Kék (metál),1596.0,Első kerék,Manuális,5.0,,6.4
+22151259,1600000.0,,TOYOTA,AVENSIS,2007.83,218000.0,Benzin,108.0,147.0,Normál,520.0,Kombi,5.0,Szürke (metál),1998.0,Első kerék,Manuális,5.0,,9.4
+22002713,1600000.0,,HONDA,CR-V,2006.0,203000.0,Benzin,118.0,160.0,Normál,525.0,Városi terepjáró (crossover),5.0,Világosszürke,2354.0,Összkerék,Automata,6.0,,9.3
+21849357,1600000.0,,MAZDA,MX-5,2001.17,270000.0,Benzin,81.0,110.0,Normál,144.0,Cabrio,2.0,Szürke,1598.0,Hátsó kerék,Manuális,5.0,,8.1
+22123272,1625000.0,,OPEL,CORSA CORSA D,2007.33,104900.0,Benzin,66.0,90.0,Megkímélt,285.0,Ferdehátú,5.0,Fekete,1364.0,Első kerék,Manuális,5.0,,6.2
+19823122,1635000.0,,FORD,FIESTA,2009.83,186000.0,Benzin,60.0,82.0,Megkímélt,295.0,Ferdehátú,5.0,,1242.0,Első kerék,Manuális,5.0,,5.7
+22129379,1649000.0,,PEUGEOT,308,2009.5,128000.0,Benzin,110.0,150.0,Megkímélt,348.0,Cabrio,5.0,,1598.0,Első kerék,Manuális,5.0,,7.1
+22060447,,,SUZUKI,SWIFT,2009.17,168471.0,Benzin,68.0,92.0,Kitűnő,213.0,Ferdehátú,5.0,Fekete (metál),1328.0,Első kerék,Manuális,5.0,,6.2
+22151478,1650000.0,,FIAT,BRAVO,2011.25,170777.0,Benzin,66.0,90.0,Kitűnő,400.0,Ferdehátú,5.0,,1368.0,Első kerék,Manuális,6.0,,6.7
+22130227,1650000.0,,OPEL,INSIGNIA,2010.92,296620.0,Dízel,118.0,160.0,Normál,530.0,Ferdehátú,5.0,Fehér,1956.0,Első kerék,Manuális,6.0,,5.1
+22129889,1650000.0,,SKODA,ROOMSTER,2007.0,261400.0,Dízel,77.0,105.0,Megkímélt,477.0,Egyterű,5.0,Pezsgő (metál),1896.0,Első kerék,Manuális,5.0,,5.4
+22020259,1650000.0,,VOLKSWAGEN,GOLF GOLF PLUS,2006.92,209000.0,Benzin,75.0,102.0,Megkímélt,395.0,Egyterű,5.0,,1595.0,Első kerék,Manuális,5.0,,7.9
+22107188,1650000.0,,FIAT,500,2010.33,204000.0,Benzin,51.0,69.0,Normál,185.0,Ferdehátú,4.0,Fehér,1242.0,Első kerék,Manuális,5.0,,5.1
+22054443,1650000.0,,TOYOTA,AVENSIS,2003.33,110000.0,Benzin,95.0,129.0,Megkímélt,510.0,Ferdehátú,5.0,Kék (metál),1794.0,Első kerék,Manuális,5.0,,7.2
+21986193,1670000.0,,OPEL,CORSA CORSA D,2012.08,152165.0,Benzin,74.0,101.0,Megkímélt,285.0,Ferdehátú,5.0,Szürke (metál),1364.0,Első kerék,Manuális,5.0,,5.7
+22150795,1689000.0,,TOYOTA,YARIS,2005.0,257705.0,Benzin,78.0,106.0,Normál,205.0,Ferdehátú,5.0,Világosszürke,1497.0,Első kerék,Manuális,5.0,,6.8
+22134902,1690000.0,,HYUNDAI,I30,2011.0,151370.0,Benzin,80.0,109.0,Megkímélt,415.0,Kombi,5.0,Fehér,1396.0,Első kerék,Manuális,5.0,,6.3
+22106784,1690000.0,,BMW,X SOROZAT X3,2007.0,359000.0,Dízel,110.0,150.0,Kitűnő,480.0,Városi terepjáró (crossover),5.0,,1995.0,Összkerék,Manuális,6.0,,7.2
+22104932,1690000.0,,FIAT,PANDA,2006.83,134958.0,Benzin,74.0,101.0,Normál,203.0,Ferdehátú,4.0,Szürke,1368.0,Első kerék,Manuális,6.0,,6.5
+22062900,1690000.0,,PEUGEOT,107,2012.92,66719.0,Benzin,50.0,68.0,Megkímélt,130.0,Ferdehátú,4.0,Piros,998.0,Első kerék,Manuális,5.0,,4.5
+21900388,1690000.0,,OPEL,CORSA CORSA D,2010.17,149500.0,Benzin,74.0,101.0,Megkímélt,285.0,Ferdehátú,5.0,,1364.0,Első kerék,Manuális,5.0,,5.5
+22147058,1699000.0,,SUZUKI,SX4,2007.0,159000.0,Benzin,73.0,99.0,Normál,270.0,Ferdehátú,5.0,(metál),1490.0,Első kerék,Manuális,5.0,,6.8
+22143493,1699000.0,,FORD,MONDEO,2009.0,299000.0,Dízel,103.0,140.0,Kitűnő,554.0,Kombi,5.0,Fekete (metál),1997.0,Első kerék,Manuális,6.0,,5.9
+22143418,1699000.0,,KIA,CEE'D,2011.08,207000.0,Benzin,77.0,105.0,Megkímélt,340.0,Ferdehátú,5.0,,1396.0,Első kerék,Manuális,5.0,,5.8
+21995698,,,SKODA,OCTAVIA,2007.83,174000.0,Dízel,77.0,105.0,Kitűnő,560.0,Ferdehátú,5.0,Fekete,1896.0,Első kerék,Manuális,5.0,,5.0
+21894302,,,VOLKSWAGEN,PASSAT PASSAT VI,2006.83,236847.0,Benzin,85.0,116.0,Megkímélt,513.0,Kombi,5.0,Sötétbarna (metál),1598.0,Első kerék,Manuális,6.0,,7.8
+22154179,1750000.0,,ALFA ROMEO,159,2008.75,178000.0,Dízel,110.0,150.0,Normál,405.0,Sedan,5.0,Sötétbarna,1910.0,Első kerék,Manuális,6.0,,5.9
+22151258,1750000.0,,VOLVO,V50,2011.0,217700.0,Dízel,84.0,114.0,Kitűnő,417.0,Kombi,5.0,Sötétszürke,1560.0,Első kerék,Manuális,6.0,,3.9
+22145807,1750000.0,,FORD,MONDEO,2011.17,253816.0,Dízel,103.0,140.0,Normál,554.0,Kombi,5.0,Fekete,1997.0,Első kerék,Manuális,6.0,,4.9
+22144875,1750000.0,,FORD,MONDEO,2008.83,242900.0,Dízel,103.0,140.0,Megkímélt,554.0,Kombi,5.0,Fekete,1997.0,Első kerék,Automata,6.0,tiptronic,5.9
+22141406,1750000.0,,CITROEN,C3,2013.67,150000.0,Benzin/Gáz,50.0,68.0,Megkímélt,300.0,Ferdehátú,5.0,Fehér,999.0,Első kerék,Manuális,5.0,,4.3
+22042178,1750000.0,,FORD,MONDEO,2008.92,188000.0,Benzin,107.0,145.0,Megkímélt,550.0,Sedan,5.0,Sötétkék,1999.0,Első kerék,Manuális,5.0,,7.9
+22020741,1750000.0,,FORD,FIESTA,2012.0,168000.0,Benzin,60.0,82.0,Sérülésmentes,295.0,Ferdehátú,5.0,Sötétkék,1242.0,Első kerék,Manuális,5.0,,5.7
+22006499,1750000.0,,OPEL,ASTRA ASTRA J,2011.0,220000.0,Benzin,64.0,87.0,Normál,370.0,Ferdehátú,5.0,Fekete,1398.0,Első kerék,Manuális,5.0,,5.5
+21977611,1750000.0,,TOYOTA,YARIS,2010.67,231000.0,Dízel,66.0,90.0,Megkímélt,275.0,Ferdehátú,5.0,Piros,1364.0,Első kerék,Manuális,6.0,,4.2
+22039252,1780000.0,,HONDA,FR-V,2008.17,189500.0,Benzin,103.0,140.0,Kitűnő,439.0,Egyterű,6.0,Fekete (metál),1799.0,Első kerék,Manuális,6.0,,7.5
+22138889,1699999.0,,SKODA,OCTAVIA,2008.92,181321.0,Dízel,77.0,105.0,Normál,580.0,Kombi,5.0,,1896.0,Első kerék,Manuális,5.0,,5.0
+21727081,1699999.0,,SKODA,OCTAVIA,2004.5,189211.0,Dízel,96.0,131.0,Normál,548.0,Kombi,5.0,Fekete,1896.0,Első kerék,Manuális,5.0,,5.0
+22157540,1790000.0,,KIA,CEE'D,2010.0,147000.0,Benzin,66.0,90.0,Normál,340.0,Ferdehátú,5.0,,1396.0,Első kerék,Manuális,5.0,,5.5
+22075436,1790000.0,,AUDI,A4,2003.17,521000.0,Dízel,96.0,131.0,Normál,445.0,Kombi,5.0,Fekete,1896.0,Első kerék,Manuális,6.0,,5.6
+22139502,1790000.0,,SUZUKI,SWIFT,2007.0,147000.0,Benzin,68.0,92.0,Kitűnő,213.0,Ferdehátú,5.0,Narancs (metál),1328.0,Első kerék,Manuális,5.0,,6.2
+22136071,1790000.0,,ALFA ROMEO,159,2009.67,190896.0,Dízel,110.0,150.0,Megkímélt,445.0,Kombi,5.0,Fehér,1910.0,Első kerék,Manuális,6.0,,6.0
+22135371,1790000.0,,FORD,FIESTA,2009.5,126300.0,Benzin,71.0,97.0,Megkímélt,295.0,Ferdehátú,5.0,,1388.0,Első kerék,Manuális,5.0,,5.7
+22102220,1790000.0,,OPEL,ZAFIRA ZAFIRA B,2007.33,191906.0,Benzin,103.0,140.0,Kitűnő,140.0,Egyterű,7.0,Világosszürke (metál),1796.0,Első kerék,Manuális,5.0,,7.8
+22060889,1790000.0,,RENAULT,FLUENCE,2013.08,223659.0,Dízel,66.0,90.0,Megkímélt,530.0,Sedan,5.0,Szürke (metál),1461.0,Első kerék,Manuális,5.0,,4.4
+22038520,1790000.0,,ALFA ROMEO,MITO,2009.92,153000.0,Benzin,88.0,120.0,Kitűnő,270.0,Ferdehátú,4.0,,1368.0,Első kerék,Manuális,5.0,,6.1
+22025957,1790000.0,,CHEVROLET,AVEO,2013.25,165804.0,Dízel,55.0,75.0,Megkímélt,502.0,Sedan,5.0,Fekete (metál),1248.0,Első kerék,Manuális,6.0,,4.1
+21933403,1790000.0,,HONDA,JAZZ,2009.42,171000.0,Benzin,73.0,99.0,Kitűnő,375.0,Egyterű,5.0,Szürke (metál),1339.0,Első kerék,Manuális,5.0,,5.4
+21931424,1790000.0,,RENAULT,SCENIC GRAND SCENIC,2010.92,269000.0,Dízel,96.0,131.0,Kitűnő,752.0,Egyterű,7.0,,1870.0,Első kerék,Manuális,6.0,,5.5
+22132968,1799000.0,,FORD,C-MAX,2007.83,118129.0,Benzin,92.0,125.0,Megkímélt,460.0,Egyterű,5.0,Kék (metál),1798.0,Első kerék,Manuális,5.0,,7.1
+22110391,1799000.0,,VOLKSWAGEN,GOLF GOLF PLUS,2010.58,213500.0,Benzin,77.0,105.0,Újszerű,395.0,Egyterű,5.0,Sötétszürke,1197.0,Első kerék,Manuális,6.0,,5.9
+22084729,1799000.0,,KIA,CEE'D,2010.75,180000.0,Benzin,66.0,90.0,Normál,534.0,Kombi,5.0,,1396.0,Első kerék,Manuális,5.0,,5.7
+21999396,,,OPEL,MERIVA MERIVA B,2011.92,198000.0,Benzin,74.0,101.0,Kitűnő,400.0,Egyterű,5.0,Fekete (metál),1398.0,Első kerék,Manuális,5.0,,6.1
+22055222,1799900.0,,OPEL,CORSA CORSA D,2014.17,210000.0,Benzin,63.0,86.0,Megkímélt,285.0,Ferdehátú,5.0,Szürke (metál),1229.0,Első kerék,Manuális,5.0,,5.3
+21973717,1849000.0,,CITROEN,C3,2012.08,144000.0,Benzin,44.0,60.0,Kitűnő,300.0,Ferdehátú,5.0,Fehér,1124.0,Első kerék,Manuális,5.0,,4.6
+22151590,1849999.0,,FORD,TRANSIT,2006.75,512000.0,Dízel,93.0,126.0,Normál,,Kisbusz,9.0,Fehér,2185.0,Első kerék,Manuális,5.0,,
+22155100,1850000.0,,SEAT,IBIZA,2012.08,119000.0,Benzin,63.0,86.0,Normál,284.0,Ferdehátú,5.0,Fehér,1390.0,Első kerék,Manuális,5.0,,5.9
+22154603,1850000.0,,BMW,3-AS SOROZAT 316,1999.25,194741.0,Benzin,85.0,116.0,Újszerű,300.0,Ferdehátú,5.0,Fekete,1596.0,Hátsó kerék,Automata,4.0,,9.1
+22147123,1850000.0,,FORD,MONDEO,2006.0,110037.0,Dízel,114.0,155.0,Sérülésmentes,500.0,Sedan,5.0,Vajszínű,2198.0,Első kerék,Manuális,6.0,,6.1
+22112838,1850000.0,,AUDI,A4,2002.0,161000.0,Dízel,96.0,131.0,Kitűnő,445.0,Lépcsőshátú,5.0,Barna,1896.0,Összkerék,Manuális,6.0,,6.1
+21989915,1850000.0,,NISSAN,NOTE,2011.08,165006.0,Benzin,65.0,88.0,Megkímélt,280.0,Egyterű,5.0,,1386.0,Első kerék,Manuális,5.0,,5.9
+21786977,1850000.0,,MAZDA,5,2011.17,157000.0,Benzin,110.0,150.0,Normál,158.0,Egyterű,7.0,Óceánkék (metál),1998.0,Első kerék,Manuális,6.0,,6.9
+22120518,1850000.0,,BMW,5-ÖS SOROZAT,2003.92,328000.0,Dízel,120.0,163.0,Megkímélt,410.0,Kombi,5.0,Ibolyakék,2497.0,Hátsó kerék,Manuális,5.0,,7.0
+22153072,1880000.0,,HONDA,JAZZ,2010.58,121000.0,Benzin,66.0,90.0,Normál,375.0,Egyterű,5.0,,1198.0,Első kerék,Manuális,5.0,,5.3
+21963830,1799999.0,,VOLKSWAGEN,PASSAT PASSAT V,2003.92,196411.0,Dízel,96.0,131.0,Normál,495.0,Kombi,5.0,,1896.0,Első kerék,Manuális,6.0,,5.8
+22144303,1890000.0,,TOYOTA,HI-ACE,1999.33,353500.0,Dízel,58.0,79.0,Normál,,Kisbusz,6.0,Olajzöld,2446.0,Hátsó kerék,Manuális,5.0,,10.2
+22125937,1890000.0,,FIAT,DOBLO,2016.92,188000.0,Dízel,66.0,90.0,Normál,3400.0,Egyterű,3.0,,1248.0,Első kerék,Manuális,5.0,,4.4
+22119715,1890000.0,,FIAT,PUNTO,2016.75,167453.0,Benzin,57.0,77.0,Normál,275.0,Ferdehátú,5.0,Fekete,1368.0,Első kerék,Manuális,5.0,,5.7
+22083794,1890000.0,,ALFA ROMEO,MITO,2012.17,162328.0,Dízel,70.0,95.0,Kitűnő,270.0,Ferdehátú,4.0,Ezüst,1248.0,Első kerék,Manuális,5.0,,4.3
+22011705,1890000.0,,CITROEN,C3 PICASSO,2014.33,188181.0,Benzin,70.0,95.0,Normál,385.0,Egyterű,5.0,Lila (metál),1397.0,Első kerék,Manuális,5.0,,6.1
+21749480,1890000.0,,SKODA,FABIA,2011.0,107100.0,Benzin,63.0,86.0,Normál,315.0,Ferdehátú,5.0,,1390.0,Első kerék,Manuális,5.0,,5.9
+22143778,1895000.0,,NISSAN,QASHQAI,2007.17,197100.0,Benzin,84.0,114.0,Újszerű,410.0,Városi terepjáró (crossover),5.0,Fekete (metál),1598.0,Első kerék,Manuális,5.0,,6.7
+22136822,1899000.0,,FORD,FIESTA,2009.33,174563.0,Benzin,88.0,120.0,Megkímélt,295.0,Ferdehátú,5.0,Fekete (metál),1596.0,Első kerék,Manuális,5.0,,5.9
+22111843,,,VOLKSWAGEN,PASSAT PASSAT VI,2009.08,250000.0,Dízel,77.0,105.0,Kitűnő,513.0,Kombi,5.0,Fekete (metál),1896.0,Első kerék,Manuális,5.0,,5.3
+22131639,1910000.0,,HYUNDAI,I20,2013.42,189000.0,Benzin,62.0,84.0,Kitűnő,295.0,Ferdehátú,5.0,Fehér,1248.0,Első kerék,Manuális,5.0,,4.9
+22111961,1930000.0,,VOLKSWAGEN,GOLF GOLF PLUS,2010.83,174000.0,Benzin,77.0,105.0,Megkímélt,395.0,Egyterű,5.0,Szürke,1197.0,Első kerék,Manuális,6.0,,5.9
+22154034,1950000.0,,SUZUKI,SX4,2008.75,137000.0,Benzin,73.0,99.0,Normál,270.0,Ferdehátú,5.0,Narancs (metál),1490.0,Első kerék,Manuális,5.0,,6.8
+22137461,1950000.0,,PEUGEOT,3008,2012.42,302600.0,Dízel,,,Normál,,Városi terepjáró (crossover),,,,,,,,
+22135029,1950000.0,,FORD,FOCUS,2012.67,248000.0,Benzin,77.0,105.0,Kitűnő,316.0,Ferdehátú,5.0,,1596.0,Első kerék,Manuális,5.0,,5.9
+22132858,1950000.0,,OPEL,ASTRA ASTRA J,2014.83,197000.0,Dízel,81.0,110.0,Kitűnő,500.0,Kombi,5.0,,1598.0,Első kerék,Manuális,6.0,,3.9
+22127938,1950000.0,,OPEL,OMEGA OMEGA B,1996.0,268500.0,Benzin,155.0,211.0,Kitűnő,520.0,Sedan,5.0,Olajzöld,2962.0,Hátsó kerék,Automata,4.0,,10.8
+22124260,1950000.0,,KIA,CEE'D,2011.5,158457.0,Benzin,66.0,90.0,Kitűnő,,Kombi,5.0,Világosbarna,1396.0,Első kerék,Manuális,5.0,,
+22038971,1950000.0,,CITROEN,C4 PICASSO GRAND C4 PICASSO,2011.75,310000.0,Dízel,110.0,150.0,Megkímélt,,Egyterű,7.0,Óceánkék,1997.0,Első kerék,Automata,6.0,,5.3
+22032230,1950000.0,,AUDI,A4,2006.25,303018.0,Dízel,171.0,232.0,Normál,,Kombi,5.0,Fekete,2967.0,Összkerék,Automata,6.0,,7.6
+21988418,1950000.0,,FORD,FIESTA,2011.5,143000.0,Benzin,71.0,97.0,Normál,295.0,Ferdehátú,5.0,Bordó,1388.0,Első kerék,Manuális,5.0,,5.7
+21714180,1950000.0,,VOLVO,XC90,2004.75,253660.0,Dízel,120.0,163.0,Normál,483.0,Városi terepjáró (crossover),5.0,,2401.0,Összkerék,Automata,5.0,tiptronic,9.1
+22131288,1970000.0,,FORD,FOCUS,2011.25,124064.0,Benzin,107.0,145.0,Megkímélt,534.0,Cabrio,4.0,Fekete,1999.0,Első kerék,Manuális,5.0,,7.5
+22077062,1970000.0,,FORD,FOCUS,2014.58,254000.0,Dízel,77.0,105.0,Normál,316.0,Kombi,5.0,,1560.0,Első kerék,Manuális,6.0,,3.7
+22118651,1980000.0,,FORD,FIESTA,2009.08,118000.0,Benzin,60.0,82.0,Normál,295.0,Ferdehátú,5.0,Szürke,1242.0,Első kerék,Manuális,5.0,,5.7
+22152723,1990000.0,,TOYOTA,YARIS,2010.42,126030.0,Benzin,51.0,69.0,Megkímélt,272.0,Ferdehátú,5.0,Piros,998.0,Első kerék,Manuális,5.0,,5.4
+22154167,1990000.0,,VOLKSWAGEN,JETTA,2006.92,190000.0,Dízel,103.0,140.0,Újszerű,527.0,Sedan,5.0,Bordó,1968.0,Első kerék,Manuális,6.0,,5.8
+22134757,1990000.0,,BMW,1-ES SOROZAT 116,2008.25,170370.0,Benzin,90.0,122.0,Megkímélt,330.0,Ferdehátú,5.0,Fekete,1599.0,Hátsó kerék,Manuális,6.0,,5.8
+22130336,1990000.0,,FORD,FOCUS,2013.33,128295.0,Benzin,74.0,101.0,Kitűnő,490.0,Kombi,5.0,Világosszürke (metál),999.0,Első kerék,Manuális,5.0,,5.0
+22121062,1990000.0,,SKODA,OCTAVIA,2008.25,143500.0,Benzin,118.0,160.0,Normál,580.0,Kombi,5.0,Kék (metál),1798.0,Első kerék,Manuális,6.0,,7.4
+22040103,1990000.0,,HYUNDAI,I20,2012.92,192635.0,Benzin,63.0,86.0,Megkímélt,295.0,Ferdehátú,5.0,Piros,1248.0,Első kerék,Manuális,5.0,,4.9
+22064222,1990000.0,,HONDA,JAZZ,2009.42,95300.0,Benzin,73.0,99.0,Kitűnő,375.0,Egyterű,5.0,Ezüst (metál),1339.0,Első kerék,Manuális,5.0,,5.4
+21983847,1990000.0,,OPEL,VECTRA VECTRA C,2005.0,66211.0,Benzin,74.0,101.0,Megkímélt,500.0,Sedan,5.0,Kék,1598.0,Első kerék,Manuális,5.0,,7.5
+21709651,1990000.0,,HONDA,JAZZ,2010.92,165900.0,Benzin,66.0,90.0,Kitűnő,375.0,Egyterű,5.0,Sötétkék (metál),1198.0,Első kerék,Manuális,5.0,,5.3
+21499375,1990000.0,,FORD,MONDEO,2010.92,330631.0,Dízel,103.0,140.0,Normál,554.0,Kombi,5.0,Zöld,1997.0,Első kerék,Automata,,,5.6
+22150387,1998000.0,,SUZUKI,SWIFT,2008.75,119000.0,Benzin,68.0,92.0,Sérülésmentes,213.0,Ferdehátú,5.0,Ezüst (metál),1328.0,Első kerék,Manuális,5.0,,6.2
+22135093,1999000.0,,TOYOTA,COROLLA COROLLA VERSO,2009.0,230000.0,Benzin,81.0,110.0,Sérülésmentes,440.0,Egyterű,5.0,,1598.0,Első kerék,Manuális,5.0,,7.5
+22113844,1999000.0,,KIA,CEE'D,2010.33,275000.0,Dízel,66.0,90.0,Megkímélt,534.0,Kombi,5.0,Ezüst,1582.0,Első kerék,Manuális,6.0,,
+22106042,1999000.0,,DACIA,DUSTER,2012.75,339617.0,Benzin,77.0,105.0,Normál,,Városi terepjáró (crossover),,Fehér,1598.0,Összkerék,Manuális,6.0,,8.0
+22097546,1999000.0,,PEUGEOT,508,2012.67,297281.0,Dízel,120.0,163.0,Normál,400.0,Sedan,5.0,Sötétszürke (metál),1997.0,Összkerék,Szekvenciális,6.0,,
+22088539,1999000.0,,MERCEDES-BENZ,C-OSZTÁLY C 200,2007.0,218000.0,Benzin,120.0,163.0,Kitűnő,310.0,Coupe,4.0,Ezüst (metál),1796.0,Hátsó kerék,Manuális,6.0,,8.6
+21986051,,,OPEL,INSIGNIA,2011.75,184000.0,Dízel,96.0,131.0,Kitűnő,540.0,Kombi,5.0,Sötétkék (metál),1956.0,Első kerék,Manuális,6.0,,4.9
+21906196,1999000.0,,PEUGEOT,508,2012.67,297281.0,Hibrid (Dízel),120.0,163.0,Normál,400.0,Sedan,5.0,Sötétszürke (metál),1997.0,Összkerék,Szekvenciális,6.0,,
+21769988,1999000.0,,TOYOTA,CELICA,1995.75,236753.0,Benzin,85.0,116.0,Megkímélt,283.0,Coupe,4.0,Sötétkék (metál),1762.0,Első kerék,Manuális,5.0,,
+22096264,1999987.0,,PEUGEOT,RCZ,2011.0,99500.0,Benzin,115.0,156.0,Kitűnő,321.0,Coupe,4.0,Fekete (metál),1598.0,Első kerék,Manuális,6.0,,6.7
+22123607,1999990.0,,VOLKSWAGEN,TOURAN,2011.75,327000.0,Dízel,77.0,105.0,Normál,695.0,Egyterű,5.0,,1598.0,Első kerék,Manuális,6.0,,5.1
+22142312,1999999.0,,OPEL,MERIVA MERIVA B,2011.0,167208.0,Dízel,81.0,110.0,Kitűnő,400.0,Egyterű,5.0,Barna (metál),1686.0,Első kerék,Manuális,6.0,,5.2
+22139220,1999999.0,,VOLKSWAGEN,UP,2014.58,140500.0,Benzin,55.0,75.0,Kitűnő,251.0,Ferdehátú,4.0,Fekete (metál),999.0,Első kerék,Manuális,5.0,,4.7
+22139105,1999999.0,,VOLKSWAGEN,GOLF GOLF VI,2011.58,199987.0,Benzin,77.0,105.0,Kitűnő,350.0,Ferdehátú,5.0,Fekete,1197.0,Első kerék,Manuális,6.0,,5.7
+22083124,1999999.0,,RENAULT,LAGUNA,2011.5,287000.0,Dízel,96.0,131.0,Kitűnő,,Kombi,5.0,Fekete,1995.0,Első kerék,Manuális,6.0,,
+22059649,1999999.0,,VOLKSWAGEN,PASSAT PASSAT VI,2008.17,290000.0,Dízel,77.0,105.0,Megkímélt,513.0,Kombi,5.0,Kék,1896.0,Első kerék,Manuális,5.0,,5.8
+22156868,1999999.0,,MAZDA,3,2015.08,129750.0,Dízel,110.0,150.0,Sérülésmentes,364.0,Ferdehátú,5.0,Bordó (metál),2191.0,Első kerék,Automata,6.0,tiptronic,4.8
+22136061,2000000.0,,DACIA,SANDERO,2017.33,158576.0,Benzin,54.0,73.0,Normál,320.0,Ferdehátú,5.0,Fehér,998.0,Első kerék,Manuális,5.0,,5.2
+22116534,2000000.0,,VOLKSWAGEN,EOS,2006.75,228029.0,Benzin,110.0,150.0,Kitűnő,380.0,Cabrio,4.0,Ezüst,1984.0,Első kerék,Manuális,6.0,,8.2
+22062641,2000000.0,,AUDI,A4,2006.17,242039.0,Dízel,103.0,140.0,Megkímélt,460.0,Kombi,5.0,Fekete (metál),1968.0,Első kerék,Fokozatmentes automata,,,5.8
+22153130,2050000.0,,NISSAN,X-TRAIL,2007.58,282285.0,Dízel,127.0,173.0,Megkímélt,603.0,Városi terepjáró (crossover),5.0,,1995.0,Összkerék,Manuális,6.0,,7.4
+22104326,1999999.0,,AUDI,A4,2004.92,182721.0,Dízel,96.0,131.0,Normál,442.0,Kombi,5.0,,1896.0,Első kerék,Manuális,6.0,,5.7
+22138409,2090000.0,,OPEL,CORSA CORSA D,2011.25,119820.0,Benzin,74.0,101.0,Kitűnő,285.0,Ferdehátú,5.0,Barna (metál),1364.0,Első kerék,Manuális,5.0,,5.3
+22122775,2090000.0,,FORD,FOCUS,2013.25,214595.0,Dízel,70.0,95.0,Kitűnő,316.0,Ferdehátú,5.0,,1560.0,Első kerék,Manuális,6.0,,4.5
+21733560,2090000.0,,OPEL,MERIVA,2012.25,148200.0,Benzin,88.0,120.0,Normál,400.0,Egyterű,5.0,,1364.0,Első kerék,Manuális,5.0,,5.9
+22155987,2090000.0,,FORD,FOCUS,2011.17,211000.0,Dízel,80.0,109.0,Kitűnő,385.0,Ferdehátú,5.0,Óceánkék (metál),1560.0,Első kerék,Manuális,5.0,,4.4
+22149067,2095000.0,,SKODA,RAPID,2015.42,275700.0,Dízel,77.0,105.0,Újszerű,550.0,Ferdehátú,5.0,Fehér,1598.0,Első kerék,Manuális,5.0,,4.0
+22120106,2099000.0,,CITROEN,C-ELYSEE,2014.75,102737.0,Benzin,85.0,116.0,Megkímélt,506.0,Sedan,5.0,Fehér,1587.0,Első kerék,Manuális,5.0,,6.5
+22113018,2100000.0,,VOLKSWAGEN,POLO POLO IV,2013.42,116000.0,Benzin,44.0,60.0,Kitűnő,,Egyterű,5.0,Sötétkék,1198.0,Első kerék,Manuális,6.0,,
+22095706,2100000.0,,TOYOTA,RAV 4,2008.67,254000.0,Dízel,100.0,136.0,Normál,450.0,Városi terepjáró (crossover),5.0,Szürke,2231.0,Összkerék,Manuális,6.0,,6.6
+22131775,2149000.0,,OPEL,ASTRA ASTRA J,2013.92,186000.0,Benzin,74.0,101.0,Kitűnő,370.0,Ferdehátú,5.0,Fehér,1398.0,Első kerék,Manuális,5.0,,5.5
+22049356,2149000.0,,BMW,3-AS SOROZAT 320,2010.75,260000.0,Dízel,135.0,184.0,Normál,460.0,Kombi,5.0,Sötétszürke (metál),1995.0,Hátsó kerék,Manuális,6.0,,4.8
+22133334,2150000.0,,MITSUBISHI,SPACE SPACE STAR,2015.75,121000.0,Benzin,59.0,80.0,Kitűnő,235.0,Ferdehátú,5.0,Fekete,1193.0,Első kerék,Manuális,5.0,,4.3
+22067514,2150000.0,,CITROEN,C-CROSSER,2008.92,265000.0,Dízel,115.0,156.0,Kitűnő,184.0,Városi terepjáró (crossover),7.0,,2179.0,Összkerék,Manuális,6.0,,7.3
+22017718,,,HONDA,JAZZ,2010.58,127553.0,Benzin,73.0,99.0,Megkímélt,375.0,Egyterű,5.0,,1339.0,Első kerék,Manuális,5.0,,5.5
+22010643,2150000.0,,MAZDA,5,2011.92,205000.0,Benzin,85.0,116.0,Kitűnő,158.0,Egyterű,7.0,,1798.0,Első kerék,Manuális,6.0,,7.2
+21877108,2150000.0,,OPEL,MERIVA,2012.25,168203.0,Benzin,88.0,120.0,Normál,400.0,Egyterű,5.0,Fekete (metál),1364.0,Első kerék,Manuális,5.0,,5.9
+22062862,2189000.0,,SUZUKI,SWIFT,2011.83,96282.0,Benzin,66.0,90.0,Megkímélt,211.0,Ferdehátú,5.0,Narancs (metál),1242.0,Első kerék,Manuális,5.0,,5.0
+22145767,2190000.0,,BMW,5-ÖS SOROZAT,2009.42,283000.0,Benzin,125.0,170.0,Megkímélt,520.0,Sedan,5.0,Fekete,1995.0,Hátsó kerék,Manuális,6.0,,6.7
+22144191,2190000.0,,MAZDA,2,2012.75,40900.0,Benzin,55.0,75.0,Kitűnő,250.0,Ferdehátú,5.0,Piros,1349.0,Első kerék,Manuális,5.0,,5.1
+22130753,2190000.0,,TOYOTA,AVENSIS,2009.67,196700.0,Dízel,93.0,126.0,Kitűnő,520.0,Sedan,5.0,Világosszürke,1998.0,Első kerék,Manuális,6.0,,5.5
+22127545,2190000.0,,OPEL,ASTRA ASTRA J,2015.92,285000.0,Dízel,81.0,110.0,Kitűnő,500.0,Kombi,5.0,Fekete,1598.0,Első kerék,Manuális,6.0,,3.9
+22121125,2190000.0,,SKODA,SUPERB,2011.0,403000.0,Dízel,125.0,170.0,Megkímélt,,Lépcsőshátú,5.0,Ezüst,1998.0,Állandó összkerék,Manuális,6.0,,6.7
+22078234,2190000.0,,VOLKSWAGEN,GOLF GOLF PLUS,2013.0,220000.0,Benzin,77.0,105.0,Normál,395.0,Egyterű,5.0,,1197.0,Első kerék,Manuális,6.0,,5.9
+22069811,2190000.0,,SUZUKI,SX4,2011.0,132000.0,Benzin,82.0,111.0,Megkímélt,270.0,Ferdehátú,5.0,Fekete (metál),1490.0,Első kerék,Manuális,5.0,,6.1
+22127780,,,SKODA,OCTAVIA,2010.92,242000.0,Dízel,77.0,105.0,Kitűnő,580.0,Kombi,5.0,Fekete (metál),1598.0,Első kerék,Manuális,5.0,,4.5
+22029902,2199000.0,,HONDA,JAZZ,2010.83,167000.0,Benzin,73.0,99.0,Megkímélt,375.0,Egyterű,5.0,,1339.0,Első kerék,Manuális,5.0,,5.4
+21874501,2199000.0,,FIAT,DUCATO,2009.67,259300.0,Dízel,74.0,101.0,Normál,,Kisbusz,9.0,Kék (metál),2198.0,Első kerék,Manuális,5.0,,
+22144956,2199999.0,,VOLKSWAGEN,GOLF GOLF VI,2010.5,181470.0,Benzin,90.0,122.0,Normál,350.0,Ferdehátú,5.0,Világosszürke (metál),1390.0,Első kerék,Manuális,6.0,,6.2
+22142340,2199999.0,,MAZDA,5,2010.5,172605.0,Benzin,107.0,145.0,Kitűnő,158.0,Egyterű,7.0,Fekete,1999.0,Első kerék,Manuális,6.0,,7.9
+22147845,2200000.0,,PEUGEOT,207,2014.83,192729.0,Benzin,88.0,120.0,Kitűnő,405.0,Cabrio,4.0,Barna,1598.0,Első kerék,Manuális,5.0,,6.5
+22146983,2200000.0,,VOLKSWAGEN,EOS,2007.0,290112.0,Dízel,103.0,140.0,Megkímélt,380.0,Cabrio,4.0,Pezsgő (metál),1968.0,Első kerék,Manuális,6.0,,6.0
+22104591,2200000.0,,FORD,GALAXY,2011.92,310000.0,Dízel,103.0,140.0,Normál,,Egyterű,7.0,Világosszürke,1997.0,Első kerék,Automata,6.0,,6.0
+22069538,2200000.0,,OPEL,CORSA CORSA D,2010.0,105000.0,Benzin,74.0,101.0,Normál,285.0,Ferdehátú,5.0,,1364.0,Első kerék,Automata,4.0,,5.7
+22055085,2200000.0,,OPEL,INSIGNIA,2009.42,240600.0,Benzin,162.0,220.0,Megkímélt,530.0,Ferdehátú,5.0,Fekete,1998.0,Első kerék,Automata,6.0,tiptronic,9.6
+22148798,2220000.0,,AUDI,A6,2012.42,559000.0,Dízel,150.0,204.0,Normál,530.0,Sedan,5.0,Fehér,2967.0,Első kerék,Manuális,6.0,,5.3
+21908667,2240000.0,,SKODA,RAPID,2016.75,308000.0,Dízel,85.0,116.0,Megkímélt,,Kombi,5.0,Fehér,1598.0,Első kerék,Manuális,5.0,,3.9
+22141442,2250000.0,,FIAT,500,2013.67,156340.0,Benzin,51.0,69.0,Kitűnő,185.0,Ferdehátú,4.0,Fekete,1242.0,Első kerék,Manuális,5.0,,5.1
+22110170,2250000.0,,SUZUKI,VITARA GRAND VITARA,2004.83,420000.0,Dízel,94.0,128.0,Normál,290.0,Városi terepjáró (crossover),4.0,Sötétzöld,1995.0,Összkerék,Manuális,5.0,,8.2
+21973606,2250000.0,,ALFA ROMEO,GIULIETTA,2011.92,196000.0,Dízel,125.0,170.0,Megkímélt,350.0,Ferdehátú,5.0,Szürke,1956.0,Első kerék,,,,4.5
+22054032,2270000.0,,TOYOTA,PRIUS,2007.75,162128.0,Benzin,57.0,77.0,Normál,390.0,Ferdehátú,5.0,Fekete,1497.0,Első kerék,Fokozatmentes automata,,,4.3
+22123816,2290000.0,,SKODA,SUPERB,2006.5,137573.0,Dízel,77.0,105.0,Kitűnő,462.0,Sedan,5.0,Ezüst (metál),1896.0,Első kerék,Manuális,5.0,,5.8
+22145339,2290000.0,,FORD,FIESTA,2010.08,140000.0,Benzin,71.0,97.0,Kitűnő,295.0,Ferdehátú,5.0,Világosszürke (metál),1388.0,Első kerék,Manuális,5.0,,5.7
+22134403,2290000.0,,FORD,FOCUS,2012.0,297832.0,Dízel,85.0,116.0,Kitűnő,476.0,Kombi,5.0,Fekete (metál),1560.0,Első kerék,Manuális,6.0,,4.2
+22127758,2290000.0,,AUDI,A6,2010.92,459000.0,Dízel,125.0,170.0,Megkímélt,565.0,Kombi,5.0,Fekete,1968.0,Első kerék,Manuális,6.0,,6.0
+22066973,2290000.0,,SUZUKI,SWIFT,2011.17,140000.0,Benzin,69.0,94.0,Megkímélt,211.0,Ferdehátú,4.0,Ezüst,1242.0,Első kerék,Manuális,5.0,,5.0
+21967951,2290000.0,,BMW,3-AS SOROZAT 318,2009.0,152000.0,Benzin,105.0,143.0,Normál,460.0,Sedan,5.0,,1995.0,Hátsó kerék,Manuális,6.0,,5.9
+22152726,2290000.0,,FIAT,PUNTO,2013.92,136083.0,Benzin,55.0,75.0,Megkímélt,275.0,Ferdehátú,5.0,Fehér,1368.0,Első kerék,Manuális,5.0,,5.7
+22149503,2290000.0,,SUZUKI,SWIFT,2012.83,193250.0,Benzin,69.0,94.0,Kitűnő,211.0,Ferdehátú,5.0,,1242.0,Első kerék,Manuális,5.0,,5.0
+22132681,2299000.0,,BMW,3-AS SOROZAT 320,2008.42,262867.0,Dízel,130.0,177.0,Normál,460.0,Sedan,5.0,(metál),1995.0,Hátsó kerék,Manuális,6.0,,4.8
+22128948,2299000.0,,MERCEDES-BENZ,C-OSZTÁLY C 200,2004.42,261672.0,Dízel,90.0,122.0,Újszerű,455.0,Sedan,5.0,Ezüst (metál),2148.0,Hátsó kerék,Automata,5.0,tiptronic,6.6
+22111511,2299000.0,,RENAULT,LAGUNA,2011.08,320400.0,Dízel,110.0,150.0,Kitűnő,450.0,Ferdehátú,5.0,Szürke,1995.0,Első kerék,Manuális,6.0,,6.0
+22099409,2299000.0,,OPEL,MERIVA MERIVA B,2011.92,83100.0,Benzin,88.0,120.0,Megkímélt,400.0,Egyterű,5.0,Fekete (metál),1364.0,Első kerék,Manuális,5.0,,5.9
+21665068,2299000.0,,CHEVROLET,CRUZE,2013.33,162900.0,Benzin,103.0,140.0,Normál,413.0,Kombi,5.0,Világosszürke (metál),1362.0,Első kerék,Manuális,6.0,,5.8
+22147949,2299999.0,,FORD,FOCUS,2012.08,193350.0,Dízel,85.0,116.0,Kitűnő,476.0,Kombi,5.0,Fekete,1560.0,Első kerék,Manuális,6.0,,4.2
+22129220,2300000.0,,VOLKSWAGEN,GOLF GOLF VI,2011.42,298000.0,Dízel,103.0,140.0,Kitűnő,505.0,Kombi,5.0,,1968.0,Első kerék,,,,5.5
+22139133,2333333.0,,VOLKSWAGEN,GOLF GOLF VI,2009.58,188898.0,Benzin,90.0,122.0,Kitűnő,350.0,Ferdehátú,5.0,Fekete (metál),1390.0,Első kerék,Manuális,6.0,,6.2
+22116254,2350000.0,,SEAT,LEON,2019.33,256000.0,Benzin,81.0,110.0,Kitűnő,380.0,Ferdehátú,5.0,,999.0,Első kerék,Manuális,6.0,,4.7
+22055431,2350000.0,,NISSAN,MICRA,2014.92,119000.0,Benzin,59.0,80.0,Kitűnő,265.0,Ferdehátú,5.0,,1198.0,Első kerék,Manuális,5.0,,5.0
+21962118,2350000.0,,FORD,MONDEO,2014.25,299000.0,Benzin,176.0,239.0,Kitűnő,550.0,Sedan,5.0,Szürke,1999.0,Első kerék,Manuális,6.0,,7.6
+21988733,2360000.0,,FIAT,500,2012.92,71200.0,Benzin,63.0,86.0,Újszerű,185.0,Cabrio,4.0,Sötétszürke,875.0,Első kerék,Manuális,5.0,,4.2
+21985658,2380000.0,,PEUGEOT,208,2014.42,81260.0,Benzin,60.0,82.0,Megkímélt,285.0,Ferdehátú,5.0,Fekete (metál),1199.0,Első kerék,Manuális,5.0,,4.5
+22117590,2388000.0,,MERCEDES-BENZ,C-OSZTÁLY C 220,2005.42,182123.0,Dízel,110.0,150.0,Megkímélt,470.0,Kombi,5.0,Fekete (metál),2148.0,Hátsó kerék,Automata,5.0,tiptronic,6.8
+22109175,2388000.0,,BMW,1-ES SOROZAT,2013.58,255000.0,Dízel,85.0,116.0,Megkímélt,360.0,Ferdehátú,5.0,Fehér,1995.0,Hátsó kerék,Manuális,6.0,,3.8
+22126940,2389000.0,,FORD,C-MAX,2011.17,239800.0,Benzin,110.0,150.0,Kitűnő,475.0,Egyterű,5.0,,1597.0,Első kerék,Manuális,6.0,,6.4
+21804252,2389000.0,,OPEL,MERIVA,2014.67,184202.0,Benzin,74.0,101.0,Normál,400.0,Egyterű,5.0,Fehér,1398.0,Első kerék,Manuális,5.0,,5.7
+22148777,2390000.0,,ALFA ROMEO,MITO,2009.25,28198.0,Benzin,57.0,77.0,Megkímélt,270.0,Ferdehátú,4.0,Fekete,1368.0,Első kerék,Manuális,6.0,,5.9
+22065151,2390000.0,,OPEL,MERIVA,2011.83,135456.0,Benzin,88.0,120.0,Megkímélt,400.0,Egyterű,5.0,,1364.0,Első kerék,Manuális,6.0,,6.4
+22012834,2390000.0,,PEUGEOT,308,2010.17,166823.0,Dízel,80.0,109.0,Megkímélt,403.0,Cabrio,4.0,Fekete (metál),1560.0,Első kerék,Manuális,6.0,,
+21774393,,,PEUGEOT,308,2014.58,142000.0,Benzin,60.0,82.0,Megkímélt,420.0,Ferdehátú,5.0,,1199.0,Első kerék,Manuális,5.0,,4.9
+22151783,2399000.0,,PEUGEOT,2008,2013.0,175000.0,Benzin,60.0,82.0,Megkímélt,360.0,Városi terepjáró (crossover),5.0,Fehér,1199.0,Első kerék,Manuális,5.0,,4.9
+22139097,2399000.0,,OPEL,ASTRA ASTRA J,2012.0,241000.0,Dízel,81.0,110.0,Kitűnő,,Kombi,5.0,Fekete,1686.0,Első kerék,Manuális,6.0,,4.6
+22133011,2399000.0,,OPEL,KARL,2015.67,135000.0,Benzin,55.0,75.0,Normál,,Ferdehátú,5.0,,999.0,Első kerék,Manuális,5.0,,
+22128909,2399000.0,,NISSAN,MICRA,2014.33,103600.0,Benzin,59.0,80.0,Megkímélt,265.0,Ferdehátú,5.0,Fehér,1198.0,Első kerék,Manuális,5.0,,5.0
+21992672,2399000.0,,OPEL,ASTRA ASTRA J,2012.08,163200.0,Benzin,85.0,116.0,Normál,370.0,Ferdehátú,5.0,Világoszöld (metál),1598.0,Első kerék,Manuális,5.0,,6.6
+20416816,2399000.0,,FORD,FIESTA,2013.25,131137.0,Benzin,92.0,125.0,Kitűnő,290.0,Ferdehátú,5.0,Fekete (metál),999.0,Első kerék,Manuális,5.0,,4.3
+22132213,2399999.0,,BMW,3-AS SOROZAT 318,2003.25,216232.0,Benzin,105.0,143.0,Kitűnő,410.0,Cabrio,5.0,Ezüst (metál),1995.0,Hátsó kerék,Manuális,5.0,,7.4
+22086742,2399999.0,,MERCEDES-BENZ,E-OSZTÁLY E 220,2012.92,650000.0,Dízel,125.0,170.0,Normál,540.0,Sedan,5.0,Ezüst (metál),2143.0,Hátsó kerék,Manuális,6.0,,6.2
+22123469,2400000.0,,SAAB,9-3,2008.0,203504.0,Dízel,110.0,150.0,Normál,450.0,Sedan,5.0,Szürke,1910.0,Első kerék,Manuális,6.0,,5.8
+22118865,2400000.0,,MERCEDES-BENZ,220,2006.33,238596.0,,,,Megkímélt,,Kombi,,Fekete,,,,,,
+22041061,2400000.0,,VOLKSWAGEN,PASSAT PASSAT VII,2012.0,406000.0,Dízel,103.0,140.0,Normál,603.0,Kombi,5.0,,1968.0,Első kerék,Manuális,6.0,,4.6
+21964520,2400000.0,,RENAULT,SCENIC GRAND SCENIC,2010.08,182836.0,Benzin,96.0,131.0,Megkímélt,752.0,Egyterű,7.0,Fekete (metál),1397.0,Első kerék,Manuális,6.0,,7.1
+22139147,2444444.0,,VOLKSWAGEN,GOLF GOLF VI,2011.83,169844.0,Benzin,63.0,86.0,Kitűnő,,Ferdehátú,5.0,Sötétkék (metál),1198.0,,Manuális,5.0,,
+22118734,2450000.0,,OPEL,ASTRA ASTRA H,2010.67,178700.0,Benzin,85.0,116.0,Kitűnő,500.0,Kombi,5.0,Ezüst,1598.0,Első kerék,Manuális,5.0,,6.8
+22105512,2450000.0,,FORD,FIESTA,2016.33,165935.0,Benzin,44.0,60.0,Kitűnő,290.0,Ferdehátú,5.0,,1242.0,Első kerék,Manuális,5.0,,5.2
