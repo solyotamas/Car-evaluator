@@ -23,7 +23,9 @@ from scrape_functions import(
     clean_hengerurtartalom,
     clean_vegyes_fogyasztas,
 
-    switch_proxy
+    switch_proxy,
+    wait_for_car_page_load,
+    wait_for_main_page_load
 )
 from itertools import cycle
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
@@ -31,7 +33,7 @@ from playwright._impl._errors import Error as PlaywrightError
 
 
 
-# Credentials 
+# ======== 
 
 load_dotenv("shhh.env")
 username = os.getenv("PROXY_USERNAME")
@@ -40,7 +42,7 @@ proxy_ips = os.getenv("PROXIES").split(',')
 ports = os.getenv("PORTS").split(',')
 port = 12323
 
-# ========
+# ======== 
 
 car_specs = []
 car_data = []
@@ -53,10 +55,9 @@ proxy_list = [
 ]
 proxy_cycle = cycle(proxy_list)
 
-# ========
+# ======== 
 
 with sync_playwright() as pw:
-    # browser = pw.chromium.launch(headless=False, args=[f"--proxy-server={proxy}"])
     browser = pw.chromium.launch(headless=False)
     
     context = None
@@ -68,62 +69,107 @@ with sync_playwright() as pw:
     for k in range(0,100):
 
         if (page_num - 1)  % 5 == 0:
-            context, main_page, car_page = switch_proxy(proxy_cycle = proxy_cycle, browser = browser, context = context,
-                main_page = main_page, car_page = car_page, username = username, password = password, page_num = page_num              
-            )
-            time.sleep(random.uniform(3, 5))
+            context, main_page, car_page = switch_proxy(
+                proxy_cycle=proxy_cycle,
+                browser=browser,
+                context=context,
+                main_page=main_page,
+                car_page=car_page,
+                username=username,
+                password=password,
+                page_num=page_num
+            )  
             
-            listings = main_page.locator('div.row.talalati-sor')
-            count = listings.count()
-            
-            df1 = pd.DataFrame(car_specs)
-            df2 = pd.DataFrame(car_data)
-
-            df1.to_csv('car_specs.csv', index=False)
-            df2.to_csv('car_data.csv', index=False)
-            print(f"✔ Data saved")
-        
-
-
-        print("Page number: ", page_num, '\n')
-
-        # Car listings on the page given page
-        listings = main_page.locator('div.row.talalati-sor')
-        count = listings.count()
-
-        for i in range(count):
+            max_retries_with_current_proxy_main_page = 3
+            retries_main_page = 0
 
             while True:
                 try:
-                    #listings = main_page.locator('div.row.talalati-sor')
+                    main_page.goto(f"https://www.hasznaltauto.hu/talalatilista/PCOHKVCBN3RTADH4RNPZAOCJXOVRY52RUBABD5GUVPA5VDFDLAJAHCJWTICP362SW2JVURXWMRREMIRZEPJKBVQLOUGWVGNLVQA4NGV4QYOXNWKWWCS4VQQFFWNDHNCMHW2FMGMY6TQG5RAP3JL4QGB2VAQFZMXNU5NIYSJ2QEG7RQTKC6JSYVEWZUM7RGRSDOKWD24L4TPO4EIRV7O6WS2VA6DIWI3Y3P3HSVFW5S746KVLYGBSWNIYDUPBZSFDKIYOIHTQKLZRGPM2AMZD3ID7VNGPVI5ADGMYWW4ZXEW7IASHQ3RQ2F5BPNISARV5KY2GFSZ3GYITYBLPMJCY3R6QDIHLCALJHXP7JHP4TK74DH7A66ET734HWMT7PIJLDSF6NEV7NQBZG7OTQHPT2WLCJXXLKGXIU77NNR7LNZKLZOBJ23Q4KD3XWSVV7NDB6Q7QTK5SFAH6A25BRKJJZQ4SNFBMH73JKFQMCN2Q5CYYC2BOKVUMYHMREOWE63JYUKM42ETW6I4MBKLZO5YGEXVDHN4SYMY6CL77MMW5ZSGZ2D3IIISRGKT5WWZBTYGOKDP7HARROARM5NVAG3VKVB7R57DUJK7FCDTTDTUHPAK6HVIQV5R3YHTCPHGG6CKW4I63UGT55N454WGKUW5RGHJ6GI2YKDFUQUPZDLOBQAESUIWEIWB7MQSNNRNE4XL3QPR3MW3ATC7LUHFGCAXI23CCGPCZ7YRQ2BPH6JJDEIUBU3BYBZKCRYGTIBZCTVRQVUGLNUZTTDIZ4YXNERN37HPIHN6WTSE5XMUSOTTAHDGRV3OI2GATZVKT7R47RW6IPJHFCWPOYZUJWSENX4F2TBXORSQ5RE5PYHMETH67QPE3EGD7VFWC3OSJWPP76ABZU2WZU/page{page_num}")
+                    wait_for_main_page_load(main_page = main_page)
+
+                    '''
+                    # Cookie button
+                    cookieButton = main_page.locator("#didomi-notice-agree-button")
+                    try:
+                        cookieButton.wait_for(state="visible", timeout=30000)
+                        if cookieButton.is_enabled():
+                            cookieButton.click()
+                            print("✔ Cookie button clicked")
+                    except PlaywrightTimeoutError:
+                        print("Cookie button not visible (timeout) — probably not shown")
+                    except PlaywrightError as e:
+                        print(f"Unexpected error with cookie button: {e}")
+                    '''
+                    break
+
+                except (PlaywrightTimeoutError, PlaywrightError):
+                    retries_main_page += 1
+                    print(f"Attempt {retries_main_page} failed with current proxy while loading main page")
+
+                    if retries_main_page >= max_retries_with_current_proxy_main_page:
+                        print("Max retries reached, switching proxy")
+                        context, main_page, car_page = switch_proxy(
+                            proxy_cycle=proxy_cycle,
+                            browser=browser,
+                            context=context,
+                            main_page=main_page,
+                            car_page=car_page,
+                            username=username,
+                            password=password,
+                            page_num=page_num
+                        )
+                        retries_main_page = 0
+                        continue
+                    else:
+                        print("Retrying with current proxy.")
+                        continue
+
+
+        # Car listings on the page given page
+        print('finding listings')
+        listings = main_page.locator('div.row.talalati-sor')
+        print('found')
+        count = listings.count()
+        print("Page number: ", page_num, '\n')
+
+
+        for i in range(count):
+
+            max_retries_with_current_proxy_car_page = 3
+            retries_car_page = 0
+            while True:
+                try:
                     car_listing_element = listings.nth(i)
                     car_listing_link_element = car_listing_element.locator('h3 > a').first
                     href = car_listing_link_element.get_attribute('href')
 
-                    car_page.goto(href, timeout=60000)
+                    car_page.goto(href, wait_until='domcontentloaded')
+                    wait_for_car_page_load(car_page = car_page)
                     break
 
-                except PlaywrightTimeoutError:
-                    print("Timeout Error")
-                    context, main_page, car_page = switch_proxy(proxy_cycle = proxy_cycle, browser = browser, context = context,
-                        main_page = main_page, car_page = car_page, username = username, password = password, page_num = page_num              
-                    )
-                    time.sleep(random.uniform(3, 5))
+                except (PlaywrightTimeoutError, PlaywrightError):
+                    retries_car_page += 1
+                    print(f"Attempt {retries_car_page} failed with current proxy while loading car page.")
 
-                    listings = main_page.locator('div.row.talalati-sor')
-                    count = listings.count()
-                    continue
-
-                except PlaywrightError as e:
-                    print("Other")
-                    context, main_page, car_page = switch_proxy(proxy_cycle = proxy_cycle, browser = browser, context = context,
-                        main_page = main_page, car_page = car_page, username = username, password = password, page_num = page_num              
-                    )
-                    time.sleep(random.uniform(3, 5))
-
-                    listings = main_page.locator('div.row.talalati-sor')
-                    count = listings.count()
-                    continue
+                    if retries_car_page >= max_retries_with_current_proxy_car_page:
+                        print("Max retries reached, switching proxy")
+                        context, main_page, car_page = switch_proxy(
+                            proxy_cycle=proxy_cycle,
+                            browser=browser,
+                            context=context,
+                            main_page=main_page,
+                            car_page=car_page,
+                            username=username,
+                            password=password,
+                            page_num=page_num
+                        )
+                        listings = main_page.locator('div.row.talalati-sor')
+                        retries_car_page = 0
+                        continue
+                    else:
+                        print("Retrying with current proxy.")
+                        continue
 
 
 
@@ -135,7 +181,6 @@ with sync_playwright() as pw:
             sale = sale_locator.inner_text().strip() if sale_locator.count() > 0 else None
 
             # URL, ID, 
-            href = href
             id_search = re.search(r'-(\d+)(?:[#?]|$)', href)
             id = id_search.group(1)
 
@@ -144,7 +189,6 @@ with sync_playwright() as pw:
             # On Car Page  
             # Manufacturer, Modell
             manufacturer, modell = extract_car_manufacturer_modell(car_page = car_page)
-        
             # Basics
             evjarat = extract_car_basic_specs(car_page = car_page, text = 'Évjárat')
             km_ora = extract_car_basic_specs(car_page = car_page, text = 'Km. óra állás')
@@ -152,8 +196,6 @@ with sync_playwright() as pw:
             teljesitmeny = extract_car_basic_specs(car_page = car_page, text = 'Teljesítmény')
             allapot = extract_car_basic_specs(car_page = car_page, text = 'Állapot')
             csomagtarto = extract_car_basic_specs(car_page = car_page, text = 'Csomagtartó')
-            #print(evjarat, km_ora, uzemanyag, teljesitmeny, allapot, csomagtarto, sep='\n')
-
             # Extra
             kivitel = extract_car_extra_specs(car_page = car_page, text = 'Kivitel')
             szemelyek_szama = extract_car_extra_specs(car_page = car_page, text = 'Szállítható szem. száma')
@@ -161,13 +203,9 @@ with sync_playwright() as pw:
             hengerurtartalom = extract_car_extra_specs(car_page = car_page, text = 'Hengerűrtartalom')
             hajtas = extract_car_extra_specs(car_page = car_page, text = 'Hajtás')
             valto = extract_car_extra_specs(car_page = car_page, text = 'Sebességváltó')
-            #print(kivitel, szemelyek_szama, szin, hengerurtartalom, hajtas, valto, sep='\n')
-
             # Fogyasztas
-            vegyes_fogyasztas = extract_car_vegyes_fogyasztas(car_page = car_page)
-            #print(vegyes_fogyasztas, sep='\n')
+            #vegyes_fogyasztas = extract_car_vegyes_fogyasztas(car_page = car_page)
 
-            
             
             # =====================
 
@@ -190,12 +228,9 @@ with sync_playwright() as pw:
             hengerurtartalom = clean_hengerurtartalom(hengerurtartalom)
             hajtas = hajtas
             valto_tipus, valto_szam, valto_subtipus = clean_valto(valto)
-            vegyes_fogyasztas = clean_vegyes_fogyasztas(vegyes_fogyasztas)
-
-            # Car data table
+            #vegyes_fogyasztas = clean_vegyes_fogyasztas(vegyes_fogyasztas)
             
-
-
+            
             car_specs.append({
                 'id': id, 
                 'price': price,
@@ -216,8 +251,31 @@ with sync_playwright() as pw:
                 'hajtas' : hajtas,
                 'valto tipus' : valto_tipus,
                 'valto szam' : valto_szam,
-                'valto subtipus' : valto_subtipus,
-                'vegyes fogyasztas' : vegyes_fogyasztas
+                'valto subtipus' : valto_subtipus
+                #'vegyes fogyasztas': vegyes_fogyasztas
+            })
+            print({
+                'id': id, 
+                'price': price,
+                'sale price': sale,
+                'gyarto': manufacturer,
+                'modell': modell,
+                'evjarat' : evjarat,
+                'km ora' : km_ora,
+                'uzemenyag': uzemanyag,
+                'KW' : kw,
+                'LE' : le,
+                'allapot' : allapot,
+                'csomagtarto' : csomagtarto,
+                'kivitel' : kivitel,
+                'szemelyek_szama' : szemelyek_szama,
+                'szin' : szin,
+                'hengerurtartalom': hengerurtartalom,
+                'hajtas' : hajtas,
+                'valto tipus' : valto_tipus,
+                'valto szam' : valto_szam,
+                'valto subtipus' : valto_subtipus
+                #'vegyes fogyasztas' : vegyes_fogyasztas
             })
             
             
@@ -229,29 +287,31 @@ with sync_playwright() as pw:
                 'url' : href
             })
 
-            print('Scraped: ' + manufacturer + ' ' + modell)
-            print(i)
+            print('Scraped: ' + str(i))
             
-
 
         # Next page
         next_button = main_page.locator('ul.pagination > li.next').first
 
         if next_button.is_enabled():
-            retry_count = 0
-            max_retries = 3
-            while retry_count < max_retries:
+            retry_count_next_button = 0
+            max_retries_next_button = 3
+            while True:
                 try:
                     next_button.click()
-                    main_page.wait_for_load_state('load', timeout=60000)
+                    wait_for_main_page_load(main_page= main_page)
+
+                    
+
                     page_num += 1
-                    break  # success, exit retry loop
-                except PlaywrightTimeoutError:
-                    retry_count += 1
-                    print(f"Pagination timeout, retrying... ({retry_count}/{max_retries})")
-                    time.sleep(2)
-                    if retry_count == max_retries:
-                        print("Max retries reached. Switching proxy.")
+                    break
+                    
+                except (PlaywrightTimeoutError, PlaywrightError):
+                    retry_count_next_button += 1
+                    print(f"Attempt {max_retries_next_button} failed with current proxy while loading next main page")
+
+                    if retry_count_next_button >= max_retries_next_button:
+                        print("Max retries reached, switching proxy")
                         context, main_page, car_page = switch_proxy(
                             proxy_cycle=proxy_cycle,
                             browser=browser,
@@ -262,10 +322,13 @@ with sync_playwright() as pw:
                             password=password,
                             page_num=page_num
                         )
-                        time.sleep(random.uniform(3, 5))
-                        break
-        else:
-            break
+                        max_retries_next_button = 0
+                        continue
+                    else:
+                        print("Retrying with current proxy.")
+                        continue
+                
+        
 
         
     car_page.close()

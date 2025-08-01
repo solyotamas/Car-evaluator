@@ -1,10 +1,23 @@
 import re
 from playwright.sync_api import Browser, BrowserContext, Page
+from playwright._impl._errors import Error as PlaywrightError 
 from dotenv import load_dotenv
 import os
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
+import time
+import random
 
 # =========================
+def extract_car_basic_specs(car_page, text):
+    wrapper = car_page.locator(
+        'div.print-highlighted-info__item',
+        has=car_page.locator('div.small.text-body-secondary.mb-1', has_text=text)
+    )
+    if wrapper.count() == 0:
+        return None
+    
+    spec = wrapper.locator('div > div').nth(1).inner_text().strip()
+    return spec
 
 def extract_car_extra_specs(car_page, text):
     wrapper = car_page.locator(
@@ -15,17 +28,6 @@ def extract_car_extra_specs(car_page, text):
         return None
     
     spec = wrapper.locator('div.row > div.col-6').nth(1).inner_text().strip()
-    return spec
-
-def extract_car_basic_specs(car_page, text):
-    wrapper = car_page.locator(
-        'div.print-highlighted-info__item',
-        has=car_page.locator('div.small.text-body-secondary.mb-1', has_text=text)
-    )
-    if wrapper.count() == 0:
-        return None
-    
-    spec = wrapper.locator('div > div').nth(1).inner_text().strip()
     return spec
 
 def extract_car_vegyes_fogyasztas(car_page):
@@ -163,6 +165,54 @@ def clean_vegyes_fogyasztas(value: str) -> float:
 
 # ==========================
 
+def wait_for_main_page_load(main_page : Page, timeout : int = 45000):
+    try:
+        # Cookie button
+        cookieButton = main_page.locator("#didomi-notice-agree-button")
+        try:
+            cookieButton.wait_for(state="visible", timeout=30000)
+            if cookieButton.is_enabled():
+                cookieButton.click()
+                print("✔ Cookie button clicked")
+        except PlaywrightTimeoutError:
+            print("Cookie button not visible (timeout) — probably not shown")
+        except PlaywrightError as e:
+            print(f"Unexpected error with cookie button: {e}")
+            
+
+        main_page.locator('div.row.talalati-sor').first.wait_for(state="visible", timeout=timeout)
+        main_page.locator('ul.pagination > li.next').last.wait_for(state="attached", timeout=timeout)
+        print("Main page loaded")
+
+    except PlaywrightTimeoutError:
+        print("Main page not loaded (timeout)")
+        raise
+    except PlaywrightError as e:
+        print(f"Unexpected error with main page load: {e}")
+        raise
+
+def wait_for_car_page_load(car_page: Page, timeout: int = 45000):
+    try:
+        print("Waiting for print-highlighted-info__item...")
+        car_page.locator('div.print-highlighted-info__item').first.wait_for(state="visible", timeout=timeout)
+        
+        print("Waiting for print-basic-info-item...")
+        car_page.locator('div.print-basic-info-item').first.wait_for(state="visible", timeout=timeout)
+        
+        #print("Waiting for tr.align-middle...")
+        #car_page.locator('tr.align-middle').first.wait_for(state="visible", timeout=timeout)
+        
+        print("Waiting for breadcrumb...")
+        car_page.locator('ol#breadcrumb').wait_for(state="visible", timeout=timeout)
+
+        print("Car page loaded successfully.")
+    except PlaywrightTimeoutError as e:
+        print(f"Car page not loaded (timeout) on selector: {e}")
+        raise
+    except PlaywrightError as e:
+        print(f"Unexpected error with car page load: {e}")
+        raise
+
 def switch_proxy(proxy_cycle, browser : Browser, context : BrowserContext, main_page : Page, car_page : Page, username, password, page_num):
     if car_page:
         car_page.close()
@@ -171,30 +221,24 @@ def switch_proxy(proxy_cycle, browser : Browser, context : BrowserContext, main_
     if context:
         context.close()
 
+    # Proxy
     proxy = next(proxy_cycle)
     print(f"Switching proxy to: {proxy}")
 
+    # Context
     context = browser.new_context(proxy={"server": proxy, "username":username, "password":password})
-    
+
+    # Main page
     main_page = context.new_page()
     main_page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-    main_page.goto(f"https://www.hasznaltauto.hu/talalatilista/PCOHKVCBN3RTADH4RNPZAOCJXOVRY52RUBABD5GUVPA5VDFDLAJAHCJWTICP362SW2JVURXWMRREMIRZEPJKBVQLOUGWVGNLVQA4NGV4QYOXNWKWWCS4VQQFFWNDHNCMHW2FMGMY6TQG5RAP3JL4QGB2VAQFZMXNU5NIYSJ2QEG7RQTKC6JSYVEWZUM7RGRSDOKWD24L4TPO4EIRV7O6WS2VA6DIWI3Y3P3HSVFW5S746KVLYGBSWNIYDUPBZSFDKIYOIHTQKLZRGPM2AMZD3ID7VNGPVI5ADGMYWW4ZXEW7IASHQ3RQ2F5BPNISARV5KY2GFSZ3GYITYBLPMJCY3R6QDIHLCALJHXP7JHP4TK74DH7A66ET734HWMT7PIJLDSF6NEV7NQBZG7OTQHPT2WLCJXXLKGXIU77NNR7LNZKLZOBJ23Q4KD3XWSVV7NDB6Q7QTK5SFAH6A25BRKJJZQ4SNFBMH73JKFQMCN2Q5CYYC2BOKVUMYHMREOWE63JYUKM42ETW6I4MBKLZO5YGEXVDHN4SYMY6CL77MMW5ZSGZ2D3IIISRGKT5WWZBTYGOKDP7HARROARM5NVAG3VKVB7R57DUJK7FCDTTDTUHPAK6HVIQV5R3YHTCPHGG6CKW4I63UGT55N454WGKUW5RGHJ6GI2YKDFUQUPZDLOBQAESUIWEIWB7MQSNNRNE4XL3QPR3MW3ATC7LUHFGCAXI23CCGPCZ7YRQ2BPH6JJDEIUBU3BYBZKCRYGTIBZCTVRQVUGLNUZTTDIZ4YXNERN37HPIHN6WTSE5XMUSOTTAHDGRV3OI2GATZVKT7R47RW6IPJHFCWPOYZUJWSENX4F2TBXORSQ5RE5PYHMETH67QPE3EGD7VFWC3OSJWPP76ABZU2WZU/page{page_num}")
-    main_page.wait_for_load_state('load')
+    
 
+    # Car page
     car_page = context.new_page()
     car_page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-    
-    cookieButton = main_page.locator("#didomi-notice-agree-button")
 
-    try:
-        cookieButton.wait_for(state="visible", timeout=30000)
-        if cookieButton.is_enabled():
-            cookieButton.click()
-            print("✔ Cookie button clicked")
-    except PlaywrightTimeoutError:
-        print("⌛ Cookie button not visible (timeout) — probably not shown")
-    except Exception as e:
-        print(f"⚠️ Unexpected error with cookie button: {e}")
 
+    # Stabilize proxy
+    time.sleep(random.uniform(2, 3))
 
     return context, main_page, car_page
