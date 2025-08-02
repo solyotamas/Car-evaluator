@@ -31,21 +31,26 @@ from itertools import cycle
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
 from playwright._impl._errors import Error as PlaywrightError
 
-
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from models import CarData, CarDetails 
 
 # ======== 
-
 load_dotenv("shhh.env")
 username = os.getenv("PROXY_USERNAME")
 password = os.getenv("PROXY_PASSWORD")
 proxy_ips = os.getenv("PROXIES").split(',')
 ports = os.getenv("PORTS").split(',')
 port = 12323
+# ========
+engine_connection = os.getenv("SQL_ENGINE")
 
+engine = create_engine(engine_connection)
+Session = sessionmaker(bind=engine)
+session = Session()
 # ======== 
-
-car_specs = []
-car_data = []
+car_details_page = []
+car_data_page = []
     
 
 page_num = 1
@@ -67,7 +72,8 @@ with sync_playwright() as pw:
     # =============================
 
     for k in range(0,100):
-
+        
+        # Proxy switching every 5th page
         if (page_num - 1)  % 5 == 0:
             context, main_page, car_page = switch_proxy(
                 proxy_cycle=proxy_cycle,
@@ -127,9 +133,7 @@ with sync_playwright() as pw:
 
 
         # Car listings on the page given page
-        print('finding listings')
         listings = main_page.locator('div.row.talalati-sor')
-        print('found')
         count = listings.count()
         print("Page number: ", page_num, '\n')
 
@@ -176,9 +180,9 @@ with sync_playwright() as pw:
             # On Main Page
             # Price, Sale Price 
             price_locator = listings.nth(i).locator('div.pricefield-primary').first
-            sale_locator = listings.nth(i).locator('div.pricefield-secondary-basic').first
             price = price_locator.inner_text().strip() if price_locator.count() > 0 else None
-            sale = sale_locator.inner_text().strip() if sale_locator.count() > 0 else None
+            #sale_locator = listings.nth(i).locator('div.pricefield-secondary-basic').first
+            #sale = sale_locator.inner_text().strip() if sale_locator.count() > 0 else None
 
             # URL, ID, 
             id_search = re.search(r'-(\d+)(?:[#?]|$)', href)
@@ -213,7 +217,7 @@ with sync_playwright() as pw:
             # Car specs table
             id = id
             price = clean_price(price)
-            sale = clean_sale_price(sale)
+            #sale = clean_sale_price(sale)
             manufacturer = manufacturer
             modell = modell
             evjarat = clean_evjarat(evjarat)
@@ -231,64 +235,76 @@ with sync_playwright() as pw:
             #vegyes_fogyasztas = clean_vegyes_fogyasztas(vegyes_fogyasztas)
             
             
-            car_specs.append({
+            car_details_page.append({
                 'id': id, 
-                'price': price,
-                'sale price': sale,
-                'gyarto': manufacturer,
+                'ár': price,
+                'gyártó': manufacturer,
                 'modell': modell,
-                'evjarat' : evjarat,
-                'km ora' : km_ora,
-                'uzemenyag': uzemanyag,
-                'KW' : kw,
-                'LE' : le,
-                'allapot' : allapot,
-                'csomagtarto' : csomagtarto,
+                'évjárat' : evjarat,
+                'km' : km_ora,
+                'üzemenyag': uzemanyag,
+                'kw' : kw,
+                'le' : le,
+                'állapot' : allapot,
+                'csomagtartó' : csomagtarto,
                 'kivitel' : kivitel,
-                'szemelyek_szama' : szemelyek_szama,
-                'szin' : szin,
-                'hengerurtartalom': hengerurtartalom,
-                'hajtas' : hajtas,
-                'valto tipus' : valto_tipus,
-                'valto szam' : valto_szam,
-                'valto subtipus' : valto_subtipus
-                #'vegyes fogyasztas': vegyes_fogyasztas
-            })
+                'férőhely' : szemelyek_szama,
+                'szín' : szin,
+                'hengerűrtartalom': hengerurtartalom,
+                'hajtás' : hajtas,
+                'sebességváltó_típus' : valto_tipus,
+                'fokozatszám' : valto_szam,
+                'sebességváltó_altípus' : valto_subtipus
+            }) 
             print({
                 'id': id, 
-                'price': price,
-                'sale price': sale,
-                'gyarto': manufacturer,
+                'ár': price,
+                'gyártó': manufacturer,
                 'modell': modell,
-                'evjarat' : evjarat,
-                'km ora' : km_ora,
-                'uzemenyag': uzemanyag,
-                'KW' : kw,
-                'LE' : le,
-                'allapot' : allapot,
-                'csomagtarto' : csomagtarto,
+                'évjárat' : evjarat,
+                'km' : km_ora,
+                'üzemenyag': uzemanyag,
+                'kw' : kw,
+                'le' : le,
+                'állapot' : allapot,
+                'csomagtartó' : csomagtarto,
                 'kivitel' : kivitel,
-                'szemelyek_szama' : szemelyek_szama,
-                'szin' : szin,
-                'hengerurtartalom': hengerurtartalom,
-                'hajtas' : hajtas,
-                'valto tipus' : valto_tipus,
-                'valto szam' : valto_szam,
-                'valto subtipus' : valto_subtipus
-                #'vegyes fogyasztas' : vegyes_fogyasztas
+                'férőhely' : szemelyek_szama,
+                'szín' : szin,
+                'hengerűrtartalom': hengerurtartalom,
+                'hajtás' : hajtas,
+                'sebességváltó_típus' : valto_tipus,
+                'fokozatszám' : valto_szam,
+                'sebességváltó_altípus' : valto_subtipus
             })
             
             
-            car_data.append({
+            car_data_page.append({
                 'id' : id,
                 'active' : True,
                 'first seen' : datetime.now().replace(second=0, microsecond=0),
                 'last seen' : datetime.now().replace(second=0, microsecond=0),
                 'url' : href
             })
-
             print('Scraped: ' + str(i))
             
+        # =======================
+
+        pd.DataFrame(car_details_page).to_csv(
+            "car_details.csv",
+            mode='a',
+            header=not os.path.exists("car_details.csv"),
+            index=False
+        )
+        car_details_page.clear()
+        pd.DataFrame(car_data_page).to_csv(
+            "car_data.csv",
+            mode='a',
+            header=not os.path.exists("car_data.csv"),
+            index=False
+        )
+        car_data_page.clear()
+                        
 
         # Next page
         next_button = main_page.locator('ul.pagination > li.next').first
@@ -330,16 +346,11 @@ with sync_playwright() as pw:
                 
         
 
-        
+    # End
+
     car_page.close()
     main_page.close()
     context.close()
     browser.close()
 
-
-    df1 = pd.DataFrame(car_specs)
-    df2 = pd.DataFrame(car_data)
-
-    df1.to_csv('car_specs.csv', index=False)
-    df2.to_csv('car_data.csv', index=False)
 
