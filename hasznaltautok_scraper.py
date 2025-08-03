@@ -9,23 +9,11 @@ import os
 from scrape_functions import(
     extract_car_extra_specs,
     extract_car_basic_specs,
-    extract_car_vegyes_fogyasztas,
     extract_car_manufacturer_modell,
-
-    clean_price,
-    clean_sale_price,
-    clean_evjarat,
-    clean_km_ora,
-    clean_teljesitmeny,
-    clean_csomagtarto,
-    clean_szemelyek_szama,
-    clean_valto,
-    clean_hengerurtartalom,
-    clean_vegyes_fogyasztas,
-
     switch_proxy,
     wait_for_car_page_load,
-    wait_for_main_page_load
+    wait_for_main_page_load,
+    build_car_dict,
 )
 from itertools import cycle
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
@@ -53,7 +41,7 @@ car_details_page = []
 car_data_page = []
     
 
-page_num = 1
+page_num = 1401
 proxy_list = [ 
     f"http://{ip}:{port}" 
     for ip in proxy_ips
@@ -71,7 +59,7 @@ with sync_playwright() as pw:
 
     # =============================
 
-    for k in range(0,100):
+    while True:
         
         # Proxy switching every 5th page
         if (page_num - 1)  % 5 == 0:
@@ -181,14 +169,11 @@ with sync_playwright() as pw:
             # Price, Sale Price 
             price_locator = listings.nth(i).locator('div.pricefield-primary').first
             price = price_locator.inner_text().strip() if price_locator.count() > 0 else None
-            #sale_locator = listings.nth(i).locator('div.pricefield-secondary-basic').first
-            #sale = sale_locator.inner_text().strip() if sale_locator.count() > 0 else None
 
             # URL, ID, 
             id_search = re.search(r'-(\d+)(?:[#?]|$)', href)
             id = id_search.group(1)
 
-            
             
             # On Car Page  
             # Manufacturer, Modell
@@ -207,88 +192,26 @@ with sync_playwright() as pw:
             hengerurtartalom = extract_car_extra_specs(car_page = car_page, text = 'Hengerűrtartalom')
             hajtas = extract_car_extra_specs(car_page = car_page, text = 'Hajtás')
             valto = extract_car_extra_specs(car_page = car_page, text = 'Sebességváltó')
-            # Fogyasztas
-            #vegyes_fogyasztas = extract_car_vegyes_fogyasztas(car_page = car_page)
-
             
             # =====================
 
-            # Cleaning
-            # Car specs table
-            id = id
-            price = clean_price(price)
-            #sale = clean_sale_price(sale)
-            manufacturer = manufacturer
-            modell = modell
-            evjarat = clean_evjarat(evjarat)
-            km_ora = clean_km_ora(km_ora)
-            uzemanyag = uzemanyag
-            kw, le = clean_teljesitmeny(teljesitmeny)
-            allapot = allapot
-            csomagtarto = clean_csomagtarto(csomagtarto)
-            kivitel = kivitel
-            szemelyek_szama = clean_szemelyek_szama(szemelyek_szama)
-            szin = szin
-            hengerurtartalom = clean_hengerurtartalom(hengerurtartalom)
-            hajtas = hajtas
-            valto_tipus, valto_szam, valto_subtipus = clean_valto(valto)
-            #vegyes_fogyasztas = clean_vegyes_fogyasztas(vegyes_fogyasztas)
-            
-            
-            car_details_page.append({
-                'id': id, 
-                'ár': price,
-                'gyártó': manufacturer,
-                'modell': modell,
-                'évjárat' : evjarat,
-                'km' : km_ora,
-                'üzemenyag': uzemanyag,
-                'kw' : kw,
-                'le' : le,
-                'állapot' : allapot,
-                'csomagtartó' : csomagtarto,
-                'kivitel' : kivitel,
-                'férőhely' : szemelyek_szama,
-                'szín' : szin,
-                'hengerűrtartalom': hengerurtartalom,
-                'hajtás' : hajtas,
-                'sebességváltó_típus' : valto_tipus,
-                'fokozatszám' : valto_szam,
-                'sebességváltó_altípus' : valto_subtipus
-            }) 
-            print({
-                'id': id, 
-                'ár': price,
-                'gyártó': manufacturer,
-                'modell': modell,
-                'évjárat' : evjarat,
-                'km' : km_ora,
-                'üzemenyag': uzemanyag,
-                'kw' : kw,
-                'le' : le,
-                'állapot' : allapot,
-                'csomagtartó' : csomagtarto,
-                'kivitel' : kivitel,
-                'férőhely' : szemelyek_szama,
-                'szín' : szin,
-                'hengerűrtartalom': hengerurtartalom,
-                'hajtás' : hajtas,
-                'sebességváltó_típus' : valto_tipus,
-                'fokozatszám' : valto_szam,
-                'sebességváltó_altípus' : valto_subtipus
-            })
-            
-            
-            car_data_page.append({
-                'id' : id,
-                'active' : True,
-                'first seen' : datetime.now().replace(second=0, microsecond=0),
-                'last seen' : datetime.now().replace(second=0, microsecond=0),
-                'url' : href
-            })
+            car_details, car_data = build_car_dict(
+                id, price, manufacturer, modell, evjarat, km_ora, uzemanyag, teljesitmeny, allapot,
+                csomagtarto, kivitel, szemelyek_szama, szin, hengerurtartalom, hajtas, valto, href
+            )
+            car_details_page.append(car_details)
+            car_data_page.append(car_data)
             print('Scraped: ' + str(i))
             
         # =======================
+        '''
+        car_details_objects = [CarDetails(**car) for car in car_details_page]
+        car_data_objects = [CarData(**car) for car in car_data_page]
+        session.bulk_save_objects(car_details_objects)
+        session.bulk_save_objects(car_data_objects)
+        session.commit()
+        '''
+
 
         pd.DataFrame(car_details_page).to_csv(
             "car_details.csv",
@@ -314,12 +237,9 @@ with sync_playwright() as pw:
             max_retries_next_button = 3
             while True:
                 try:
-                    next_button.click()
-                    wait_for_main_page_load(main_page= main_page)
-
-                    
-
                     page_num += 1
+                    main_page.goto(f"https://www.hasznaltauto.hu/talalatilista/PCOHKVCBN3RTADH4RNPZAOCJXOVRY52RUBABD5GUVPA5VDFDLAJAHCJWTICP362SW2JVURXWMRREMIRZEPJKBVQLOUGWVGNLVQA4NGV4QYOXNWKWWCS4VQQFFWNDHNCMHW2FMGMY6TQG5RAP3JL4QGB2VAQFZMXNU5NIYSJ2QEG7RQTKC6JSYVEWZUM7RGRSDOKWD24L4TPO4EIRV7O6WS2VA6DIWI3Y3P3HSVFW5S746KVLYGBSWNIYDUPBZSFDKIYOIHTQKLZRGPM2AMZD3ID7VNGPVI5ADGMYWW4ZXEW7IASHQ3RQ2F5BPNISARV5KY2GFSZ3GYITYBLPMJCY3R6QDIHLCALJHXP7JHP4TK74DH7A66ET734HWMT7PIJLDSF6NEV7NQBZG7OTQHPT2WLCJXXLKGXIU77NNR7LNZKLZOBJ23Q4KD3XWSVV7NDB6Q7QTK5SFAH6A25BRKJJZQ4SNFBMH73JKFQMCN2Q5CYYC2BOKVUMYHMREOWE63JYUKM42ETW6I4MBKLZO5YGEXVDHN4SYMY6CL77MMW5ZSGZ2D3IIISRGKT5WWZBTYGOKDP7HARROARM5NVAG3VKVB7R57DUJK7FCDTTDTUHPAK6HVIQV5R3YHTCPHGG6CKW4I63UGT55N454WGKUW5RGHJ6GI2YKDFUQUPZDLOBQAESUIWEIWB7MQSNNRNE4XL3QPR3MW3ATC7LUHFGCAXI23CCGPCZ7YRQ2BPH6JJDEIUBU3BYBZKCRYGTIBZCTVRQVUGLNUZTTDIZ4YXNERN37HPIHN6WTSE5XMUSOTTAHDGRV3OI2GATZVKT7R47RW6IPJHFCWPOYZUJWSENX4F2TBXORSQ5RE5PYHMETH67QPE3EGD7VFWC3OSJWPP76ABZU2WZU/page{page_num}")
+                    wait_for_main_page_load(main_page=main_page)
                     break
                     
                 except (PlaywrightTimeoutError, PlaywrightError):
@@ -343,7 +263,9 @@ with sync_playwright() as pw:
                     else:
                         print("Retrying with current proxy.")
                         continue
-                
+        else:
+            print("Scraped full, no more pages left")
+            break
         
 
     # End

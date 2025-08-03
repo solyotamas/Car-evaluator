@@ -6,6 +6,7 @@ import os
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
 import time
 import random
+from datetime import datetime
 
 # =========================
 def extract_car_basic_specs(car_page, text):
@@ -162,6 +163,54 @@ def clean_vegyes_fogyasztas(value: str) -> float:
     fraction = match.group(2) if match.group(2) else "0"
 
     return float(f"{whole}.{fraction}")
+
+# ==========================
+
+def build_car_dict(id, price, manufacturer, modell, evjarat, km_ora, uzemanyag, teljesitmeny, allapot,
+    csomagtarto, kivitel, szemelyek_szama, szin, hengerurtartalom, hajtas, valto, href):
+    
+    # Cleaning
+    price = clean_price(price)
+    evjarat = clean_evjarat(evjarat)
+    km_ora = clean_km_ora(km_ora)
+    kw, le = clean_teljesitmeny(teljesitmeny)
+    csomagtarto = clean_csomagtarto(csomagtarto)
+    szemelyek_szama = clean_szemelyek_szama(szemelyek_szama)
+    hengerurtartalom = clean_hengerurtartalom(hengerurtartalom)
+    valto_tipus, valto_szam, valto_subtipus = clean_valto(valto)
+    
+    # Build dicts
+    car_details = {
+        'id': id,
+        'price': price,
+        'manufacturer': manufacturer,
+        'model': modell,
+        'year': evjarat,
+        'kilometers': km_ora,
+        'fuel_type': uzemanyag,
+        'kw': kw,
+        'le': le,
+        'condition': allapot,
+        'trunk_capacity': csomagtarto,
+        'body_type': kivitel,
+        'seats': szemelyek_szama,
+        'color': szin,
+        'engine_capacity': hengerurtartalom,
+        'drive_type': hajtas,
+        'transmission_type': valto_tipus,
+        'number_of_gears': valto_szam,
+        'transmission_subtype': valto_subtipus
+    }
+
+    car_data = {
+        'id': id,
+        'active': True,
+        'first_seen': datetime.now().replace(second=0, microsecond=0),
+        'last_seen': datetime.now().replace(second=0, microsecond=0),
+        'url': href
+    }
+
+    return car_details, car_data
 
 # ==========================
 
