@@ -41,7 +41,7 @@ car_details_page = []
 car_data_page = []
     
 
-page_num = 1401
+page_num = 2436
 proxy_list = [ 
     f"http://{ip}:{port}" 
     for ip in proxy_ips

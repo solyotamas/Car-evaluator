@@ -219,7 +219,7 @@ def wait_for_main_page_load(main_page : Page, timeout : int = 45000):
         # Cookie button
         cookieButton = main_page.locator("#didomi-notice-agree-button")
         try:
-            cookieButton.wait_for(state="visible", timeout=30000)
+            cookieButton.wait_for(state="visible", timeout=15000)
             if cookieButton.is_enabled():
                 cookieButton.click()
                 print("✔ Cookie button clicked")
