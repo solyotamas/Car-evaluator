@@ -40,3 +40,18 @@ else:
 
 plt.tight_layout()
 plt.show()
+
+
+#================ What will be dropped ===============
+print("\n" + "=" * 60)
+
+missing_km = df['kilometers'].isna().sum()
+over_1m = df[df['kilometers'] > 1000000]
+print("\nCars over 1m km:")
+print(over_1m[['manufacturer', 'model', 'year', 'price', 'kilometers']].sort_values('kilometers'))
+
+over_1m = len(df[df['kilometers'] > 1000000])
+print(f"Will be dropped:")
+print(f"  Over 1M km: {over_1m} cars")
+print(f"Will be imputed:")
+print(f"  Missing km: {missing_km} cars")

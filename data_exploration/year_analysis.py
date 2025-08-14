@@ -45,3 +45,14 @@ plt.xlabel('Year')
 plt.ylabel('Count')
 plt.title('Distribution of Car Years')
 plt.show()
+
+
+#================ What will be dropped ===============
+print("\n" + "=" * 60)
+
+missing_year = df['year'].isna().sum()
+older_than_2000 = len(df[df['year'] < 2000])
+
+print(f"Will be dropped:")
+print(f"Cars with missing year: {missing_year}")
+print(f"Cars made earlier than 2000: {older_than_2000}")

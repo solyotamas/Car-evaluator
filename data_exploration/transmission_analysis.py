@@ -61,3 +61,18 @@ for trans_type in df['transmission_type'].unique():
                print(f"    {gear:.0f} gears: {count} cars")
            print(f"  Mean: {trans_data['number_of_gears'].mean():.1f}")
            print(f"  Median: {trans_data['number_of_gears'].median():.0f}")
+
+
+
+# Extension to find submission types where gears are missing
+print("\n" + "="*60)
+print("ANALYSIS OF MISSING GEARS BY TRANSMISSION TYPE:")
+print("="*60)
+
+missing_gears_df = df[df['number_of_gears'].isna()]
+missing_gears_by_trans_type = missing_gears_df['transmission_type'].value_counts(dropna=False)
+
+print("Distribution of 'transmission_type' where 'number_of_gears' is missing:")
+print(missing_gears_by_trans_type)
+
+print(f"\nTotal cars with missing gears: {missing_gears_df.shape[0]}")

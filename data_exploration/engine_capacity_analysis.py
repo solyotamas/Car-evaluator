@@ -60,3 +60,17 @@ print("\nEngine capacity by fuel type (CV = coefficient of variation):")
 fuel_stats = df.groupby('fuel_type')['engine_capacity'].agg(['mean', 'std', 'median', 'count'])
 fuel_stats['cv'] = fuel_stats['std'] / fuel_stats['mean']  # Lower = more consistent
 print(fuel_stats.sort_values('cv'))
+
+
+#================ What will be dropped ===============
+print("\n" + "=" * 60)
+
+missing_cc = df['engine_capacity'].isna().sum()
+under = len(df[df['engine_capacity'] < 500])
+over = len(df[df['engine_capacity'] > 10000])
+
+print(f"Will be dropped:")
+print(f"Cars under 500 cc: {under}")
+print(f"Car over 10 000 cc: {over}")
+print(f"Will be imputed:")
+print(f"Cars: {missing_cc}")

@@ -81,3 +81,16 @@ print(f"300+ kw: {len(df[df['kw'] >= 300])} cars")
 print("\nDetailed 0-20 kw breakdown:")
 print(f"  0-10 kw:  {len(df[(df['kw'] >= 0) & (df['kw'] < 10)])} cars")
 print(f"  10-20 kw: {len(df[(df['kw'] >= 10) & (df['kw'] < 20)])} cars")
+
+
+#================ What will be dropped ===============
+print("\n" + "=" * 60)
+
+missing_kw = df['kw'].isna().sum()
+under = len(df[df['kw'] < 30])
+over = len(df[df['kw'] > 1000])
+
+print(f"Will be dropped:")
+print(f"Cars with missing kw: {missing_kw}")
+print(f"Cars with <30 kw: {under}")
+print(f"Cars with >1000 kw: {over}")

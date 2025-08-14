@@ -44,3 +44,40 @@ for t in thresholds:
 print("\nCars between 50-100M:")
 print(df[(df['price'] > 50_000_000) & (df['price'] <= 100_000_000)]['manufacturer'].value_counts().head(10))
 
+
+#================ What will be dropped ===============
+
+print("\n" + "=" * 60)
+
+cheap_cars = df[df['price'] < 200000]
+print(cheap_cars.groupby('condition')['price'].count())
+print("\nSample of <200k cars:")
+print(cheap_cars[['manufacturer', 'model', 'year', 'price', 'condition']].sort_values('price'))
+
+print("\n" + "=" * 60)
+
+over150m = df[df['price'] > 150000000]
+print("\nCars over 150m:")
+print(over150m[['manufacturer', 'model', 'year', 'price']].sort_values('price'))
+
+print("\n" + "=" * 60)
+
+over_500m = df[df['price'] > 500000000]
+print("\nCars over 500m:")
+print(over_500m[['manufacturer', 'model', 'year', 'price']].sort_values('price'))
+
+print("\n" + "=" * 60)
+
+missing_price = df['price'].isna().sum()
+under_200k = len(df[df['price'] < 200000])
+over500m = len(df[df['price'] > 500000000])
+
+
+print(f"\nWill be dropped:")
+print(f"Missing prices: {missing_price} cars")
+print(f"Under 200k: {under_200k} cars")
+print(f"Over 500m: {over500m} cars")
+print(f"TOTAL: {missing_price + under_200k + over500m} cars")
+
+
+

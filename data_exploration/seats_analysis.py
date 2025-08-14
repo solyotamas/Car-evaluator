@@ -28,3 +28,17 @@ print(unusual_seats[['manufacturer', 'model', 'body_type', 'seats', 'year']].hea
 print("\nAverage seats by body type:")
 seats_by_body = df.groupby('body_type')['seats'].agg(['mean', 'median', 'min', 'max', 'count']).sort_values('mean', ascending=False)
 print(seats_by_body)
+
+
+#================ What will be dropped ===============
+print("\n" + "=" * 60)
+
+missing_seats = df['seats'].isna().sum()
+under = len(df[df['seats'] < 2])
+over = len(df[df['seats'] > 15])
+
+print(f"Will be dropped:")
+print(f"Cars with < 2 seats: {under}")
+print(f"Cars with > 15 seats: {over}")
+print(f"Will be imputed:")
+print(f"Cars with missing seats: {missing_seats}")
