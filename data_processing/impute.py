@@ -42,7 +42,7 @@ def impute_fuel_type(df: pd.DataFrame) -> pd.DataFrame:
         - Missing fuel types - filled with Unknown
     '''
     imputed_df = df.copy()
-    imputed_df['fuel_type'].fillna('Unknown', inplace=True)
+    imputed_df['fuel_type'] = imputed_df['fuel_type'].fillna('Unknown')
     
     return imputed_df
 
@@ -59,9 +59,7 @@ def impute_trunk_capacity(df: pd.DataFrame) -> pd.DataFrame:
     
 
     # for like hot rod etc
-    imputed_df['trunk_capacity'].fillna(imputed_df['trunk_capacity'].median(), inplace=True)
-    
-    print(f"Imputed {df['trunk_capacity'].isna().sum()} missing trunk capacities")
+    imputed_df['trunk_capacity'] = imputed_df['trunk_capacity'].fillna(imputed_df['trunk_capacity'].median())
     
     return imputed_df
 
@@ -76,9 +74,7 @@ def impute_seats(df: pd.DataFrame) -> pd.DataFrame:
         mask = (imputed_df['body_type'] == body_type) & (imputed_df['seats'].isna())
         imputed_df.loc[mask, 'seats'] = seat_medians[body_type]
     
-    imputed_df['seats'].fillna(5, inplace=True)
-    
-    print(f"Imputed {df['seats'].isna().sum()} missing seat values")
+    imputed_df['seats'] = imputed_df['seats'].fillna(5)
     
     return imputed_df
 
@@ -87,67 +83,66 @@ def impute_color(df: pd.DataFrame) -> pd.DataFrame:
         - Missing color - filled with Unknown
     '''
     imputed_df = df.copy()
-    imputed_df['color'].fillna('Unknown', inplace=True)
-    
-    print(f"Filled {df['color'].isna().sum()} missing colors with 'Unknown'")
+    imputed_df['color'] = imputed_df['color'].fillna('Unknown')
     
     return imputed_df
-
 
 def impute_engine_capacity(df: pd.DataFrame) -> pd.DataFrame:
+    '''
+        - Imputing missing engine capacities based on kw correlation
+    '''
     imputed_df = df.copy()
-    
-    has_both = imputed_df[(imputed_df['kw'] > 0) & 
-                          (imputed_df['engine_capacity'] > 0)]
-    
-    # kw max - kw min / 30
-    has_both['kw_range'] = pd.cut(has_both['kw'], bins=30)
-    kw_to_cc = has_both.groupby('kw_range')['engine_capacity'].median()
-    
-    missing_mask = imputed_df['engine_capacity'].isna()
-    
-    for idx in imputed_df[missing_mask].index:
-        kw_val = imputed_df.loc[idx, 'kw']
-        imputed = False
-        
-        # bucket
-        for kw_range in kw_to_cc.index:
-            if kw_val in kw_range:
-                imputed_df.loc[idx, 'engine_capacity'] = kw_to_cc[kw_range]
-                imputed = True
-                break
-        
-        # fallback if no bucket
-        if not imputed:
-            imputed_df.loc[idx, 'engine_capacity'] = kw_val * 15
-    
-    return imputed_df
+    '''
+    car_id	kw	    engine_capacity
+    1	    130	    1798
+    2	    210	    2998
+    3	    40	    NaN
+    4	    340	    4998
+    5	    111	    NaN
+    '''
+    kw_bins = pd.cut(imputed_df['kw'], bins=30, include_lowest=True)
+    '''
+    car_id	kw_bin
+    1	(100, 200]
+    2	(200, 300]
+    3	(0, 100]
+    4	(300, 400]
+    5	(100, 200]
+    '''
+    kw_to_cc_map = imputed_df.groupby(kw_bins, observed=False)['engine_capacity'].median()
+    '''
+    kw_bin	median_engine_capacity
+    (0, 100]	NaN*
+    (100, 200]	1798.0
+    (200, 300]	2998.0
+    (300, 400]	4998.0
+    '''
+    imputed_values = kw_bins.map(kw_to_cc_map)
 
+    imputed_df['engine_capacity'] = imputed_df['engine_capacity'].fillna(imputed_values)
+    imputed_df['engine_capacity'] = imputed_df['engine_capacity'].fillna(imputed_df['kw'] * 15)
+
+    return imputed_df
 
 def impute_drive_type(df: pd.DataFrame) -> pd.DataFrame:
     '''
         - Missing drive type - filled with Unknown
     '''
     imputed_df = df.copy()
-    imputed_df['drive_type'].fillna('Unknown', inplace=True)
-    
-    print(f"Filled {df['drive_type'].isna().sum()} missing drive types with 'Unknown'")
+    imputed_df['drive_type'] = imputed_df['drive_type'].fillna('Unknown')
     
     return imputed_df
-
 
 def impute_transmission_type(df: pd.DataFrame) -> pd.DataFrame:
     '''
         - Missing transmission type - filled with Unknown
+        
+        + leaving Nans in transmission subtype because it will be merged in engineer_transmission
     '''
     imputed_df = df.copy()
-    
-    imputed_df['transmission_type'].fillna('Unknown', inplace=True)
-    
-    print(f"Filled {df['transmission_type'].isna().sum()} missing transmission types with 'Unknown'")
-    
+    imputed_df['transmission_type'] = imputed_df['transmission_type'].fillna('Unknown')
+     
     return imputed_df
-
 
 def impute_number_of_gears(df: pd.DataFrame) -> pd.DataFrame:
     '''
@@ -156,18 +151,16 @@ def impute_number_of_gears(df: pd.DataFrame) -> pd.DataFrame:
     imputed_df = df.copy()
     
     gears_median = imputed_df.groupby('transmission_type')['number_of_gears'].median()
-    for trans_type in gears_median.index:
-        if pd.notna(gears_median[trans_type]):
-            mask = (imputed_df['transmission_type'] == trans_type) & \
-                   (imputed_df['number_of_gears'].isna())
-            imputed_df.loc[mask, 'number_of_gears'] = gears_median[trans_type]
+    imputed_df['number_of_gears'] = imputed_df['number_of_gears'].fillna(
+        imputed_df['transmission_type'].map(gears_median)
+    )
     
     mask = (imputed_df['transmission_type'] == 'Fokozatmentes automata') & \
            (imputed_df['number_of_gears'].isna())
     imputed_df.loc[mask, 'number_of_gears'] = 0
     
     # Unknown
-    imputed_df['number_of_gears'].fillna(5, inplace=True)
+    imputed_df['number_of_gears'] = imputed_df['number_of_gears'].fillna(5)
 
     print(f"Imputed {df['number_of_gears'].isna().sum()} missing gear values")
     
@@ -175,5 +168,58 @@ def impute_number_of_gears(df: pd.DataFrame) -> pd.DataFrame:
 
 # ========================================
 
-def table_impute(df: pd.DataFrame) -> pd.DataFrame:
-    ...
+def table_impute(df: pd.DataFrame, text: bool = True) -> pd.DataFrame:
+    """
+        - Complete imputating for car data
+    """
+    if text:
+        print("\nIMPUTING\n")
+
+    imputation_steps = [
+        ("kilometers", impute_kilometers),
+        ("fuel type", impute_fuel_type),
+        ("trunk capacity", impute_trunk_capacity),
+        ("seats", impute_seats),
+        ("color", impute_color),
+        ("engine capacity", impute_engine_capacity),
+        ("drive type", impute_drive_type),
+        ("transmission type", impute_transmission_type),
+        ("number of gears", impute_number_of_gears),
+    ]
+    
+    for step_name, impute_func in imputation_steps:
+        if 'kilometers' in step_name:
+            missing_before = df['kilometers'].isna().sum()
+        elif 'fuel' in step_name:
+            missing_before = df['fuel_type'].isna().sum()
+        elif 'trunk' in step_name:
+            missing_before = df['trunk_capacity'].isna().sum()
+        elif 'seats' in step_name:
+            missing_before = df['seats'].isna().sum()
+        elif 'color' in step_name:
+            missing_before = df['color'].isna().sum()
+        elif 'engine' in step_name:
+            missing_before = df['engine_capacity'].isna().sum()
+        elif 'drive' in step_name:
+            missing_before = df['drive_type'].isna().sum()
+        elif 'transmission type' in step_name:
+            missing_before = df['transmission_type'].isna().sum()
+        elif 'gears' in step_name:
+            missing_before = df['number_of_gears'].isna().sum()
+        
+        df = impute_func(df)
+        
+        if text:
+            print(f"{step_name}: imputed {missing_before} missing values")
+    
+    if text:
+        print("-" * 50)
+        print(f"Imputation complete")
+        
+        remaining_nan = df.isna().sum()
+        if remaining_nan.sum() > 0:
+            print("\nRemaining missing values:")
+            for col, count in remaining_nan[remaining_nan > 0].items():
+                print(f"  {col}: {count}")
+    
+    return df

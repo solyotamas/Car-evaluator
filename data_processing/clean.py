@@ -5,11 +5,11 @@ import pandas as pd
 def clean_price(df: pd.DataFrame) -> pd.DataFrame:
     '''
         - Dropping cars with no price 
-        - Dropping cars worth less than 300k and more than 100m huf
+        - Dropping cars worth less than 300k and more than 500m huf
     '''
     clean_df = df.copy()
     clean_df = clean_df.dropna(subset=['price'])
-    clean_df = clean_df[(clean_df['price'] >= 300_000) & (clean_df['price'] <= 100_000_000)]
+    clean_df = clean_df[(clean_df['price'] >= 200_000) & (clean_df['price'] <= 500_000_000)]
 
     return clean_df
 
@@ -40,41 +40,25 @@ def clean_manufacturer_model(df:pd.DataFrame) -> pd.DataFrame:
 
 def clean_kilometers(df: pd.DataFrame) -> pd.DataFrame:
     '''
-        - Dropping cars with more than 1 million kilometers on them
-        - Cars without kilometers on them will be imputed + flagged ...
+        - Dropping cars with more than 1 million kilometers 
+
+        + Cars without kilometers on them will be imputed + flagged ...
     '''
     clean_df = df.copy()
-    clean_df = clean_df[clean_df['kilometers'] <= 1_000_000]
-    
+    clean_df = clean_df[(clean_df['kilometers'] <= 1_000_000) | 
+                        (clean_df['kilometers'].isna())]
+
+
     return clean_df
 
 def clean_fuel_type(df: pd.DataFrame) -> pd.DataFrame:
     '''
-        - Dropping weird fuel types: 
-            - LPG, CNG, Etanol
-        - Merging gas variants into base
-        - keeping hybrid seperate for now
+        - Not dropping anything
+
+        + Will impute missing with Unknown
+        + Will feature engineer weird variants
     '''
     clean_df = df.copy()
-
-    removable_gas_types = ['LPG', 'CNG', 'Etanol']
-    clean_df = clean_df[~clean_df['fuel_type'].isin(removable_gas_types)]
-
-    fuel_mapping = {
-        'Benzin': 'Benzin',
-        'Dízel' : 'Dízel',
-        'Elektromos' : 'Elektromos',
-
-        'Hibrid (Benzin)': 'Hibrid-Benzin',
-        'Hibrid (Dízel)': 'Hibrid-Dízel',
-        'Hibrid': 'Hibrid',
-        
-        'Benzin/Gáz': 'Benzin',
-        'Dízel/Gáz': 'Dízel',
-        'LPG/dízel' : 'Dízel',
-        'Biodízel': 'Dízel',
-    }
-    clean_df['fuel_type'] = clean_df['fuel_type'].replace(fuel_mapping)
 
     return clean_df
 
@@ -93,7 +77,7 @@ def clean_kw_le(df: pd.DataFrame) -> pd.DataFrame:
     clean_df = clean_df[clean_df['kw'] >= 30]
     clean_df = clean_df[clean_df['kw'] <= 1000]
     clean_df = clean_df.dropna(subset=['kw'])
-    
+
     return clean_df
 
 def clean_condition(df: pd.DataFrame) -> pd.DataFrame:
@@ -109,6 +93,7 @@ def clean_trunk_capacity(df: pd.DataFrame) -> pd.DataFrame:
     '''
         - Dropping cars with high trunk capacity
             - x their body types capacity, generally 5x median
+
         Kisbusz: 15x median, huge differences
         Pickup: 5x median
         Kombi: 15x median, lot of minibuses here mistakenly
@@ -125,11 +110,12 @@ def clean_trunk_capacity(df: pd.DataFrame) -> pd.DataFrame:
         Modepautó: 5x median
         Sport: 5x median
         Lépcsőshátú: 5x median
+
+        + Will impute missing trunk capacity based on body type median
     '''
     clean_df = df.copy()
 
     trunk_medians = clean_df.groupby('body_type')['trunk_capacity'].median()
-
     multipliers = {
         'Kisbusz': 15,
         'Pickup': 5,
@@ -156,16 +142,14 @@ def clean_trunk_capacity(df: pd.DataFrame) -> pd.DataFrame:
                     (clean_df['trunk_capacity'] > threshold)
             rows_to_drop.extend(clean_df[mask].index.tolist())
     
-    # Drop the outliers
     clean_df = clean_df.drop(index=rows_to_drop)
-    
-    print(f"Removed {len(rows_to_drop)} cars with excessive trunk capacity")
-    
+
     return clean_df
 
 def clean_body_type(df: pd.DataFrame) -> pd.DataFrame:
     '''
-        - Removing rare body types, 
+        - Dropping cars with body type missing
+        - Dropping cars with rare body type 
     '''
     clean_df = df.copy()
     clean_df = clean_df.dropna(subset=['body_type'])
@@ -173,9 +157,7 @@ def clean_body_type(df: pd.DataFrame) -> pd.DataFrame:
     
     rare_body_types = ['Hot rod', 'Buggy']
     clean_df = clean_df[~clean_df['body_type'].isin(rare_body_types)]
-    
-    print(f"Removed {len(df) - len(clean_df)} cars with missing or rare body types (Hot rod, Buggy)")
-    
+
     return clean_df
 
 def clean_seats(df: pd.DataFrame) -> pd.DataFrame:
@@ -183,24 +165,24 @@ def clean_seats(df: pd.DataFrame) -> pd.DataFrame:
         - Dropping cars with seats
             - more than 15
             - less than 2
-        - Cars with missing seats will be imputed based on body type median and possibly a general 5 seat fallback
+
+        + Cars with missing seats will be imputed based on body type median
     '''
     clean_df = df.copy()
-    
-    clean_df = clean_df[(clean_df['seats'] >= 2) & (clean_df['seats'] <= 15)]
-    
-    print(f"Removed {len(df) - len(clean_df)} cars with seats <2 or >15")
+    clean_df = clean_df[((clean_df['seats'] >= 2) & (clean_df['seats'] <= 15)) | 
+                        (clean_df['seats'].isna())]
     
     return clean_df
 
 def clean_color(df: pd.DataFrame) -> pd.DataFrame:
     '''
-        - Not doing anything here for now
-        - Cars with missing color will be imputed with an Unknown category
-        - Possible feature engineering into 2 seperate features in the future: base color and is_metallic
+        - Not dropping anything
+
+        + Cars with missing color will be imputed with an Unknown category
+        + Possible feature engineering into 2 seperate features in the future: base color and is_metallic
     '''
     clean_df = df.copy()
-    
+
     return clean_df
 
 def clean_engine_capacity(df: pd.DataFrame) -> pd.DataFrame:
@@ -209,81 +191,58 @@ def clean_engine_capacity(df: pd.DataFrame) -> pd.DataFrame:
             - below 500cc
             - over 10 000 cc
         - Setting Electric car's cc to 0
-        - Cars without engine capacity will be imputed based on kw correlation
+
+        + Cars without engine capacity will be imputed based on kw correlation
     '''
     clean_df = df.copy()
 
-    clean_df.loc[clean_df['fuel_type'] == 'Elektromos', 'engine_capacity'] = 0
-    
-    clean_df = clean_df[(clean_df['engine_capacity'] >= 500) | 
-                        (clean_df['engine_capacity'] == 0) |
-                        (clean_df['engine_capacity'].isna())]
-    
-    clean_df = clean_df[clean_df['engine_capacity'] <= 10000]
-    
-    print(f"Removed {len(df) - len(clean_df)} cars with invalid engine capacity")
+    clean_df.loc[clean_df['fuel_type'] == 'Elektromos', 'engine_capacity'] = 0 
+
+    valid_range = ((clean_df['engine_capacity'] >= 500) & (clean_df['engine_capacity'] <= 10000))
+    keep_rows = (valid_range | (clean_df['engine_capacity'] == 0) | (clean_df['engine_capacity'].isna()))
+
+    clean_df = clean_df[keep_rows]
     
     return clean_df
 
 def clean_drive_type(df: pd.DataFrame) -> pd.DataFrame:
     '''
-        - Not doing anything with them for now
-        - Cars with missing drive types will be imputed with Unknown category
-        - Could merge Állando osszkerek + Kapcsolhato osszekerek + osszkerek
-            - maybe in the future
+        - Not dropping anything
+
+        + Cars with missing drive types will be imputed with Unknown category
+        + Could merge Állando osszkerek + Kapcsolhato osszekerek + osszkerek
+            + maybe in the future
     '''
     clean_df = df.copy()
-    
+
     return clean_df
 
 def clean_transmission(df: pd.DataFrame) -> pd.DataFrame:
     '''
+        - Not dropping anything
+
         - Simplifying transmission types, merging subtype
         - Cars with missing transmission types will be marked with Unknown
         - Cars with missing gearcount will be imputed with transmission type average
         - no dropping 
     '''
     clean_df = df.copy()
-    
-
-    mask = (clean_df['transmission_type'] == 'Automata') & \
-           (clean_df['transmission_subtype'] == 'tiptronic')
-    clean_df.loc[mask, 'transmission_type'] = 'Automata tiptronic'
-    
-    clean_df = clean_df.drop(columns=['transmission_subtype'])
-    
-    
-    transmission_mapping = {
-        'Manuális' : 'Manuális',
-        'Automata' : 'Automata',
-        'Fokozatmentes automata' : 'Fokozatmentes automata',
-        'Automata tiptronic' : 'Automata tiptronic',
-        'Szekvenciális' : 'Szekvenciális',
-
-        'Automata felező váltóval': 'Automata',
-        'Manuális felező váltóval': 'Manuális',
-        'Fokozatmentes automata felező váltóval': 'Fokozatmentes automata',
-        'Félautomata': 'Manuális',
-        'Tiptronic': 'Automata tiptronic'
-    }
-    clean_df['transmission_type'] = clean_df['transmission_type'].replace(transmission_mapping)
-    
-    print(f"Simplified transmission types to: {clean_df['transmission_type'].nunique()} categories")
-    
+     
     return clean_df
+
 # ========================================
 
-def table_clean(df: pd.DataFrame, verbose: bool = True) -> pd.DataFrame:
+def table_clean(df: pd.DataFrame, text: bool = True) -> pd.DataFrame:
     """
-        - Complete cleaning pipeline for car data
+        - Complete cleaning for car data
     """
-    if verbose:
+    if text:
+        print("\nCLEANING\n")
         print(f"Starting with {len(df)} cars")
         print("-" * 50)
     
     initial_count = len(df)
     
-    # Track rows after each step for debugging
     cleaning_steps = [
         ("price", clean_price),
         ("year", clean_year),
@@ -306,17 +265,12 @@ def table_clean(df: pd.DataFrame, verbose: bool = True) -> pd.DataFrame:
         df = clean_func(df)
         after = len(df)
         
-        if verbose and before != after:
+        if text:
             print(f"{step_name}: {before} → {after} (-{before-after})")
     
-    if verbose:
+    if text:
         print("-" * 50)
         print(f"Final: {len(df)} cars ({len(df)/initial_count*100:.1f}% retained)")
     
     return df
 
-# ======================
-
-df = pd.read_csv('data/raw/car_details.csv')
-df = table_clean(df = df)
-df.to_csv('data/clean/car_details.csv', index=False)
