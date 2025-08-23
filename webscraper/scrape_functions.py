@@ -7,7 +7,7 @@ from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
 import time
 import random
 from datetime import datetime
-from data.sql.models import CarData, CarDetails 
+from sql.models import CarData, CarDetails 
 
 # =========================
 def extract_car_basic_specs(car_page, text):
@@ -216,7 +216,7 @@ def build_car_dict(id, price, manufacturer, modell, evjarat, km_ora, uzemanyag, 
 # ========================== SQL
 def load_existing_ids(session):
     existing_ids = session.query(CarData.id).all()
-    id_set = {str(id[0]) for id in existing_ids}
+    id_set = {id[0] for id in existing_ids}
     
     print(f"Loaded {len(id_set)} existing IDs into cache")
     return id_set
@@ -272,16 +272,13 @@ def wait_for_main_page_load(main_page : Page, timeout : int = 45000):
 
 def wait_for_car_page_load(car_page: Page, timeout: int = 45000):
     try:
-        print("Waiting for print-highlighted-info__item...")
+        print("Waiting for - Essential stats to appear")
         car_page.locator('div.print-highlighted-info__item').first.wait_for(state="visible", timeout=timeout)
         
-        print("Waiting for print-basic-info-item...")
+        print("Waiting for - Basic stats to appear")
         car_page.locator('div.print-basic-info-item').first.wait_for(state="visible", timeout=timeout)
         
-        #print("Waiting for tr.align-middle...")
-        #car_page.locator('tr.align-middle').first.wait_for(state="visible", timeout=timeout)
-        
-        print("Waiting for breadcrumb...")
+        print("Waiting for - Manufacturer and Model to appear")
         car_page.locator('ol#breadcrumb').wait_for(state="visible", timeout=timeout)
 
         print("Car page loaded successfully.")

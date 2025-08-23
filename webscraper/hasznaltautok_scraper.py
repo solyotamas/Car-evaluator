@@ -21,7 +21,7 @@ from playwright._impl._errors import Error as PlaywrightError
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from data.sql.models import CarData, CarDetails
+from sql.models import CarData, CarDetails
 
 
 # ======== ENV
@@ -64,9 +64,9 @@ with sync_playwright() as pw:
     while True:
         
         '''
-        Switching proxy every 5th page
+        Switching proxy every 10th page
         '''
-        if (page_num - 1)  % 5 == 0:
+        if (page_num - 1) % 10 == 0:
             context, main_page, car_page = switch_proxy(
                 proxy_cycle=proxy_cycle,
                 browser=browser,
@@ -113,14 +113,23 @@ with sync_playwright() as pw:
 
             id_search = re.search(r'-(\d+)(?:[#?]|$)', href)
             id = id_search.group(1)
+            id = int(id)
+
 
             price_locator = listings.nth(i).locator('div.pricefield-primary').first
-            price = price_locator.inner_text().strip() if price_locator.count() > 0 else None
+            inactive_price_locator = listings.nth(i).locator('div.pricefield-inactive').first
+            if price_locator.count() > 0:
+                price = price_locator.inner_text().strip()
+            elif inactive_price_locator.count() > 0:
+                price = inactive_price_locator.inner_text().strip()
+            else:
+                price = None
             price = clean_price(price)
 
+
             if id in existing_car_ids_cache:
-                print(f"ID {id} exists, updating if neccessary")
-                update_existing_car(session, int(id), price)
+                print(f"ID {id} exists - updating if neccessary")
+                update_existing_car(session, id, price)
                 continue
 
 
@@ -128,7 +137,6 @@ with sync_playwright() as pw:
                 try:
                     car_page.goto(href, wait_until='domcontentloaded')
                     wait_for_car_page_load(car_page = car_page)
-
                     break
 
                 except (PlaywrightTimeoutError, PlaywrightError):
@@ -165,10 +173,36 @@ with sync_playwright() as pw:
                     listings = main_page.locator('div.row.talalati-sor')
                     count = listings.count()
 
+                    car_listing_element = listings.nth(i)
+                    car_listing_link_element = car_listing_element.locator('h3 > a').first
+                    href = car_listing_link_element.get_attribute('href')
 
+                    id_search = re.search(r'-(\d+)(?:[#?]|$)', href)
+                    id = id_search.group(1)
+                    id = int(id)
+
+                    if id in existing_car_ids_cache:
+                        print(f"After reload, ID {id} exists - updating")
+                        update_existing_car(session, id, price)
+                        break
+                    
+            # So I dont try to scrape the unloaded car pages stats, break -> into continue
+            if id in existing_car_ids_cache:
+                continue
+
+            id_search = re.search(r'-(\d+)(?:[#?]|$)', href)
+            id = id_search.group(1)
+            id = int(id)
 
             price_locator = listings.nth(i).locator('div.pricefield-primary').first
-            price = price_locator.inner_text().strip() if price_locator.count() > 0 else None
+            inactive_price_locator = listings.nth(i).locator('div.pricefield-inactive').first
+            if price_locator.count() > 0:
+                price = price_locator.inner_text().strip()
+            elif inactive_price_locator.count() > 0:
+                price = inactive_price_locator.inner_text().strip()
+            else:
+                price = None
+
             # On Car Page  
             # Manufacturer, Modell
             manufacturer, modell = extract_car_manufacturer_modell(car_page = car_page)
@@ -196,17 +230,18 @@ with sync_playwright() as pw:
             car_details_page.append(car_details)
             car_data_page.append(car_data)
             print('Scraped: ' + str(i))
+
             existing_car_ids_cache.add(id)
             
 
 
         # ======================= Saving new cars to db
-        
         car_details_objects = [CarDetails(**car) for car in car_details_page]
         car_data_objects = [CarData(**car) for car in car_data_page]
         session.bulk_save_objects(car_details_objects)
         session.bulk_save_objects(car_data_objects)
         session.commit()
+
 
         car_details_page.clear()
         car_data_page.clear()
@@ -215,14 +250,20 @@ with sync_playwright() as pw:
         # ======================= Next page
         page_num += 1
         next_button = main_page.locator('ul.pagination > li.next').first
+        next_classes = next_button.get_attribute('class')
 
-        if next_button.is_enabled():
+        #print(f"Next button classes: '{next_classes}'")
+
+        if 'disabled' not in next_classes:
             while True:
                 try:
-                    main_page.goto(f"https://www.hasznaltauto.hu/talalatilista/PCOHKVCBN3RTADH4RNPZAOCJXOVRY52RUBABD5GUVPA5VDFDLAJAHCJWTICP362SW2JVURXWMRREMIRZEPJKBVQLOUGWVGNLVQA4NGV4QYOXNWKWWCS4VQQFFWNDHNCMHW2FMGMY6TQG5RAP3JL4QGB2VAQFZMXNU5NIYSJ2QEG7RQTKC6JSYVEWZUM7RGRSDOKWD24L4TPO4EIRV7O6WS2VA6DIWI3Y3P3HSVFW5S746KVLYGBSWNIYDUPBZSFDKIYOIHTQKLZRGPM2AMZD3ID7VNGPVI5ADGMYWW4ZXEW7IASHQ3RQ2F5BPNISARV5KY2GFSZ3GYITYBLPMJCY3R6QDIHLCALJHXP7JHP4TK74DH7A66ET734HWMT7PIJLDSF6NEV7NQBZG7OTQHPT2WLCJXXLKGXIU77NNR7LNZKLZOBJ23Q4KD3XWSVV7NDB6Q7QTK5SFAH6A25BRKJJZQ4SNFBMH73JKFQMCN2Q5CYYC2BOKVUMYHMREOWE63JYUKM42ETW6I4MBKLZO5YGEXVDHN4SYMY6CL77MMW5ZSGZ2D3IIISRGKT5WWZBTYGOKDP7HARROARM5NVAG3VKVB7R57DUJK7FCDTTDTUHPAK6HVIQV5R3YHTCPHGG6CKW4I63UGT55N454WGKUW5RGHJ6GI2YKDFUQUPZDLOBQAESUIWEIWB7MQSNNRNE4XL3QPR3MW3ATC7LUHFGCAXI23CCGPCZ7YRQ2BPH6JJDEIUBU3BYBZKCRYGTIBZCTVRQVUGLNUZTTDIZ4YXNERN37HPIHN6WTSE5XMUSOTTAHDGRV3OI2GATZVKT7R47RW6IPJHFCWPOYZUJWSENX4F2TBXORSQ5RE5PYHMETH67QPE3EGD7VFWC3OSJWPP76ABZU2WZU/page{page_num}", wait_until='domcontentloaded')
-                    wait_for_main_page_load(main_page=main_page)
-                    break
-                    
+                    if (page_num - 1) % 10 == 0:
+                        print(f"Page {page_num} will trigger proxy switch, skipping navigation")
+                        break
+                    else:
+                        main_page.goto(f"https://www.hasznaltauto.hu/talalatilista/PCOHKVCBN3RTADH4RNPZAOCJXOVRY52RUBABD5GUVPA5VDFDLAJAHCJWTICP362SW2JVURXWMRREMIRZEPJKBVQLOUGWVGNLVQA4NGV4QYOXNWKWWCS4VQQFFWNDHNCMHW2FMGMY6TQG5RAP3JL4QGB2VAQFZMXNU5NIYSJ2QEG7RQTKC6JSYVEWZUM7RGRSDOKWD24L4TPO4EIRV7O6WS2VA6DIWI3Y3P3HSVFW5S746KVLYGBSWNIYDUPBZSFDKIYOIHTQKLZRGPM2AMZD3ID7VNGPVI5ADGMYWW4ZXEW7IASHQ3RQ2F5BPNISARV5KY2GFSZ3GYITYBLPMJCY3R6QDIHLCALJHXP7JHP4TK74DH7A66ET734HWMT7PIJLDSF6NEV7NQBZG7OTQHPT2WLCJXXLKGXIU77NNR7LNZKLZOBJ23Q4KD3XWSVV7NDB6Q7QTK5SFAH6A25BRKJJZQ4SNFBMH73JKFQMCN2Q5CYYC2BOKVUMYHMREOWE63JYUKM42ETW6I4MBKLZO5YGEXVDHN4SYMY6CL77MMW5ZSGZ2D3IIISRGKT5WWZBTYGOKDP7HARROARM5NVAG3VKVB7R57DUJK7FCDTTDTUHPAK6HVIQV5R3YHTCPHGG6CKW4I63UGT55N454WGKUW5RGHJ6GI2YKDFUQUPZDLOBQAESUIWEIWB7MQSNNRNE4XL3QPR3MW3ATC7LUHFGCAXI23CCGPCZ7YRQ2BPH6JJDEIUBU3BYBZKCRYGTIBZCTVRQVUGLNUZTTDIZ4YXNERN37HPIHN6WTSE5XMUSOTTAHDGRV3OI2GATZVKT7R47RW6IPJHFCWPOYZUJWSENX4F2TBXORSQ5RE5PYHMETH67QPE3EGD7VFWC3OSJWPP76ABZU2WZU/page{page_num}", wait_until='domcontentloaded')
+                        wait_for_main_page_load(main_page=main_page)
+                        break       
                 except (PlaywrightTimeoutError, PlaywrightError):
                     print("Switching proxies, next page did not load.")
                     context, main_page, car_page = switch_proxy(
@@ -237,7 +278,7 @@ with sync_playwright() as pw:
                     )
                     next_button = main_page.locator('ul.pagination > li.next').first
         else:
-            print("Scraped full, no more pages left")
+            print("Scraped all, no more pages left")
             break
         
 
