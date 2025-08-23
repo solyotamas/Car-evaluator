@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('data/raw/car_details.csv')
+df = pd.read_csv('data/clean/car_details.csv')
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 
@@ -89,3 +89,33 @@ for i, v in enumerate(cars_removed):
 plt.tight_layout()
 plt.show()
 
+print("="*60)
+print("MODEL DISTRIBUTION ANALYSIS")
+print("="*60)
+
+# Basic model statistics
+print(f"\nTotal unique models: {df['model'].nunique()}")
+print(f"Total cars: {len(df)}")
+print(f"Average cars per model: {len(df) / df['model'].nunique():.1f}")
+
+# Model frequency distribution
+model_counts = df['model'].value_counts()
+
+print("\n" + "="*60)
+print("MODEL FREQUENCY DISTRIBUTION")
+print("="*60)
+
+# Distribution brackets
+distribution = {
+    '1 car': len(model_counts[model_counts == 1]),
+    '2-5 cars': len(model_counts[(model_counts >= 2) & (model_counts <= 5)]),
+    '6-10 cars': len(model_counts[(model_counts >= 6) & (model_counts <= 10)]),
+    '11-20 cars': len(model_counts[(model_counts >= 11) & (model_counts <= 20)]),
+    '21-50 cars': len(model_counts[(model_counts >= 21) & (model_counts <= 50)]),
+    '51-100 cars': len(model_counts[(model_counts >= 51) & (model_counts <= 100)]),
+    '100+ cars': len(model_counts[model_counts > 100])
+}
+
+for bracket, count in distribution.items():
+    pct = count / df['model'].nunique() * 100
+    print(f"{bracket:15} {count:5} models ({pct:5.1f}%)")

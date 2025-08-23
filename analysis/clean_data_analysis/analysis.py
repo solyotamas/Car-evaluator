@@ -106,3 +106,7 @@ for col in categorical_features:
         print(f"{col}: Has 'Unknown' category ✓")
     else:
         print(f"{col}: No 'Unknown' category")
+
+
+print(f"Unique manufacturers: {df['manufacturer'].nunique()}")
+print(f"Unique models: {df['model'].nunique()}")
