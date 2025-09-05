@@ -183,7 +183,7 @@ with sync_playwright() as pw:
 
                     if id in existing_car_ids_cache:
                         print(f"After reload, ID {id} exists - updating")
-                        update_existing_car(session, id, price)
+                        #update_existing_car(session, id, price)
                         break
                     
             # So I dont try to scrape the unloaded car pages stats, break -> into continue
@@ -231,17 +231,32 @@ with sync_playwright() as pw:
             car_data_page.append(car_data)
             print('Scraped: ' + str(i))
 
+
+            # ~~~~~~~~~~~~~~~~~~~~~~~~
+            '''
+            car_details_obj = CarDetails(**car_details)
+            session.add(car_details_obj)
+            session.commit()
+
+            car_data_obj = CarData(**car_data)    
+            session.add(car_data_obj)
+            session.commit()
+
             existing_car_ids_cache.add(id)
+            '''
             
 
 
         # ======================= Saving new cars to db
+        
         car_details_objects = [CarDetails(**car) for car in car_details_page]
         car_data_objects = [CarData(**car) for car in car_data_page]
         session.bulk_save_objects(car_details_objects)
         session.bulk_save_objects(car_data_objects)
         session.commit()
-
+        for car in car_details_page:
+            existing_car_ids_cache.add(car['id'])
+        
 
         car_details_page.clear()
         car_data_page.clear()
