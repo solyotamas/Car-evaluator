@@ -233,22 +233,22 @@ with sync_playwright() as pw:
 
 
             # ~~~~~~~~~~~~~~~~~~~~~~~~
-            '''
+            
             car_details_obj = CarDetails(**car_details)
             session.add(car_details_obj)
-            session.commit()
+            session.flush()
 
             car_data_obj = CarData(**car_data)    
             session.add(car_data_obj)
             session.commit()
 
             existing_car_ids_cache.add(id)
-            '''
+            
             
 
 
         # ======================= Saving new cars to db
-        
+        '''
         car_details_objects = [CarDetails(**car) for car in car_details_page]
         car_data_objects = [CarData(**car) for car in car_data_page]
         session.bulk_save_objects(car_details_objects)
@@ -256,7 +256,7 @@ with sync_playwright() as pw:
         session.commit()
         for car in car_details_page:
             existing_car_ids_cache.add(car['id'])
-        
+        '''
 
         car_details_page.clear()
         car_data_page.clear()
