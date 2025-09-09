@@ -110,6 +110,47 @@ def test_show_extreme_cases(results: dict, df_test, extreme_threshhold = 100):
         return pd.DataFrame()
     
 
+def find_undervalued_cars(results: dict, df_test, car_data_df, undervalued_threshold=20):
+
+    actual_prices = results['actual_prices']
+    pred_prices = results['prediction_prices']
+    
+    undervalued_percent = ((pred_prices - actual_prices) / actual_prices) * 100
+    analysis_df = df_test.copy().reset_index(drop=True)
+    analysis_df['actual_price'] = actual_prices
+    analysis_df['predicted_price'] = pred_prices
+    analysis_df['undervalued_percent'] = undervalued_percent
+    
+
+    bargains = analysis_df[analysis_df['undervalued_percent'] > undervalued_threshold].copy()
+    
+    if len(bargains) == 0:
+        print(f"No cars found undervalued by more than {undervalued_threshold}%")
+        return pd.DataFrame()
+    
+    bargains = bargains.merge(car_data_df[['id', 'url']], on='id', how='left')
+    display_df = bargains[['actual_price', 'predicted_price', 'undervalued_percent',
+                           'manufacturer', 'model', 'year', 'kilometers', 'kw', 'url']]
+    display_df = display_df.sort_values('undervalued_percent', ascending=False)
+    
+
+    
+    styled = (display_df.style
+        .format({
+            'actual_price': '{:,.0f} Ft',
+            'predicted_price': '{:,.0f} Ft',
+            'undervalued_percent': '+{:.1f}%',
+            'kilometers': '{:,.0f} km',
+            'year': '{:.0f}',
+            'kw': '{:.0f}',
+            'url': lambda x: f'<a href="{x}" target="_blank">Car page</a>' if pd.notna(x) else "No url"
+        })
+        .bar(subset=['undervalued_percent'], color='lightgreen', align='left')
+        .hide(axis='index')
+    )
+    
+    return styled
+
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 def plot_outlier_years(results: dict, df_test, threshold=50):

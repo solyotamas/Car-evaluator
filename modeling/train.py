@@ -7,7 +7,7 @@ def train_model(model, train_loader, val_loader,
     epochs = 100, learning_rate = 0.001, learning_rate_decay_factor = 0.5, weight_decay = 0.00001, gradient_clip = 1.0, 
 ):
     
-    # i have amd so its always cpu
+    # rip amds
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = model.to(device)
     print(f"Training on: {device}")
@@ -49,7 +49,7 @@ def train_model(model, train_loader, val_loader,
             
             optimizer.zero_grad()
             predictions = model(X_num, X_cat).squeeze()
-            loss = mse_loss_fn(predictions, y)
+            loss = mse_loss_fn(predictions.squeeze(), y)
             loss.backward()
 
             if gradient_clip > 0:
