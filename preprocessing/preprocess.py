@@ -67,6 +67,14 @@ class PreProcessor:
         with open(filepath_json, 'w') as f:
             json.dump(config_readable, f, indent = 4)
         
+    def load(self, filepath_joblib):
+        config = joblib.load(filepath_joblib)
+        
+        self.numerical_features = config['numerical_features']
+        self.scaler = config['scaler']
+        self.categorical_features = config['categorical_features']
+        
+        return self
 
     def transform(self, df : DataFrame, is_training, include_target):
         X_numerical = None
