@@ -18,7 +18,7 @@ filename = f'car_details_{length}_{date_str}.csv'
 car_details_df.to_csv(f'data/raw/{filename}', index=False)
 
 # Car Data Table
-car_data_df = pd.read_sql_query("SELECT * FROM car_details", engine)
+car_data_df = pd.read_sql_query("SELECT * FROM car_data", engine)
 length = len(car_details_df)
 filename = f'car_data_{length}_{date_str}.csv'
 car_data_df.to_csv(f'data/raw/{filename}', index=False)
