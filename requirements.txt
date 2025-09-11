@@ -1,0 +1,9 @@
+joblib==1.5.2
+matplotlib==3.10.6
+numpy==2.3.3
+pandas==2.3.2
+playwright==1.55.0
+python-dotenv==1.1.1
+scikit_learn==1.7.2
+SQLAlchemy==2.0.43
+torch==2.8.0
