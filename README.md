@@ -2,7 +2,7 @@
 
 ---
 
-##**Updates**
+## **Updates**
 Updated weekly(ish) for new underpriced cars 
 
 ## **Introduction**
