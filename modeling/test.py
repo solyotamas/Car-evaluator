@@ -17,7 +17,7 @@ def test_model(model, test_loader):
             X_cat = X_cat.to(device)
             y = y.to(device)
             
-            preds = model(X_num, X_cat).squeeze()
+            preds = model(X_num, X_cat).squeeze(-1)
             
             predictions.extend(preds.cpu().numpy())
             actuals.extend(y.cpu().numpy())

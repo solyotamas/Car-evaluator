@@ -128,9 +128,9 @@ def find_undervalued_cars(results: dict, df_test, car_data_df, undervalued_thres
         print(f"No cars found undervalued by more than {undervalued_threshold}%")
         return pd.DataFrame()
     
-    bargains = bargains.merge(car_data_df[['id', 'url']], on='id', how='left')
+    bargains = bargains.merge(car_data_df[['id', 'url', 'first_seen']], on='id', how='left')
     display_df = bargains[['actual_price', 'predicted_price', 'undervalued_percent',
-                           'manufacturer', 'model', 'year', 'kilometers', 'kw', 'url']]
+                           'manufacturer', 'model', 'year', 'kilometers', 'kw', 'url', 'first_seen']]
     display_df = display_df.sort_values('undervalued_percent', ascending=False)
     
 
@@ -146,6 +146,7 @@ def find_undervalued_cars(results: dict, df_test, car_data_df, undervalued_thres
             'url': lambda x: f'<a href="{x}" target="_blank">Car page</a>' if pd.notna(x) else "No url"
         })
         .bar(subset=['undervalued_percent'], color='lightgreen', align='left')
+        .set_properties(**{'font-size': '12px'})
         .hide(axis='index')
     )
     
