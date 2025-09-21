@@ -3,10 +3,10 @@
 ---
 
 ## **Updates**
-Updated weekly(ish) for new underpriced cars 
+Updated weekly(ish) for new underpriced cars in **evaluate_market_model.ipynb**
 
 ## **Introduction**
-A deep learning project using regression **MLPS** to predict the prices of the cars which are available on the popular hungarian site Hasznaltautok.hu, trying to find underpriced ones
+A deep learning project using regression **MLPs** to predict the prices of cars available on the popular hungarian site [Hasznaltauto.hu](https://www.hasznaltauto.hu) aiming to find underpriced ones
 
 
 ## **Project Structure**
@@ -28,7 +28,7 @@ Achieving validation **MSE < 0.02**, validation MAPE ≈ 10.6% while maintaining
 
 ## **Future Improvements**
 
-- As noted in the notebooks, more frequent scraping of Hasznaltautok.hu is needed to gather sufficient, realistic car data. (The site lists around 500-1k new cars daily)
+- As noted in the notebooks, more frequent scraping of hasznaltauto.hu is needed to gather sufficient, realistic car data. (The site lists around 500-1k new cars daily)
 - Once enough data is collected, the model can be trained on inactive listings only and be used to predict prices for all active listings, catching potantial bargains instantly. 
 
 
@@ -36,7 +36,7 @@ Achieving validation **MSE < 0.02**, validation MAPE ≈ 10.6% while maintaining
 
 **1. Data Gathering / Web Scraping**
 
-Hasznaltautok.hu doesn't have an API or any easy way to download their data, so I wrote a scraper to get all the cars listings directly. 
+hasznaltauto.hu doesn't have an API or any easy way to download their data, so I wrote a scraper to get all the cars listings directly. 
 I collected details like price, manufacturer, model, mileage, fuel type, etc. 
 
 **2. Data Analysis**
