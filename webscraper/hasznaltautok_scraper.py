@@ -1,5 +1,6 @@
 from playwright.sync_api import sync_playwright
 import re
+from playwright.sync_api import Browser, BrowserContext, Page
 from dotenv import load_dotenv
 import os
 from webscraper.scrape_functions import(
@@ -12,17 +13,19 @@ from webscraper.scrape_functions import(
     build_car_dict,
     load_existing_ids,
     clean_price,
-    update_existing_car,
+    update_existing_car
 )
 from itertools import cycle
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
 from playwright._impl._errors import Error as PlaywrightError
-
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-
 from sql.models import CarData, CarDetails
-
+import json
+import asyncio
+from playwright.async_api import async_playwright
+from twocaptcha import TwoCaptcha
+import time
 
 # ======== ENV
 load_dotenv("shhh.env")
@@ -30,12 +33,14 @@ username = os.getenv("PROXY_USERNAME")
 password = os.getenv("PROXY_PASSWORD")
 proxy_ips = os.getenv("PROXIES").split(',')
 ports = os.getenv("PORTS").split(',')
+
 # ======== SQL
 engine_connection = os.getenv("SQL_ENGINE")
 engine = create_engine(engine_connection)
 Session = sessionmaker(bind=engine)
 session = Session()
 existing_car_ids_cache = load_existing_ids(session = session)
+
 # ======== OTHER VARIABLES
 car_details_page = []
 car_data_page = []
@@ -49,12 +54,16 @@ proxy_list = [
 ]
 proxy_cycle = cycle(proxy_list)
 
+# ==========================
+API_KEY = os.getenv("2CAPTCHA_API_KEY")
+#solver = TwoCaptcha(API_KEY)
 
 
 # =============================
 
 with sync_playwright() as pw:
     browser = pw.chromium.launch(headless=False)
+    
     
     context = None
     main_page = None
@@ -67,7 +76,8 @@ with sync_playwright() as pw:
         Switching proxy every 10th page
         '''
         if (page_num - 1) % 10 == 0:
-            context, main_page, car_page = switch_proxy(
+            
+            context, main_page, car_page, current_proxy = switch_proxy(
                 proxy_cycle=proxy_cycle,
                 browser=browser,
                 context=context,
@@ -80,12 +90,17 @@ with sync_playwright() as pw:
             
             while True:
                 try:
-                    main_page.goto(f"https://www.hasznaltauto.hu/talalatilista/PCOHKVCBN3RTADH4RNPZAOCJXOVRY52RUBABD5GUVPA5VDFDLAJAHCJWTICP362SW2JVURXWMRREMIRZEPJKBVQLOUGWVGNLVQA4NGV4QYOXNWKWWCS4VQQFFWNDHNCMHW2FMGMY6TQG5RAP3JL4QGB2VAQFZMXNU5NIYSJ2QEG7RQTKC6JSYVEWZUM7RGRSDOKWD24L4TPO4EIRV7O6WS2VA6DIWI3Y3P3HSVFW5S746KVLYGBSWNIYDUPBZSFDKIYOIHTQKLZRGPM2AMZD3ID7VNGPVI5ADGMYWW4ZXEW7IASHQ3RQ2F5BPNISARV5KY2GFSZ3GYITYBLPMJCY3R6QDIHLCALJHXP7JHP4TK74DH7A66ET734HWMT7PIJLDSF6NEV7NQBZG7OTQHPT2WLCJXXLKGXIU77NNR7LNZKLZOBJ23Q4KD3XWSVV7NDB6Q7QTK5SFAH6A25BRKJJZQ4SNFBMH73JKFQMCN2Q5CYYC2BOKVUMYHMREOWE63JYUKM42ETW6I4MBKLZO5YGEXVDHN4SYMY6CL77MMW5ZSGZ2D3IIISRGKT5WWZBTYGOKDP7HARROARM5NVAG3VKVB7R57DUJK7FCDTTDTUHPAK6HVIQV5R3YHTCPHGG6CKW4I63UGT55N454WGKUW5RGHJ6GI2YKDFUQUPZDLOBQAESUIWEIWB7MQSNNRNE4XL3QPR3MW3ATC7LUHFGCAXI23CCGPCZ7YRQ2BPH6JJDEIUBU3BYBZKCRYGTIBZCTVRQVUGLNUZTTDIZ4YXNERN37HPIHN6WTSE5XMUSOTTAHDGRV3OI2GATZVKT7R47RW6IPJHFCWPOYZUJWSENX4F2TBXORSQ5RE5PYHMETH67QPE3EGD7VFWC3OSJWPP76ABZU2WZU/page{page_num}", wait_until='domcontentloaded')
+                    main_page.goto(f"https://www.hasznaltauto.hu/talalatilista/PCOHKVCBN3RTADH4RNPZAOCJXOVRY52RUBABD5GUVPA5VDFDLAJAHCJWTICP362SW2JVURXWMRREMIRZEPJKBVQLOUGWVGNLVQA4NGV4QYOXNWKWWCS4VQQFFWNDHNCMHW2FMGMY6TQG5RAP3JL4QGB2VAQFZMXNU5NIYSJ2QEG7RQTKC6JSYVEWZUM7RGRSDOKWD24L4TPO4EIRV7O6WS2VA6DIWI3Y3P3HSVFW5S746KVLYGBSWNIYDUPBZSFDKIYOIHTQKLZRGPM2AMZD3ID7VNGPVI5ADGMYWW4ZXEW7IASHQ3RQ2F5BPNISARV5KY2GFSZ3GYITYBLPMJCY3R6QDIHLCALJHXP7JHP4TK74DH7A66ET734HWMT7PIJLDSF6NEV7NQBZG7OTQHPT2WLCJXXLKGXIU77NNR7LNZKLZOBJ23Q4KD3XWSVV7NDB6Q7QTK5SFAH6A25BRKJJZQ4SNFBMH73JKFQMCN2Q5CYYC2BOKVUMYHMREOWE63JYUKM42ETW6I4MBKLZO5YGEXVDHN4SYMY6CL77MMW5ZSGZ2D3IIISRGKT5WWZBTYGOKDP7HARROARM5NVAG3VKVB7R57DUJK7FCDTTDTUHPAK6HVIQV5R3YHTCPHGG6CKW4I63UGT55N454WGKUW5RGHJ6GI2YKDFUQUPZDLOBQAESUIWEIWB7MQSNNRNE4XL3QPR3MW3ATC7LUHFGCAXI23CCGPCZ7YRQ2BPH6JJDEIUBU3BYBZKCRYGTIBZCTVRQVUGLNUZTTDIZ4YXNERN37HPIHN6WTSE5XMUSOTTAHDGRV3OI2GATZVKT7R47RW6IPJHFCWPOYZUJWSENX4F2TBXORSQ5RE5PYHMETH67QPE3EGD7VFWC3OSJWPP76ABZU2WZU/page{page_num}", 
+                    wait_until="domcontentloaded", timeout=45000
+                    )
+
                     wait_for_main_page_load(main_page = main_page)
                     break
+
                 except (PlaywrightTimeoutError, PlaywrightError):
+
                     print(f"Switching proxy, failed to load main page")
-                    context, main_page, car_page = switch_proxy(
+                    context, main_page, car_page, current_proxy = switch_proxy(
                         proxy_cycle=proxy_cycle,
                         browser=browser,
                         context=context,
@@ -141,7 +156,7 @@ with sync_playwright() as pw:
 
                 except (PlaywrightTimeoutError, PlaywrightError):
                     print(f"Switching proxy, failed to load car page.")
-                    context, main_page, car_page = switch_proxy(
+                    context, main_page, car_page, current_proxy = switch_proxy(
                         proxy_cycle=proxy_cycle,
                         browser=browser,
                         context=context,
@@ -159,7 +174,7 @@ with sync_playwright() as pw:
                             break
                         except (PlaywrightTimeoutError, PlaywrightError):
                             print(f"Switching proxy, failed to load main page")
-                            context, main_page, car_page = switch_proxy(
+                            context, main_page, car_page, current_proxy = switch_proxy(
                                 proxy_cycle=proxy_cycle,
                                 browser=browser,
                                 context=context,
@@ -281,7 +296,7 @@ with sync_playwright() as pw:
                         break       
                 except (PlaywrightTimeoutError, PlaywrightError):
                     print("Switching proxies, next page did not load.")
-                    context, main_page, car_page = switch_proxy(
+                    context, main_page, car_page, current_proxy = switch_proxy(
                         proxy_cycle=proxy_cycle,
                         browser=browser,
                         context=context,

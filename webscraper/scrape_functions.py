@@ -8,6 +8,17 @@ import time
 import random
 from datetime import datetime
 from sql.models import CarData, CarDetails 
+import json
+import asyncio
+from playwright.async_api import async_playwright
+from twocaptcha import TwoCaptcha
+import re
+
+# =========================
+
+API_KEY = os.getenv("2CAPTCHA_API_KEY")
+solver = TwoCaptcha(API_KEY)
+
 
 # =========================
 def extract_car_basic_specs(car_page, text):
@@ -241,23 +252,122 @@ def update_existing_car(session, car_id, new_price):
 
 
 # ==========================
+'''
+async def solve_turnstile_challenge(url, proxy_config=None, timeout=300):
+    """
+    Solve Turnstile challenge and return success status
+    
+    Args:
+        url: The URL that has the Turnstile challenge
+        proxy_config: Dict with proxy settings {"server": "http://ip:port", "username": "user", "password": "pass"}
+        api_key: 2captcha API key
+        timeout: Max time to wait for challenge solving
+    
+    Returns:
+        bool: True if challenge was solved successfully, False otherwise
+    """
+    
+    
+    challenge_solved = False
+    
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=False)
+        context = await browser.new_context(proxy=proxy_config)
+            
+        page = await context.new_page()
+        
+        # Load inject.js content
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        inject_js_path = os.path.join(script_dir, 'inject.js')
+
+        with open(inject_js_path, 'r', encoding='utf-8') as f:
+            inject_js = f.read()
+        
+        await page.add_init_script(inject_js)
+        
+        # Console message handler
+        async def handle_console(msg):
+            nonlocal challenge_solved
+            txt = msg.text
+            if 'intercepted-params:' in txt:
+                params_json = txt.replace('intercepted-params:', '')
+                params = json.loads(params_json)
+                print("Intercepted Turnstile params")
+                
+                try:
+                    print("Solving captcha...")
+                    
+                    result = solver.turnstile(
+                        sitekey=params['sitekey'],
+                        url=params['pageurl'],
+                        data=params.get('data'),
+                        pagedata=params.get('pagedata'),
+                        action=params.get('action'),
+                        useragent=params.get('userAgent')
+                    )
+                    
+                    print(f"Captcha solved: {result['captchaId']}")
+                    token = result['code']
+                    
+                    # Call the callback with the token
+                    await page.evaluate(f"cfCallback('{token}')")
+                    challenge_solved = True
+                    
+                except Exception as e:
+                    print(f"Error solving captcha: {e}")
+        
+        page.on('console', handle_console)
+        
+        try:
+            await page.goto(url)
+            
+            # Wait for challenge to be solved or timeout
+            start_time = asyncio.get_event_loop().time()
+            while not challenge_solved and (asyncio.get_event_loop().time() - start_time) < timeout:
+                await asyncio.sleep(1)
+            
+        except Exception as e:
+            print(f"Error navigating to challenge page: {e}")
+        
+        await browser.close()
+    
+    return challenge_solved
+
+def handle_challenge_in_sync_scraper(url, proxy_config):
+    """
+    Wrapper to call async Turnstile solver from sync code
+    """
+    import threading
+    import asyncio
+
+    result = [False]
+    
+    def async_worker():
+        try:
+            # Create fresh event loop in this thread
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            
+            # Run the async function
+            result[0] = loop.run_until_complete(
+                solve_turnstile_challenge(url, proxy_config)
+            )
+            
+            loop.close()
+        except Exception as e:
+            print(f"Async worker error: {e}")
+    
+    # Run in separate thread
+    worker = threading.Thread(target=async_worker)
+    worker.start()
+    worker.join(timeout=300)  # 5 minute timeout
+    
+    return result[0]
+'''
+# ==========================
 
 def wait_for_main_page_load(main_page : Page, timeout : int = 45000):
     try:
-        # Cookie button
-        '''
-        cookieButton = main_page.locator("#didomi-notice-agree-button")
-        try:
-            cookieButton.wait_for(state="visible", timeout=15000)
-            if cookieButton.is_enabled():
-                cookieButton.click()
-                print("✔ Cookie button clicked")
-        except PlaywrightTimeoutError:
-            print("Cookie button not visible (timeout) — probably not shown")
-        except PlaywrightError as e:
-            print(f"Unexpected error with cookie button: {e}")
-        '''
-            
 
         main_page.locator('div.row.talalati-sor').first.wait_for(state="visible", timeout=timeout)
         main_page.locator('ul.pagination > li.next').last.wait_for(state="attached", timeout=timeout)
@@ -297,24 +407,36 @@ def switch_proxy(proxy_cycle, browser : Browser, context : BrowserContext, main_
     if context:
         context.close()
 
+        
+
     # Proxy
     proxy = next(proxy_cycle)
     print(f"Switching proxy to: {proxy}")
 
+
     # Context
     context = browser.new_context(proxy={"server": proxy, "username":username, "password":password})
 
+    enhanced_stealth = """
+        Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+        Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});
+        Object.defineProperty(navigator, 'languages', {get: () => ['en-US', 'en']});
+        delete window.chrome.runtime.onConnect;
+        delete window.chrome.runtime.onMessage;
+        window.chrome = {runtime: {}};
+    """
+
     # Main page
     main_page = context.new_page()
-    main_page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
-    
+    #main_page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
     # Car page
     car_page = context.new_page()
-    car_page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+    #car_page.add_init_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
 
-
+    main_page.add_init_script(enhanced_stealth)
+    car_page.add_init_script(enhanced_stealth)
     # Stabilize proxy
     time.sleep(random.uniform(2, 3))
 
-    return context, main_page, car_page
+    return context, main_page, car_page, proxy
