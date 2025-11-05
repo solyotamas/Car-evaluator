@@ -2,8 +2,12 @@
 
 ---
 
+
 ## **Updates**
+*Updates currently paused because data protection became better on the site 😔, trying to bypass them...*
+
 Updated weekly(ish) for new underpriced cars in **evaluate_market_model.ipynb**
+
 
 ## **Introduction**
 A deep learning project using regression **MLPs** to predict the prices of cars available on the popular hungarian site [Hasznaltauto.hu](https://www.hasznaltauto.hu) aiming to find underpriced ones
