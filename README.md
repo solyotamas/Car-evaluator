@@ -1,10 +1,9 @@
 # **Car Price Predictor**
 
 ---
-
+# Cba maintaining anymore + hasznaltauto protection became better
 
 ## **Updates**
-*Updates currently paused because data protection became better on the site 😔, trying to bypass them...*
 
 Updated weekly(ish) for new underpriced cars in **evaluate_market_model.ipynb**
 
