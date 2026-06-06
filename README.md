@@ -1,7 +1,7 @@
 # **Car Price Predictor**
 
 ---
-# Cba maintaining anymore + hasznaltauto protection became better
+### Cba maintaining it anymore + hasznaltauto protection became better
 
 ## **Updates**
 
